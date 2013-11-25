@@ -1,0 +1,42 @@
+html {
+    font-variant-numeric: oldstyle-nums;
+    -moz-font-feature-settings: 'onum=1';
+    -ms-font-feature-settings: 'onum';
+    -o-font-feature-settings: 'onum';
+    -webkit-font-feature-settings: 'onum';
+    font-feature-settings: 'onum';
+}
+
+ul.posts {
+    padding: 0;
+}
+
+p, ul, ol {
+    font-family: "garamond-premier-pro-display-1","garamond-premier-pro-display-2";
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+h1 {
+    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-weight: 100;
+}
+
+iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.posts {
+    list-style-type: none;
+}
+
+.flush-right {
+    text-align: right;
+}
