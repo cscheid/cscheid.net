@@ -1,0 +1,36 @@
+---
+layout: post
+title: "VisWeek 2011 day 0"
+---
+
+[VisWeek 2011](http://visweek.org) starts tomorrow, with two
+workshops, three tutorials and the contest. Having helped organize the
+workshops program, I'm obviously biased on the matter. Come attend the
+workshops! They're fantastic. 
+
+You get to choose between two great
+events; it's a pity they run in parallel. The first
+workshop is on visual analytics and health care, and in particular about
+[getting physicians
+to pay attention to us and vice-versa](http://www.visualanalyticshealthcare.org/). This perspective cannot be
+stressed nearly enough, and it's obvious how important this topic
+is. In particular, I'd like you to consider attending the panel they
+will host at 11:00am. Let's get a conversation started between these
+two universes!
+
+(Yes, I was half-asleep when I typed the original post. The
+uncertainty workshop is on monday!) The second workshop is on
+[story-telling](http://data-stories.com/), which is noteworthy
+in that it follows the extremely successful workshop from last year,
+and should be very popular as well. The interaction with the
+journalist community is very exciting, and getting people in newsrooms
+to care about what we do, and us caring about what they need, is
+well worth your attendance. I'll note a talk by New York Times' Brad
+Stenger. 
+
+I'll try to do some live-blogging, since not everyone is going to be
+around for the whole week, in particular for the first few days. The
+last couple of years were a complete live-blogging failure on my part,
+but let's see if I can make it work this year.
+
+If you see me around tomorrow, stop and say hi!

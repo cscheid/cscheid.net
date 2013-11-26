@@ -1,0 +1,42 @@
+---
+layout: post
+title: "VisWeek 2011 day 2"
+---
+
+The VisWeek keynote is just over; the fast-forward and the first VAST
+session are now underway. There's more VAST in the afternoon, and also
+what I think will be a great panel.
+
+I thought that the keynote was somewhat disappointing. It seems wrong
+to snark at an invited speaker, but I wish his talk had a little more
+justification for the visualizations he presented; the animation of
+the neural network process, for example, seemed to me to use
+visualizations for precisely the wrong reasons: it showed something,
+it looked good, but it never became clear what the visualization
+taught the users. What's the point, then? Am I missing something here?
+
+One paper I'm looking forward to seeing this morning is [Albuquerque et
+al's Perception-Based Visual Quality Metrics](http://www.cg.tu-bs.de/media/publications/Albuquerque2011PBQ.pdf). The interesting bit here
+is that they use perceptual experiments to derive a metric through
+explicit energy minimization. This is neat: the paper uses human
+subjects where computers can't do a very good job, and computers where
+humans do a good job. This is something that visualization papers tend
+to get wrong: because the community is good at creating depictions of
+data which are intelligible and attractive, we tend to forget that
+computers are actually great at computing things!
+
+In the afternoon, there's [Orion](http://vis.stanford.edu/papers/orion), Heer and Perer's system for
+manipulating network data. The only systemsy tool I know for
+generating and processing network data is GVPR, and it feels, ahem,
+slightly outdated. It certainly gets simple jobs done, but AWK
+expertise seems to be falling out of favor, and Heer has a good feel for
+good computational building blocks. I'm looking forward to that talk.
+
+In the afternoon as well, there's van Wijk, Ware, Demiralp and
+Laidlaw's aptly named panel: "Theories of Visualization: are there
+any?". This continues the long-standing debate on how to
+appropriately define and measure the goodness and utility of a
+visualization. Old readers will remember my discussion on the topic at
+the time of Laidlaw's capstone some years ago. This problem continues
+to be important, continues to be hard, and continues to be completely
+open.

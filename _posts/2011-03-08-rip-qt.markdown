@@ -1,0 +1,75 @@
+---
+layout: post
+title: "RIP, Qt"
+---
+
+In what seems now a long time ago, I wrote the following about
+[Qt and Nokia](http://carlosscheidegger.wordpress.com/2009/01/16/nokia-buy-riverbank-computing/).
+
+*Early last year, Nokia acquired Trolltech for \$153M, and there was much
+worry about Qt, the great GUI toolkit. The fear was Nokia would focus
+only on mobile devices, and cut off Qt's open source version. In an
+incredibly smart move (and I have to say one I didn't see coming),
+Nokia just announced it's making Qt available under LGPL.*
+
+*Think about how this would have sounded 20 years ago: Big company pays
+150 mil for small company, renounces said small company's major
+revenue stream by giving its product away. Rest assured that Nokia
+will lose Qt licensees. But as they correctly calculated, it does not
+matter. If Nokia wants to fight Android and the iPhone, they'd better
+have a decent software platform, and it better be free. 150 million is chump
+change for them: Nokia's market cap is around U\$53 billion.*
+
+*A more interesting problem (for us involved with the VisTrails
+project, at least) is what happens with PyQt, the incredibly
+well-designed Python bindings for Qt. PyQt is developed by Riverbank
+Computing, which is really a synonym for ``Phil Thompson's one-man
+show''. If you pay for Qt, buying PyQt for everyone essentially costs
+you every sixth Qt license, which is not very much at all. But now
+that Qt is LGPL, what is Phil to do?*
+
+*Well, he can't really make PyQt LGPL, as he'd just sink his
+company. But you could argue that he can't not make it LGPL
+either. For once, PyQt would be the only commercial barrier for
+writing commercial Python software with Qt, and I have a feeling that
+people would actively try to find a way around that. More importantly,
+with Qt being LGPL and no Python bindings to go with that, it'd be
+just a matter of time until someone else starts an LGPL PyQt
+clone. But it's essentially impossible that any new effort will be as
+good as PyQt is. So, there will be fragmentation of the community and
+a big waste of development effort. Crucially, this outcome is bad for
+Nokia. If Phil sticks around by himself, chances are Nokia loses
+money.*
+
+*So for Nokia to keep around a great set Python bindings for Qt, they
+just have to ensure Riverbank wants to make PyQt LGPL. And the easiest
+way is simply to buy the company, hire Phil Thompson, and make him
+PyQt dictator for life. So, Phil, it's time to buy a new suit!*
+
+Now it is all but official, and the writing is on the wall for Qt. It
+was announced today that Nokia are selling the Qt licensing rights to
+[some random
+company](http://www.digia.com/C2256FEF0043E9C1/0/405002251) (man, that is one ugly URL!). Qt is still head and shoulders
+above any other GUI toolkit. I haven't kept up with PyQt, but it's not
+looking good. [Pyside](http://www.pyside.org) are exactly the
+kind of bindings I thought would surface; they have reached 1.0
+last week. 
+
+My point about Nokia, Android, and iOS also turned out to
+be central to how this whole affair played out. It's sad that
+after years of being a great product, Qt gets killed by
+MS the cash juggernaut, and mostly as a side effect. Notice,
+incidentally, that Nokia's market cap is about half of what it was
+back then.
+
+Don't get me wrong, Qt will be no doubt forked. But what made Qt great
+was its documentation and its (comparably speaking) attention to API
+design. No other open-source GUI toolkit I have used has come anywhere
+close to it, and I have no reason to believe such a fork would inherit
+these good traits from Qt. At least superficially, this seems to be
+good news for [wxWidgets](http://www.wxwidgets.org/).
+
+Still, as I write this, I can't shake the feeling that it is HTML5
+that will be the lowest-common-denominator GUI toolkit for application
+development (even for locally hosted, off-the-web deployments) of this
+decade. But that's for another post.

@@ -1,3 +1,8 @@
+body {
+    font-size: 2.2em; 
+    text-rendering: optimizeLegibility;
+}
+
 html {
     font-variant-numeric: oldstyle-nums;
     -moz-font-feature-settings: 'onum=1';
@@ -16,15 +21,34 @@ p, ul, ol {
     font-weight: 100;
 }
 
+.heading {
+    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-weight: 100;
+    font-size: .75em;
+    margin-top: 20px;
+}
+
 .bold {
     font-weight: 700;
+    color: #444;
 }
 
 h1 {
     font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    position: relative;
+    left: -20px;
     font-weight: 100;
+    text-transform: uppercase;
+}
+
+h2, h3, h4 {
+    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-weight: 100;
+    position: relative;
+    left: -1em;
+    text-transform: uppercase;
 }
 
 iframe {
@@ -35,8 +59,4 @@ iframe {
 
 ul.posts {
     list-style-type: none;
-}
-
-.flush-right {
-    text-align: right;
 }

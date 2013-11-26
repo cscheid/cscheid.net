@@ -3,24 +3,24 @@ layout: bootstrap
 ---
 <div class="row">
   <div class="col-md-1"></div>
-  <div class="col-md-10">
-    <a href="/">cscheid.net</a> to <a href="/blog.html">blog</a> to {{page.title}}
-    <span style="float: right">
-      <a href="/">home</a> <a href="/blog.html">blog</a> <a href="/papers.html">papers</a> <a href="/code.html">code</a>
+  <div class="col-md-11">
+    <span class="heading" style="float: right">
+      <a href="/">HOME</a> BLOG <a href="/papers.html">PAPERS</a> <a href="/code.html">CODE</a>
     </span>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="col-md-10">
-    <h1>VISUALIZATION, ETC. <span style="font-size:.5em">A HALF-ASSED SEMI-PICTORIAL VISION THING</span></h1>
+    <h1 style="margin-bottom:0"><span class="bold">VISUALIZATION</span>, ETC.</h1>
+    <h1 style="margin-top:0; font-size:.6em">A HALF-ASSEDLY THOUGHT OUT SEMI-PICTORIAL VISION THING</h1>
   </div>
 </div>
 
 <div class="row">
   <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <h1 class="bold" style="font-size:1.2em">{{ page.title }}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
   <div class="col-md-7">
-    <h1>{{ page.title }}</h1>
     <p class="meta">{{ page.date | date_to_string }}</p>
     {{ content }}
   </div>
