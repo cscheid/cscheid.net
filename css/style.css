@@ -79,3 +79,7 @@ a {
     position: absolute;
     right: -370px;
 }
+
+.flush-right {
+    text-align: right;
+}

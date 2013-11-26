@@ -2,13 +2,20 @@
 layout: bootstrap
 title: Carlos Scheidegger
 ---
+<style>
+h1, h2 {
+left: 0px;
+}
+</style>
 
 <div class="row">
-    <h1><span class="light">CARLOS</span> <span class="bold">SCHEIDEGGER</span></h1>
+    <h1><span class="light">CARLOS</span> <span class="bold">SCHEIDEGGER</span> <span style="float:right;
+    font-size:0.5em; font-weight: 300; margin-top:5px; margin-right:15px" class="tk-museo-sans"><a href="#code">CODE</a>
+    <a href="#projects">VIS</a> <a href="#blog">BLOG</a> <a href="#papers">PAPERS</a> <a href="#about">ABOUT</a></span></h1>
 </div>
-<div class="row">
-  <div class="col-md-6">
-    <h2 class="bold">BLOG</h2>
+<div class="row" style="font-size:0.9em">
+  <div class="col-md-5">
+    <h2 class="bold"><a name="blog"></a>BLOG</h2>
     <ul class="posts">
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
@@ -17,52 +24,53 @@ title: Carlos Scheidegger
         {% endif %}
       {% endfor %}
     </ul>
-    <h2 class="bold">CODE</h2>
+    <h2 class="bold"><a name="code"></a>CODE</h2>
     <ul class="posts">
       <li><a href="http://github.com/laurolins/nanocube">Nanocubes</a>: blazing fast
-      large data visualization</li>
+      large data visualization.</li>
       <li><a href="http://github.com/att/rcloud">RCloud</a>:
-      collaborative data analysis</li>
+      collaborative data analysis.</li>
       <li><a href="http://www.vistrails.org">VisTrails</a>:
-      a provenance-aware scientific workflow system</li>
+      a provenance-aware scientific workflow system.</li>
       <li><a href="http://cscheid.github.io/lux">Lux</a> (n&eacute;e Facet):
-      Write WebGL shaders in Javascript, composably.</li>
-      <li><a href="http://github.com/nivan/vfkm">Vector-Field k-means</a>:
-      Scalable trajectory clustering.</li>
+      write WebGL shaders in Javascript, composably.</li>
+      <li><a href="http://github.com/nivan/vfkm">Vector-field k-means</a>:
+      scalable trajectory clustering.</li>
       <li><a href="http://afront.sourceforge.net">Afront</a>:
       high-quality triangle meshing of surfaces.</li>
     </ul>
 
   </div>
-  <div class="col-md-6">
-    <h2 class="bold">VIS PROJECTS</h2>
+  <div class="col-md-7 flush-right">
+    </ul>
+    <h2 class="bold"><a name="papers"></a>PAPERS</h2>
+    <ul class="posts">
+      {% for post in site.posts %}
+        {% if post.tags contains 'paper' %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> &laquo; <span>{{ post.date | date_to_string }}</span></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+    <h2 class="bold"><a name="projects"></a>VIS PROJECTS</h2>
     <ul class="posts">
       <li>Interactive visualizations
       of <a href="http://nanocubes.net/view.html#twitter">200 million
       data points</a>. In your web browser.</li>
       <li>Plotting <a href="http://cscheid.github.io/nfl-plays">ten years of NFL plays</a>.</li>
-      <li>Visualizing the Baseball Hall of
-      Fame <a href="http://cscheid.net/static/mlb-hall-of-fame-voting/">ballot</a> dynamics.</li>
+      <li>Visualizing the MLB Hall of
+      Fame induction <a href="http://cscheid.net/static/mlb-hall-of-fame-voting/">voting</a> dynamics.</li>
       <li>Five hours of footage from a <a href="http://cscheid.net/static/windowseat">Window Seat</a>
       combined into one image.</li>
       <li>The <a href="http://cscheid.github.io/facet/demos/beauty_of_roots.html">Beauty of Roots</a>.</li>
       <li>An <a href="http://www.sci.utah.edu/~cscheid/blog/20080420/f4.svg">interactive
-	  nomograph</a> for Bayes' rule.</a> (<a href="/blog/2010/12/07/repost-looking-at-conditional-probability.html">explanation</a>)</li>
-
-    </ul>
-    <h2 class="bold">PAPERS</h2>
-    <ul class="posts">
-      {% for post in site.posts %}
-        {% if post.tags contains 'paper' %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endfor %}
+	  nomograph</a> for Bayes' rule.</a>
+	  (<a href="/blog/2010/12/07/repost-looking-at-conditional-probability.html">explanation</a>)</li>
     </ul>
   </div>
 </div>
 <div class="row">
   <div class="col-md-12">
-    <h2 class="bold">ABOUT</h2>
+    <h2 class="bold"><a name="about"></a>ABOUT</h2>
   </div>
 </div>
 <div class="row">
