@@ -51,7 +51,7 @@ straightforward idea, but one appears to have received essentially no
 attention until the last couple of years.
 
 Less After the Fact: Investigative Visual Analysis of Events from
-Streaming Twitter. Thomas Kraft, Xiaoyu Wang, Jeffery Delawder, Wenwen
+Streaming Twitter. Thomas Kraft, Xiaoyu Wang, Jeffery Delawder, Wenwen
 Dou, Li Yu, William
 Ribarsky. ([PDF](http://viscenter.uncc.edu/sites/viscenter.uncc.edu/files/CVC-UNCC-13-11.pdf))
 I'm curious about this because of the relationship with our

@@ -78,8 +78,8 @@ is not very actionable: how do we design a visualization around
 that? Going back to part 1, remember that we learned that the
 [vertices
 of acyclic graphs can be ranked](http://cscheid.net/blog/so_you_want_to_look_at_a_graph): we can give every vertex $v$ an
-integer $r(v)$ such that if there is a path from vertex $v_1$ to
-$v_2$, then $r(v_1) < r(v_2)$.
+integer $r(v)$ such that if there is a path from vertex $v\_1$ to
+ $v\_2$, then $r(v\_1) < r(v\_2)$.
 
 @clear-floats{}
 @float-right{@embedded-frame["http://cscheid.net/static/20120722/iframe2.html"

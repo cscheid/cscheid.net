@@ -11,10 +11,16 @@
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.min.js"></script>
-  </head>
+    <script type="text/javascript" src="http://cscheid.net/mathjax/MathJax.js">MathJax.Hub.Config({extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],jax: ["input/TeX","output/HTML-CSS"],tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], processEscapes: true},'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});</script> 
+ </head>
   <body>
     <div class="container">
       {{ content }}
     </div>
+    <script>
+      $(document).ready(function() {
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      });
+    </script>
   </body>
 </html>
