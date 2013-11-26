@@ -60,8 +60,8 @@ node-link diagrams. So your mission is simply to specify positions of
 the nodes on a cartesian plane, and edges will be drawn as
 straight lines (directed edges will use traditional arrowheads).
 
-@float-left{@embedded-frame["http://cscheid.net/static/20120722/iframe1.html"
-220 220]} You're given a graph $G$ which happens to have a "mostly
+<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe1.html" width=250 height=250></iframe></div>
+You're given a graph $G$ which happens to have a "mostly
 acyclic structure". That is, there are either no cycles, or
 relatively few of them, such that you expect that the majority of the
 interesting properties of $G$ come from its acyclicity. If your
@@ -81,9 +81,8 @@ of acyclic graphs can be ranked](http://cscheid.net/blog/so_you_want_to_look_at_
 integer $r(v)$ such that if there is a path from vertex $v\_1$ to
  $v\_2$, then $r(v\_1) < r(v\_2)$.
 
-@clear-floats{}
-@float-right{@embedded-frame["http://cscheid.net/static/20120722/iframe2.html"
-220 220]} Let's set aside the fact that there are many such possible
+<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe2.html" width=250 height=250></iframe></div>
+Let's set aside the fact that there are many such possible
 rankings, and accept for now that a rank ordering is a good
 representation of the notion of acyclicity. The question is then: can
 we design a visualization that uses it?  One possibility is to use the
@@ -139,9 +138,8 @@ arrangement" with "no additional information" is a mix of cultural
 and innate characteristics about which we know very little (but there has been
 [recent work in the area](http://www.cs.brown.edu/people/cziemki/documents/ziemkiewicz10_laws-of-attraction.pdf)).
 
-@clear-floats{}
-@float-right{@embedded-frame["http://cscheid.net/static/20120722/iframe3.html"
-220 220]} Leaving aside all those important details, this is what an
+<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe3.html" width=250 height=250></iframe></div>
+Leaving aside all those important details, this is what an
 algorithm which (roughly) encodes the above principles
 generates. Aside from one important step, this is a result from
 graphviz's classic

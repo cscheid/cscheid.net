@@ -13,7 +13,7 @@ process of transforming our data into a visualization.
 
 ## What is in a sheet of paper? Marks
 
-@float-left{@image/plain["/static/20120229/marks.png"]} 
+<div class="sidebar"><img src="http://cscheid.net/static/20120229/marks.png"></div>
 Paper is like external memory. We can make marks on it, and later we
 can *read* marks that we made on a particular spots. We will say
 then that visualizations are encodings of data as particular
@@ -48,7 +48,7 @@ that should be enough.
 
 ## Even the simplest possible abstract encoding can go boink
 
-@float-left{@image/plain["/static/20120229/innocent_marks.png"]}
+<div class="sidebar"><img src="http://cscheid.net/static/20120229/innocent_marks.png"></div>
 When there are *two* dot marks on a piece of paper, it turns out
 that we immediately see that these two marks have some distance
 between them. Given two marks written on paper, I can then read a real
@@ -66,7 +66,9 @@ encoding of my graph to be, roughly, the ASCII string representing the
 graph vertices, edges and properties. Furthermore, this encoding is
 lossless.
 
-@float-left{@image/plain["/static/20120229/oh_oh.png"]} Although
+<div class="sidebar"><img
+src="http://cscheid.net/static/20120229/oh_oh.png"></div> 
+Although
 encoding an entire graph as a single distance between two points is
 valid, it's clearly ludicrous. What went wrong?  Remember that we
 decided the prose encoding was bad because "it wasn't visual". Now
@@ -94,13 +96,13 @@ Graphics.
 At this point, you may be thinking that this entire discussion
 is a gigantic waste of time, a treatise in picking nits. But the fact
 of the matter is that arguing about the effectiveness of different
-visualization techniques @bold{is exactly} arguing about encoding
+visualization techniques *is exactly* arguing about encoding
 choices. And if we ever hope our theoretical arguments to be valid
 regardless of which encoding we use to examine, we need to be able to
 articulate why stupid encodings like the above are, in fact, stupid.
 
-@float-left{@image/plain["/static/20120229/chernoff_faces.png"]}And
-even armed with the simplest of the observations above, 
+<div class="sidebar-large"><img src="http://cscheid.net/static/20120229/chernoff_faces.png"></div>
+And even armed with the simplest of the observations above, 
 we can already make some nontrivial statements.
 If you've ever heard about Chernoff faces and
 wondered why they're a terrible idea, worry no more. Remember that the idea behind
@@ -120,7 +122,7 @@ experimentally confirmed this:
 [Chernoff faces are not pre-attentive](http://www.research.ibm.com/people/c/cjmorris/publications/Chernoff_990402.pdf).  The important point is that
 even though we can, given enough time, make precise judgements
 of face proportions, the values don't jump at us: we have to
-@bold{read} faces in the same way we would read numbers from a
+*read* faces in the same way we would read numbers from a
 spreadsheet. And, if the encoding forces me to read, then it's not a
 visual encoding at all. If they were visual, we'd just stick with spreadsheet rows
 in the first place!

@@ -14,9 +14,9 @@ Marc Khoury, Yifan Hu, Shankar Krishnan, Carlos Scheidegger. Eurovis 2012, to ap
   (APSP) matrix, which takes
   $O(|V|^2 \log|E| + |V||E|)$ time and $O(|V|^2)$ space.
   We propose a novel algorithm 
-  based on a @bold{low-rank} approximation to the required matrices.
+  based on a *low-rank* approximation to the required matrices.
   The crux of our technique is an observation that it is possible to
-  approximate the @bold{full} APSP matrix, even when only 
+  approximate the *full* APSP matrix, even when only 
   a small subset of its entries are known.
   Our algorithm takes time $O(k |V| + |V| \log |V| + |E|)$ per
   iteration with a preprocessing time of $O(k^3+k(|E|+|V|\log|V|)+k^2

@@ -134,7 +134,7 @@ shown.
 [![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/parallel_coordinates/CFK_7_large.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/parallel_coordinates/CFK_7_med.svg)
 [![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/parallel_coordinates/CFK_8_large.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/parallel_coordinates/CFK_8_med.svg)
 
-@section{Datasets}
+### Datasets
 
 These datasets are stored in NRRD format.
 

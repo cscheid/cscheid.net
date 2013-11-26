@@ -58,7 +58,7 @@ to formalize it! And, as we will see, I believe this distinction
 
 An edge $a \to b$ in a graph implies some sort of connection between
 $a$ and $b$, and we typically think of these connections being
-@bold{transitive}. So if $a \to b$ and $b \to c$ encode some
+*transitive*. So if $a \to b$ and $b \to c$ encode some
 relationship, we tend to think of there existing some relationship
 between $a$ and $c$ as well (we will say $a \leadsto b$ to say that
 there exists some path $a \to \ldots \to b$).
