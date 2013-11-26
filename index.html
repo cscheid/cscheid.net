@@ -3,12 +3,12 @@ layout: bootstrap
 title: Carlos Scheidegger
 ---
 
-<div id="row">
+<div class="row">
     <h1>CARLOS <span class="bold">SCHEIDEGGER</span></h1>
 </div>
-<div id="row">
+<div class="row">
   <div class="col-md-6">
-    <h2 style="right: 0">BLOG</h2>
+    <h2 class="bold">BLOG</h2>
     <ul class="posts">
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
@@ -17,9 +17,25 @@ title: Carlos Scheidegger
         {% endif %}
       {% endfor %}
     </ul>
+    <h2 class="bold">CODE</h2>
+    <ul class="posts">
+      <li><a href="http://github.com/laurolins/nanocube">Nanocubes</a>: blazing fast
+      large data visualization</li>
+      <li><a href="http://github.com/att/rcloud">RCloud</a>:
+      collaborative data analysis</li>
+      <li><a href="http://www.vistrails.org">VisTrails</a>:
+      a provenance-aware scientific workflow system</li>
+      <li><a href="http://cscheid.github.io/lux">Lux</a> (n&eacute;e Facet):
+      Write WebGL shaders in Javascript, composably.</li>
+      <li><a href="http://github.com/nivan/vfkm">Vector-Field k-means</a>:
+      Scalable trajectory clustering.</li>
+      <li><a href="http://afront.sourceforge.net">Afront</a>:
+      high-quality triangle meshing of surfaces.</li>
+    </ul>
+
   </div>
   <div class="col-md-6">
-    <h2 style="right: 0">VIS PROJECTS</h2>
+    <h2 class="bold">VIS PROJECTS</h2>
     <ul class="posts">
       <li>Interactive visualizations
       of <a href="http://nanocubes.net/view.html#twitter">200 million
@@ -31,10 +47,10 @@ title: Carlos Scheidegger
       combined into one image.</li>
       <li>The <a href="http://cscheid.github.io/facet/demos/beauty_of_roots.html">Beauty of Roots</a>.</li>
       <li>An <a href="http://www.sci.utah.edu/~cscheid/blog/20080420/f4.svg">interactive
-	  nomograph</a> for Bayes' rule.</a></li>
+	  nomograph</a> for Bayes' rule.</a> (<a href="/blog/2010/12/07/repost-looking-at-conditional-probability.html">explanation</a>)</li>
 
     </ul>
-    <h2>PAPERS</h2>
+    <h2 class="bold">PAPERS</h2>
     <ul class="posts">
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
@@ -44,6 +60,28 @@ title: Carlos Scheidegger
     </ul>
   </div>
 </div>
-<div id="row">
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="bold">ABOUT</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-3">
+    <img width=100% src="http://cscheid.net/cscheid.jpg">
+  </div>
+  <div class="col-md-6">
+    <p>I'm a member of the technical staff at AT&amp;T Labs&ndash;Research, in the
+    Information Visualization group. I work in data visualization,
+    data analysis, computer graphics and geometry processing. Opinions
+    here are all mine.</p>
+    <p style="margin:0">info: <a href="http://cscheid.net/cv.pdf">vita</a>,
+    <a href="http://scholar.google.com/citations?user=8uHMJjsAAAAJ&hl=en">google scholar</a></p>
+    <p style="margin:0">email: carlos.scheidegger@gmail.com</p>
+    <p style="margin:0">google+: <a href="http://google.com/+CarlosScheidegger">Carlos Scheidegger</a></p>
+    <p style="margin:0">facebook: <a href="http://www.facebook.com/carlos.scheidegger">carlos.scheidegger</a></p>
+    <p style="margin:0">flickr: <a href="http://www.flickr.com/photos/cscheid">cscheid</a></p>
+    <p style="margin:0">twitter: <a href="http://twitter.com/scheidegger">scheidegger</a></p>
+    <p style="margin:0">instagram: <a href="http://web.stagram.com/n/cscheid">webstagram</a>, <a href="http://instagrid.me/cscheid/">instagrid</a></p>
 
+  </div>  
 </div>

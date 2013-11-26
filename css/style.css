@@ -60,3 +60,7 @@ iframe {
 ul.posts {
     list-style-type: none;
 }
+
+a {
+    color: #c07040;
+}
