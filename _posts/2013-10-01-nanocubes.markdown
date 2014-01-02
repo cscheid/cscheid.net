@@ -13,7 +13,7 @@ location, a time, and other attributes. Are certain attributes
 correlated spatially or temporally? Are there trends or outliers in
 the data? Answering these questions requires aggregation over
 arbitrary regions of the domain and attributes of the data. Data cubes
-are a well-known aggregration operation in relational databases. In a
+are a well-known aggregation operation in relational databases. In a
 sense, they precompute every possible aggregate query over the
 database. Data cubes are sometimes assumed to take a prohibitively
 large amount of space, and to consequently require disk storage. In
@@ -31,5 +31,5 @@ bandwidth measurements. We ﬁnd that the timings for the queries in our
 examples are dominated by network and user-interaction latencies.
 
 Get the
-[paper](http://www.nanocubes.net/assets/pdf/nanocubes_paper_preprint.pdf),
+[paper](http://cscheid.net/static/papers/nanocubes.pdf)
 and visit the [website](http://nanocubes.net) for [live](http://nanocubes.net/view.html#twitter) [demos](http://nanocubes.net/view.html#brightkite).
