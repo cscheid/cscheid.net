@@ -37,7 +37,7 @@ One important characteristic of graphs is whether they are
 undirected, we mean that whenever $(a,b) \in E$, it is implied
 that $(b,a) \in E$: in other words, the has-edge relation is
 symmetric, and $e\_\textrm{attr}((a,b)) = e\_\textrm{attr}((b,a))$. 
-(For undirected graphs, I will write $a -- b$ to mean
+(For undirected graphs, I will write $a \unicode{x2013} b$ to mean
 that both $(a, b) \in E$ and $(b, a) \in E$ are true).  Otherwise, we
 say that $G$ is directed. 
 
