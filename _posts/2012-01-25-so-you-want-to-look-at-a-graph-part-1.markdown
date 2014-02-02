@@ -18,7 +18,7 @@ distinct vertices (so in this definition we will not have multiple
 edges and "self-edges"). To denote that $(a, b)$ is in $E$, I will
 use $a \to b$.
 
-Usually, we also have a mapping $v_\textrm{attr}$ from
+Usually, we also have a mapping v_\textrm{attr} from
 $V$ to some other space $V_A$. This gives us attributes of these
 vertices (names of the people in your social network, names of the
 computers in your intranet, etc.). A similar mapping $e_\text{attr}$
