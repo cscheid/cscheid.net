@@ -21,8 +21,8 @@ use $a \to b$.
 Usually, we also have a mapping $v\_\textrm{attr}$ from
 $V$ to some other space $V\_A$. This gives us attributes of these
 vertices (names of the people in your social network, names of the
-computers in your intranet, etc.). A similar mapping $e\textrm{attr}$
-from $E$ to $E_A$ does the same for edges (is $b$ married to $c$ or
+computers in your intranet, etc.). A similar mapping $e\_\textrm{attr}$
+from $E$ to $E\_A$ does the same for edges (is $b$ married to $c$ or
 does $b$ work for $c$? How far is $h$ from $j$?, etc.).
 
 These define a graph, but they don't say much of what is interesting
@@ -36,7 +36,7 @@ One important characteristic of graphs is whether they are
 **directed** or **undirected**. When we say that a graph is
 undirected, we mean that whenever $(a,b) \in E$, it is implied
 that $(b,a) \in E$: in other words, the has-edge relation is
-symmetric, and $e_\textrm{attr}((a,b)) = e_\textrm{attr}((b,a))$. 
+symmetric, and $e\_\textrm{attr}((a,b)) = e\_\textrm{attr}((b,a))$. 
 (For undirected graphs, I will write $a -- b$ to mean
 that both $(a, b) \in E$ and $(b, a) \in E$ are true).  Otherwise, we
 say that $G$ is directed. 
