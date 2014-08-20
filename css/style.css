@@ -103,9 +103,9 @@ div.post-content h2, div.post-content h3, div.post-content h4 {
 }
 
 /* Small Devices, .visible-sm-* */
-@media (min-width: 768px) and (max-width: 991px) and (orientation:portrait) {
+@media (min-width: 768px) and (max-width: 991px) {
     body {
-	font-size: 6em;
+	font-size: 4.8em;
     }
     .container {
 	width: auto;
@@ -114,11 +114,10 @@ div.post-content h2, div.post-content h3, div.post-content h4 {
     }
 }
 
-
 /* Small Devices, .visible-sm-* */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) and (orientation:portrait) {
     body {
-	font-size: 4.8em;
+	font-size: 6em;
     }
     .container {
 	width: auto;
