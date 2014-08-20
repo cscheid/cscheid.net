@@ -93,7 +93,7 @@ div.post-content h2, div.post-content h3, div.post-content h4 {
 /* Extra Small Devices, .visible-xs-* */
 @media (max-width: 767px) {
     html {
-	font-size: 1.2em;
+	font-size: 1.25em;
     }
     .container {
 	width: auto;
