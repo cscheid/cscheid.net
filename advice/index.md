@@ -99,11 +99,22 @@ to read everything from beginning to end.
 
 You will over the course of your career review many things. Remember
 this very important rule: in very few occasions you will be reviewing
-people. If you are reviewing a paper, it is not *the authors* that
-might be wrong: it's the *paper*. This is a good habit to get into:
-even if you are correct in pointing out a problem, the readers of your
-review are much more likely to pay attention to what you are saying if
-you do not make it personal.
+people.
+
+If you are reviewing a paper, it is never *the authors* that
+are wrong; rather, you only know that the *paper* might be
+wrong. Before every review, make sure you check what you wrote. Very
+rarely you should need to write "author".
+
+This is a matter of making the process less of a personal judgment,
+but it is also a matter of making it more precise: you truly do not
+know if this was just a slipup. And writeup screwups that look bad
+happen. I've made many of them myself, and get used to the following
+idea: you'll make them too.
+
+Hence, making your reviews about the paper and not about the authors
+is a good habit to get into: it makes your review much more likely
+to be listened to.
 
 ## External sites
 
