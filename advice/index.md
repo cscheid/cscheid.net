@@ -15,7 +15,7 @@ I try to read Hamming's
 ["You and Your Research"](http://www.cs.virginia.edu/~robins/YouAndYourResearch.html)
 once a year. Pay attention to the "work more" bit, but ignore the part
 about stress and ulcers: it's useless chest-thumping. Work on
-important problems, steadily; don't fret if you see a contradiction,
+important problems, steadily; don't fret if you see a contradiction:
 learn to keep conflicting views in your head; keep your doors open,
 literally; learn to sell.
 
@@ -59,8 +59,7 @@ At some point in time I used to recommend
 together with pretty much every other piece of writing advice you'll
 find online. But it turns out it's
 [not](http://chronicle.com/article/50-Years-of-Stupid-Grammar/25497)
-[such](http://languagelog.ldc.upenn.edu/nll/?p=1498) [great]
-[advice](http://languagelog.ldc.upenn.edu/nll/?p=2235). S&W was the
+[such](http://languagelog.ldc.upenn.edu/nll/?p=1498) [great advice](http://languagelog.ldc.upenn.edu/nll/?p=2235). S&W was the
 first thing I read when I started caring about my own writing, and my
 writing did improve after reading it. But on a third or fourth
 reading, I started noticing that S&W is contradictory and
@@ -75,8 +74,8 @@ any particular way. Then go on to buy Gopen's
 and Williams's
 [Style: Toward Clarity and Grace](http://www.amazon.com/Style-Clarity-Chicago-Writing-Publishing/dp/0226899152).
 
-If you're interested at all in how language works, you should be
-reading (although you probably already are) the
+If you're interested in how language works, you will love
+(although you probably already do) the
 [Language Log](http://languagelog.ldc.upenn.edu/).
 
 The
