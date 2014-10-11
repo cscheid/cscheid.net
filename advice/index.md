@@ -6,8 +6,11 @@ title: Advice
 Collected advice on the mechanics of academia. Things I tell other people,
 should they ask, and things I tell myself, should I forget.
 
-Much of this is deeply personal perspective, if it doesn't become
-obvious enough by the fourth or fifth paragraph. 
+*Caveats*: much of this is deeply personal perspective, if it doesn't
+become obvious enough by the fourth or fifth paragraph. I found they
+had a positive impact in how I go about my work, and I think they
+would help other people. They're also neither exhaustive or
+unchanging.
 
 ## Generalities
 
