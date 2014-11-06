@@ -42,32 +42,31 @@ function initDiv(topo, data)
         d = Number(d.pt);
         var h = (d < 50) ? 250 : 30;
         var l = 60 - Math.abs(d-50) / 3;
-        // var l = 50;
         var c = Math.abs(d - 50) * 1.5;
         return d3.hcl(h, c, l);
     };
 
-    function colorScale_1(colorScale_0) {
-    function colorScale_1(d) {
-        var d_ = d;
-        var density = Number(d.pop) / Number(d.area);
-        var cs = d3.scale.linear()
-            .domain([0, 500])
-            .range(["#ffffff", colorScale_0(d_)]);
-        return cs(density);
-    }
-        return colorScale_1;
+    function colorScale_1(c) {
+        function colorScale(d) {
+            var d_ = d;
+            var density = Number(d.pop) / Number(d.area);
+            var cs = d3.scale.linear()
+                .domain([0, 500])
+                .range(["#ffffff", c(d_)]);
+            return cs(density);
+        }
+        return colorScale;
     }
 
-    function colorScale_2(colorScale_0) {
-    function colorScale_2(d) {
-        d = Number(d.pt);
-        if (d < 50)
-            return colorScale_0({pt: 0, pop: 1, density: 1});
-        else
-            return colorScale_0({pt: 100, pop: 1, density: 1});
-    }
-        return colorScale_2;
+    function colorScale_2(c) {
+        function colorScale(d) {
+            d = Number(d.pt);
+            if (d < 50)
+                return c({pt: 0, pop: 1, density: 1});
+            else
+                return c({pt: 100, pop: 1, density: 1});
+        }
+        return colorScale;
     }
 
     function colorScale_3(d) {
@@ -81,15 +80,15 @@ function initDiv(topo, data)
         return prop(d);
     }
 
-    function colorScale_4(colorScale_0) {
-    function colorScale_4(d) {
-        var d_ = d;
-        var cs = d3.scale.linear()
-            .domain([0, 45000000])
-            .range(["#ffffff", colorScale_0(d_)]);
-        return cs(Number(d.pop));
-    }
-        return colorScale_4;
+    function colorScale_4(c) {
+        function colorScale(d) {
+            var d_ = d;
+            var cs = d3.scale.linear()
+                .domain([0, 45000000])
+                .range(["#ffffff", c(d_)]);
+            return cs(Number(d.pop));
+        }
+        return colorScale;
     }
 
     var colorScales = {
