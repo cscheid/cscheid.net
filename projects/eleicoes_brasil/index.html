@@ -6,6 +6,12 @@
     <script src="topojson.v1.min.js" charset="utf-8"></script>
     <script src="main.js"></script>
     <style>
+body {
+  font-size: 10pt;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 200;
+}
+
       .state {
       font-family: "Helvetica Neue", sans-serif;
       font-weight: 300;
@@ -23,6 +29,13 @@
   </head>
 
   <body>
+  <p>
+    <a href="index.html?colormap=categorical">categorical</a> | 
+    <a href="index.html?colormap=gray">gray</a> | 
+    <a href="index.html?colormap=purple">purple</a> | 
+    <a href="index.html?colormap=density">density</a> | 
+    <a href="index.html?colormap=population">population</a>
+  </p>
     <div id="main">
     </div>
   </body>
