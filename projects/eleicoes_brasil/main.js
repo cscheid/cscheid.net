@@ -47,6 +47,7 @@ function initDiv(topo, data)
         return d3.hcl(h, c, l);
     };
 
+    function colorScale_1(colorScale_0) {
     function colorScale_1(d) {
         var d_ = d;
         var density = Number(d.pop) / Number(d.area);
@@ -55,13 +56,18 @@ function initDiv(topo, data)
             .range(["#ffffff", colorScale_0(d_)]);
         return cs(density);
     }
+        return colorScale_1;
+    }
 
+    function colorScale_2(colorScale_0) {
     function colorScale_2(d) {
         d = Number(d.pt);
         if (d < 50)
             return colorScale_0({pt: 0, pop: 1, density: 1});
         else
             return colorScale_0({pt: 100, pop: 1, density: 1});
+    }
+        return colorScale_2;
     }
 
     function colorScale_3(d) {
@@ -75,6 +81,7 @@ function initDiv(topo, data)
         return prop(d);
     }
 
+    function colorScale_4(colorScale_0) {
     function colorScale_4(d) {
         var d_ = d;
         var cs = d3.scale.linear()
@@ -82,13 +89,17 @@ function initDiv(topo, data)
             .range(["#ffffff", colorScale_0(d_)]);
         return cs(Number(d.pop));
     }
+        return colorScale_4;
+    }
 
     var colorScales = {
         "gray": colorScale_0, 
-        "density": colorScale_1, 
-        "categorical": colorScale_2, 
         "purple": colorScale_3,
-        "population": colorScale_4
+        "density": colorScale_1(colorScale_0), 
+        "categorical": colorScale_2(colorScale_0), 
+        "population": colorScale_4(colorScale_0),
+        "density_purple": colorScale_1(colorScale_3), 
+        "population_purple": colorScale_4(colorScale_3)
     };
     var colorScale = colorScales[getQueryVariable("colormap") || "gray"];
 
