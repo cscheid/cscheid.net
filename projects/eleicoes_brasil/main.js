@@ -16,7 +16,124 @@ d3.selection.prototype.moveToFront = function() {
   });
 };
 
-function initDiv(topo, data)
+//////////////////////////////////////////////////////////////////////////////
+
+function colorScale_0(d) {
+    d = Number(d.pt);
+    var h = (d < 50) ? 250 : 30;
+    var l = 60 - Math.abs(d-50) / 3;
+    var c = Math.abs(d - 50) * 1.5;
+    return d3.hcl(h, c, l);
+};
+
+function colorScale_1(c) {
+    function colorScale(d) {
+        var d_ = d;
+        var density = Number(d.pop) / Number(d.area);
+        var cs = d3.scale.linear()
+            .domain([0, 500])
+            .range(["#ffffff", c(d_)]);
+        return cs(density);
+    }
+    return colorScale;
+}
+
+function colorScale_2(c) {
+    function colorScale(d) {
+        d = Number(d.pt);
+        if (d < 50)
+            return c({pt: 0, pop: 1, density: 1});
+        else
+            return c({pt: 100, pop: 1, density: 1});
+    }
+    return colorScale;
+}
+
+function colorScale_3(d) {
+    var d_ = d;
+    d = Number(d.pt);
+    var prop = d3.scale.linear()
+        .domain([0, 50, 100])
+        .range([d3.hcl(250, 50, 50),
+                d3.hcl(300, 50, 40),
+                d3.hcl(30, 50, 50)]);
+    return prop(d);
+}
+
+function colorScale_4(c) {
+    function colorScale(d) {
+        var d_ = d;
+        var cs = d3.scale.linear()
+            .domain([0, 45000000])
+            .range(["#ffffff", c(d_)]);
+        return cs(Number(d.pop));
+    }
+    return colorScale;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+// global variables (yuck)
+
+var colorScales = {
+    "gray": colorScale_0, 
+    "purple": colorScale_3,
+    "density": colorScale_1(colorScale_0), 
+    "categorical": colorScale_2(colorScale_0), 
+    "population": colorScale_4(colorScale_0),
+    "density_purple": colorScale_1(colorScale_3), 
+    "population_purple": colorScale_4(colorScale_3)
+};
+
+var map, colorLegend, stateLegends, xScale;
+
+var currentColorScale;
+
+var data;
+
+//////////////////////////////////////////////////////////////////////////////
+
+function selectScale(name, transition)
+{
+    currentColorScale = colorScales[name];
+    applyScales(transition);
+}
+
+function selectData(name, transition)
+{
+    data.forEach(function(d) {
+        d.pt = d[name];
+    });
+    // map.selectAll("path")
+    //     .data(data);
+    applyScales(transition);
+}
+
+function applyScales(transition)
+{
+    function t(o) {
+        return transition ? o.transition().duration(750) : o;
+    }
+   
+    t(map.selectAll("path")).attr("fill", function(d, i) {
+        return currentColorScale(d);
+    });
+
+    t(stateLegends.selectAll("line"))
+        .attr("x1", function(d) { return xScale(d.pt); })
+        .attr("x2", function(d) { return xScale(d.pt); })
+    ;
+
+    t(stateLegends.selectAll("text"))
+        .attr("x", function(d) { return xScale(d.pt); });
+
+    t(colorLegend.selectAll("rect"))
+        .attr("fill", function(d) {
+            return currentColorScale(
+                { pop: 40000000, area: 40000000 / 380, pt: d });
+        });
+}
+
+function initDiv(topo, data, scaleName)
 {
     var width = 600,
         height = 720;
@@ -26,7 +143,7 @@ function initDiv(topo, data)
         .attr("height", height)
     ;
 
-    var map = svg.append("g");
+    map = svg.append("g");
 
     var projection = d3.geo.albers()
         .rotate([0, -15])
@@ -38,80 +155,19 @@ function initDiv(topo, data)
     var path = d3.geo.path()
         .projection(projection);
 
-    function colorScale_0(d) {
-        d = Number(d.pt);
-        var h = (d < 50) ? 250 : 30;
-        var l = 60 - Math.abs(d-50) / 3;
-        var c = Math.abs(d - 50) * 1.5;
-        return d3.hcl(h, c, l);
-    };
-
-    function colorScale_1(c) {
-        function colorScale(d) {
-            var d_ = d;
-            var density = Number(d.pop) / Number(d.area);
-            var cs = d3.scale.linear()
-                .domain([0, 500])
-                .range(["#ffffff", c(d_)]);
-            return cs(density);
-        }
-        return colorScale;
-    }
-
-    function colorScale_2(c) {
-        function colorScale(d) {
-            d = Number(d.pt);
-            if (d < 50)
-                return c({pt: 0, pop: 1, density: 1});
-            else
-                return c({pt: 100, pop: 1, density: 1});
-        }
-        return colorScale;
-    }
-
-    function colorScale_3(d) {
-        var d_ = d;
-        d = Number(d.pt);
-        var prop = d3.scale.linear()
-            .domain([0, 50, 100])
-            .range([d3.hcl(250, 50, 50),
-                    d3.hcl(300, 50, 40),
-                    d3.hcl(30, 50, 50)]);
-        return prop(d);
-    }
-
-    function colorScale_4(c) {
-        function colorScale(d) {
-            var d_ = d;
-            var cs = d3.scale.linear()
-                .domain([0, 45000000])
-                .range(["#ffffff", c(d_)]);
-            return cs(Number(d.pop));
-        }
-        return colorScale;
-    }
-
-    var colorScales = {
-        "gray": colorScale_0, 
-        "purple": colorScale_3,
-        "density": colorScale_1(colorScale_0), 
-        "categorical": colorScale_2(colorScale_0), 
-        "population": colorScale_4(colorScale_0),
-        "density_purple": colorScale_1(colorScale_3), 
-        "population_purple": colorScale_4(colorScale_3)
-    };
-    var colorScale = colorScales[getQueryVariable("colormap") || "gray"];
+    //////////////////////////////////////////////////////////////////////////
+    // create elements
 
     map.selectAll(".subunit")
         .data(topojson.feature(topo, topo.objects.estados_2010).features)
       .enter()
         .append("path")
         .attr("d", path)
-        .attr("fill", function(d, i) {
-            if (i >= data.length)
-                return "black";
-            return colorScale(data[i]);
-        })
+        // .attr("fill", function(d, i) {
+        //     if (i >= data.length)
+        //         return "black";
+        //     return colorScale(data[i]);
+        // })
         .on("mouseover", function(d, i) {
             d3.select(".state." + data[i].estado).classed("hover", true);
             d3.select(this).moveToFront();
@@ -122,9 +178,14 @@ function initDiv(topo, data)
         .attr("stroke", "#eeeeee")
     ;
 
-    var colorLegend = svg.append("g").attr("transform", "translate(0,700)");
+    // now that we drew the polygons, we don't need topojson anymore
+    // so we bind the csv data to the polys
+    map.selectAll("path")
+        .data(data);
 
-    var xScale = d3.scale.linear()
+    colorLegend = svg.append("g").attr("transform", "translate(0,700)");
+
+    xScale = d3.scale.linear()
         .domain([0, 100])
         .range([0, 500]);
 
@@ -139,32 +200,42 @@ function initDiv(topo, data)
         .attr("width", 4)
         .attr("height", 10)
         .attr("x", function(d) { return xScale(d); })
-        .attr("fill", function(d) { return colorScale({pop: 40000000, 
-                                                       area: 40000000 / 380, pt: d}); })
     ;
 
-    var stateLegends = svg.append("g").attr("transform", "translate(0,698)");
+    stateLegends = svg.append("g").attr("transform", "translate(0,698)");
 
     stateLegends.selectAll("text")
         .data(data)
         .enter()
         .append("text")
         .text(function(d) { return d.estado; })
-        .attr("x", function(d) { return xScale(d.pt); })
         .attr("class", function(d) { return "state " + d.estado; });
 
     stateLegends.selectAll("line")
         .data(data)
         .enter()
         .append("line")
-        .attr("x1", function(d) { return xScale(d.pt); })
-        .attr("x2", function(d) { return xScale(d.pt); })
         .attr("y1", 2)
         .attr("y2", 13)
         .attr("stroke", "black")
         .attr("stroke-width", "1px")
     ;
-     
+
+    //////////////////////////////////////////////////////////////////////////
+    // apply scales to elements
+
+    selectScale(scaleName, false);
+    selectData('ptOriginal', false);
+}
+
+function add_data_symmetries(data)
+{
+    for (var i=0; i<data.length; ++i) {
+        var pt = Number(data[i].pt);
+        data[i].ptOriginal = pt;
+        data[i].ptClose = 50 - ((50 - pt) / 5);
+        data[i].ptInverted = 100 - pt;
+    }
 }
 
 window.onload = function()
@@ -174,12 +245,16 @@ window.onload = function()
             console.error(error);
             return;
         }
+        add_data_symmetries(csv);
+
         d3.json("estados.json", function(error, json) {
             if (error) {
                 console.error(error);
                 return;
             }
-            initDiv(json, csv);
+            initDiv(json, csv, getQueryVariable("colormap") || "gray");
         });
+
+        data = csv;
     });
 };

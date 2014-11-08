@@ -30,13 +30,18 @@ body {
 
   <body>
   <p>
-    <a href="index.html?colormap=categorical">categorical</a> | 
-    <a href="index.html?colormap=gray">gray</a> | 
-    <a href="index.html?colormap=purple">purple</a> | 
-    <a href="index.html?colormap=density">density</a> | 
-    <a href="index.html?colormap=density_purple">density (purple)</a> | 
-    <a href="index.html?colormap=population">population</a> | 
-    <a href="index.html?colormap=population_purple">population (purple)</a>
+    <a href="#" onclick="selectScale('categorical', true); return false">categorical</a> | 
+    <a href="#" onclick="selectScale('gray', true); return false">gray</a> | 
+    <a href="#" onclick="selectScale('purple', true); return false">purple</a> | 
+    <a href="#" onclick="selectScale('density', true); return false">density</a> | 
+    <a href="#" onclick="selectScale('density_purple', true); return false">density (purple)</a> | 
+    <a href="#" onclick="selectScale('population', true); return false">population</a> | 
+    <a href="#" onclick="selectScale('population_purple', true); return false">population (purple)</a>
+  </p>
+  <p>
+    <a href="#" onclick="selectData('ptOriginal', true); return false">original</a> |
+    <a href="#" onclick="selectData('ptClose', true); return false">close</a> |
+    <a href="#" onclick="selectData('ptInverted', true); return false">inverted</a>
   </p>
     <div id="main">
     </div>
