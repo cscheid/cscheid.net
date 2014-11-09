@@ -33,6 +33,16 @@ var basic_colormaps = {
                       50,
                       d3.scale.linear().domain([0,50,100]).range([50,40,50])(d));
     },
+    "purple4": function(d) {
+        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
+                      50,
+                      d3.scale.linear().domain([0,50,100]).range([43,40,43])(d));
+    },
+    "purple5": function(d) {
+        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
+                      50,
+                      d3.scale.linear().domain([0,50,100]).range([50,40,50])(d));
+    },
     "grurple": function(d) {
         return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
                       d3.scale.linear().domain([0,50,100]).range([75,0,75])(d),
