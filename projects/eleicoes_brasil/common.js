@@ -19,6 +19,12 @@ var basic_colormaps = {
         var c = Math.abs(d - 50) * 1.5;
         return d3.hcl(h, c, l);
     },
+    "gray_dark_2": function(d) {
+        var h = (d < 50) ? 250 : 30;
+        var l = 30 - Math.abs(d-50)/5;
+        var c = Math.abs(d - 50) * 1.5;
+        return d3.hcl(h, c, l);
+    },
     "purple": function(d) {
         var prop = d3.scale.linear()
             .domain([0, 50, 100])
@@ -52,6 +58,11 @@ var basic_colormaps = {
     "purple6": function(d) {
         return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
                       50,
+                      d3.scale.linear().domain([0,50,100]).range([30,20,30])(d));
+    },
+    "purple7": function(d) {
+        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
+                      d3.scale.linear().domain([0,50,100]).range([50,30,50])(d),
                       d3.scale.linear().domain([0,50,100]).range([30,20,30])(d));
     },
     "grurple": function(d) {
@@ -240,7 +251,7 @@ function applyScales(transition)
 
 function initDiv(topo)
 {
-    var width = 1200,
+    var width = 1000,
         height = 800;
     
     var svg = d3.select("#main").append("svg")
@@ -296,8 +307,11 @@ function initDiv(topo)
     populations.sort();
     data = f;
     add_data_symmetries(data);
-    density_quantiles = [0,1,2,3,4,5].map(function(i) {
-        var ix = ~~(i * densities.length / 5);
+    density_quantiles = [];
+    for (var i=0; i<=50; ++i)
+        density_quantiles.push(i);
+    density_quantiles = density_quantiles.map(function(i) {
+        var ix = ~~(i * densities.length / (density_quantiles.length - 1));
         ix = Math.min(ix, densities.length - 1);
         return densities[ix];
     });
