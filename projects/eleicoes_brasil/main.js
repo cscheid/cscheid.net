@@ -40,11 +40,15 @@ var basic_colormaps = {
     },
     "purple5": function(d) {
         return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
-                      75,
+                      60,
                       d3.scale.linear().domain([0,50,100]).range([50,40,50])(d));
     },
     "grurple": function(d) {
-        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
+        var d_ = d, s = (d < 50) ? -1 : 1;
+        d_ = Math.abs(d - 50) / 50;
+        d_ = Math.pow(d_, 0.4);
+        d_ = d_ * 50 * s + 50;
+        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d_),
                       d3.scale.linear().domain([0,50,100]).range([75,0,75])(d),
                       d3.scale.linear().domain([0,50,100]).range([43,60,43])(d));
     }
