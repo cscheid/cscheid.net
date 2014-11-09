@@ -20,6 +20,13 @@ var basic_colormaps = {
                     d3.hcl(300, 50, 40),
                     d3.hcl(30, 50, 50)]);
         return prop(d);
+    },
+    "purple2": function(d) {
+        var prop = d3.scale.linear()
+            .domain([0, 100])
+            .range([d3.hcl(250, 50, 50),
+                    d3.hcl(30, 50, 50)]);
+        return prop(d);
     }
 };
 
@@ -305,7 +312,7 @@ window.onload = function()
     d3.selectAll("input").on("click", function() {
         selectScale(true);
     });
-    var x =d3.selectAll("input")
+    d3.selectAll("input")
         .filter(function(d) {
             return this.name === "data";
         })
