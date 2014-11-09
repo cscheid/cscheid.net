@@ -1,15 +1,3 @@
-// http://css-tricks.com/snippets/javascript/get-url-variables/
-function getQueryVariable(variable)
-{
-       var query = window.location.search.substring(1);
-       var vars = query.split("&");
-       for (var i=0;i<vars.length;i++) {
-               var pair = vars[i].split("=");
-               if(pair[0] == variable){return pair[1];}
-       }
-       return(false);
-}
-
 d3.selection.prototype.moveToFront = function() {
   return this.each(function(){
     this.parentNode.appendChild(this);
@@ -33,6 +21,24 @@ var basic_colormaps = {
                     d3.hcl(30, 50, 50)]);
         return prop(d);
     }
+};
+
+function dataRange()
+{
+    var mx = 0;
+    var mn = 100;
+    data.forEach(function(v) {
+        mx = Math.max(mx, Number(v.pt));
+        mn = Math.min(mn, Number(v.pt));
+    });
+    return [mn, mx];
+}
+
+var invariance_transformations = {
+    "none": d3.scale.linear(),
+    "scale": d3.scale.linear().range([0, 100]),
+    "affine": d3.scale.linear().range([0, 100]),
+    "affineTwosided": d3.scale.linear().domain([0,50,100]).range([0, 50, 100])
 };
 
 var transformations = {
@@ -85,134 +91,34 @@ var bivariates = {
     }
 };
 
-var bivariate, basic_range, transformation;
+function make_scale_invariant(v)
+{
+    var mx = 0;
+    var mn = 100;
+    for (var i=0; i<data.length; ++i) {
+        mx = Math.max(mx, Number(data.pt));
+        mn = Math.min(mn, Number(data.pt));
+    }
+    if (mx - 50 > 50 - mn)
+        mn = 100 - mx;
+    else
+        mx = 100 - mn;
+    return d3.scale.linear()
+        .domain([mn, mx])
+        .range([0, 100])(v);
+}
+
+var bivariate, basic_range, transformation, invariance_transformation = "none";
 function full_colormap(d) {
     var v = Number(d.pt);
+    v = invariance_transformations[invariance_transformation](v);
+    return almost_full_colormap(v, d);
+}
+function almost_full_colormap(v, d) {
     v = transformations[transformation](v);
     var c = basic_colormaps[basic_range](v);
     return bivariates[bivariate](c, d);
-    
 }
-
-// function colorScale_0(d) {
-//     d = Number(d.pt);
-//     var h = (d < 50) ? 250 : 30;
-//     var l = 60 - Math.abs(d-50) / 3;
-//     var c = Math.abs(d - 50) * 1.5;
-//     return d3.hcl(h, c, l);
-// };
-
-// function colorScale_3(d) {
-//     d = Number(d.pt);
-//     var prop = d3.scale.linear()
-//         .domain([0, 50, 100])
-//         .range([d3.hcl(250, 50, 50),
-//                 d3.hcl(300, 50, 40),
-//                 d3.hcl(30, 50, 50)]);
-//     return prop(d);
-// }
-
-// function colorScale_7(d) {
-//     d = d.pt;
-//     d = d - 50;
-//     var sign = d < 0 ? -1 : 1;
-//     d = Math.abs(d/50);
-//     d = Math.pow(d, 0.4);
-//     d = d * 50 * sign + 50;
-
-//     var h = (d < 50) ? 250 : 30;
-//     var l = 60 - Math.abs(d-50) / 3;
-//     var c = Math.abs(d - 50) * 1.5;
-//     return d3.hcl(h, c, l);
-// }
-
-// function colorScale_8(d) {
-//     d = d.pt;
-//     d = d - 50;
-//     var sign = d < 0 ? -1 : 1;
-//     d = Math.abs(d/50);
-//     d = Math.pow(d, 0.4);
-//     d = d * 50 * sign + 50;
-
-//     var prop = d3.scale.linear()
-//         .domain([0, 50, 100])
-//         .range([d3.hcl(250, 50, 50),
-//                 d3.hcl(300, 50, 40),
-//                 d3.hcl(30, 50, 50)]);
-//     return prop(d);
-// }
-
-// function colorScale_1(c) {
-//     function colorScale(d) {
-//         var density = Number(d.pop) / Number(d.area);
-//         var cs = d3.scale.linear()
-//             .domain([0, 500])
-//             .range(["#ffffff", c(d)]);
-//         return cs(density);
-//     }
-//     return colorScale;
-// }
-
-// function colorScale_2(c) {
-//     function colorScale(d) {
-//         d = Number(d.pt);
-//         if (d < 50)
-//             return c({pt: 0, pop: 1, density: 1});
-//         else
-//             return c({pt: 100, pop: 1, density: 1});
-//     }
-//     return colorScale;
-// }
-
-// function colorScale_4(c) {
-//     function colorScale(d) {
-//         var cs = d3.scale.linear()
-//             .domain([0, 45000000])
-//             .range(["#ffffff", c(d)]);
-//         return cs(Number(d.pop));
-//     }
-//     return colorScale;
-// }
-
-// function colorScale_5(c) {
-//     function colorScale(d) {
-//         var density = Number(d.pop) / Number(d.area);
-//         var cs = d3.scale.linear()
-//             .domain([0, Math.pow(500, 0.5)])
-//             .range(["#ffffff", c(d)]);
-//         return cs(Math.pow(density, 0.5));
-//     }
-//     return colorScale;
-// }
-
-// function colorScale_6(c) {
-//     function colorScale(d) {
-//         var cs = d3.scale.linear()
-//             .domain([0, Math.pow(45000000, 0.5)])
-//             .range(["#ffffff", c(d)]);
-//         return cs(Math.pow(Number(d.pop), 0.5));
-//     }
-//     return colorScale;
-// }
-
-//////////////////////////////////////////////////////////////////////////////
-// global variables (yuck)
-
-// var colorScales = {
-//     "categorical": colorScale_2(colorScale_0), 
-//     "gray": colorScale_0, 
-//     "purple": colorScale_3,
-//     "gray_nonlinear": colorScale_7,
-//     "purple_nonlinear": colorScale_8,
-//     "density": colorScale_1(colorScale_0), 
-//     "density_purple": colorScale_1(colorScale_3), 
-//     "density_sqrt": colorScale_5(colorScale_0), 
-//     "density_sqrt_purple": colorScale_5(colorScale_3), 
-//     "population": colorScale_4(colorScale_0),
-//     "population_purple": colorScale_4(colorScale_3),
-//     "population_sqrt": colorScale_6(colorScale_0),
-//     "population_sqrt_purple": colorScale_6(colorScale_3)
-// };
 
 var map, colorLegend, stateLegends, xScale;
 
@@ -238,6 +144,8 @@ function selectScale(transition)
     bivariate = whichRadio("bivariate");
     basic_range = whichRadio("basic_range");
     transformation = whichRadio("transformation");
+    invariance_transformation = whichRadio("invariance_transformation");
+
     applyScales(transition);
 }
 
@@ -246,6 +154,20 @@ function selectData(name, transition)
     data.forEach(function(d) {
         d.pt = d[name];
     });
+
+    var _ = dataRange(), mn = _[0], mx = _[1];
+    var mn_scale, mx_scale;
+    if (mx - 50 > 50 - mn) {
+        mn_scale = 100 - mx;
+        mx_scale = mx;
+    } else {
+        mn_scale = mn;
+        mx_scale = 100 - mn;
+    }
+    invariance_transformations["scale"].domain([mn_scale, mx_scale]);
+    invariance_transformations["affine"].domain([mn, mx]);
+    invariance_transformations["affineTwosided"].domain([mn, 50, mx]);
+
     applyScales(transition);
 }
 
@@ -269,12 +191,14 @@ function applyScales(transition)
 
     t(colorLegend.selectAll("rect"))
         .attr("fill", function(d) {
-            return full_colormap(
+            // FIXME this is a bad back.
+            // more importantly, what's the problem with the architecture that caused this?
+            return almost_full_colormap(d,
                 { pop: 40000000, area: 40000000 / 380, pt: d });
         });
 }
 
-function initDiv(topo, data, scaleName)
+function initDiv(topo, data)
 {
     var width = 600,
         height = 720;
@@ -304,11 +228,6 @@ function initDiv(topo, data, scaleName)
       .enter()
         .append("path")
         .attr("d", path)
-        // .attr("fill", function(d, i) {
-        //     if (i >= data.length)
-        //         return "black";
-        //     return colorScale(data[i]);
-        // })
         .on("mouseover", function(d, i) {
             d3.select(".state." + data[i].estado).classed("hover", true);
             d3.select(this).moveToFront();
@@ -326,9 +245,11 @@ function initDiv(topo, data, scaleName)
 
     colorLegend = svg.append("g").attr("transform", "translate(0,700)");
 
-    xScale = d3.scale.linear()
-        .domain([0, 100])
-        .range([0, 500]);
+    xScale = function(d) {
+        return d3.scale.linear()
+            .domain([0, 100])
+            .range([0, 500])(invariance_transformations[invariance_transformation](d));
+    };
 
     var x = [];
     for (var i=0; i<200; ++i)
@@ -403,7 +324,7 @@ window.onload = function()
                 console.error(error);
                 return;
             }
-            initDiv(json, csv, getQueryVariable("colormap") || "gray");
+            initDiv(json, csv);
         });
 
         data = csv;
