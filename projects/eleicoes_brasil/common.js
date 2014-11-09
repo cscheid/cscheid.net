@@ -121,9 +121,9 @@ var bivariates = {
     "density_sqrt": function(c, d) {
         var density = Number(d.properties.t) / Number(d.properties.area);
         var cs = d3.scale.linear()
-            .domain([0, Math.pow(max_density, 0.1)])
+            .domain([0, Math.pow(max_density, 0.2)])
             .range(["#fff", c]);
-        return cs(Math.pow(density, 0.1));
+        return cs(Math.pow(density, 0.2));
     },
     "density_quantiles": function(c, d) {
         var density = Number(d.properties.t) / Number(d.properties.area);
