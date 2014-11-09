@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="d3.v3.min.js" charset="utf-8"></script>
+    <script src="topojson.otherv.min.js" charset="utf-8"></script>
+    <script src="mn.js"></script>
+    <style>
+body {
+  font-size: 10pt;
+  font-family: Helvetica Neue, sans-serif;
+  font-weight: 200;
+}
+
+      .state {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 300;
+      font-size: 8pt;
+      fill: rgba(0,0,0,0.2);
+      text-anchor: middle;
+      }
+
+      .hover {
+      font-weight: 700;
+      fill: rgba(0,0,0,1);
+      }
+    </style>
+    
+  </head>
+
+  <body>
+    <div style="float: right">
+      <p>
+	<b>Colormaps</b>:
+      </p>
+
+      <p>Basic:</p>
+
+      <form>
+	<input type="radio" name="basic_range" value="gray" checked>Gray<br>
+	<input type="radio" name="basic_range" value="purple">Purple<br>
+	<input type="radio" name="basic_range" value="purple2">Purple2<br>
+	<input type="radio" name="basic_range" value="purple3">Purple3<br>
+	<input type="radio" name="basic_range" value="purple4">Purple4<br>
+	<input type="radio" name="basic_range" value="purple5">Purple5<br>
+	<input type="radio" name="basic_range" value="grurple">Grurple<br>
+      </form>
+
+      <p>Invariance Transformations:</p>
+      <form>
+	<input type="radio" name="invariance_transformation" value="none" checked>None<br>
+	<input type="radio" name="invariance_transformation" value="scale">Scale Invariant<br>
+	<input type="radio" name="invariance_transformation" value="affine">Affine Invariant<br>
+	<input type="radio" name="invariance_transformation" value="affineTwosided">Two-sided "Affine Invariant"<br>
+      </form>
+
+      <p>blah Transformations</p>
+      <form> 
+	<input type="radio" name="transformation" value="none" checked>None<br>
+	<input type="radio" name="transformation" value="categorical">Categorical<br>
+	<input type="radio" name="transformation" value="stretch">Near-middle stretch<br>
+      </form>
+
+      <p>Bivariates</p>
+
+      <form>
+	<input type="radio" name="bivariate" value="none" checked>None<br>
+	<input type="radio" name="bivariate" value="density">Density<br>
+	<input type="radio" name="bivariate" value="density_sqrt">Density^0.5<br>
+	<input type="radio" name="bivariate" value="population">Population<br>
+	<input type="radio" name="bivariate" value="population_sqrt">Population^0.5<br>
+      </form>
+
+      <p><b>Data</b>:</p>
+      <form>
+	<input type="radio" name="data" value="Original" checked>Original<br>
+	<input type="radio" name="data" value="Close">Close<br>
+	<input type="radio" name="data" value="Inverted">Inverted<br>
+      </form>
+
+    </div>
+  <p>
+  </p>
+      </div>
+    <div style="float: left" id="main">
+    </div>
+  </body>
+</html>
