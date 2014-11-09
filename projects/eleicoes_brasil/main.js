@@ -40,7 +40,7 @@ var basic_colormaps = {
     },
     "purple5": function(d) {
         return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
-                      50,
+                      75,
                       d3.scale.linear().domain([0,50,100]).range([50,40,50])(d));
     },
     "grurple": function(d) {
