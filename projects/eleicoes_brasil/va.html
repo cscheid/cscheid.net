@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <script src="d3.v3.min.js" charset="utf-8"></script>
     <script src="topojson.v1.min.js" charset="utf-8"></script>
+    <script src="common.js"></script>
     <script src="va.js"></script>
     <style>
 body {
@@ -38,11 +39,13 @@ body {
 
       <form>
 	<input type="radio" name="basic_range" value="gray" checked>Gray<br>
+	<input type="radio" name="basic_range" value="gray_dark">Gray dark<br>
 	<input type="radio" name="basic_range" value="purple">Purple<br>
 	<input type="radio" name="basic_range" value="purple2">Purple2<br>
 	<input type="radio" name="basic_range" value="purple3">Purple3<br>
 	<input type="radio" name="basic_range" value="purple4">Purple4<br>
 	<input type="radio" name="basic_range" value="purple5">Purple5<br>
+	<input type="radio" name="basic_range" value="purple6">Purple6<br>
 	<input type="radio" name="basic_range" value="grurple">Grurple<br>
       </form>
 
@@ -67,6 +70,7 @@ body {
 	<input type="radio" name="bivariate" value="none" checked>None<br>
 	<input type="radio" name="bivariate" value="density">Density<br>
 	<input type="radio" name="bivariate" value="density_sqrt">Density^0.5<br>
+	<input type="radio" name="bivariate" value="density_quantiles">Density quantiles<br>
 	<input type="radio" name="bivariate" value="population">Population<br>
 	<input type="radio" name="bivariate" value="population_sqrt">Population^0.5<br>
       </form>
