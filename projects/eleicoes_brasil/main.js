@@ -27,6 +27,11 @@ var basic_colormaps = {
             .range([d3.hcl(250, 50, 50),
                     d3.hcl(30, 50, 50)]);
         return prop(d);
+    },
+    "purple3": function(d) {
+        return d3.hcl(d3.scale.linear().domain([0,50,100]).range([250,300,390])(d),
+                      50,
+                      d3.scale.linear().domain([0,50,100]).range([50,40,50])(d));
     }
 };
 
