@@ -29,21 +29,48 @@ body {
   </head>
 
   <body>
+    <div style="float: right">
+      <p>
+	<b>Colormaps</b>:
+      </p>
+
+      <p>Basic:</p>
+
+      <form>
+	<input type="radio" name="basic_range" value="gray" checked>Gray<br>
+	<input type="radio" name="basic_range" value="purple">Purple<br>
+      </form>
+
+      <p>Transformations:</p>
+
+      <form>
+	<input type="radio" name="transformation" value="none" checked>None<br>
+	<input type="radio" name="transformation" value="categorical">Categorical<br>
+	<input type="radio" name="transformation" value="stretch">Near-middle stretch<br>
+      </form>
+
+      <p>Bivariates</p>
+
+      <form>
+	<input type="radio" name="bivariate" value="none" checked>None<br>
+	<input type="radio" name="bivariate" value="density">Density<br>
+	<input type="radio" name="bivariate" value="density_sqrt">Density^0.5<br>
+	<input type="radio" name="bivariate" value="population">Population<br>
+	<input type="radio" name="bivariate" value="population_sqrt">Population^0.5<br>
+      </form>
+
+      <p><b>Data</b>:</p>
+      <form>
+	<input type="radio" name="data" value="Original" checked>Original<br>
+	<input type="radio" name="data" value="Close">Close<br>
+	<input type="radio" name="data" value="Inverted">Inverted<br>
+      </form>
+
+    </div>
   <p>
-    <a href="#" onclick="selectScale('categorical', true); return false">categorical</a> | 
-    <a href="#" onclick="selectScale('gray', true); return false">gray</a> | 
-    <a href="#" onclick="selectScale('purple', true); return false">purple</a> | 
-    <a href="#" onclick="selectScale('density', true); return false">density</a> | 
-    <a href="#" onclick="selectScale('density_purple', true); return false">density (purple)</a> | 
-    <a href="#" onclick="selectScale('population', true); return false">population</a> | 
-    <a href="#" onclick="selectScale('population_purple', true); return false">population (purple)</a>
   </p>
-  <p>
-    <a href="#" onclick="selectData('ptOriginal', true); return false">original</a> |
-    <a href="#" onclick="selectData('ptClose', true); return false">close</a> |
-    <a href="#" onclick="selectData('ptInverted', true); return false">inverted</a>
-  </p>
-    <div id="main">
+      </div>
+    <div style="float: left" id="main">
     </div>
   </body>
 </html>

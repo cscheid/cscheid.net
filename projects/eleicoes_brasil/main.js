@@ -18,83 +18,226 @@ d3.selection.prototype.moveToFront = function() {
 
 //////////////////////////////////////////////////////////////////////////////
 
-function colorScale_0(d) {
-    d = Number(d.pt);
-    var h = (d < 50) ? 250 : 30;
-    var l = 60 - Math.abs(d-50) / 3;
-    var c = Math.abs(d - 50) * 1.5;
-    return d3.hcl(h, c, l);
+var basic_colormaps = {
+    "gray": function(d) {
+        var h = (d < 50) ? 250 : 30;
+        var l = 60 - Math.abs(d-50) / 3;
+        var c = Math.abs(d - 50) * 1.5;
+        return d3.hcl(h, c, l);
+    },
+    "purple": function(d) {
+        var prop = d3.scale.linear()
+            .domain([0, 50, 100])
+            .range([d3.hcl(250, 50, 50),
+                    d3.hcl(300, 50, 40),
+                    d3.hcl(30, 50, 50)]);
+        return prop(d);
+    }
 };
 
-function colorScale_1(c) {
-    function colorScale(d) {
-        var d_ = d;
+var transformations = {
+    "stretch": function(d) {
+        d = d - 50;
+        var sign = d < 0 ? -1 : 1;
+        d = Math.abs(d/50);
+        d = Math.pow(d, 0.4);
+        d = d * 50 * sign + 50;
+        return d;
+    },
+    "categorical": function(d) {
+        if (d < 50) 
+            return 0;
+        else
+            return 100;
+    },
+    "none": function(d) { return d; }
+};
+
+var bivariates = {
+    "none": function(c) {
+        return c;
+    },
+    "density": function(c, d) {
         var density = Number(d.pop) / Number(d.area);
         var cs = d3.scale.linear()
             .domain([0, 500])
-            .range(["#ffffff", c(d_)]);
+            .range(["#ffffff", c]);
         return cs(density);
-    }
-    return colorScale;
-}
-
-function colorScale_2(c) {
-    function colorScale(d) {
-        d = Number(d.pt);
-        if (d < 50)
-            return c({pt: 0, pop: 1, density: 1});
-        else
-            return c({pt: 100, pop: 1, density: 1});
-    }
-    return colorScale;
-}
-
-function colorScale_3(d) {
-    var d_ = d;
-    d = Number(d.pt);
-    var prop = d3.scale.linear()
-        .domain([0, 50, 100])
-        .range([d3.hcl(250, 50, 50),
-                d3.hcl(300, 50, 40),
-                d3.hcl(30, 50, 50)]);
-    return prop(d);
-}
-
-function colorScale_4(c) {
-    function colorScale(d) {
-        var d_ = d;
+    },
+    "density_sqrt": function(c, d) {
+        var density = Number(d.pop) / Number(d.area);
+        var cs = d3.scale.linear()
+            .domain([0, Math.pow(500, 0.5)])
+            .range(["#ffffff", c]);
+        return cs(Math.pow(density, 0.5));
+    },
+    "population": function(c, d) {
         var cs = d3.scale.linear()
             .domain([0, 45000000])
-            .range(["#ffffff", c(d_)]);
+            .range(["#ffffff", c]);
         return cs(Number(d.pop));
+    },
+    "population_sqrt": function(c, d) {
+        var cs = d3.scale.linear()
+            .domain([0, Math.pow(45000000, 0.5)])
+            .range(["#ffffff", c]);
+        return cs(Math.pow(Number(d.pop), 0.5));
     }
-    return colorScale;
+};
+
+var bivariate, basic_range, transformation;
+function full_colormap(d) {
+    var v = Number(d.pt);
+    v = transformations[transformation](v);
+    var c = basic_colormaps[basic_range](v);
+    return bivariates[bivariate](c, d);
+    
 }
+
+// function colorScale_0(d) {
+//     d = Number(d.pt);
+//     var h = (d < 50) ? 250 : 30;
+//     var l = 60 - Math.abs(d-50) / 3;
+//     var c = Math.abs(d - 50) * 1.5;
+//     return d3.hcl(h, c, l);
+// };
+
+// function colorScale_3(d) {
+//     d = Number(d.pt);
+//     var prop = d3.scale.linear()
+//         .domain([0, 50, 100])
+//         .range([d3.hcl(250, 50, 50),
+//                 d3.hcl(300, 50, 40),
+//                 d3.hcl(30, 50, 50)]);
+//     return prop(d);
+// }
+
+// function colorScale_7(d) {
+//     d = d.pt;
+//     d = d - 50;
+//     var sign = d < 0 ? -1 : 1;
+//     d = Math.abs(d/50);
+//     d = Math.pow(d, 0.4);
+//     d = d * 50 * sign + 50;
+
+//     var h = (d < 50) ? 250 : 30;
+//     var l = 60 - Math.abs(d-50) / 3;
+//     var c = Math.abs(d - 50) * 1.5;
+//     return d3.hcl(h, c, l);
+// }
+
+// function colorScale_8(d) {
+//     d = d.pt;
+//     d = d - 50;
+//     var sign = d < 0 ? -1 : 1;
+//     d = Math.abs(d/50);
+//     d = Math.pow(d, 0.4);
+//     d = d * 50 * sign + 50;
+
+//     var prop = d3.scale.linear()
+//         .domain([0, 50, 100])
+//         .range([d3.hcl(250, 50, 50),
+//                 d3.hcl(300, 50, 40),
+//                 d3.hcl(30, 50, 50)]);
+//     return prop(d);
+// }
+
+// function colorScale_1(c) {
+//     function colorScale(d) {
+//         var density = Number(d.pop) / Number(d.area);
+//         var cs = d3.scale.linear()
+//             .domain([0, 500])
+//             .range(["#ffffff", c(d)]);
+//         return cs(density);
+//     }
+//     return colorScale;
+// }
+
+// function colorScale_2(c) {
+//     function colorScale(d) {
+//         d = Number(d.pt);
+//         if (d < 50)
+//             return c({pt: 0, pop: 1, density: 1});
+//         else
+//             return c({pt: 100, pop: 1, density: 1});
+//     }
+//     return colorScale;
+// }
+
+// function colorScale_4(c) {
+//     function colorScale(d) {
+//         var cs = d3.scale.linear()
+//             .domain([0, 45000000])
+//             .range(["#ffffff", c(d)]);
+//         return cs(Number(d.pop));
+//     }
+//     return colorScale;
+// }
+
+// function colorScale_5(c) {
+//     function colorScale(d) {
+//         var density = Number(d.pop) / Number(d.area);
+//         var cs = d3.scale.linear()
+//             .domain([0, Math.pow(500, 0.5)])
+//             .range(["#ffffff", c(d)]);
+//         return cs(Math.pow(density, 0.5));
+//     }
+//     return colorScale;
+// }
+
+// function colorScale_6(c) {
+//     function colorScale(d) {
+//         var cs = d3.scale.linear()
+//             .domain([0, Math.pow(45000000, 0.5)])
+//             .range(["#ffffff", c(d)]);
+//         return cs(Math.pow(Number(d.pop), 0.5));
+//     }
+//     return colorScale;
+// }
 
 //////////////////////////////////////////////////////////////////////////////
 // global variables (yuck)
 
-var colorScales = {
-    "gray": colorScale_0, 
-    "purple": colorScale_3,
-    "density": colorScale_1(colorScale_0), 
-    "categorical": colorScale_2(colorScale_0), 
-    "population": colorScale_4(colorScale_0),
-    "density_purple": colorScale_1(colorScale_3), 
-    "population_purple": colorScale_4(colorScale_3)
-};
+// var colorScales = {
+//     "categorical": colorScale_2(colorScale_0), 
+//     "gray": colorScale_0, 
+//     "purple": colorScale_3,
+//     "gray_nonlinear": colorScale_7,
+//     "purple_nonlinear": colorScale_8,
+//     "density": colorScale_1(colorScale_0), 
+//     "density_purple": colorScale_1(colorScale_3), 
+//     "density_sqrt": colorScale_5(colorScale_0), 
+//     "density_sqrt_purple": colorScale_5(colorScale_3), 
+//     "population": colorScale_4(colorScale_0),
+//     "population_purple": colorScale_4(colorScale_3),
+//     "population_sqrt": colorScale_6(colorScale_0),
+//     "population_sqrt_purple": colorScale_6(colorScale_3)
+// };
 
 var map, colorLegend, stateLegends, xScale;
-
-var currentColorScale;
 
 var data;
 
 //////////////////////////////////////////////////////////////////////////////
+// http://stackoverflow.com/a/9618826
 
-function selectScale(name, transition)
+function whichRadio(name)
 {
-    currentColorScale = colorScales[name];
+    var radios = document.getElementsByName(name);
+
+    for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+            return radios[i].value;
+        }
+    }
+    return undefined;
+}
+
+function selectScale(transition)
+{
+    bivariate = whichRadio("bivariate");
+    basic_range = whichRadio("basic_range");
+    transformation = whichRadio("transformation");
     applyScales(transition);
 }
 
@@ -103,8 +246,6 @@ function selectData(name, transition)
     data.forEach(function(d) {
         d.pt = d[name];
     });
-    // map.selectAll("path")
-    //     .data(data);
     applyScales(transition);
 }
 
@@ -115,7 +256,7 @@ function applyScales(transition)
     }
    
     t(map.selectAll("path")).attr("fill", function(d, i) {
-        return currentColorScale(d);
+        return full_colormap(d);
     });
 
     t(stateLegends.selectAll("line"))
@@ -128,7 +269,7 @@ function applyScales(transition)
 
     t(colorLegend.selectAll("rect"))
         .attr("fill", function(d) {
-            return currentColorScale(
+            return full_colormap(
                 { pop: 40000000, area: 40000000 / 380, pt: d });
         });
 }
@@ -224,7 +365,7 @@ function initDiv(topo, data, scaleName)
     //////////////////////////////////////////////////////////////////////////
     // apply scales to elements
 
-    selectScale(scaleName, false);
+    selectScale(false);
     selectData('ptOriginal', false);
 }
 
@@ -240,6 +381,16 @@ function add_data_symmetries(data)
 
 window.onload = function()
 {
+    d3.selectAll("input").on("click", function() {
+        selectScale(true);
+    });
+    var x =d3.selectAll("input")
+        .filter(function(d) {
+            return this.name === "data";
+        })
+        .on("click", function() {
+            selectData("pt" + whichRadio("data"), true);
+        });
     d3.csv("estados.csv", function(error, csv) {
         if (error) {
             console.error(error);
