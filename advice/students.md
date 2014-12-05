@@ -7,7 +7,7 @@ date: 2014-12-05 11:00:00
 So we're going to work together. That's great! I wrote this thing to
 help us both get started. 
 
-All of the [general academic advice](index.html) I wrote applies, and
+All of the [general academic advice](academics.html) I wrote applies, and
 then there's this.
 
 ## "What is going on inside his head?"
