@@ -89,6 +89,17 @@ div.post-content h2, div.post-content h3, div.post-content h4 {
     margin-bottom:20px;
 }
 
+code {
+    padding: 0;
+    font-size: 70%;
+    color: #244;
+    background-color: #fff;
+}
+
+a.reversefootnote {
+    font-size: 50%;
+}
+/****************************************************************************/
 
 /* Extra Small Devices, .visible-xs-* */
 @media (max-width: 767px) {
