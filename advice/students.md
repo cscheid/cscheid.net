@@ -93,7 +93,7 @@ I'm stealing the section title from Philip Guo's
 writeup (I'm not going to hold it against you if you leave now and go
 read everything Guo has written. Seriously).
 
-It is more than a little embarassing for our field that the best way
+It is maybe a bit embarassing that the best way
 we know how to carry our day-to-day research is by interacting with
 computers through a command-line interface that's been the same for,
 more or less, 40 years. But them's the breaks, so my job is to make it
