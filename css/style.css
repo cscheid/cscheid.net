@@ -1,15 +1,15 @@
 body {
-    font-size: 2.2em; 
+    font-size: 1.8em; 
     text-rendering: optimizeLegibility;
 }
 
 html {
-    font-variant-numeric: oldstyle-nums;
-    -moz-font-feature-settings: 'onum=1';
-    -ms-font-feature-settings: 'onum';
-    -o-font-feature-settings: 'onum';
-    -webkit-font-feature-settings: 'onum';
-    font-feature-settings: 'onum';
+    /* font-variant-numeric: oldstyle-nums; */
+    /* -moz-font-feature-settings: 'onum=1'; */
+    /* -ms-font-feature-settings: 'onum'; */
+    /* -o-font-feature-settings: 'onum'; */
+    /* -webkit-font-feature-settings: 'onum'; */
+    /* font-feature-settings: 'onum'; */
 }
 
 ul.posts {
@@ -17,8 +17,15 @@ ul.posts {
 }
 
 p, ul, ol {
-    font-family: "garamond-premier-pro-display-1","garamond-premier-pro-display-2";
-    font-weight: 100;
+    font-family: "Oxygen", "Helvetica Neue", sans;
+    font-weight: 300;
+    /* font-family: "garamond-premier-pro-display-1","garamond-premier-pro-display-2"; */
+    /* font-weight: 100; */
+}
+
+em {
+    font-weight: 400;
+    font-style: normal
 }
 
 .heading {

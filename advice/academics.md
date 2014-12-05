@@ -6,7 +6,7 @@ date: 2014-12-05 11:00:00
 
 Collected advice on the mechanics of academia. Things I tell other people,
 should they ask, and things I tell myself, should I forget. Things
-specific to student-advisor [go here](students.html).
+specific to student-advisor [are to be found here](students.html).
 
 *Caveats*: this is all personal perspective, in case it's not
 obvious enough by the fourth paragraph. I found it
