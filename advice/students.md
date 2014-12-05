@@ -1,6 +1,7 @@
 ---
 layout: static
 title: Resources for Students
+date: 2014-12-05 11:00:00
 ---
 
 So we're going to work together. That's great! I wrote this thing to
@@ -85,7 +86,7 @@ excitement get us ahead of the truth. I want you to become comfortable
 at staring at ideas (both mine and your own) that you want to be true,
 and learning to spot the ones that are not[^1].
 
-## command-line bullshittery
+## workflow, or command-line bullshittery
 
 I'm stealing the section title from Philip Guo's
 [excellent, *excellent*](http://www.pgbovine.net/command-line-bullshittery.htm)
@@ -118,7 +119,7 @@ command-line (ideally from a single Makefile, but I'll take `ant`,
 share with you whatever little Emacs I've picked up over the years,
 and if you know vi, I want to learn!
 
-## back up your files. Back up your files. BACK UP YOUR FILES.
+## back up your files. Back. up. your. files.
 
 Don't lose a month of writing because someone stole your
 laptop, or because some idiot walking past you at the coffee shop
@@ -127,8 +128,7 @@ with awkward apologies.
 
 Everything that is important about your research should be saved in a
 system that's backed up, *automatically*, by someone other than
-yourself (for example but notably, emailing files to yourself does not
-count). Dropbox is not backup,
+yourself (emailing files to yourself does not count). Dropbox is not backup,
 [unless you pay for the packrat option](https://www.dropbox.com/en/help/113). For
 example, have a [cron job that rsyncs](#command-line-bullshittery)
 your contents with the university machines, or run CrashPlan, or

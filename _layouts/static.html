@@ -4,12 +4,42 @@ layout: bootstrap
 <div class="row">
   <div class="col-md-1"></div>
   <div class="col-md-10">
-    <h1 class="bold" style="font-size:1.2em">{{ page.title }}</h1>
+    <h1 class="bold" style="font-size:1.5em">{{ page.title }}</h1>
   </div>
 </div>
 <div class="row">
   <div class="col-md-1"></div>
   <div class="col-md-7 post-content">
+    <p class="meta"><a href="http://cscheid.net">cscheid</a>, {{ page.date | date_to_string }}</p>
+    <p>&nbsp;</p>
     {{ content }}
   </div>
+  <div class="col-md-3 my-sidebar">
+    <ul class="nav nav-sidebar" id="sidebar">
+      <li>
+    </ul>
+  </div>
+    <script>
+      function elideWords(txt, count) {
+          txt = txt.split(" ");
+          if (txt.length > count) {
+              txt = txt.slice(0, count);
+              txt.push("...");
+          }
+          return txt.join(" ");
+      }
+      $(document).ready(function() {
+        d3.selectAll("div.container > h1,h2,h3")
+          .each(function() {
+              console.log(this);
+      d3.select("#sidebar")
+      .append("li")
+      .append(this.nodeName.toLowerCase())
+      .attr("class", "my-sidebar")
+      .append("a")
+      .attr("href", "#" + this.id)
+      .text(elideWords(this.textContent, 3));
+          });
+      });
+    </script>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: static
-title: Advice
+title: Academics
+date: 2014-12-05 11:00:00
 ---
 
 Collected advice on the mechanics of academia. Things I tell other people,
