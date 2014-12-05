@@ -109,8 +109,26 @@ so, we want to avoid the
 "paper\_version1\_ab\_november\_please\_stop.tex" madness. Distributed
 version-control systems are *wonderful* for that.
 
-You will need to learn one of the standard shells: `bash`, `tcsh`,
-`zsh`, or whatever you like. 
+Speaking of papers, you will need to learn
+[LaTeX](http://www.latex-project.org/). You will be writing a lot, and
+although there is a lot that's bad about LaTeX, there's so much more
+that's good.
+
+You will need to learn one of the standard UNIX shells: `bash`,
+`tcsh`, `zsh`, or whatever you like. If you use Windows on a
+day-to-day basis, I will not be able to help you with your workflow. I
+have been bitten by proprietary software way too many times in the
+past; even though I run OS X primarily, the stuff I depend on for
+research is all open source.
+
+I don't care what programming language you use for your software, but
+it will make things much smoother if we speak the same ones.  C++,
+Python, and Javascript are what I use on a day-to-day basis (in no
+particular order), but I speak a little Haskell, Scheme, Julia, OCaml,
+Java, and a handful of others. It's much more important for you to be
+very proficient with one language than to write in whatever is the new
+hotness, but if you're a fan of some particularly cool programming
+language, tell me about it!
 
 You can use an IDE for developing your code if you like, but if you do
 so, I will want you to make sure everything builds from the
@@ -123,8 +141,7 @@ and if you know vi, I want to learn!
 
 Don't lose a month of writing because someone stole your
 laptop, or because some idiot walking past you at the coffee shop
-decided it was time to plaster your keyboard with caffeine and you
-with awkward apologies.
+decided it was time to plaster your keyboard with caffeine.
 
 Everything that is important about your research should be saved in a
 system that's backed up, *automatically*, by someone other than
