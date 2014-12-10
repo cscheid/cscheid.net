@@ -47,7 +47,7 @@ This is not to say that we should give up on the project of
 data-driven, algorithmic decision-making. "We have met the enemy, and
 he is us", after all: we have [good
 evidence](http://www.powells.com/biblio/1-9780374533557-38) that
-humans are not decision-makers. On the contrary: we should directly
+humans are bad decision-makers. On the contrary: we should directly
 study how to characterize bias, how it shows up in data sources, and
 how we go about fixing it. It's not only cool computer science: *it's
 the right thing to do*.
@@ -59,23 +59,23 @@ things a minor observation. But! I became interested in visualization
 because of how well it connects the world of human experiences with
 the world of computation, algorithms, and data. Our work at FATML has
 nothing to do with visualization, but this process of looking at the
-human impact of a computational phenomenon is something we should do
-*more of*, not less.
+human impact of a computational phenomenon is something I feel I ought
+to do *more of*, not less.
 
-And, in addition, I think there's an opportunity for vis (and
-algorithmic aspects of human-computer interaction, more generally).
-Not only this would be using visualization for the betterment of
-mankind (and really, do you need a better reason than that?), but
-there's good research questions here: can
-visualization and interactive exploration help detect, explain, and
-remove structural biases in data sources? How do we even define these
+And, in addition, I think there's a big opportunity for vis (and more
+generally, for people looking at algorithmic aspects of human-computer
+interaction).  This would be using visualization for the
+betterment of mankind (and really, do you need a better reason than
+that?), but there's good research questions here: can visualization
+and interactive exploration help detect, explain, and remove
+structural biases in data sources? How do we even define these
 questions correctly?
 
 This whole field is just getting started. We vis people know how it
 can be a powerful way to bring clarity to messy problems. We *know*
 how powerful visualizations [when they force us to face hard
 truths](http://guns.periscopic.com/). (Hell, really I'm just badly repeating a
-point Tamara has been making for, at least, [8
+point Tamara has been making for at least [8
 years](https://www.cs.ubc.ca/~tmm/talks/vis08/vis08-4x4.pdf): "concern
 not only for truth, but also for justice")
 
