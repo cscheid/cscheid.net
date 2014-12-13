@@ -12,6 +12,16 @@ html {
     /* font-feature-settings: 'onum'; */
 }
 
+img {
+    display: block;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
 ul.posts {
     padding: 0;
 }
