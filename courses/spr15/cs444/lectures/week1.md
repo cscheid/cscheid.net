@@ -201,10 +201,10 @@ get started more than 24 minutes (ahem, hours) before the deadline.
 
 ## Midterm
 
-The midterm will be given, tentatively, on the sixth week of the
-course. By then we will have been throught the Mechanics, and most of
+The midterm will be given, tentatively, on the eight week of the
+course. By then we will have been through the Mechanics, and some of
 the Principles. The midterm will be a closed-books exam which I'm
-calibrating so that can finish in one hour.
+calibrating so that you can finish in one hour.
 
 ## Final project
 
