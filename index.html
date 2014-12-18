@@ -1,5 +1,5 @@
 ---
-layout: bootstrap
+layout: bootstrap_main
 title: Carlos Scheidegger
 ---
 <style>
@@ -21,7 +21,7 @@ left: 0px;
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
         {% else %}
-      <tr valign="top"><td width="100" valign="top">{{ post.date | date_to_string }}</td> <td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></tr></td>
+      <tr valign="top"><td valign="top" style="white-space: nowrap"><span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date_to_string }}<span style="padding-right:1em"></span></span></td><td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></tr></td>
         {% endif %}
       {% endfor %}
       </table>
@@ -50,7 +50,7 @@ left: 0px;
       <table>
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
-      <tr valign="top"><td><a href="{{ post.url }}">{{ post.title }}</a></td><td width="100" valign="top">{{ post.date | date_to_string }}</td></tr>
+      <tr valign="top"><td><span class="hidden-md hidden-lg">⬝&nbsp;</span><a href="{{ post.url }}">{{ post.title }}</a></td><td style="white-space: nowrap" valign="top"><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date_to_string }}</span></td></tr>
       <!-- <li><a href="{{ post.url }}">{{ post.title }}</a> &laquo; <span>{{ post.date | date_to_string }}</span></li> -->
         {% endif %}
       {% endfor %}

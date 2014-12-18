@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+      href="/feed.xml">
+    <link href="http://fonts.googleapis.com/css?family=Oxygen+Mono|Oxygen:400,300,700"
+	  rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="//use.typekit.net/xxt2bxs.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.3.9/d3.min.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+ </head>
+  <body>
+    <div class="container">
+      <div class="col-md-12">
+	{{ content }}
+      </div>
+    </div>
+    <script>
+      $(document).ready(function() {
+	MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+      });
+    </script>
+  </body>
+</html>
