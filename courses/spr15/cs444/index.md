@@ -14,4 +14,4 @@ This is the course website for CS444/544, Data Visualization.
 
 ## Class materials
 
-* [Introduction, Week 1](week1.html).
+* [Introduction, Week 1](lectures/week1.html).
