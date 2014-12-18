@@ -27,7 +27,11 @@
  </head>
   <body>
     <div class="container">
-      {{ content }}
+      <div class="col-md-9">
+	{{ content }}
+      </div>
+      <div class="col-md-3" id="right-column">
+      </div>
     </div>
     <script>
       $(document).ready(function() {
