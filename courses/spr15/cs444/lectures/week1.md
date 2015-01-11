@@ -69,6 +69,18 @@ visualization has an *enormity* of existing techniques. We will spend
 the remaining time of the course material going over existing
 techniques, and what kinds of data they apply to.
 
+Here, computer science has much to say about data
+visualization. 
+
+For example, not everything we want to do with data is
+efficient, and not everything that is efficient is worth doing with
+data. This means that the practice of data visualization needs to be
+informed by algorithmic constraints. 
+
+Data visualization also interacts with software engineering: not every
+visualization plays well with the rest of the code in your program and
+in your head.
+
 ### List of Techniques
 
 * line plots
@@ -80,6 +92,7 @@ techniques, and what kinds of data they apply to.
   * directed graphs
   * undirected graphs
 * techniques for large data
+* software infrastructure for data visualization
 
 ## The how: mechanics
 
@@ -194,8 +207,8 @@ more than a paragraph or two).
 
 Assignments will be posted on thursdays, and will be due on the
 following thursday at the time class starts. My office hours will be
-tuesday morning, and there will be no office hours on wednesday and
-thursday morning. This is so that I can use the tuesday lecture to
+tuesday, 9:00-11:30, and there will be no office hours on wednesday
+and thursday morning. This is so that I can use the tuesday lecture to
 talk about issues with the previous assignment, and to force you to
 get started more than 24 minutes (ahem, hours) before the deadline.
 
