@@ -48,15 +48,19 @@ I'll know about your expectations and what you think is exciting.
 
 4. Which programming language are you *most comfortable* with?
 
-5. Have you ever created any data visualizations? What were they?
+5. Have you ever created a data visualization? What was it?
 
-6. What's the size of the biggest data set you've had to deal with?
-What tools did you use?
+6. During the course of your studies (CS544: or your research), what's
+the largest dataset you've had to deal with? What tools did you use?
 
-7. Tell me about something cool you learned recently. If you were
+7. What's the best visualization you've ever seen? Why do you like it?
+
+8. What's the worst visualization you've ever seen? Why do you not like it?
+
+9. What are you thinking about doing for your final project? (This is
+non-binding, but I want you to start thinking about it)
+
+10. Tell me about something cool you learned recently. If you were
 meeting with a friend, what would you chitchat about? Possible
-answers: books, movies, TV shows, blogs, podcasts, etc.
-
-8. What's the best visualization you've ever seen? Why do you like it?
-
-9. What's the worst visualization you've ever seen? Why do you not like it?
+answers: books, movies, TV shows, blogs, podcasts, etc. It does not
+have to be about data visualization.

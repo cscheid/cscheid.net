@@ -15,3 +15,10 @@ This is the course website for CS444/544, Data Visualization.
 ## Class materials
 
 * [Introduction, Week 1](lectures/week1.html).
+
+## Assignments
+
+* [Assignment 1](assignments_1.html), posted January 15th. Due January
+  22nd.
+  
+

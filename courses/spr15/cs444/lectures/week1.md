@@ -8,16 +8,16 @@ title: Week 1, Getting Started
 Welcome to CS444/CS544, Data Visualization. In this course, you will
 learn how, and why, to create data visualizations.
 
-Pay attention to this document: it serves as the syllabus for the
-course.
+Pay attention to this document: *it serves as the syllabus for the
+course*.
 
-Good data visualization involves a unique mix of human
+Good data visualization requires a mix of perceptual
 psychology, mathematics, and computer science. This makes our subject
-uniquely challenging: sometimes the physiology of our eyes stands in
+uniquely challenging: sometimes the way our eyes work stands in
 way of applying some beautiful result from computer science. Sometimes
 it's the other way around: something deep about the math in the data
-will help guide the design process and let us make a beautiful,
-informative, and true picture.
+will help guide the design process and let us make a picture that is beautiful,
+informative, and truthful.
 
 The content of the course is split roughly in three distinct aspects:
 mechanics, principles, and techniques.
@@ -26,17 +26,17 @@ mechanics, principles, and techniques.
 
 ## The why: principles
 
-Data visualization itself has existed for about 200 years; Playfair,
-Nightingale, Minard. Statistics in the 1900s, computers in the
-1950s. From the 1960s on, we started to realize that some things in
-visualization work better than others, and around 1980 scientists
-started seriously studying the effectiveness of data visualization as
-a medium itself. This program goes on to this day. 
-To give a few examples, we know that using *positions* works better than
-using *angles*; we know that using *length* works better than using
-*area*. We know that, in some cases, using *color intensity* works
-better than *color hue* (and that in other cases, it's the other way
-around).
+Data visualization itself has existed for at least 200 years; we'll learn
+about Playfair, Nightingale, Minard, and others.  Statistics in the
+1900s, computers in the 1950s; exploratory analysis.  From the 1960s
+on, we started to realize that some things in visualization work
+better than others, and around 1980 scientists started seriously
+studying the effectiveness of data visualization as a medium
+itself. This program goes on to this day.  To give a few examples, we
+know that using *positions* works better than using *angles*; we know
+that using *length* works better than using *area*. We know that, in
+some cases, using *color intensity* works better than *color hue* (and
+that in other cases, it's the other way around).
 
 We also know, since the 1960s, that *interaction* is a powerful
 idea. Back then people interacted with a data visualization by
@@ -100,16 +100,17 @@ When we talk about *mechanics*, we mean the practical, grungy things
 you will need to learn in order to create data visualizations. In this
 course, we will be using the web software stack. This means making
 visualizations through web pages, using HTML, CSS, and Javascript. The
-main domain-specific tool we'll have to learn is [d3](http://d3js.org).
+main domain-specific tool we'll learn is [d3](http://d3js.org).
 
-The modern web stack is good, bad, and ugly, and we will spend about
-two weeks in this course learning how to use it to make 
+The modern web stack is good, bad, and ugly. We will spend about
+four weeks in this course learning how to use it to make 
 visualizations.
 
-In this course, we will (of course) be dealing with data from many
+In this course, we will handle data from many
 different sources. As we will see, data is *dirty*: standard formats
 are not really standard, sometimes there's missing information in
-files, there's weird data points that don't belong (outliers), etc.
+files, there's weird data points that don't belong (outliers),
+etc.
 
 We will learn to do basic *exploratory* analysis in data:
 specifically, we will become comfortable with digging into a dataset
@@ -121,9 +122,9 @@ We will do one week of data cleaning and exploratory data analysis.
 
 ### List of Mechanics
 
-* basics of HTML, CSS, selectors
-* basics of Javascript
-* basics of SVG
+* HTML, CSS, selectors
+* Javascript
+* SVG
 * d3
   * Basics
   * Selections
@@ -173,7 +174,7 @@ will be discussed in class.
 Assessment of your performance in this course will be done mostly
 through projects. There will be a large number of small assignments,
 (about one per week for a total of 10-12 small assignments), which
-should take you less than two hours of time to complete. 
+should each take you less than two hours to complete.
 There will be one midterm, and one final project. In other
 words, there is no final exam in this course.
 
@@ -221,7 +222,28 @@ calibrating so that you can finish in one hour.
 
 ## Final project
 
-TBD.
+For the final project, you will build one larger visualization of your
+own choosing. You will use the mechanics, principles and techniques
+you learn in this course, and will be graded to the extent in which
+your visualization respects these. Each student can expect to spend
+about as much time on the final project as they will on all
+assignments, combined.
+
+### CS544 students
+
+If you are a 544 student, you are encouraged to replace the final
+project with a research-oriented project of your own choosing, as long
+as it:
+
+1) involves visualization
+
+2) is a concrete and significant step towards a research paper. 
+
+A successful final project will not have to be a paper (although if
+you *do* finish a solid manuscript, you're pretty much guaranteed an
+A)
+
+
 
 ## Grading
 
@@ -257,7 +279,7 @@ By dropout day, you will have more than 40% of your total weight.
 ## Plagiarism and open-source software
 
 We will use a lot of existing libraries in this course. This is good
-sense, and good practice: most programming nowadays is much more about
+sense, and good practice: much programming nowadays is more about
 finding the right set of libraries and learning how to combine them
 usefully than it is about designing new libraries from scratch. As a
 general rule, you are allowed to use any open source library you want
@@ -272,9 +294,10 @@ If you take an existing, however small, piece of code from elsewhere,
 use it in your coursework, and do not give attribution, this is
 plagiarism. Plagiarizing from classmates is not allowed, plagiarizing
 from sources on the web is not allowed, and plagiarizing *from
-yourself* is not allowed, either. You need to get in the habit of
-giving sources the proper attribution, and this course will be a great
-opportunity for that.
+yourself* is not allowed, either. In other words, I want to know how
+much of the code you turn in was written for this assignment in
+particular. It's ok if it only took 15 lines of code, and it's ok if
+takes 500. 
 
 In other words, plagiarism is cheating, and I will treat is as such.
 The penalty for cheating and plagiarism always includes a referral to
@@ -282,13 +305,73 @@ the college, and ranges from an automatic zero in the assignment, to a
 failing grade in the course, up to potential expulsion from the
 university.
 
+The main point is I want you to get in the habit of giving
+sources the proper attribution, and this course will be a great
+opportunity for that.
+
 ## Incomplete policy
 
-TBD.
+I only give incomplete grades with extenuating circumstances, and only
+on a case-by-case scenario. By the time I give you an incomplete
+grade, we will both have agreed on what exactly you need to finish,
+and by what time (I expect will you to have completed
+everything necessary before the end of summer).
 
 # A tour of visualizations, good, bad, and ugly
 
 By the end of this course, you will have the skills to create
-these visualizations yourself:
+many of these visualizations yourself.
 
-TBF.
+## The good
+
+- [The Periodic Table](http://en.wikipedia.org/wiki/Periodic_table).
+
+- [The Upshot's Rent vs. Own calculator](http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html?abt=0002&abg=0).
+
+- [The Upshot's per-precinct election maps](http://www.nytimes.com/interactive/2014/11/04/upshot/senate-maps.html).
+
+- [The Wind map](http://earth.nullschool.net/#2014/12/11/0900Z/wind/surface/level/orthographic=-115.81,34.51,1154).
+
+- [Stop-and-Frisk decline in New York City](http://www.nytimes.com/interactive/2014/09/19/nyregion/stop-and-frisk-map.html).
+
+- [America's Cup course in San Francisco](http://www.nytimes.com/interactive/2013/09/25/sports/americas-cup-course.html).
+
+- [Gun deaths in the US](http://guns.periscopic.com/?year=2010).
+
+
+## The bad, and the ugly
+
+- [Smartphone buyers](http://viz.wtf/post/107998162170/6-7-gender-neutral).
+
+- [A hairball](https://d148z92cppxlnu.cloudfront.net/wp-content/uploads/2012/02/ecoli_meta3_sm.png).
+
+- [Bad colormaps](https://twitter.com/_tessr/status/527639523610472449).
+
+- [More bad colormaps](http://bl.ocks.org/mbostock/3290752)
+([and how to fix them](http://bl.ocks.org/mbostock/3289530)).
+
+- [A compendium of bad infographics and visualizations](http://viz.wtf/).
+
+- [A non-periodic-table periodic table](http://visual.ly/periodic-table-figures-speech).
+
+- [Obvious chart is obvious](http://viz.wtf/image/102816501562).
+
+
+# Further reading, watching, etc.
+
+- [Jonathan Corum's Visualized 2014 keynote](http://vimeo.com/101957416). See also
+[this implementation](http://bl.ocks.org/mbostock/5415941) of the exoplanet visualization.
+
+- Mike Bostock's [blocks collection](http://bl.ocks.org/mbostock).
+
+## What's possible (if not easy) with today's web technology
+
+- Mike Bostock's
+[Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/).
+
+- Steven Wittens's
+[how to fold a Julia fractal](http://acko.net/blog/how-to-fold-a-julia-fractal/).
+
+- Bret Victor's
+[Up and Down the Ladder of Abstraction](http://worrydream.com/#!2/LadderOfAbstraction).
+
