@@ -3,16 +3,18 @@ layout: bootstrap
 title: "Assignment 1: Tell me about you"
 ---
 
+# Assignment 1
+
 - Posting date: Jan. 14th 2014
 - Due date: Jan. 19th 2014
 - Assignment name for `turnin`: `cs444_assignment_1`
+
+# Description
 
 Your first assignment is to fill out this questionnaire and submit it
 via turnin. This will ensure you know how `turnin` works, will
 ensure *I* know how `turnin` works, and will ensure that I can see
 your submissions.
-
-# Assignment 1
 
 You will turn in a single plain-text file called `answers.txt`. 
 This file should contain the answers to the questions below, formatted
