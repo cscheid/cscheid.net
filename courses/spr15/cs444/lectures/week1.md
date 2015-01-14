@@ -66,7 +66,7 @@ principles.
 
 In comparison to the relative paucity of principles, data
 visualization has an *enormity* of existing techniques. We will spend
-the remaining time of the course material going over existing
+about six weeks in this course going over existing
 techniques, and what kinds of data they apply to.
 
 Here, computer science has much to say about data
