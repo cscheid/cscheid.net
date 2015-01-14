@@ -34,9 +34,9 @@ that's the case.
 I am going to use the answers to calibrate the remainder of the
 course, so this is an opportunity for you to influence where the
 course goes. There are no right or wrong answers in this
-questionnaire. The All I ask is you answer honestly, without trying to
+questionnaire. All I ask is you answer honestly, without trying to
 figure out what I might want to read. The more you write, the more
-I'll know about your expectations and what you think is exciting.
+I'll know about your expectations and what you are interested in.
 
 # Questionnaire: tell me about you
 
