@@ -203,14 +203,14 @@ the 444 level vs. the 544 level will be:
 Small assignments will test whether you understood the concepts
 discussed in that particular week, and will be small and
 self-contained. You'll submit a webpage, typically, with a
-demonstration of the concept we discussed and a short explanation (no
-more than a paragraph or two).
+demonstration of the concept we discussed and a short explanation
+(around a paragraph or two).
 
 Assignments will be posted on thursdays, and will be due on the
 following thursday at the time class starts. My office hours will be
 tuesday, 9:00-11:30, and there will be no office hours on wednesday
 and thursday morning. This is so that I can use the tuesday lecture to
-talk about issues with the previous assignment, and to force you to
+talk about issues with the previous assignment, and to nudge you to
 get started more than 24 minutes (ahem, hours) before the deadline.
 
 ## Midterm
@@ -237,12 +237,15 @@ as it:
 
 1) involves visualization
 
-2) is a concrete and significant step towards a research paper. 
+2) is a concrete and significant step towards a research paper, either
+about using data visualization in your area of research, or a
+visualization research paper itself.
 
-A successful final project will not have to be a paper (although if
-you *do* finish a solid manuscript, you're pretty much guaranteed an
-A)
-
+A successful final project will not have to be a finished paper (although if
+you *do* finish a solid manuscript, you're essentially guaranteed an
+A), but it should be clear how to take what you have at the end of the
+course and turn it into a reasonable submission to a workshop,
+conference, or journal.
 
 
 ## Grading
@@ -272,7 +275,7 @@ Curve grading:
 In other words, for you to get an A, you need to *either* score 90%
 average or better in the overall performance, or be in the top 15% of
 the class. If you get an F, you will have been in the bottom 40%
-of the class, *and* in the bottom 40% of the performance.
+of the class, *and* have scored less than 40% of the possible total points.
 
 By dropout day, you will have more than 40% of your total weight.
 
@@ -319,8 +322,9 @@ everything necessary before the end of summer).
 
 # A tour of visualizations, good, bad, and ugly
 
-By the end of this course, you will have the skills to create
-many of these visualizations yourself.
+By the end of this course, you will have the skills to create many of
+these visualizations yourself, to tell whether they are a good or a
+bad design, and *why*.
 
 ## The good
 

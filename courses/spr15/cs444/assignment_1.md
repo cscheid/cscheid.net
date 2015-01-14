@@ -1,6 +1,6 @@
 ---
 layout: bootstrap
-title: Assignment 1: Tell me about you
+title: "Assignment 1: Tell me about you"
 ---
 
 - Posting date: Jan. 14th 2014
