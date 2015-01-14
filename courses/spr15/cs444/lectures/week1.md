@@ -9,15 +9,14 @@ Welcome to CS444/CS544, Data Visualization. In this course, you will
 learn how, and why, to create data visualizations. Pay attention to
 this document: *it serves as the syllabus for the course*.
 
-A "visualization" is a visual representation of something we are
-interested in. 
-
-It's *visual*: we will consume them with our eyes, and so it is
-essential for us to know how our eyes work --- and, more importantly,
-the parts of our brains. And it's also *representation*: we get to
-choose what the representation will be, and so we need to understand
-what happens when we make different choices.  We also will worry about
-primarily about *data* visualization: we want to understand
+A "visualization" is simply a visual representation of an object of
+our interest. It's *visual*: we consume them with our eyes, and so it is
+essential that we know how our eyes work --- and, more importantly,
+the parts of our brains connected to our eyes. It's also a
+*representation*; we get to choose what this representation will be,
+and different choices lead to different pictures, some good and some
+bad. We will learn how to tell those apart, and how to make pictures
+that are more good than bad.
 
 Good data visualization involves perceptual
 psychology, mathematics, and computer science. This makes our subject
@@ -52,9 +51,9 @@ carefully rearranging bits of paper (no supercomputers in our pockets
 yet!), but many of the original thoughts are still valid. We will
 learn the basics of interactive visualizations.
 
-Although much of what we know is finicky and specific, we do have some
-general principles. We will spend about four weeks studying these
-principles.
+Although much of what we know about visualization is finicky and
+specific, we have some general principles. We will spend about four
+weeks studying these principles.
 
 ### List of Principles
 
@@ -86,8 +85,8 @@ data. This means that the practice of data visualization needs to be
 informed by algorithmic constraints. 
 
 Data visualization also interacts with software engineering: not every
-visualization plays well with the rest of the code in your program and
-in your head.
+visualization algorithm plays well with the rest of the code in your
+program and in your head.
 
 ### List of Techniques
 
@@ -104,9 +103,9 @@ in your head.
 
 ## The how: mechanics
 
-When we talk about *mechanics*, we mean the practical, grungy things
+When we talk about *mechanics*, we mean the practical things
 you will need to learn in order to create data visualizations. In this
-course, we will be using the web software stack. This means making
+course, we will use the web software stack. This means making
 visualizations through web pages, using HTML, CSS, and Javascript. The
 main domain-specific tool we'll learn is [d3](http://d3js.org).
 
@@ -162,12 +161,12 @@ curious):
 * William Cleveland, The Elements of Graphing Data
 * William Cleveland, Visualizing Data
 * John W. Tukey, Exploratory Data Analysis
+* Edward Tufte, The Visual Display of Quantitative Information
 
 If you want to dive deeper into visualization, you should have read,
 at least once, the following books:
 
 * Jacques Bertin, Semiology of Graphics
-* Edward Tufte, The Visual Display of Quantitative Information
 * Edward Tufte, Visual Explanations
 * Edward Tufte, Envisioning Information
 * Colin Ware, Information Visualization
@@ -176,6 +175,16 @@ We will also be reading some web pages and some research papers
 (especially CS544 students). When you're expected to read material
 ahead of time, the material will be posted on the course web page, and
 will be discussed in class.
+
+# Discussion Fora
+
+Offline student discussion is welcome, as long as it does not involve
+sharing of assignment source code (see the
+[Academic Conduct](#academic-conduct-plagiarism-and-open-source-software)
+section below). Discussion on the
+[Piazza](https://piazza.com/arizona/spring2015/cs444544/home) site is
+especially encouraged, since we can monitor it and will count towards
+class participation.
 
 # Assessment
 
@@ -288,7 +297,10 @@ of the class, *and* have scored less than 40% of the possible total points.
 By March 31st (your last day to withdraw), you will know more than 40%
 of your grade by weight.
 
-## Plagiarism and open-source software
+Grades for assignments, midterm and final project will be posted on
+D2L as soon as we have them.
+
+## Academic conduct, plagiarism, and open-source software
 
 We will use a lot of existing libraries in this course. This is good
 sense, and good practice: much programming nowadays is more about
