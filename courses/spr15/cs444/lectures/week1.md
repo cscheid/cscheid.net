@@ -6,12 +6,20 @@ title: Week 1, Getting Started
 # CS444/544: Data Visualization
 
 Welcome to CS444/CS544, Data Visualization. In this course, you will
-learn how, and why, to create data visualizations.
+learn how, and why, to create data visualizations. Pay attention to
+this document: *it serves as the syllabus for the course*.
 
-Pay attention to this document: *it serves as the syllabus for the
-course*.
+A "visualization" is a visual representation of something we are
+interested in. 
 
-Good data visualization requires a mix of perceptual
+It's *visual*: we will consume them with our eyes, and so it is
+essential for us to know how our eyes work --- and, more importantly,
+the parts of our brains. And it's also *representation*: we get to
+choose what the representation will be, and so we need to understand
+what happens when we make different choices.  We also will worry about
+primarily about *data* visualization: we want to understand
+
+Good data visualization involves perceptual
 psychology, mathematics, and computer science. This makes our subject
 uniquely challenging: sometimes the way our eyes work stands in
 way of applying some beautiful result from computer science. Sometimes
@@ -241,11 +249,11 @@ as it:
 about using data visualization in your area of research, or a
 visualization research paper itself.
 
-A successful final project will not have to be a finished paper (although if
-you *do* finish a solid manuscript, you're essentially guaranteed an
-A), but it should be clear how to take what you have at the end of the
-course and turn it into a reasonable submission to a workshop,
-conference, or journal.
+A successful final project does not have to be a finished paper
+(although if you *do* finish a solid manuscript, you're essentially
+guaranteed an A), but the clearer it is how to take what you have and
+turn it into a reasonable submission to a workshop, conference, or
+journal, the better.
 
 
 ## Grading
@@ -277,7 +285,8 @@ average or better in the overall performance, or be in the top 15% of
 the class. If you get an F, you will have been in the bottom 40%
 of the class, *and* have scored less than 40% of the possible total points.
 
-By dropout day, you will have more than 40% of your total weight.
+By March 31st (your last day to withdraw), you will know more than 40%
+of your grade by weight.
 
 ## Plagiarism and open-source software
 
@@ -371,11 +380,16 @@ bad design, and *why*.
 ## What's possible (if not easy) with today's web technology
 
 - Mike Bostock's
-[Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/).
+[Visualizing Algorithms](http://bost.ocks.org/mike/algorithms/), for
+fantastic examples of how to use visualization to understand
+*behavior*, not *data*.
 
 - Steven Wittens's
-[how to fold a Julia fractal](http://acko.net/blog/how-to-fold-a-julia-fractal/).
+[how to fold a Julia fractal](http://acko.net/blog/how-to-fold-a-julia-fractal/),
+for examples of how to use visualization to understand mathematics.
 
 - Bret Victor's
-[Up and Down the Ladder of Abstraction](http://worrydream.com/#!2/LadderOfAbstraction).
+[Up and Down the Ladder of Abstraction](http://worrydream.com/#!2/LadderOfAbstraction),
+for ideas on how to use interaction *and* visualization to
+understand behavior.
 
