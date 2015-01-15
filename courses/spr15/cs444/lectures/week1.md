@@ -349,7 +349,13 @@ bad design, and *why*.
 
 ## The good
 
-- [The Periodic Table](http://en.wikipedia.org/wiki/Periodic_table).
+-
+  [The Periodic Table](http://en.wikipedia.org/wiki/Periodic_table). You
+  might not think of the Periodic Table as a good visualization. 
+  It is nevertheless an *especially* good one, because of its brilliant spatial
+  arrangement of elements in ways that make your eyes think for you:
+  electron affinity up and to the right; metallic character down and
+  to the left; etc.
 
 - [The Upshot's Rent vs. Own calculator](http://www.nytimes.com/interactive/2014/upshot/buy-rent-calculator.html?abt=0002&abg=0).
 
@@ -368,7 +374,10 @@ bad design, and *why*.
 
 - [Smartphone buyers](http://viz.wtf/post/107998162170/6-7-gender-neutral).
 
-- [A hairball](https://d148z92cppxlnu.cloudfront.net/wp-content/uploads/2012/02/ecoli_meta3_sm.png).
+- [A hairball](https://d148z92cppxlnu.cloudfront.net/wp-content/uploads/2012/02/ecoli_meta3_sm.png). We
+  didn't have to go into this in class, but we'll learn in the
+  Principles section why this is a terrible visualization, and in the
+  Techniques section how to create something better.
 
 - [Bad colormaps](https://twitter.com/_tessr/status/527639523610472449).
 
