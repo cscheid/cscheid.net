@@ -22,7 +22,7 @@ This is the course website for CS444/544, Data Visualization.
 
 ## Assignments
 
-* [Assignment 1](assignments_1.html), posted January 15th. Due January
+* [Assignment 1](assignment_1.html), posted January 15th. Due January
   22nd.
 
 ## Tentative Schedule
