@@ -15,6 +15,7 @@ This is the course website for CS444/544, Data Visualization.
 * Office Hours: Tuesday, 9:00-11:30. Otherwise by appointment only.
 * When: Tuesdays and Thursdays, 2:00PM-3:15PM
 * Where: GS906
+* Questions? Comments? Discussion? [Piazza](piazza.com/arizona/spring2015/cs444544/).
 
 ## Class materials
 
