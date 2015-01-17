@@ -5,16 +5,16 @@ title: "Assignment 1: Tell me about you"
 
 # Assignment 1
 
-- Posting date: Jan. 14th 2014
-- Due date: Jan. 19th 2014
+- Posting date: Jan. 14th 2015
+- Due date: Jan. 22nd 2015, 1:59PM MST. (it is due *by thursday's lecture*)
 - Assignment name for `turnin`: `cs444_assignment_1`
 
 # Description
 
 Your first assignment is to fill out this questionnaire and submit it
-via turnin. This will ensure you know how `turnin` works, will
-ensure *I* know how `turnin` works, and will ensure that I can see
-your submissions.
+via `turnin`. This is mostly a test to ensure you know how `turnin`
+works, will ensure *I* know how `turnin` works, and to ensure that I
+can see your submissions.
 
 You will turn in a single plain-text file called `answers.txt`. 
 This file should contain the answers to the questions below, formatted
@@ -66,3 +66,9 @@ non-binding, but I want you to start thinking about it)
 meeting with a friend, what would you chitchat about? Possible
 answers: books, movies, TV shows, blogs, podcasts, etc. It does not
 have to be about data visualization.
+
+# How to use `turnin`
+
+If you haven't used `turnin`, our department's assignment submission
+system, you should go over
+[Prof. McCann's submission instructions](http://www.cs.arizona.edu/people/mccann/submission.pdf).
