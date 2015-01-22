@@ -13,7 +13,7 @@ This is the course website for CS444/544, Data Visualization.
   [spring15cs444@cs.arizona.edu](mailto:spring15cs444@cs.arizona.edu)
   *Use this email for urgent class-related questions and
   comments*. It will reach both Nathan and Carlos. For content
-  discussions, please use [Piazza](piazza.com/arizona/spring2015/cs444544/).
+  discussions, please use [Piazza](http://piazza.com/arizona/spring2015/cs444544/).
 * Lectures: Tuesdays and Thursdays, 2:00PM-3:15PM, GS906
 * Office Hours: Tuesdays, 9:00-11:30, GS734. Otherwise by appointment only.
 
