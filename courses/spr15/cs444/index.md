@@ -22,10 +22,12 @@ This is the course website for CS444/544, Data Visualization.
 * [Introduction, Week 1](lectures/week1.html),
   [slides](slides/lecture 1.pdf).
 
-## Assignments
+## [Assignments](assignments.html)
 
 * [Assignment 1](assignment_1.html), posted January 15th. Due January
   22nd.
+* [Assignment 2](assignment_2.html), posted January 22nd. Due January
+  29th.
 
 ## Tentative Schedule
 
