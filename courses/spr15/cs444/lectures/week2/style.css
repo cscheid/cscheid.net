@@ -1,3 +1,26 @@
+/* select on element name */
+em {
+    color: blue;
+}
+
+/* select on a class */
+.title {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* select on an id */
+#create {
+    font-size: 300%;
+}
+
+/* select on a *path*: u inside strong */
+strong > u {
+    background-color: gray;
+}
+
+/**********************************/
+/* These style declarations are used by the d3 code */
+
 .node rect {
   cursor: pointer;
   fill: #fff;
