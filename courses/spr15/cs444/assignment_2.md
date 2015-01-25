@@ -43,7 +43,7 @@ The name of the file should be `index.html`.
 
 Your bar charts should take all horizontal space in the SVG (all 400
 pixels). The individual bars should have the following height, in order: `150,
-225, 255, 300, 300, 225, 225, 150`.
+225, 225, 300, 300, 225, 225, 150`.
 
 You should create a bar chart with blue bars in the SVG element named
 `blue_bar_chart`, and a bar chart with red bars in the SVG element
