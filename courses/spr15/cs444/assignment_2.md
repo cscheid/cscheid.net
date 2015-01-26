@@ -104,9 +104,9 @@ Your pie chart will look very similar to this:
 
 - Mozilla Developer Network:
 
-  - [https://developer.mozilla.org/en-US/docs/Web/CSS](CSS)
+  - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
   
-  - [https://developer.mozilla.org/en-US/docs/Web/SVG](SVG)
+  - [SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 
 - Scott Murray's book,
   [SVG section](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#SVG_3).
