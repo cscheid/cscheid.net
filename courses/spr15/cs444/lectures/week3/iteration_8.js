@@ -50,8 +50,8 @@ function color(count) {
     // count = 0 -> #ffffff (white)
 
     var amount = (2500 - count) / 2500 * 255;
-    var s = toHex(amount);
-    return "#" + s + s + s;
+    var s = toHex(amount), s2 = toHex(amount / 2 + 127), s3 = toHex(amount / 2 + 127);
+    return "#" + s + s2 + s3;
 }
 
 function radius(amount) {
@@ -78,7 +78,7 @@ plotAll(chart2, ukDriverFatalities, "circle", {
     cx: function(row) { return Math.ceil(600 / (1984 - 1969 + 1)) * (row.year - 1969 + 0.5); },
     cy: function(row) { return Math.ceil(300 / 12) * (11 - row.month + 0.5); },
     r: function(row) {
-        return row.count / 200;
+        return row.count / 500 * 3;
     },
     stroke: function() { return "blue"; },
     fill: function() { return "white"; }

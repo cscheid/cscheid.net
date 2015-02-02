@@ -22,6 +22,8 @@ This is the course website for CS444/544, Data Visualization.
 * [Week 1, Introduction](lectures/week1.html),
   [slides](slides/lecture 1.pdf).
 * [Week 2, HTML/CSS/SVG Basics](lectures/week2.html).
+* [Week 3, JavaScript Basics](lectures/week3.html).
+* [Week 3b, JavaScript for simple visualizations](lectures/week3b.html).
 
 ## [Assignments](assignments.html)
 

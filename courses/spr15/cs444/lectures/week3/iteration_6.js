@@ -14,7 +14,7 @@ function plotAll(svg, data, widthGetter, heightGetter, xGetter, yGetter)
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// these are what we had before
+// these are now getter *generators*
 
 function rectWidth(svgWidth) { 
     return function() { 
@@ -41,7 +41,7 @@ function rectY(svgHeight) {
 }
 
 //////////////////////////////////////////////////////////////////////////////
-// This is what we'll do now: different getters for different sizes
+// This is what we'll do now: call getter generator with different parameter
 
 var chart1 = make("svg", { width: 800, height: 400, "class": "my-chart" });
 document.getElementById("chart1").appendChild(chart1);
