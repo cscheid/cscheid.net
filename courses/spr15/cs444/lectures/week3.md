@@ -337,11 +337,16 @@ with a set prototype:
     v2 = Object.create(base);
     v3 = Object.create(v2); // etc.
 
-## The special `this` object
+## The special variable `this`
 
-To be finished.
+JavaScript has a special variable that is available at every scope
+called `this`. When a function is called with a notation that
+resembles methods in typical object-oriented languages, say
+`obj.method()`, then `this` is bound to the object holding the method
+(in this case `obj`). `this` allows you to make changes to the local
+object:
 
-    function weirdObject(value)
+    function otherObject(value)
     {
         return {
             x: value,
@@ -353,34 +358,84 @@ To be finished.
             }
         };
     }
-    
-    weird = weirdObject(3);
-    weird.x;
-    weird.get();
-    weird.set(5);
-    weird.get();
-    weird.x; // compare example to "createObject"
 
-    // every javascript scope includes the binding for "this"
-    
-    // the syntax obj.method(parameters) is special
-    // and so is obj["method"](parameters). what happens in these cases
-    // is: JavaScript calls the function at the slot "method" of object obj,
-    // and binds obj to "this" in the function scope.
-    
-    // the lesson is important to remember, because d3 uses "this" extensively,
-    // and "this" interacts weirdly with storing function values in variables,
-    // which is also something that you'll do in d3. So you need to be aware these
-    // things:
+Now try running these examples:
+
+    other = otherObject(3);
+    other.x;
+    other.get();
+    other.set(5);
+    other.get();
+    other.x; // compare example to "createObject"
+
+So far, so good: we've used `this` to change the value bound to the
+`x` field in the object from the object itself. That's pretty
+convenient.
+
+However, the conenience comes with a caveat. The way JavaScript
+decides to associate `this` with a given object is simple to explain,
+but sometimes leads to strange behavior. The way it works is that
+although `obj.someFunction` is the syntax to access the `someFunction`
+slot from obj *and* `someFunction(parameter)` is the syntax to call a
+the function value bound to `someFunction` with parameter `parameter`,
+the syntax `obj.someFunction(parameter)` is *not* equivalent to
+storing `obj.someFunction` to some temporary variable and calling
+that. In other words, the syntax `obj.someFunction(parameter)`
+consisting of those three things next to one another is *special* to
+JavaScript.
+
+Here's what can go wrong:
+
+	function yetAnotherObject()
+	{
+		return {
+			x: 3,
+			get(): function() { return this.x };
+		};
+	}
+
+	obj = yetAnotherObject()
+	console.log(obj.get()); // fine
+	var t = obj.get;
+	console.log(t()); // *NOT* fine
+
+What happened in the example that goes wrong is that when `t()` is
+called, JavaScript doesn't see the special notation
+`obj.method(params)`, and so it keeps the binding of `this` to its
+present value.
+
+Anytime you use `this` and something goes wrong, the first you should
+try to check is whether some call in your chain forgot to set the
+binding by using the right syntax.
 
 # DOM Manipulation
 
-    To be finished.
-    
+So that is the very basics of JavaScript, and enough to get you
+through pretty much everything we'll see in class.
+
+Like
+we've seen in class, the HTML we write is represented as a tree inside
+a web browser. What we are going to turn to now are the JavaScript APIs that web
+browsers provide to let you *edit* the DOM dynamically, so that we can
+build our visualizations with code instead of text editors.
+
+Let's get some boilerplate out of the way. (Note that the following
+assumes that your document contains an element with `id` "hi". If not,
+you'll have to create one such element first)
+
     function radians(v) { return v * (Math.PI / 180); }
     
+The method `getElementById` is used to return get an element from the
+DOM (remember that an 'element' is simply a tree node):
+	
     mainDiv = document.getElementById("hi");
+	
+To add nodes to an existing node, use `appendChild`. To create text
+content, use `document.createTextNode`:
+	
     mainDiv.appendChild(document.createTextNode("This is some text"));
+	
+With these, we can start to build software that creates more complex trees:
     
     function divWithText(text) {
         var result = document.createElement("div");
@@ -395,13 +450,19 @@ To be finished.
     
     x = divWithText("X");
     mainDiv.appendChild(x);
+	
+Sometimes, the appearance of an element is controlled by its
+*attributes* (the things inside the opening tag; in `<div id="foo"/>`,
+the attribute `id` has value `foo`:
     
     function textAt(text, x, y) {
         var node = divWithText(text);
         node.setAttribute("style", "position:absolute; left: " + x + "px; top: " + y + "px;");
         return node;
     }
-    
+
+With this, we can place text at specific positions on the screen:
+
     mainDiv.appendChild(textAt("hi", 20, 30));
     for (i=0; i<360; i+=30) {
         mainDiv.appendChild(textAt(
@@ -409,7 +470,11 @@ To be finished.
             100 + 100 * Math.cos(radians(i)), 
             100 + 100 * Math.sin(radians(i))));
     }
-    
+
+Remember that in JavaScript we can attach new fields to existing
+objects. You can do this to DOM elements returned by the API, and that
+turns out to be very powerful:
+
     function numberText(v) {
         var node = divWithText(String(Math.floor(v)));
         node.update = function(amount) {
@@ -422,34 +487,72 @@ To be finished.
         node.update(0);
         return node;
     }
-    
+
+Note how in the above snippet, we are adding a new method `update` to
+the node returned by `divWithText`. When this method is called, we use
+add passed value to the current amount (stored at `v`), compute new
+positions from `v`, and update the text content of the node.
+
+With this function on hand, we can start working towards an animated
+demo. We begin by creating a list of nodes and storing them in an
+array.
+
     var nodes = [];
     for (i=0; i<360; i+=30) {
         node = numberText(i);
         mainDiv.appendChild(node);
         nodes.push(node);
     }
-    
+
+Then every time we want to move the nodes around the circle, we simply
+call the `update` method:
+
     for (i=0; i<nodes.length; ++i) {
         nodes[i].update(10);
     }
-    
+
+If we put this in a function, then all we need to do is call the
+function over and over again.
+
     function tick() {
         var i;
         for (i=0; i<nodes.length; ++i) {
             nodes[i].update(1);
         }
     }
-    
+
+We're almost there. The main issue, now, is that we have to be careful
+not to send the web browser into an endless loop. For example, the
+following does *not* work:
+
 	// This will crash your browser (well, it'll send it looping
     // forever until Chrome decides to kill the JavaScript process)
-    function badTickForever() {
+	while (true) {
         tick();
-        badTickForever();
     }
-    
+	
+The reason for it is that although the element attributes are being
+changed, the user of the web browser does not get to see it, because
+the web browser does not ever get a chance to update the graphical
+representation of the DOM. The way to solve this problem is by using a
+special browser API called `requestAnimationFrame`. This API lets you
+tell a web browser that you'd like the opportunity to change something
+in the DOM. The next time the web browser is sitting idly,
+after having drawn all of its needed graphics, it will call the
+function passed as a parameter. Then, we just need to make sure that
+after updating the graphics, we call `requestAnimationFrame` again. It
+looks like this:
+
+	// this works!
     function tickForever() {
         tick();
         window.requestAnimationFrame(tickForever);
     }
    
+This is very much like a recursive version of the endless loop above
+(`function f() { tick(); f(); }`).  The fundamental difference here is
+that instead of making the recursive call directly, we ask the browser
+to make the recursive call, *after* it has updated the graphics. This
+way there's always a step in between every update where the web
+browser updates the UI and graphics, and you get nice animations as a
+result.
