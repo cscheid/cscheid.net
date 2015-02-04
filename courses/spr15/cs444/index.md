@@ -24,6 +24,7 @@ This is the course website for CS444/544, Data Visualization.
 * [Week 2, HTML/CSS/SVG Basics](lectures/week2.html).
 * [Week 3, JavaScript Basics](lectures/week3.html).
 * [Week 3b, JavaScript for simple visualizations](lectures/week3b.html).
+* [Week 4, Odds and Ends](lectures/week4.html): JavaScript Events, AJAX, HTTP.
 
 ## [Assignments](assignments.html)
 
@@ -33,6 +34,8 @@ This is the course website for CS444/544, Data Visualization.
   29th.
 * [Assignment 3](assignment_3.html), posted January 29th. Due February
   5th.
+* [Assignment 4](assignment_4.html), posted February 5th. Due February
+  12th.
 
 ## Tentative Schedule
 

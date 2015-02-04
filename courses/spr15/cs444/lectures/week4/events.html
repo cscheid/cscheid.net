@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <style>
+    .log-entry {
+      padding-left: .5em;
+      padding-right: .5em;
+    }
+    </style>
+  </head>
+  <body>
+    <svg width=400 height=400>
+      <circle id="circle" cx=300 cy=300 r=90 fill="#669933" stroke="black"/>
+      <rect id="rect" x=20 y=180 width=200 height=200 fill="#336600" stroke="black"/>
+
+      <g id="group">
+      	<rect id="r1" x=20 y=20 width=60 height=60 fill="#ff8888" stroke="black"/>
+      	<rect id="r2" x=30 y=30 width=60 height=60 fill="#ee9988" stroke="black"/>
+      	<rect id="r3" x=40 y=40 width=60 height=60 fill="#ddaa88" stroke="black"/>
+      	<rect id="r4" x=50 y=50 width=60 height=60 fill="#ccbb88" stroke="black"/>
+      	<rect id="r5" x=60 y=60 width=60 height=60 fill="#bbcc88" stroke="black"/>
+      	<rect id="r6" x=70 y=70 width=60 height=60 fill="#aadd88" stroke="black"/>
+      	<rect id="r7" x=80 y=80 width=60 height=60 fill="#99ee88" stroke="black"/>
+      	<rect id="r8" x=90 y=90 width=60 height=60 fill="#88ff88" stroke="black"/>
+      </g>
+    </svg>
+    <div id="logging" style="background-color: #eeeeee">
+    </div>
+    <script src="events.js"></script>
+  </body>
+</html>

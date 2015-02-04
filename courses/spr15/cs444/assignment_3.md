@@ -95,7 +95,10 @@ color? It might help to remember the discussion we had in class about
 [preattentive processing](http://www.csc.ncsu.edu/faculty/healey/PP/).
 
 - Visualization 1 suffers from some amount of overplotting. How would
-you solve it?
+you solve it? (*Overplotting* is what happens when the second shape
+your draw goes entirely over the first shape. As a result, you cannot
+tell if the first point was there to begin with, or, more generally,
+how many points are "hiding")
 
 ## Extra credit (50% total)
 
