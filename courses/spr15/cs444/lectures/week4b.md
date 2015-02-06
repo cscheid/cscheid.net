@@ -34,14 +34,14 @@ to write code to manipulate the HTML document, and this how to create
 graphical elements from data: visualizations! Finally, you've seen why
 it makes sense to structure your basic visualization code around
 looping over the dataset, and [mapping parts of each data point to
-parts of a graphical elements](week3b.html).
+different aspects of a graphical element](week3b.html).
 
-If you don't understand some of these parts, I strongly urge you to go
-back to the lecture notes of previous weeks and make sure you
-understand them. From now on, the course will start picking up pace,
-and we will need all of this material as prerequisite. Specifically,
-make sure you understand how the
-[last iteration](week3/iteration_8.html) of our very simplified
+If you don't understand some of these things above, I strongly urge
+you to go back to the lecture notes of previous weeks and read them
+over again until you do. From now on, the course will pick up
+its pace, and we will need all of this material as
+prerequisites. Specifically, make sure you understand how the
+[last iteration](week3/iteration_8.html) of our simplified
 visualization library operates. If you understand how that works, you
 will understand a lot of how d3 works.
 
@@ -50,7 +50,7 @@ will understand a lot of how d3 works.
 [D3](http://d3js.org) is a JavaScript library originally written by
 Mike Bostock, Vadim Ogievetsky, and Jeff Heer; at this point it has a
 large number of contributors, and it's one of the overall most popular
-open-source projects on GitHub (!). D3 certainly owes some of its
+projects on GitHub (!). D3 certainly owes some of its
 popularity to riding the everything-on-the-web
 wave. Nevertheless, the way in which you can express relationships
 between *data* and *visual elements* is fundamentally superior than
@@ -78,21 +78,31 @@ In order to follow the basic examples that are given below, open
 developer console. We'll be typing code into the console and examining
 what happens.
 
-
-
-d3.select("#test").append("svg").attr({width:500,height:500}).selectAll("rect").data(d1).enter().append("rect").attr({x: function(d,i) { return i * 50; }, y: 0, width: 50, height: function(d) { return d * 50; }})
+    d3.select("#test").append("svg")
+		.attr({width:500,height:500})
+		.selectAll("rect").data(d1).enter()
+		.append("rect").attr({
+			x: function(d,i) { return i * 50; }, y: 0, 
+			width: 50, height: function(d) { return d * 50; }})
 
 ## Scales
 
-It turns all of that weird junky code we had in our iteration_8 into
-something that actually makes sense. And, for the people who tried to
+It turns all of that weird junky code with divisions and
+multiplications that we had in [iteration_8](week3/iteration_8.html) can be rewritten into
+something that actually makes sense.
+
+And, for the people who tried to
 add the axis lines and labels to your previous assignment: d3 scales
 store the extra information about domain and range, and can be used to
 create axis lines much more easily.
 
+To be finished.
+
 ## transitions
 
-Animations prevent change blindness. d3 has excellent support for them.
+Animations prevent change blindness. d3 has excellent support for
+them: 99% of the time it's just a matter of sticking `.transition()`
+between your selection and your attribute assignments:
 
     d3.select("#test")
 		.selectAll("rect")
@@ -100,8 +110,12 @@ Animations prevent change blindness. d3 has excellent support for them.
 		.transition()
 		.attr("height", function(d) { return d * 50; })
 
+To be finished.
+
 ## event handlers
 
 Adding interactivity, tied to the *data*, and not to the DOM
 element. This is extremely convenvient.
+
+To be finished.
 
