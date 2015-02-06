@@ -25,6 +25,7 @@ This is the course website for CS444/544, Data Visualization.
 * [Week 3, JavaScript Basics](lectures/week3.html).
 * [Week 3b, JavaScript for simple visualizations](lectures/week3b.html).
 * [Week 4, Odds and Ends](lectures/week4.html): JavaScript Events, AJAX, HTTP.
+* [Week 4b, Introduction to d3](lectures/week4b.html)
 
 ## [Assignments](assignments.html)
 
@@ -61,7 +62,7 @@ This is the course website for CS444/544, Data Visualization.
 * Mar 26th: MIDTERM
 * Mar 31st: Catchup?
 * Apr 2nd: Catchup?
-* Apr 7th: Line Plots, Dot Plots, Scatterplots
+* Apr 7th: Line Plots, Dot Plots, Scatterplots, Small multiples
 * Apr 9th: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 14th: Hierarchical Data
 * Apr 16th: Directed and Undirected Graphs
