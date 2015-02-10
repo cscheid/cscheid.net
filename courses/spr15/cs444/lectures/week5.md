@@ -332,8 +332,4 @@ can use the *same* piece of code to do it *in an animation*. In
 addition, you will be able to control the way an animation looks by
 using many of the same d3 concepts.
 
-[^1]: In fact, even `.append()` operates on data! But that's rare
-enough that 99% of the time you just give it a constant string. It has
-special-case behavior when you do, creating fresh elements of the
-given node type instead of just using it. That's why we only mention
-it in footnotes.
+[^1]: In fact, even `.append()` operates on data! But that's rare enough that 99% of the time you just give it a constant string. It has special-case behavior when you do, creating fresh elements of the given node type instead of just using it. That's why we only mention it in footnotes.
