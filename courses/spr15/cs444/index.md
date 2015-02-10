@@ -26,6 +26,7 @@ This is the course website for CS444/544, Data Visualization.
 * [Week 3b, JavaScript for simple visualizations](lectures/week3b.html).
 * [Week 4, Odds and Ends](lectures/week4.html): JavaScript Events, AJAX, HTTP.
 * [Week 4b, Introduction to d3](lectures/week4b.html)
+* [Week 5, d3 selections and joins](lectures/week4b.html)
 
 ## [Assignments](assignments.html)
 
