@@ -18,12 +18,12 @@ might return a selection, on which you call selection methods... For
 example:
 
     d3.select("body")   // returns a selection!
-	    .selectAll("div") // from which we select all divs, into a new selection!
-	    .data([1,2,3,4]) // which d3 associates with that array, 
-		                 // and returns a new selection
-		.text(function(d) { return "value: " + String(d); })
-		    // in which we set some values, and get a new selection...
-		.style("font-weight", "bold");
+        .selectAll("div") // from which we select all divs, into a new selection!
+        .data([1,2,3,4]) // which d3 associates with that array, 
+                         // and returns a new selection
+        .text(function(d) { return "value: " + String(d); })
+            // in which we set some values, and get a new selection...
+        .style("font-weight", "bold");
 
 This style has many advantages. When you get used to it, the code is
 much more readable (you scan the code like this: select, then set some
@@ -42,11 +42,11 @@ The basic logic of d3 selection is that *selections choose DOM elements,
 and selection methods operate on data*. Take this basic example:
 
     d3.select("body")
-	    .selectAll("div")
-		.data([1,2,3,4,5])
-		.enter()
-		.append("div")
-		.text(function(d) { return String(d); });
+        .selectAll("div")
+        .data([1,2,3,4,5])
+        .enter()
+        .append("div")
+        .text(function(d) { return String(d); });
 
 We will unpack the meaning of all of these methods in a bit. But for
 now, simply pay attention to the kinds of things referenced used in
@@ -129,14 +129,14 @@ basic methods available:
   order to increase abstraction, you wrap it in a function:
   
       function setManyAttributes(selection) {
-	      return selection.classed("important", true)
-		      .attr("href", function(d) { return d.link; });
-	  }
-	  
+          return selection.classed("important", true)
+              .attr("href", function(d) { return d.link; });
+      }
+      
   You could write, for example,
   
       setManyAttributes(d3.selectAll("a.my-links"))
-	      .style("color", "blue");
+          .style("color", "blue");
 
   but now you have to read it all out of order: first, the selection
   of `a.my-links` happens, then you `setManyAttributes`, and finally
@@ -144,8 +144,8 @@ basic methods available:
   same code like this:
   
       d3.selectAll("a.my-links")
-	      .call(setManyAttributes)
-		  .style("color", "blue");
+          .call(setManyAttributes)
+          .style("color", "blue");
 
   That's much nicer.
   
@@ -210,21 +210,21 @@ selections. This is why when you want to create new elements, the
 pattern in your code that calls d3 looks like this:
 
     d3.select("body")
-	    .selectAll("div")   // empty selection!
+        .selectAll("div")   // empty selection!
         .data([1,2,3,4,5])  // empty *update* selection, but..
-		.enter()            // nonempty *enter* selection!
-		.append("div")      // append a div for every value in 
-		                    // enter selection
+        .enter()            // nonempty *enter* selection!
+        .append("div")      // append a div for every value in 
+                            // enter selection
 
 Conversely, if you want to *remove* unneeded DOM elements from your
 visualization (because, for example, your dataset dynamically changes,
 and now there are only half as many values), you use the *exit* selection and `remove`
 
     d3.selectAll("div")    // there were 20 elements
-	    .data([1,2,3,4,5]) // update selection with 5 elements
-		.text(...)         // update text of DOM elements we want to keep
-		.exit()            // get the elements with no data
-		.remove()          // remove them from DOM
+        .data([1,2,3,4,5]) // update selection with 5 elements
+        .text(...)         // update text of DOM elements we want to keep
+        .exit()            // get the elements with no data
+        .remove()          // remove them from DOM
 
 ## Recap
 
@@ -232,11 +232,11 @@ So let's look back at our basic example, and now every part of it
 should make perfect sense
 
     d3.select("body")       // selects the body element
-	    .selectAll("div")   // selects every div inside it (none!)
-		.data([1,2,3,4,5])  // creates (empty!) update selection with data,
+        .selectAll("div")   // selects every div inside it (none!)
+        .data([1,2,3,4,5])  // creates (empty!) update selection with data,
         .enter()            // get the enter selection from the update selection
-		.append("div")      // append div elements for all data, bind data to it
-		.text(function(d) { return String(d); }); // set text
+        .append("div")      // append div elements for all data, bind data to it
+        .text(function(d) { return String(d); }); // set text
 
 # Nested selections
 
