@@ -15,7 +15,7 @@ title: "Assignment 4: d3 basics"
 
 In this assignment, you will recreate some of the previous
 visualizations we've seen in class. Specifically, you will recreate
-the examples in the [last iteration](week3/iteration_8.html) of the
+the examples in the [last iteration](lectures/week3/iteration_8.html) of the
 code we developed in Lecture 3, and you will also recreate the first
 visualization of Assignment 3.
 
