@@ -24,7 +24,7 @@ example:
         .text(function(d) { return "value: " + String(d); })
                           // to which we add some text, and get a new selection...
         .style("font-weight", "bold");
-		                  // which we make all elements bold. 
+                          // which we make all elements bold. 
 
 This style has many advantages. When you get used to it, it is
 more readable (you scan the code like this: select, then set some
@@ -251,11 +251,11 @@ subset of movies, and a query of "George Clooney" would include an
 overlapping set of movies. Imagine that each value in this movie dataset looks like this:
 
     {
-	  title: "Gravity",
-	  id: "tt1454468",
-	  year: 2013,
-	  gross: 274084951
-	}
+      title: "Gravity",
+      id: "tt1454468",
+      year: 2013,
+      gross: 274084951
+    }
 
 As you switch the data from a Bullock view to a Clooney one, you know
 that Gravity will be part of both plots (so you want that data point
@@ -269,15 +269,15 @@ then d3 uses that function to retrieve keys. In this example, you would say:
 
 
     var imdbResult = [ 
-  	  {
-	    title: "Gravity",
-	    id: "tt1454468",
-	    year: 2013,
-	    gross: 274084951
-	  }, ... ];
-	  
+      {
+        title: "Gravity",
+        id: "tt1454468",
+        year: 2013,
+        gross: 274084951
+      }, ... ];
+      
     selection.data(imdbResult, function(entry) { return entry.id; })
-	   ...
+       ...
 
 This way, when a new dataset comes in, you use the same key accessor on
 the same selection, and d3 knows to match DOM elements to values via
@@ -308,19 +308,19 @@ Take some time to read the code below. It's a good example of d3's
 incredibly elegant design:
 
     var data = [[1,2,3],
-	            [4,5,6],
-			    [7,8,9]];
+                [4,5,6],
+                [7,8,9]];
     d3.select("body").append("table")
-	    .selectAll("tr")
-		.data(data)      // give the 'tr' selection a nested array
-		.enter()         // pick the enter selection
-		.append("tr")    // append a 'tr' element for each element in the outer array
-		.selectAll("td") // now select 'td' elements
-		.data(function(r) { return r; }) // for each 'tr' element, return its row!
-		.enter()                         // now do the same thing!
-		.append("td")                    // for each row, append a 'td' element
-		.text(function(d) { return String(d); });
-		                                  // and set its text
+        .selectAll("tr")
+        .data(data)      // give the 'tr' selection a nested array
+        .enter()         // pick the enter selection
+        .append("tr")    // append a 'tr' element for each element in the outer array
+        .selectAll("td") // now select 'td' elements
+        .data(function(r) { return r; }) // for each 'tr' element, return its row!
+        .enter()                         // now do the same thing!
+        .append("td")                    // for each row, append a 'td' element
+        .text(function(d) { return String(d); });
+                                          // and set its text
 
 Notice how this completely replaces the need for explicit `for` loops,
 and in addition lets you use custom keys for any of the inner selections.
