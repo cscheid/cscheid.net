@@ -38,6 +38,8 @@ This is the course website for CS444/544, Data Visualization.
   5th.
 * [Assignment 4](assignment_4.html), posted February 5th. Due February
   12th.
+* [Assignment 5](assignment_5.html), posted February 12th. Due February
+  26th (you have *two* weeks for this one).
 
 ## Tentative Schedule
 

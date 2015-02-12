@@ -5,8 +5,8 @@ title: Week 5, D3 selections and joins
 
 # Week 5, D3 selections and joins
 
-Today we are going to talk about the two most important notions in D3:
-selections, and joins.
+Today we are going to talk about two of the most important notions in
+D3: selections, and joins.
 
 # Method chaining
 

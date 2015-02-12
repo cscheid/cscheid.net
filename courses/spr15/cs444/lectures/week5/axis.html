@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <script src="d3.v3.js"></script>
+    <style>
+      .important {
+        font-size: 300%;
+      }
+      .tick > line {
+        fill: none;
+        stroke: black;
+      }
+      .tick > text {
+        fill: black;
+      }
+      path.domain {
+        fill: none;
+        stroke-width: 2px;
+        stroke: black;
+      }
+      .my-chart {
+      fill: #bbb;
+      background-color: #fee;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="600" height="600">
+    </svg>
+    <div>
+      <button id="switch">Switch scores</button> (Current score: <span id="currentScore"></span>)
+    </div>
+    <script src="axis.js"></script>
+  </body>
+</html>
