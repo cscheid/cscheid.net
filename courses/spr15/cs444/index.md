@@ -48,7 +48,7 @@ This is the course website for CS444/544, Data Visualization.
 * Feb 3rd: Talking to a server, AJAX
 * Feb 5th: d3 intro
 * Feb 10th: d3 selections, joins
-* Feb 12th: d3 transitions
+* Feb 12th: d3 scales, transitions
 * Feb 17th: Exploratory Data Analysis, d3 data loading, cleaning
 * Feb 19th: Exploratory Data Analysis, d3 data loading, cleaning (2/2)
 * Feb 24th: Catchup?
