@@ -41,14 +41,14 @@ over in class, to add the following features:
    scale, together with some tick marks indicating the corresponding
    GPA. (50/100)
 
-3. You will add animated transitions between the SATM and SATV
+3. Add animated transitions between the SATM and SATV
    scores. The animated transition should include an animation of the
    axis marks (10/100)
 
 4. In addition to the transition between SATM and SATV scores that is
-   already there, you will add a button to switch between the two
+   already there, Add a button to switch between the two
    color scales. This button should change the color of the points,
-   the legend (20/100)
+   and the legend (20/100).
 
 Start your assignment by copying
 [scatterplot.html](lectures/week5/scatterplot.html),
