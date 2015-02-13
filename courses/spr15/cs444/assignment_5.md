@@ -52,9 +52,10 @@ over in class, to add the following features:
 
 Start your assignment by copying
 [scatterplot.html](lectures/week5/scatterplot.html),
-[scatterplot.js](lectures/week5/scatterplot.js), and
-[d3.v3.js](lectures/week5/d3.v3.js) to an empty directory, and work
-from those files. Turn in your edited versions of them using `turnin`.
+[scatterplot.js](lectures/week5/scatterplot.js), 
+[d3.v3.js](lectures/week5/d3.v3.js), and [calvinCollegeSeniorScores.csv](lectures/week5/calvinCollegeSeniorScores.csv) to an empty directory, and work
+from those files. Turn in your edited versions of them using
+`turnin`. 
 
 # Extra credit: staggered transitions
 
