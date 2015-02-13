@@ -51,8 +51,8 @@ over in class, to add the following features:
    the legend (20/100)
 
 Start your assignment by copying
-[axis.html](lectures/week5/scatterplot.html),
-[axis.js](lectures/week5/scatterplot.js), and
+[scatterplot.html](lectures/week5/scatterplot.html),
+[scatterplot.js](lectures/week5/scatterplot.js), and
 [d3.v3.js](lectures/week5/d3.v3.js) to an empty directory, and work
 from those files. Turn in your edited versions of them using `turnin`.
 
