@@ -13,3 +13,4 @@ know how `turnin` works, please read and follow
 - Week 2: [Basic HTML, CSS and SVG](assignment_2.html).
 - Week 3: [Your first real SVG visualization](assignment_3.html).
 - Week 4: [d3 intro](assignment_4.html).
+- Week 5: [d3 scales, transitions, axes](assignment_5.html).

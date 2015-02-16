@@ -35,6 +35,10 @@ like. You are required to use [d3](http://d3js.org), but maybe you'll prefer to 
 [underscore.js](http://underscorejs.org/), or whatever else you like. Remember
 to give proper attribution in your writeup and source code.
 
+## Assessment
+
+Each of the plots is worth 25% of the total credit.
+
 ## Datasets
 
 - Dataset 1, in JSON Format:
