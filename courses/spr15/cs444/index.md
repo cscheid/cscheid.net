@@ -59,12 +59,12 @@ This is the course website for CS444/544, Data Visualization.
 * Mar 5th: Cleveland/McGill papers
 * Mar 10th: Perception: Integral/separable channels, constancy, etc.
 * Mar 12th: Interaction Basics/Transitions in stats graphics
-* Mar 17th: Crash course in Human-Centered Design, nested model
-* Mar 19th: Algebraic Design Process
+* Mar 17th: Spring Break
+* Mar 19th: Spring Break
 * Mar 24th: Review
 * Mar 26th: MIDTERM
-* Mar 31st: Catchup?
-* Apr 2nd: Catchup?
+* Mar 31st: Crash course in Human-Centered Design, nested model
+* Apr 2nd: Algebraic Design Process
 * Apr 7th: Line Plots, Dot Plots, Scatterplots, Small multiples
 * Apr 9th: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 14th: Hierarchical Data
