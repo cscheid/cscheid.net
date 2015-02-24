@@ -32,7 +32,7 @@ over in class, to add the following features:
    #91bfdb`: this is
    [Cynthia Brewer's RdYlBu](http://colorbrewer2.org/?type=diverging&scheme=RdYlBu&n=3)
    scale. Red should be mapped to the minimum GPA in the dataset,
-   white to the *AVERAGE* GPA in the dataset, and blue to the maximum
+   yellow to the *AVERAGE* GPA in the dataset, and blue to the maximum
    GPA in the dataset.
 
 2. Create a *color legend* for the current color scale, in the form
