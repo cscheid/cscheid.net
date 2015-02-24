@@ -27,7 +27,7 @@ over in class, to add the following features:
    orange to the halfway point in the range, and red to the minimum GPA in
    the dataset.
    
-   b. The second color scale will range from blue to white to red,
+   b. The second color scale will range from blue to light-yellow to red,
    using the following hex codes for the colors: `#fc8d59, #ffffbf,
    #91bfdb`: this is
    [Cynthia Brewer's RdYlBu](http://colorbrewer2.org/?type=diverging&scheme=RdYlBu&n=3)
