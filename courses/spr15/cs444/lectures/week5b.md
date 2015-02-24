@@ -252,7 +252,7 @@ Javascript:
 
     // the range doesn't go all the way to leave some margin
     var xScale = d3.scale.linear().domain([32, 212]).range([30, 570]);
-	var axis = d3.svg.axis();
+	var axis = d3.svg.axis().scale(xScale);
     d3.select("svg") // or something else that selects the SVG element in your visualizations
         .append("g") // create a group node
 		.call(axis); // call the axis generator
@@ -275,7 +275,7 @@ To be finished.
 
 # Transitions
 
-
+Duration, delay, [easing functions](https://github.com/mbostock/d3/wiki/Transitions#d3_ease).
 
 
 
