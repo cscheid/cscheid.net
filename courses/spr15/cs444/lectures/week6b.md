@@ -20,13 +20,19 @@ it, and what pitfalls to avoid.
 # Color
 
 Required reading: 
-* Maureen Stone, ["Representing Colors as Three Numbers"](http://www.stonesc.com/pubs/Stone%20CGA%2007-2005.pdf)
-* David Borland and Russell Taylor II:
+
+- Maureen Stone, ["Representing Colors as Three Numbers"](http://www.stonesc.com/pubs/Stone%20CGA%2007-2005.pdf)
+- David Borland and Russell Taylor II:
   ["Rainbow Colormap (Still) Considered Harmful"](http://data3.mprog.nl/course/15%20Readings/40%20Reading%204/Borland_Rainbow_Color_Map.pdf)
 
 Recommended reading (required for CSC 544 students):
-* Kindlmann, Reinhard, Creem:
+
+- Kindlmann, Reinhard, Creem:
   ["http://www.cs.utah.edu/~gk/papers/vis02/FaceLumin.pdf"](http://www.cs.utah.edu/~gk/papers/vis02/FaceLumin.pdf)
+
+# Slides
+
+TBF.
 
 ## Vision is complicated!
 
