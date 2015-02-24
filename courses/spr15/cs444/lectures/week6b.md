@@ -1,6 +1,6 @@
 ---
 layout: bootstrap
-title: Week 6b, Principles: Color
+title: "Week 6b, Principles: Color"
 ---
 
 # Data Visualization Principles
