@@ -21,12 +21,20 @@ This is the course website for CS444/544, Data Visualization.
 
 * [Week 1, Introduction](lectures/week1.html),
   [slides](slides/lecture 1.pdf).
+
+### Mechanics
+
 * [Week 2, HTML/CSS/SVG Basics](lectures/week2.html).
 * [Week 3, JavaScript Basics](lectures/week3.html).
 * [Week 3b, JavaScript for simple visualizations](lectures/week3b.html).
 * [Week 4, Odds and Ends](lectures/week4.html): JavaScript Events, AJAX, HTTP.
 * [Week 4b, Introduction to d3](lectures/week4b.html)
 * [Week 5, d3 selections and joins](lectures/week5.html)
+* Exploratory Data Analysis, Data Cleaning, Project Discussion
+
+### Principles
+
+* [Week 6b, Principles: Color](lectures/week6b.html)
 
 ## [Assignments](assignments.html)
 
