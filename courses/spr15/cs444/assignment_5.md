@@ -81,3 +81,13 @@ The fill color for SVG rectangles, by default, can only be a single
 color. For the color legend, you will have to implement a color
 gradient by creating many small rectangles, each with a slightly
 different color.
+
+## Hints, take 2
+
+Update, Feb 23rd. It seems like folks are having trouble with the
+description of the task. Here's what your final submission should look
+like, roughly:
+
+![colormap 1](assignment_5/sshot1_small.png)
+
+![colormap 2](assignment_5/sshot2_small.png)
