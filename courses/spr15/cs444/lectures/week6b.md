@@ -38,3 +38,7 @@ Recommended reading (required for CSC 544 students):
 ## Vision is complicated!
 
 * [Studies in Visual Perception, II -- Motion perception in various settings.](http://www.settheory.com/Glass_paper/Kanizsa_observations.html)
+
+## Resources
+
+* [ColorBrewer](http://colorbrewer2.org)
