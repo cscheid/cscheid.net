@@ -32,7 +32,8 @@ Recommended reading (required for CSC 544 students):
 
 # Slides
 
-TBF.
+- [Lecture 1 PDF File](color.pdf)
+- [Lecture 2 PDF File](color2.pdf)
 
 ## Vision is complicated!
 

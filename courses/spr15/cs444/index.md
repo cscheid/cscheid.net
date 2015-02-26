@@ -34,7 +34,7 @@ This is the course website for CS444/544, Data Visualization.
 
 ### Principles
 
-* [Week 6b, Principles: Color](lectures/week6b.html)
+* [Principles: Color](lectures/week6b.html).
 
 ## [Assignments](assignments.html)
 
@@ -60,10 +60,10 @@ This is the course website for CS444/544, Data Visualization.
 * Feb 10th: d3 selections, joins
 * Feb 12th: d3 scales, transitions
 * Feb 17th: Exploratory Data Analysis, d3 data loading, cleaning
-* Feb 19th: Exploratory Data Analysis, d3 data loading, cleaning (2/2)
-* Feb 24th: Catchup?
-* Feb 26th: Catchup?
-* Mar 3rd: Color Vision
+* Feb 19th: Color Vision 1
+* Feb 24th: Color Vision 2
+* Feb 26th: 
+* Mar 3rd: 
 * Mar 5th: Cleveland/McGill papers
 * Mar 10th: Perception: Integral/separable channels, constancy, etc.
 * Mar 12th: Interaction Basics/Transitions in stats graphics
