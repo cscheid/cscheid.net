@@ -17,7 +17,7 @@ This is the course website for CS444/544, Data Visualization.
 * Lectures: Tuesdays and Thursdays, 2:00PM-3:15PM, GS906
 * Office Hours: Tuesdays, 9:00-11:30, GS734. Otherwise by appointment only.
 
-## Class materials
+# Class materials
 
 * [Week 1, Introduction](lectures/week1.html),
   [slides](slides/lecture 1.pdf).
@@ -35,6 +35,7 @@ This is the course website for CS444/544, Data Visualization.
 ### Principles
 
 * [Principles: Color](lectures/week6b.html).
+* [Principles: Other Channels](lectures/week7b.html).
 
 ## [Assignments](assignments.html)
 
@@ -49,7 +50,9 @@ This is the course website for CS444/544, Data Visualization.
 * [Assignment 5](assignment_5.html), posted February 12th. Due February
   26th (you have *two* weeks for this one).
 
-## Tentative Schedule
+## Schedule
+
+### Mechanics
 
 * Jan 20th: the web browser as a dev environment; HTML; CSS
 * Jan 22nd: DOM, SVG
@@ -60,19 +63,26 @@ This is the course website for CS444/544, Data Visualization.
 * Feb 10th: d3 selections, joins
 * Feb 12th: d3 scales, transitions
 * Feb 17th: Exploratory Data Analysis, d3 data loading, cleaning
+
+### Principles
+
 * Feb 19th: Color Vision 1
 * Feb 24th: Color Vision 2
-* Feb 26th: 
-* Mar 3rd: 
-* Mar 5th: Cleveland/McGill papers
-* Mar 10th: Perception: Integral/separable channels, constancy, etc.
-* Mar 12th: Interaction Basics/Transitions in stats graphics
-* Mar 17th: Spring Break
-* Mar 19th: Spring Break
+* Feb 26th: Bivariate colormaps, other perceptual channels,
+  Cleveland/McGill, Separable-Integral channels, Mackinlay's APT.
+* Mar 3rd: Pre-attentiveness, Gestalt, higher-level channels
+* Mar 5th: Interaction, Filtering, Aggregation
+* Mar 10th: 
+* Mar 12th: 
+* Mar 17th: *Spring Break*
+* Mar 19th: *Spring Break*
 * Mar 24th: Review
 * Mar 26th: MIDTERM
 * Mar 31st: Crash course in Human-Centered Design, nested model
 * Apr 2nd: Algebraic Design Process
+
+### Techniques
+
 * Apr 7th: Line Plots, Dot Plots, Scatterplots, Small multiples
 * Apr 9th: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 14th: Hierarchical Data
