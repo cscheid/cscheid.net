@@ -36,6 +36,8 @@ This is the course website for CS444/544, Data Visualization.
 
 * [Principles: Color](lectures/week6b.html).
 * [Principles: Other Channels](lectures/week7b.html).
+* [Principles: Preattentiveness, Gestalt](lectures/week8.html).
+* [Principles: Interaction, Filtering, Aggregation](lectures/week8b.html).
 
 ## [Assignments](assignments.html)
 
