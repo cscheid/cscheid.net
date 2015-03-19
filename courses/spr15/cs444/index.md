@@ -76,27 +76,25 @@ This is the course website for CS444/544, Data Visualization.
   Cleveland/McGill, Separable-Integral channels, Mackinlay's APT.
 * Mar 3rd: Pre-attentiveness, Gestalt, higher-level channels
 * Mar 5th: Interaction, Filtering, Aggregation
-* Mar 10th: 
-* Mar 12th: 
+* Mar 10th: Algebraic Design Process
+* Mar 12th: Design criticism
 * Mar 17th: *Spring Break*
 * Mar 19th: *Spring Break*
 * Mar 24th: Review
 * Mar 26th: MIDTERM
-* Mar 31st: Crash course in Human-Centered Design, nested model
-* Apr 2nd: Algebraic Design Process
 
 ### Techniques
 
-* Apr 7th: Line Plots, Dot Plots, Scatterplots, Small multiples
-* Apr 9th: Spatial Data: heatmaps, contour plots, vector fields
-* Apr 14th: Hierarchical Data
-* Apr 16th: Directed and Undirected Graphs
-* Apr 21st: High-Dimensional Data, MDS
-* Apr 23rd: Methods for large data; binning, sampling
-* Apr 28th: Uncertainty/Probabilistic Data
-* Apr 30th: Catchup?
-* May 5th: Catchup?
-* May 7th: Catchup?
+* Apr 7th:  Line Plots, Dot Plots, Scatterplots, Small multiples
+* Apr 9th:  Spatial Data: heatmaps, contour plots, vector fields
+* Apr 14th: Spatial Data: heatmaps, contour plots, vector fields
+* Apr 16th: Spatial Data: heatmaps, contour plots, vector fields
+* Apr 21st: Hierarchical Data									 
+* Apr 23rd: Directed and Undirected Graphs						 
+* Apr 28th: High-Dimensional Data, MDS							 
+* Apr 30th: Methods for large data; binning, sampling			 
+* May 5th:  Uncertainty/Probabilistic Data                       
+* May 7th:  Catchup?
 * May 12th: Catchup?
 * May 14th: Final Presentation
 
