@@ -6,7 +6,7 @@ title: "Assignment 6: Linked views, brushes, details on demand"
 # Assignment 6
 
 - Posting date: Mar. 12th, 2015
-- Due date: Apr. 9th, 2015
+- Due date: Apr. 14th, 2015 (Postponed: originally was Apr. 9th)
 - Assignment name for `turnin`: `cs444_assignment_6`
 
 # Description
@@ -26,21 +26,23 @@ actual values of that particular student in a separate, third view.
 Specifically, your visualization will be graded based on the following
 features:
 
-1. One scatterplot with SATM and SATV axes (10/100)
+1. One scatterplot with SATM and SATV axes (12.5/100)
 
-2. A second scatterplot with ACT and GPA axes (10/100)
+2. A second scatterplot with ACT and GPA axes (12.5/100)
 
 3. When users click on a point in either scatterplot, the
-corresponding point on the other scatterplot is highlighted (20/100)
-
-4. When users click on a point in either scatterplot, the
 actual numerical values of the fields for that particular student are
-displayed in a separate table (20/100)
+displayed in a separate table (25/100)
 
-5. When users drag the mouse on either scatterplot, a *rectangular
+4. When users drag the mouse on either scatterplot, a *rectangular
 brush* is drawn on that scatterplot, indicating the region of
 interest. All the points inside that region are considered selected,
-and should be highlighted on the *other* scatterplot. (40/100)
+and should be highlighted on the *other* scatterplot. (50/100)
+
+5. When users click on a point in either scatterplot, the
+corresponding point on the other scatterplot is highlighted (25/100)
+
+You can get a total of 125 points (for 25 extra credit points).
 
 # Implementation hints
 
