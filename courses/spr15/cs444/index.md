@@ -53,6 +53,8 @@ This is the course website for CS444/544, Data Visualization.
   26th (you have *two* weeks for this).
 * [Assignment 6](assignment_6.html), posted March 12th. Due Apr
   9th (you have *four* weeks for this).
+* [Assignment 7](assignment_7.html), posted Apr 14th. Due Apr
+  21st.
 
 ## Schedule
 
@@ -88,8 +90,8 @@ This is the course website for CS444/544, Data Visualization.
 * Apr 7th:  Line Plots, Dot Plots, Scatterplots, Small multiples
 * Apr 9th:  Linear Algebra review, PCA							
 * Apr 14th: MDS, Other dimensionality reduction 2               
-* Apr 16th: Directed and Undirected Graphs						 
-* Apr 21st: Hierarchical Data									 
+* Apr 16th: Trees, Graphs, Hierarchies						    
+* Apr 21st: Trees, Graphs, Hierarchies						    
 * Apr 23rd: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 28th: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 30th: Spatial Data: heatmaps, contour plots, vector fields
