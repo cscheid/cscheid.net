@@ -86,15 +86,15 @@ This is the course website for CS444/544, Data Visualization.
 ### Techniques
 
 * Apr 7th:  Line Plots, Dot Plots, Scatterplots, Small multiples
-* Apr 9th:  Spatial Data: heatmaps, contour plots, vector fields
-* Apr 14th: Spatial Data: heatmaps, contour plots, vector fields
-* Apr 16th: Spatial Data: heatmaps, contour plots, vector fields
+* Apr 9th:  Linear Algebra review, PCA							
+* Apr 14th: MDS, Other dimensionality reduction 2               
+* Apr 16th: Directed and Undirected Graphs						 
 * Apr 21st: Hierarchical Data									 
-* Apr 23rd: Directed and Undirected Graphs						 
-* Apr 28th: High-Dimensional Data, MDS							 
-* Apr 30th: Methods for large data; binning, sampling			 
-* May 5th:  Uncertainty/Probabilistic Data                       
-* May 7th:  Catchup?
+* Apr 23rd: Spatial Data: heatmaps, contour plots, vector fields
+* Apr 28th: Spatial Data: heatmaps, contour plots, vector fields
+* Apr 30th: Spatial Data: heatmaps, contour plots, vector fields
+* May 5th:  Methods for large data; binning, sampling			 
+* May 7th:  Uncertainty/Probabilistic Data                       
 * May 12th: Catchup?
 * May 14th: Final Presentation
 
