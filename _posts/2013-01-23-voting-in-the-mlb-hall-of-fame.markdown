@@ -13,4 +13,4 @@ elbow grease.
 This was a whole lot of fun to create (the whole thing from zero to
 published happened in under two weeks), and was a great way to teach
 myself some d3. The source code is on
-[Github](http://github.com/cscheid/mlb-hall-of-fame-visualization).
+[Github](http://github.com/cscheid/mlb-hall-of-fame-voting).
