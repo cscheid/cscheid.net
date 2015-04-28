@@ -94,9 +94,9 @@ This is the course website for CS444/544, Data Visualization.
 * Apr 21st: Trees, Graphs, Hierarchies						    
 * Apr 23rd: Spatial Data: heatmaps, contour plots, vector fields
 * Apr 28th: Spatial Data: heatmaps, contour plots, vector fields
-* Apr 30th: Spatial Data: heatmaps, contour plots, vector fields
-* May 5th:  Methods for large data; binning, sampling			 
-* May 7th:  Uncertainty/Probabilistic Data                       
-* May 12th: Catchup?
-* May 14th: Final Presentation
+* Apr 30th: Methods for large data; binning, sampling
+* May 5th:  Uncertainty/Probabilistic Data
+* May 7th:  Dead day
+* May 12th: Finals week
+* May 14th: Finals week
 
