@@ -56,8 +56,7 @@ choose to change their policies. I understand that in some cases
 circumstances deprive you of the power to enact these changes
 yourself. At the same time, if people like myself, who have the choice
 to act differently, do not try to change the situation, then certainly
-publishers with vast bank accounts will be happy to maintain the
-status quo.
+publishers will be happy to maintain the status quo.
 
 I encourage you to forward this letter to your supervisors and
 executive boards.
