@@ -72,7 +72,7 @@ Carlos Scheidegger
 
 If you're just joining us and don't know what's been going on, let me
 take this opportunity and point you to [the Cost of
-Knowledge](http://http://thecostofknowledge.com/), a place where you
+Knowledge](http://thecostofknowledge.com/), a place where you
 can publicly pledge to stop helping Elsevier destroy the commons we
 all work hard to create. If you don't know about the war Elsevier has
 been waging against libraries, that's probably because librarians are
