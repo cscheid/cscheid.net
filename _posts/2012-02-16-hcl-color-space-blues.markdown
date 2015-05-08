@@ -1,11 +1,14 @@
 ---
-layout: post
+layout: post_narrow
 title: "HCL color space blues"
 ---
 
+{::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
 src="http://cscheid.net/static/20120216/xyz_frame.html" width=400
 height=480></iframe></div>
+{:/nomarkdown}
+
 I've been playing around with the HCL color space. HCL, if you've
 never heard of it before, is a color space that tries to combine the
 advantages of perceptual uniformity of Luv, and the simplicity of
@@ -33,9 +36,11 @@ system, which is much better at telling shades
 of yellow and green apart than it is at telling shades of blue
 apart.
 
+{::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
 src="http://cscheid.net/static/20120216/luv_frame.html" width=400
 height=480></iframe></div> 
+{:/nomarkdown}
 
 The [full
 transformation](http://en.wikipedia.org/wiki/CIELUV) behaves nonlinearly, and tries to make the euclidean
@@ -58,14 +63,17 @@ HSV colorspace.
 
 So you can play with these color spaces, I've written a few little
 demos of the color spaces using
-[Facet](http://cscheid.github.com/facet/). The sliders control
+[Lux](http://cscheid.github.io/lux/). The sliders control
 the axes which resemble brightness, and the image then shows a slice
 of the resulting parameter space. You will need WebGL and Chrome for
 these to work (sorry!). Pay attention to the boundary of the gamut.
 
+{::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
-src="http://cscheid.net/static/20120216/hcl_frame.html" width=400
+src="http://cscheid.net/static/20120216/hsv_frame.html" width=400
 height=480></iframe></div>
+{:/nomarkdown}
+
 One of the great conveniences of HSV is that no matter what you do in
 HSV, you will end up somewhere inside the (0,0,0)-(1,1,1) cube of
 valid RGB colors. That means nothing too strange happens. 
@@ -96,10 +104,12 @@ CIELUV in RGB space is complicated. So we're looking for the minimum
 of a function constrained to a complicated 2D surface, and I don't
 think there's any simple algorithm to do this.
 
+{::nomarkdown}
 <div style="position:absolute; right:-450px"><iframe
-src="http://cscheid.net/static/20120216/hsv_frame.html" width=400
+src="http://cscheid.net/static/20120216/hcl_frame.html" width=400
 height=480></iframe></div>
 Or is there?
+{:/nomarkdown}
 
 ## Acknowledgements
 
