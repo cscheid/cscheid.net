@@ -24,9 +24,9 @@ screenshots and, when possible, links to the actual webpages.
 CS544 students, in addition, had the option of working on a
 preliminary resesarch project of their choosing, as long as it
 
-1) had something to do with data visualization
+1. had something to do with data visualization
 
-2) had a clear potential for publication in either an appropriate
+2. had a clear potential for publication in either an appropriate
 venue for their particular field of research, or in a
 visualization-specific venue.
 
