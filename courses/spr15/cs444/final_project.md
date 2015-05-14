@@ -21,5 +21,17 @@ scratch. This included:
 Here is a listing of the projects created by the students, including
 screenshots and, when possible, links to the actual webpages.
 
+CS544 students, in addition, had the option of working on a
+preliminary resesarch project of their choosing, as long as it
+
+1) had something to do with data visualization
+
+2) had a clear potential for publication in either an appropriate
+venue for their particular field of research, or in a
+visualization-specific venue.
+
+The links for the research projects will be updated as the research
+projects become paper submissions.
+
 # Project list: TBD
 
