@@ -56,6 +56,14 @@ This is the course website for CS444/544, Data Visualization.
 * [Assignment 7](assignment_7.html), posted Apr 14th. Due Apr
   21st.
 
+## [Final Project](final_project.html)
+
+In the final project for CS444/CS544, students picked a dataset of
+their choosing (as long as it was sufficiently complex, as defined by
+the instructing staff), and created an interactive visualization from
+scratch. The [final project](final_project.html) page includes a list
+of the projects as submitted by the students.  
+
 ## Schedule
 
 ### Mechanics
