@@ -24,8 +24,8 @@ visualizations as opposed to node-link diagrams. We discuss the scope
 of the study and its limitations, possible implications, and future
 directions.
 
-Get the [paper](//static/papers/eurovis_long_2015.pdf) as a PDF file,
+Get the [paper](/static/papers/eurovis_long_2015.pdf) as a PDF file,
 and the [supplemental material describing the analyses in
-detail](//static/papers/eurovis_long_2015_supplemental.pdf). The full data is
-available [as a gzipped tarball](//static/papers/eurovis_long_2015_supplemental.tar.gz) that includes the raw data and the RMarkdown
+detail](/static/papers/eurovis_long_2015_supplemental.pdf). The full data is
+available [as a gzipped tarball](/static/papers/eurovis_long_2015_supplemental.tar.gz) that includes the raw data and the RMarkdown
 script used to generate the supplemental material document.
