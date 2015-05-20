@@ -25,4 +25,4 @@ critically, produce generalizable results), we ought to understand
 what specifically makes a visualization enjoyable, and what level of
 the design process these elements affect.
 
-Paper in [PDF](//static/papers/eurovis_short_2015.pdf) format.
+Paper in [PDF](/static/papers/eurovis_short_2015.pdf) format.
