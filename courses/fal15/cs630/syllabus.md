@@ -122,7 +122,9 @@ TBD.
 
 ## Evaluation criteria
 
-TBD.
+Assignment/Testing Schedule/Due Dates TBD.
+
+Assignments with description TBD.
 
 # Late Work Policy 
 
@@ -175,9 +177,6 @@ Quoting from [the FAQ](https://deanofstudents.arizona.edu/faqs):
 > your absence or grant make-up work the Dean of Students Office is
 > not able to require them to do so.
 
-Assignment/Testing Schedule/Due Dates
-Number of required exams and assignments with description
- 
 # Assignment Format
 
 Paper report assignments will be short research reports (around 2
@@ -191,7 +190,7 @@ the field of interactive data analysis. Although the development of
 novel software is a valuable part of research, the ultimate outcome is
 to *communicate a novel idea*: software, in this case, is a means to
 an end. If you don't achieve the end, you will be graded accordingly.
- 
+
 # Code of Conduct
 
 The Arizona Board of Regents' Student Code of Conduct, ABOR Policy
