@@ -101,10 +101,9 @@ are expected to look up additional information about it.
 
 # Grading Policy
 
-University policy regarding grades and grading systems is available at:
-​http://catalog.arizona.edu/2015-16/policies/grade.htm 
- 
-Grade Distribution for this Course:​​​
+Please refer to the university policy
+[regarding grades and grading systems](​http://catalog.arizona.edu/2015-16/policies/grade.htm)
+for details. The grade distribution for this course is:​​​
 
 * A: 90% or higher
 * B: 80% to 90%
@@ -112,7 +111,8 @@ Grade Distribution for this Course:​​​
 * D: 60% to 70%
 * E: 60% or lower
  
-Requests for incompletes (I) and withdrawal (W) must be made in accordance with university policies which are available at http://catalog.arizona.edu/2015-16/policies/grade.htm.
+Requests for incompletes (I) and withdrawal (W) must be made in
+accordance with university policies linked above.
 
 How many points assigned to each activity including relative percentage in relation to final grade
 
@@ -135,7 +135,7 @@ compelling reason for turning work in late.
  
 # Attendance Policy
 
-The UA’s policy concerning Class Attendance and Administrative Drops is available at: http://catalog.arizona.edu/2015-16/policies/classatten.htm
+Please refer to UA's [policy concerning Class Attendance and Administrative Drops](http://catalog.arizona.edu/2015-16/policies/classatten.htm).
 
 Participating in the course and attending lectures and other course
 events are vital to the learning process.  As such, attendance is
@@ -145,9 +145,8 @@ documentation from their healthcare provider or other relevant,
 professional third parties.  Failure to submit third-party
 documentation will result in unexcused absences.
   
-The UA policy regarding absences on and accommodation of religious
-holidays is available at
-http://deanofstudents.arizona.edu/policies-and-codes/accommodation-religious-observance-and-practice
+In addition, refer to UA's policy [regarding absences on and accommodation of religious
+holidays](http://deanofstudents.arizona.edu/policies-and-codes/accommodation-religious-observance-and-practice).
 
 ## Dean's Excuses
 
