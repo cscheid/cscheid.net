@@ -86,7 +86,9 @@ In other words, if you don't know enough to understand a paper, you
 are expected to look up additional information about it. 
 
 *Learning how to navigate an unexplored research area is part of the
- skills I expect you to develop for this course.*
+ skill set I expect students to develop during this course*. I will
+ help students get there, but independence and self-direction
+ are very valuable: expect to be challenged in this area.
 
 # Grading Policy
 
