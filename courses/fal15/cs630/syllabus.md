@@ -60,7 +60,16 @@ reports and providing written feedback.
 
 # Course Format and Teaching Methods
 
-Lecture only, lecture and lab combination, seminar, studio, small group activities or group projects, experiential or service learning, in-class discussion, web-delivered content or assessment, etc.
+The course will be entirely paper presentations and discussions. 
+
+I will present the first few papers to set the tone for the
+course. After this, students will present the majority of subsequent
+work. I will lead the discussion and provide additional background
+material when necessary, but my role will be primarily of mediator and
+enabler: students are expected to actively participate in the course.
+
+Students will be assessed on their in-class presentations and
+discussion, together with written paper reports.
  
 # Required and Recommended Texts
 
@@ -106,10 +115,6 @@ Grade Distribution for this Course:​​​
 Requests for incompletes (I) and withdrawal (W) must be made in accordance with university policies which are available at http://catalog.arizona.edu/2015-16/policies/grade.htm.
 
 How many points assigned to each activity including relative percentage in relation to final grade
-
-## Components /assignments
-
-TBD.
 
 ## Weightings
 
@@ -180,7 +185,12 @@ pages of 12-point single-column text) describing the papers being
 discussed, and putting the papers in context of other research in the
 area.
 
-The final project report 
+The final project report will be a longer research report: think of it
+as a first draft of a research paper describing your contribution to
+the field of interactive data analysis. Although the development of
+novel software is a valuable part of research, the ultimate outcome is
+to *communicate a novel idea*: software, in this case, is a means to
+an end. If you don't achieve the end, you will be graded accordingly.
  
 # Code of Conduct
 
