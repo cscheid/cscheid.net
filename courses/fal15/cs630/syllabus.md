@@ -114,9 +114,9 @@ for details. The grade distribution for this course is:​​​
 Requests for incompletes (I) and withdrawal (W) must be made in
 accordance with university policies linked above.
 
-How many points assigned to each activity including relative percentage in relation to final grade
-
 ## Weightings
+
+<!-- How many points assigned to each activity including relative percentage in relation to final grade -->
 
 TBD.
 
