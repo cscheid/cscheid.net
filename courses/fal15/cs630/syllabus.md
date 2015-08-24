@@ -8,19 +8,26 @@ title: Syllabus for "Systems for Interactive Data Analysis"
 When data sources get large enough, no single analysis or
 visualization can convey all the structure and information that might
 be there. We need *interactive interfaces*: computer programs to help
-us build models and visualizations progressively. In this
-research-oriented seminar, we will spend most of the class time
-discussing recent research results in the area, typically in the form
-of conference and journal papers. The questions we will tackle are:
-how can we build these systems? How do we know they work? Can they
-mislead us, and how? How do they fit with the rest of the data
+us build models and visualizations progressively.
+
+In this research-oriented seminar, we will spend most of the class
+time discussing recent research results in the area, typically in the
+form of conference and journal papers. The questions we will tackle
+are: how can we build these systems? How do we know they work? Can
+they mislead us, and how? How do they fit with the rest of the data
 analysis infrastructure? Although our research focus will be in
 visualization, we will cover a mix of algorithms, systems, data
 mining, machine learning, and whatever other computer science topics
-become necessary as our discussion progresses. Students will be
-assessed on their class participation, paper summary reports, and
-research projects.
- 
+become necessary as our discussion progresses.
+
+The best way to learn is to do: all students will be expected to work
+on a research project to be reported in a paper. These papers are
+expected to be of sufficient quality to be submitted to technical
+conferences in the area.
+
+Students will be assessed on their class participation, paper summary
+reports, and research projects.
+
 # Locations and Times
 
 Monday and Wednesday, 12:30-1:45P, GS942.
