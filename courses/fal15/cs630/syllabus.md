@@ -56,7 +56,6 @@ reports and providing written feedback.
 * Limitations: where do things break down?
 * Current and previous avenues of attack
   * what worked? what didn't? have we learned anything?
-* TBD: Paper list and research projects
 
 # Course Format and Teaching Methods
 
@@ -95,9 +94,11 @@ In other words, if you don't know enough to understand a paper, you
 are expected to look up additional information about it. 
 
 *Learning how to navigate an unexplored research area is part of the
- skill set I expect students to develop during this course*. I will
- help students get there, but independence and self-direction
- are very valuable: expect to be challenged in this area.
+skill set I expect students to either have, or develop during this
+course*. I will help students get there, but independence and
+self-direction are very valuable: expect to be challenged in this
+area. In other words, do not be fooled by the fact that we have no
+textbook: this makes the course *more* challenging, not less.
 
 # Grading Policy
 
@@ -118,13 +119,22 @@ accordance with university policies linked above.
 
 <!-- How many points assigned to each activity including relative percentage in relation to final grade -->
 
-TBD.
+* Class participation, including presentations and discussions on
+  Piazza: 30%.
+* Written paper reports: 30%
+* Research project: 40%
 
-## Evaluation criteria
+In addition, if your research project is so successful that we have a
+paper together submitted to Eurovis 2016, you will get an automatic A
+in the course. Note that this is contigent on me accepting that the
+paper is sufficiently high-quality (in other words, the submission
+only counts if I say it does).
 
-Assignment/Testing Schedule/Due Dates TBD.
+<!-- ## Evaluation criteria -->
 
-Assignments with description TBD.
+<!-- Assignment/Testing Schedule/Due Dates TBD. -->
+
+<!-- Assignments with description TBD. -->
 
 # Late Work Policy 
 
