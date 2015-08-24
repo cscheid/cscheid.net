@@ -21,13 +21,13 @@ The [course syllabus](syllabus.html) is available on this website.
 # Course outline
 
 * Week 1, Introduction to course, syllabus, mechanics
- * Munzner's
+  * Munzner's
    [process and pitfalls paper](https://www.cs.ubc.ca/labs/imager/tr/2008/pitfalls/pitfalls.pdf);
- * general [academic](http://cscheid.net/advice/academics.html) [advice](http://cscheid.net/advice/students.html)
+  * general [academic](http://cscheid.net/advice/academics.html) [advice](http://cscheid.net/advice/students.html)
 * Weeks 2-3, background
- * Classic papers, fundamental ideas. MapReduce, Dremel, data cubes,
+  * Classic papers, fundamental ideas. MapReduce, Dremel, data cubes,
    visualization connections
- * systems for machine learning and interactive analysis
+  * systems for machine learning and interactive analysis
 * Week 4: students decide on research projects
 * Weeks 4-n, research paper presentations, students work on research projects
 * Week n-1, student project presentations
