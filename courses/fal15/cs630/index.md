@@ -32,6 +32,10 @@ The [course syllabus](syllabus.html) is available on this website.
 * Weeks 4-n, research paper presentations, students work on research projects
 * Week n-1, student project presentations
 
+# Lectures
+
+* Sep. 2nd: [Systems for data analysis](lectures/data_analysis.pdf).
+
 # Links
 
 * [Data Systems for Interactive Analysis](http://www.interactive-analysis.org) 
