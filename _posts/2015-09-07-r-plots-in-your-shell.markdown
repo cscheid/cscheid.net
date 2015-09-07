@@ -14,7 +14,7 @@ the shell:
 (And, by the way, that is an animated high-five)
 It also means you can easily plot your data from the shell:
 
-![ggplot](/assets/img/rplot.jpg)
+![ggplot](/assets/img/rplot_demo.jpg)
 
 Details at the [github repo](http://github.com/cscheid/rplot).
 
