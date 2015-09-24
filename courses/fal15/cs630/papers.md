@@ -36,6 +36,14 @@ Technical Areas of the Field of Statistics](http://www.stat.purdue.edu/~wsc/pape
 * Trust me, I'm partially right
 * Sample-Oriented Task-Driven Visualizations
 
+### Additional reading
+
+Approximating population distributions by carefully-chosen samples:
+
+* Phillips, [ε-Samples for Kernels](https://www.cs.utah.edu/~jeffp/papers/kernel-sample.pdf)
+* Zheng et al., [Quality and Efficiency in Kernel Density Estimates for Large Data](https://www.cs.utah.edu/~jeffp/papers/kde-big.pdf)
+* Zheng and Phillips, [L∞ Error and Bandwidth Selection for Kernel Density Estimates of Large Data](https://www.cs.utah.edu/~jeffp/papers/Kinf-KDD2015.pdf)
+
 ## Vis Systems
 
 * [The Case for Data Visualization Management Systems](http://db.csail.mit.edu/pubs/p903-wu.pdf)
