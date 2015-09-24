@@ -38,6 +38,11 @@ th {
     font-weight: 400;
 }
 
+table td {
+    padding: 6px 13px;
+    border: 1px solid #ddd;
+}
+
 em {
     font-weight: 400;
     font-style: normal
