@@ -34,7 +34,27 @@ The [course syllabus](syllabus.html) is available on this website.
 
 # Lectures
 
+The list of [papers](papers.html) is available as well, together with
+additional readings for interested students.
+
 * Sep. 2nd: [Systems for data analysis](lectures/data_analysis.pdf).
+* Sep. 9th: [Data Cubes, etc.](lectures/data_cubes.pdf)
+* Sep. 23rd: [Streaming and sample-based systems](lectures/streaming.pdf).
+
+## Presentations
+
+| Paper | Presenter | Date |
+| ----- | --------- | ---: |
+| Data Cubes | Nathan | |
+| Implementing Data Cubes Efficiently | Sabrina |
+| Dwarf | Aarthy | |
+| Nanocubes | Shravan | |
+| immens | Wei | |
+| Online Aggregation | | | 
+| BlinkDB | | |
+| Trust me | | |
+| Sample-Oriented Visualizations | | |
+
 
 # Links
 
@@ -42,9 +62,7 @@ The [course syllabus](syllabus.html) is available on this website.
   is a workshop which I'm helping organize, and that will happen during
   IEEE VIS 2015. The goal of the workshop is to foster research exactly
   in the area we will be discussing during the seminar.
-
-*
-  [IDEA, Interactive Data Exploration and Analytics](http://poloclub.gatech.edu/idea2015/index.html)
+* [IDEA, Interactive Data Exploration and Analytics](http://poloclub.gatech.edu/idea2015/index.html)
   is a similar workshop held at KDD for a few years now.
-
-
+* [Human-in-the-loop Data Management](http://www-cs-students.stanford.edu/~adityagp/courses/cs598/)
+  CS598, a similar course at UIUC.
