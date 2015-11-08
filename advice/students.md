@@ -151,6 +151,24 @@ example, have a [cron job that rsyncs](#command-line-bullshittery)
 your contents with the university machines, or run CrashPlan, or
 *something*. I will ask you about your backups.
 
+# requests
+
+It's an integral part of my job to help you succeed. You should ask me
+about anything you feel comfortable asking. Still, here's some things
+to keep in mind.
+
+## recommendation letters
+
+Good recommendation letters are tremendously important for your
+success, and I'll be happy to write them for you. But know that bad
+recommendation letters hurt more than good recommendation letters
+help. I can only give you a good recommendation letter if we have
+worked together in the past. Also, recommendation letters take time to
+write! I would prefer that you tell me about the letter a month in
+advance, possibly more. You should still reach out to me if you're
+short on time, but you should have a backup plan in that case.
+
+
 <br/><br/><br/>
 
 -------

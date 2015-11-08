@@ -3,15 +3,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-html {
-    /* font-variant-numeric: oldstyle-nums; */
-    /* -moz-font-feature-settings: 'onum=1'; */
-    /* -ms-font-feature-settings: 'onum'; */
-    /* -o-font-feature-settings: 'onum'; */
-    /* -webkit-font-feature-settings: 'onum'; */
-    /* font-feature-settings: 'onum'; */
-}
-
 img {
     display: block;
     margin: auto;
@@ -27,14 +18,15 @@ ul.posts {
 }
 
 p, ul, ol, td {
-    font-family: "Oxygen", "Helvetica Neue", sans;
-    font-weight: 300;
+    font-family: "freight-sans-pro-1", "freight-sans-pro-2", "Helvetica Neue", sans;
+    font-weight: 400;
+    font-size: 1.03em;
     /* font-family: "garamond-premier-pro-display-1","garamond-premier-pro-display-2"; */
     /* font-weight: 100; */
 }
 
 th {
-    font-family: "Oxygen", "Helvetica Neue", sans;
+    font-family: "freight-sans-pro-1", "freight-sans-pro-2", "Helvetica Neue", sans;
     font-weight: 400;
 }
 

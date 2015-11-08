@@ -17,6 +17,51 @@ table th, table td {
     font-size:0.5em; font-weight: 300; margin-top:5px; margin-right:15px" class="tk-museo-sans"><a href="courses/">COURSES</a> <a href="#code">CODE</a>
     <a href="#projects">VIS</a> <a href="#blog">BLOG</a> <a href="#papers">PAPERS</a> <a href="#about">ABOUT</a></span></h1>
 </div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="visible-md visible-lg col-md-2" style="font-size:0.7em">
+    <img width=100% src="http://cscheid.net/cscheid.jpg">
+    <p style="margin:0"><a href="http://cscheid.net/cv.pdf">CV</a>,
+    <a href="http://scholar.google.com/citations?user=8uHMJjsAAAAJ&hl=en">scholar</a>,
+    <a href="mailto:cscheid@cscheid.net">email</a>, <a href="http://twitter.com/scheidegger">twitter</a>,
+    <a href="http://instagram.com/cscheid">instagram</a>, <a href="http://www.flickr.com/photos/cscheid">flickr</a>,
+    <a href="http://google.com/+CarlosScheidegger">g+</a>, <a href="http://www.facebook.com/carlos.scheidegger">facebook</a></p>
+  </div>
+  <div class="col-md-8" style="margin-left:1em">
+    <p>I'm an assistant professor in the <a href="http://www.cs.arizona.edu">Department of Computer
+	Science</a> at the University of Arizona. I work in large-scale data visualization and
+      exploratory data analysis. Before coming to <a href="https://www.flickr.com/photos/cscheid/16014561642/in/dateposted-public/">sunny</a>, <a href="https://twitter.com/scheidegger/status/655907096991371264">beautiful</a> <a href="https://www.flickr.com/photos/cscheid/16015254715/in/dateposted-public/">Tucson</a>, I worked at
+      <a href="http://www.research.att.com/">AT&amp;T Research</a> in New York.
+    </p>
+    <p>Interactive visualization is crucial in understanding, exploring, and presenting data, but data scale can present serious barriers for effectiveness and adoption. I study these barriers and design solutions to remove them. My work ranges from <a href="http://www.algebraicvis.net">theoretical</a> to <a href="http://nanocubes.net">practical</a>; from designing solutions specifically for particular domains to designing general <a href="http://github.com/cscheid/lux">infrastructure</a> for large-scale visualization.</p>
+    <p>Since joining UA, I have worked in a number of projects here, including support for interactive browsing of synteny data at <a href="https://genomevolution.org/coge/">CoGe</a>, and building up interactive visualization infrastructure at <a href="http://www.noao.edu/">NOAO</a> and the <a href="http://www.cs.arizona.edu/projects/tau/antares/">ANTARES</a> project.</p>
+  </div>
+</div>
+<div class="row" style="margin-top:.5em">
+  <div class="col-md-1"></div>
+  <div class="col-md-10">
+    <h4>Recruiting</h4>
+    <p>I'm actively looking for a PhD student to work on the intersection of topological data analysis and interactive, large-scale data visualization.</p>
+    <p>I am generally interested in the intersection of computer science and large-data visualization, as illustrated, for example, by the IEEE VIS <a href="http://www.interactive-analysis.org">workshop</a> I have co-organized. If any of the papers in that workshop seem interesting, or (even better!) if you've done similar work in the area, don't hesitate to contact me.</p>
+
+    <h4 class="bold"><a name="code"></a>CODE</h2>
+    <ul class="posts">
+      <li><a href="http://github.com/laurolins/nanocube">Nanocubes</a>: blazing fast
+      large data visualization.</li>
+      <li><a href="http://cscheid.github.io/lux">Lux</a>:
+      write WebGL shaders in Javascript, composably.</li>
+      <li><a href="http://github.com/att/rcloud">RCloud</a>:
+      collaborative data analysis, on the web.</li>
+      <li><a href="http://www.vistrails.org">VisTrails</a>:
+      a provenance-aware scientific workflow system.</li>
+      <li><a href="http://github.com/nivan/vfkm">Vector-field k-means</a>:
+      scalable trajectory clustering.</li>
+      <li><a href="http://afront.sourceforge.net">Afront</a>:
+      high-quality triangle meshing of surfaces.</li>
+    </ul>
+
+  </div>
+</div>
 <div class="row" style="font-size:0.9em">
   <div class="col-md-5">
     <h2 class="bold"><a name="blog"></a>BLOG</h2>
@@ -25,25 +70,21 @@ table th, table td {
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
         {% else %}
-      <tr valign="top"><td valign="top" style="white-space: nowrap"><span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date_to_string }}<span style="padding-right:1em"></span></span></td><td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></tr></td>
+      <tr valign="top">
+	<td valign="top" align="right" style="white-space: nowrap">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%-d" }}</span><span style="padding-right:.1em"/>
+	</td>
+	<td valign="top" align="right" style="white-space: nowrap">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%b" }}</span><span style="padding-right:.1em"/>
+	</td>
+	<td valign="top" align="right" style="white-space: nowrap">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%Y" }}</span><span style="padding-right:.5em"/>
+	</td>
+	<td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
         {% endif %}
       {% endfor %}
       </table>
-    </ul>
-    <h2 class="bold"><a name="code"></a>CODE</h2>
-    <ul class="posts">
-      <li><a href="http://github.com/laurolins/nanocube">Nanocubes</a>: blazing fast
-      large data visualization.</li>
-      <li><a href="http://github.com/att/rcloud">RCloud</a>:
-      collaborative data analysis.</li>
-      <li><a href="http://www.vistrails.org">VisTrails</a>:
-      a provenance-aware scientific workflow system.</li>
-      <li><a href="http://cscheid.github.io/lux">Lux</a> (n&eacute;e Facet):
-      write WebGL shaders in Javascript, composably.</li>
-      <li><a href="http://github.com/nivan/vfkm">Vector-field k-means</a>:
-      scalable trajectory clustering.</li>
-      <li><a href="http://afront.sourceforge.net">Afront</a>:
-      high-quality triangle meshing of surfaces.</li>
     </ul>
 
   </div>
@@ -54,7 +95,21 @@ table th, table td {
       <table>
       {% for post in site.posts %}
         {% if post.tags contains 'paper' %}
-      <tr valign="top"><td><span class="hidden-md hidden-lg">⬝&nbsp;</span><a href="{{ post.url }}">{{ post.title }}</a></td><td style="white-space: nowrap" valign="top"><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date_to_string }}</span></td></tr>
+      <tr valign="top">
+	<td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></td>
+	<td valign="top" align="left" style="white-space: nowrap">
+	  <span style="padding-right:.5em"></span>
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%-d" }}</span>
+	</td>
+	<td valign="top" align="left" style="white-space: nowrap">
+	  <span style="padding-right:.1em"></span>
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%b" }}</span>
+	</td>
+	<td valign="top" align="left" style="white-space: nowrap">
+	  <span style="padding-right:.1em"></span>
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%Y" }}</span>
+	</td>
+      </tr>
       <!-- <li><a href="{{ post.url }}">{{ post.title }}</a> &laquo; <span>{{ post.date | date_to_string }}</span></li> -->
         {% endif %}
       {% endfor %}
@@ -76,27 +131,4 @@ table th, table td {
 	  (<a href="/blog/2010/12/07/repost-looking-at-conditional-probability.html">explanation</a>)</li>
     </ul>
   </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <h2 class="bold"><a name="about"></a>ABOUT</h2>
-  </div>
-</div>
-<div class="row">
-  <div class="visible-md visible-lg col-md-3">
-    <img width=100% src="http://cscheid.net/cscheid.jpg">
-  </div>
-  <div class="col-md-6">
-    <p>I'm assistant professor in the <a href="http://www.cs.arizona.edu">Department of Computer
-    Science at the University of Arizona</a>. I work in data visualization and
-    exploratory data analysis. Opinions here are all mine.</p>
-    <p style="margin:0">info: <a href="http://cscheid.net/cv.pdf">vita</a>,
-    <a href="http://scholar.google.com/citations?user=8uHMJjsAAAAJ&hl=en">google scholar</a></p>
-    <p style="margin:0">email: cscheid@cscheid.net</p>
-    <p style="margin:0">twitter: <a href="http://twitter.com/scheidegger">scheidegger</a></p>
-    <p style="margin:0">instagram: <a href="http://instagram.com/cscheid">cscheid</a></p>
-    <p style="margin:0">flickr: <a href="http://www.flickr.com/photos/cscheid">cscheid</a></p>
-    <p style="margin:0">google+: <a href="http://google.com/+CarlosScheidegger">Carlos Scheidegger</a></p>
-    <p style="margin:0">facebook: <a href="http://www.facebook.com/carlos.scheidegger">carlos.scheidegger</a></p>
-  </div>  
 </div>
