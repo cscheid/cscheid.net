@@ -37,8 +37,8 @@ understand it. But the questions are always of understanding, *why*
 and *how*: why does this matter? why is it bad? how can it be
 improved, and why?
 
-The way I see it, academia exists to improve how *humanity*
-*understands* things. Each of these is actually important, and helps
+The way I see it, academia exists to improve how *people*
+*understand* things. Each of these is actually important, and helps
 unpack how other important things are not academic.
 
 If I understand something better than everyone else but I fail to

@@ -21,7 +21,7 @@ proposed method is much faster than previous ones, able to bundle
 hundreds of thousands of edges in seconds, and one million edges
 in a few minutes.
 
-Get the [paper](http://www2.research.att.com/~yifanhu/PUB/edge_bundling.pdf)
+Get the [paper](http://yifanhu.net/PUB/edge_bundling.pdf)
 in PDF version (3.0MB). 
 There are many additional examples on the
  [paper](http://www2.research.att.com/~yifanhu/edge_bundling/) webpage.

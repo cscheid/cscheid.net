@@ -30,3 +30,6 @@ as regions with high curvature gradients.
 
 Paper in [PDF](http://www.sci.utah.edu/~cscheid/pubs/tpss.pdf)
 format (~9MB).
+
+Source code for this (and other surface-reconstruction codes related
+to this) is available [here](http://afront.sourceforge.net).

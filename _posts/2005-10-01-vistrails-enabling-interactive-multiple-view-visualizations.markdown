@@ -33,7 +33,7 @@ format (~2.8MB).
 For the latest news, visit the [VisTrails
 project website](http://www.vistrails.org).
 
-As we started to focus our work on VisTrails around the version tree,
+*Note*: As we started to focus our work on VisTrails around the version tree,
 we started to refer to a *vistrail* as the captured exploration
 process encoded as the set of visualization pipelines. That's the
 terminology we use in later papers, but this Vis 2005 paper uses it to

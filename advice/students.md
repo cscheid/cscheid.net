@@ -48,11 +48,11 @@ understand what you're going through. Research advising is *idea
 gardening*.
 
 When I started doing research, I had no idea how important
-*perseverance* is. Good research is equal amounts intelligence
-and grit. You already have plenty of the former (you would not be here
-otherwise), and the good news is that we can train the latter. But
-don't underestimate the extent to which continued work on a single
-hard problem can be emotionally draining. 
+*perseverance* is. Good research is equal amounts intelligence and
+grit. You already have plenty of the former (you would not be here
+otherwise), and the good news is that we can train you for the
+latter. But don't underestimate the extent to which continued work on
+a single hard problem can be emotionally draining.
 
 This is why I want to meet with you regularly, why I want to hear
 from you regularly. I want to know if you're getting frustrated, and
@@ -85,6 +85,14 @@ make a *lot* of mistakes, and so it's important to not let the
 excitement get us ahead of the truth. I want you to become comfortable
 at staring at ideas (both mine and your own) that you want to be true,
 and learning to spot the ones that are not[^1].
+
+In addition, when *you* are navigating towards the unknown, the
+unknown is unknown to *me* too! So, inevitably in the course of your studies,
+your job will be to teach me, because by definition, no one else will
+have been where you are. Wild, huh? What this means is that I can
+teach you how to succesfully "live on the edge", but you should expect
+to know things that I don't, and that you will need to make an effort
+to explain them to me.
 
 ## workflow, or command-line bullshittery
 
