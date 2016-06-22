@@ -44,8 +44,11 @@ generally overwhelmed. After you are a good researcher, you will
 still get tripped up, make mistakes, get stuck and be generally
 overwhelmed. But I hope to have prepared you for some of it.  It's not
 that I'm trying to scare you. It's that I've been there, I
-understand what you're going through. Research advising is *idea
-gardening*.
+understand what you're going through. Research advising is a mix of *idea
+gardening* ("try this, not that"), gym coach ("I'm sure you can push
+yourself harder than that: don't hold back") and support network
+("yes, this paper got rejected, but trust me, it's good work. Let's
+keep at it").
 
 When I started doing research, I had no idea how important
 *perseverance* is. Good research is equal amounts intelligence and
@@ -65,11 +68,18 @@ but they're also the easiest way to burn out.
 
 When we meet, you should expect a lively discussion. That's because I
 want our mistakes and bad ideas to show up sooner rather than
-later. If you're getting started in research, you will have read more research papers
-than written them. Maybe you think that the research process is neat and
-orderly, like the structure of a good paper: we think of a problem, we find related
-work, come up with a new idea, test it, and then think of what's next.
+later. You should also bring a written document describing what you
+tried, what worked, and what didn't, and what's getting you
+stuck. Make an effort to write these things down as they are
+happening, and not an hour before the meeting: the process of writing
+down is a great way to help your thinking (this has been reinvented
+many times in the past: you might know it as [rubber-duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging))
 
+If you're getting started in research, you will have read more
+research papers than written them. That might give you the impression
+the research process is neat and orderly, like the structure of a good
+paper: we think of a problem, we find related work, come up with a new
+idea, test it, and then think of what's next.
 Well, it's nothing like that. It's messy:
 we know where we want to go, but we do not really know how to get
 there (that's the point!). Matt Might has a famous, great
@@ -78,7 +88,8 @@ which I will only nitpick in one way. Navigating towards boundary feel
 more
 [like this](http://boingboing.net/2010/02/09/deep-zoom-into-mande.html).
 It also feels as great as that looks: noticing something no one else
-has noticed before is a *huge rush*. But as you maybe already know, I
+has noticed before, in the middle of all this mess, is a *huge rush*. 
+But as you maybe already know, I
 (and you, and everyone else, including true
 [geniuses](http://mathoverflow.net/questions/879/most-interesting-mathematics-mistake/921#921))
 make a *lot* of mistakes, and so it's important to not let the
