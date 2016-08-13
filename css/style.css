@@ -117,6 +117,20 @@ h2, h3, h4 {
     font-size: 1.05em;
 }
 
+h3 {
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+    font-size: 0.85em;
+}
+
+h4 {
+    color: #888;
+    margin-left: 0.5em;
+    margin-top: 1.5em;
+    text-transform: inherit;
+    font-size: 0.85em;
+}
+
 div.flush-right > h2, div.flush-right > h3, div.flush-right > h4 {
     left: 0.7em;
 }

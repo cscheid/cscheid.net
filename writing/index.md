@@ -23,3 +23,7 @@ nothing.
 * [Host your own website](host_your_own_website.html).
 * Advice for [my students](../advice/students.html) and academic
   advice [in general](../advice/academics.html).
+
+# Reading
+
+I think I read too much [scifi](scifi_notes.html).
