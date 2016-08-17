@@ -47,16 +47,16 @@ Aurora, on the other hand? This. Changes. Everything.
 
 One of the ways I've started thinking about KSR's writing is that he's
 in a sense telling us that, no matter where --- or how --- people
-choose to live, there's *something* fundamental about being
-human. It's like he's written a dozen or so novels trying to get at
-some notion of a Soul, but without having to get theistic about it (in
-passing, KSR is the most spiritual writer of hard scifi I can think
-of.) A central notion of his books, in my view, have been that
-humans are environments fragile but humans are hardy: we will live in
-Other Places, and we will thrive. This stands in direct contast with what Aurora is about!
-It's a really fascinating change of perspective, and it left me really
-wanting to read the next installment (even though it seems clear that
-Aurora is not a trilogy). 
+choose to live, there's *something* fundamental and unchanging about
+being human. It's like he's written a dozen or so novels trying to get
+at some notion of a Soul, but without having to get theistic about it
+(in passing, KSR is the most spiritual writer of hard scifi I can
+think of.) A central notion of his books, in my view, have been that
+environments are fragile but humans are hardy: we will live in
+Other Places, and we will thrive. This stands in direct contast with
+what Aurora is about!  It's a really fascinating change of
+perspective, and it left me really wanting to read the next
+installment (even though it seems clear that Aurora is not a trilogy).
 
 ## Ken MacLeod, and the Star Fraction
 
@@ -172,6 +172,6 @@ The Magic Power Of Protagonist Love. Sigh, enough with this shit
 already. (Bonus mini-rant: Joss Whedon is a feminist in the same sense
 that Hunter Thompson isn't a total misanthrope. Sure, the statement is
 true in the context of local comparisons. But is that really the best
-you can do?)
+one could do?)
 
 Examples: Ready Player One; The Reckoners; The Atrocity Archives
