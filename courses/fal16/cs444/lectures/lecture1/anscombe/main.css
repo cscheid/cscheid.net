@@ -1,0 +1,9 @@
+svg.anscombe > circle {
+    fill: white;
+    stroke: black;
+}
+
+svg.anscombe > rect.bg {
+    stroke: null;
+    fill: #eee;
+}
