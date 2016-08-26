@@ -3,9 +3,9 @@ layout: bootstrap
 title: Courses taught by Carlos Scheidegger
 ---
 
-# Spring 2016
+# Fall 2016
 
-- CSC 444, [Data Visualization](http://cscheid.net/courses/spr15/cs444).
+- CSC 444, [Data Visualization](http://cscheid.net/courses/fal16/cs444).
 
 # Fall 2015
 

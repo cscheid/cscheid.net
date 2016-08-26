@@ -108,7 +108,7 @@ which betrays the origin of HTML as a simplified version of
 HTML5 documents need a header, and this header should in most cases
 include a charset declaration. We'll always use UTF-8, so that when I
 write about the Blue Öyster Cult, you'll be able to read
-it. (Actually, it's because Mike Bostock loves
+it. (Actually, it's because Mike Bostock used to love
 [Unicode identifiers](https://github.com/mbostock/d3/issues/1817)
 [ಠ_ಠ](http://knowyourmeme.com/memes/%E0%B2%A0_%E0%B2%A0-look-of-disapproval). Ensuring
 we use the same character set as d3 will save ourselves some potential
@@ -622,3 +622,4 @@ W3 validator against the current URL:
 This means that on my browser, it only takes one click to validate the
 current page. (note that this bookmarklet requires the web page to be
 visible to the world)
+
