@@ -67,8 +67,10 @@ The syllabus for the course is available [here](syllabus.html).
 |----|---|-----|----|
 |Intro | Aug 23 | [Introduction](lectures/week1.html) | [slides](slides/lecture%201.pdf) |
 |----|---|-----|----|
-| Mechanics | Aug 25 | [HTML/CSS/SVG Basics](lectures/week2.html) | no slides |
+| Mechanics | Aug 25 | [HTML/CSS/SVG Basics](lectures/lecture2.html) | no slides |
+|           | Aug 30 | [Javascript Basics](lectures/lecture3.html) | no slides |
 |----|---|-----|----|
+
 
 ## Planned schedule
 
