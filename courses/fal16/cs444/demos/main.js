@@ -10,8 +10,12 @@ function main()
     var u = 0.0;
     var xScale = d3.scaleLinear();
     var yScale = d3.scaleLinear();
-    function xAccessor(d) { return u * d['x-dino'] + (1-u) * d.x; }
-    function yAccessor(d) { return u * d['y-dino'] + (1-u) * d.y; }
+    function xAccessor(d) {
+        return u * d['x-dino'] + (1-u) * d.x;
+    }
+    function yAccessor(d) {
+        return u * d['y-dino'] + (1-u) * d.y;
+    }
     var xExtent, xDinoExtent, yExtent, yDinoExtent;
 
     var attrs = [["x mean", "xMean"],
@@ -103,7 +107,7 @@ function main()
         window.setTimeout(function() {
             flip();
             flipRecur();
-        }, 5000);
+        }, 2500);
     }
     flipRecur();
 }

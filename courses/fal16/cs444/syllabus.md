@@ -156,11 +156,11 @@ week after they are posted, 11:59PM of that day. Tentative dates for assignments
 | [4](assignment_4.html) | Sep 13 | Sep 20 | Sep 27 |
 | [5](assignment_5.html) | Sep 20 | Sep 27 | Oct 4  |
 | [6](assignment_6.html) | Sep 27 | Oct 4  | Oct 11 |
-| [7](assignment_7.html) | Oct 4  | Oct 11 | Oct 18 |
-| [8](assignment_8.html) | Oct 11 | Nov 1  | Nov 8  |
-| [9](assignment_9.html) | Nov 1  | Nov 8  | Nov 15 |
-| [10](assignment_10.html) | Nov 8 | Nov 15 | Nov 22 |
-| [11](assignment_11.html) | Nov 15 | Nov 22 | Nov 29 |
+| [7](assignment_7.html) | Oct 4  | Oct 18 | Oct 25 |
+| [8](assignment_8.html) | Nov 1  | Nov 8  | Nov 15 |
+| [9](assignment_9.html) | Nov 8 | Nov 15 | Nov 22 |
+| [10](assignment_10.html) | Nov 15 | Nov 22 | Nov 29 |
+| [11](assignment_11.html) | Nov 22 | Nov 29 | Dec 6 |
 
 These assignments will test whether you understood the concepts
 discussed in the previous week, and will be small and

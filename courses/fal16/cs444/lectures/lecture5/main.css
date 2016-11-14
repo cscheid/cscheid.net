@@ -1,0 +1,5 @@
+#rgb_ro, #rgb_go, #rgb_bo, #rgb_rd, #rgb_gd, #rgb_bd,
+#hsl_ho, #hsl_so, #hsl_lo, #hsl_hd, #hsl_sd, #hsl_ld,
+#hcl_ho, #hcl_co, #hcl_lo, #hcl_hd, #hcl_cd, #hcl_ld {
+    background-color: #eee;
+}

@@ -9,7 +9,6 @@ title: "Assignment 3: Your first real SVG visualization"
 - Due date: Sep. 13th
 - Assignment name for `turnin`: `cs444_assignment_3`
 
-
 # Description
 
 In this assignment, you will use the SVG creation functions we
@@ -19,11 +18,12 @@ You will turn in an HTML file named `index.html`, together with any
 other files you choose to create and reference. Each visualization
 should be an SVG element of 500 pixels in both width and height. The
 `id` of the element containing the first visualization should be
-"scatterplot_1", and the `id` of the element containing the second
-visualizations should be "scatterplot_2".
+"scatterplot_1", the `id` of the element containing the second
+visualizations should be "scatterplot_2", the `id` of the element and so on.
 
-Note: for this assignment, you are *NOT* allowed to use any source
-code other than the files we provide in links from this document.
+**IMPORTANT NOTE**. For this assignment, you are NOT allowed to use any source
+code other than the files we provide in links from this document. **Do
+not** use d3 or other helper libraries.
 
 
 ## Provided source code
@@ -58,54 +58,70 @@ The dataset looks like this:
      { SATM:790, SATV:780, ACT:35, GPA: 3.887 }
     ];
 
-## Visualization 1 (90% credit)
+## Visualization 1 (50% credit)
 
 Create a [scatterplot](http://en.wikipedia.org/wiki/Scatter_plot) of
-SAT's mathematics scores (`SATM`) versus SAT's verbal scores
-(`SATV`). In other words, the x coordinate of the plot should encode
+SAT's mathematics scores (`SATM` column) versus SAT's verbal scores
+(`SATV` column). In other words, the x coordinate of the plot should encode
 the `SATM` variable, and the y coordinate should encode `SATV`. Use
 the radius of the points to represent ACT scores, and color to
 represent the GPA scores.
 
-Notice that this specification is not exact: there are more than one
-possible solution.  Together with the visualization, include no more
-than two paragraphs of text describing how you designed the encodings.
+## Visualization 2 (25% credit)
 
-## Visualization 2 (10% credit)
+Create a different scatterplot, now showing the relationship between:
 
-Think about the above specification for the visualizations: is it the
+* ACT scores (`ACT` column) on the x axis, 
+* GPA scores (`GPA` column) on the y axes,
+* the radius of the dots to represent `SATM` scores, and
+* color to represent `SATV`.
+
+## Visualization 3 (25% credit)
+
+Create yet another scatterplot:
+
+* the sum of the SAT scores on the x axis,
+* GPA on the y axis,
+* color to represent ACT
+
+## Extra credit: improve and justify visualization 2 (+10% of total assignment)
+
+Think about the above specifications for the visualizations: is it the
 best way to portray the interesting features of the data? (Answer:
 It's fine, but not ideal.)
 
-Your goal for the second visualization is to improve on the first
-one. We have not discussed perceptual principles in class yet, so you
-do not need to give serious justifications for your choices. Still, I
-want you to explore different variants and try to justify your decisions.
+Your goal for the final visualization is to improve on Visualization
+2.  We have not discussed perceptual principles in class yet, so you
+do not need to give serious justifications for your choices. Still,
+this is a chance for you to explore different variants: try to justify
+your decisions.
 
 Together with the improved visualization, submit no more than two
-paragraphs of text describing your changes and reason.
+paragraphs of text describing your changes and reasoning. This text
+can be embedded in the submitted HTML. For this improved
+visualization, you should use an element with `id` attribute equal to
+`scatterplot_2b`.
 
 Hints:
-
-- Visualization 1 used two related quantities for the X and Y axis. Is
-there a way to combine them meaningfully?
 
 - How helpful is the combination of the circle radius with circle
 color? It might help to remember the discussion we had in class about
 [preattentive processing](http://www.csc.ncsu.edu/faculty/healey/PP/).
 
-- Visualization 1 suffers from some amount of overplotting. How would
+- Visualization 2 suffers from some amount of overplotting. How would
 you solve it? (*Overplotting* is what happens when the second shape
 your draw goes entirely over the first shape. As a result, you cannot
 tell if the first point was there to begin with, or, more generally,
 how many points are "hiding")
 
-## Extra credit (50% total)
+## Extra credit: axis annotations (+40%)
 
-(Yes, this is worth half of any future assignment)
+(Yes, if you get full extra credit, you will get half of any future
+assignment worth of points.)
 
 Add axis lines, labels and tick marks to the X and Y axes of your
-visualizations. In other words, to get extra credit, instead of looking like this:
+visualizations. In other words, to get this extra credit, instead of
+looking like this:
 
 ![old faithful data without labels](assignment_3/geyser_no_labels.png)
 
@@ -115,4 +131,10 @@ your plots should look like this:
 
 (Of course, the dataset I just used in the example above is not the
 same as the one you have, so the values for the tick marks, labels,
-etc. should all be different)
+etc. should all be different).
+
+Some things you will need to consider:
+
+* margins for your axes, tick marks, and axis labels
+* try to pick good values for the tick marks, and a good number of
+  them: not too many, and not too few.

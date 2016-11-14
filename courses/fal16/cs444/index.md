@@ -1,6 +1,6 @@
 ---
 layout: bootstrap
-title: CS444/544, Data Visualization
+title: CS444, Data Visualization
 ---
 
 # Data Visualization
@@ -18,7 +18,7 @@ This is the course website for CS444, Data Visualization.
 * Office Hours
   * Carlos: Tuesdays, 1:00PM-3:30PM, GS734. Otherwise by appointment
   only.
-  * Youhao: TBD.
+  * Youhao: Tuesdays, 12:30AM-1:30PM, Fridays 11AM-12PM.
 
 Welcome to CS444, Data Visualization. In this course, you will learn
 how, and why, to create data visualizations.  Please read
@@ -54,13 +54,15 @@ The syllabus for the course is available [here](syllabus.html).
 
 ## [Assignments](assignments.html)
 
-* [Assignment 1](assignment_1.html)
-* [Assignment 2](assignment_2.html)
-* [Assignment 3](assignment_3.html)
-* [Assignment 4](assignment_4.html)
-* [Assignment 5](assignment_5.html)
-* [Assignment 6](assignment_6.html)
-* [Assignment 7](assignment_7.html)
+* [Assignment 1](assignment_1.html) (past due, grades reported)
+* [Assignment 2](assignment_2.html) (past due, grades reported)
+* [Assignment 3](assignment_3.html) (past due, grades reported)
+* [Assignment 4](assignment_4.html) (past due, grades reported)
+* [Assignment 5](assignment_5.html) (past due, grades reported)
+* [Assignment 6](assignment_6.html) (past due, grades reported)
+* [Assignment 7](assignment_7.html) (past due, grades reported)
+* [Assignment 8](assignment_8.html) (**posted**, due Nov. 9th)
+* [Assignment 9](assignment_9.html) (**posted**, due Nov. 15th)
 
 ## Lectures
 
@@ -69,8 +71,33 @@ The syllabus for the course is available [here](syllabus.html).
 |----|---|-----|----|
 | Mechanics | Aug 25 | [HTML/CSS/SVG Basics](lectures/lecture2.html) | no slides |
 |           | Aug 30 | [Javascript Basics](lectures/lecture3.html) | no slides |
+|           | Sep  1 | [Javascript + DOM, SVG](lectures/lecture4.html) | no slides |
+|           | Sep  6 | [d3 intro](lectures/lecture5.html) | no slides |
+|           | Sep  8 | [d3 joins and scales](lectures/lecture6.html) | no slides |
 |----|---|-----|----|
-
+| Principles | Sep 13 | [Color vision](lectures/lecture7.html) | [slides](slides/Color%20Fal16.pdf) |
+|            | Sep 15 | [Color vision](lectures/lecture8.html) | [slides](slides/Color%202%20Fal16.pdf) |
+|            | Sep 20 | [Other perceptual channels](lectures/lecture9.html) | [slides](slides/Other%20Channels%201.pdf) |
+|            |  | Assignment 3 discussion | |
+|            | Sep 22 | [Other perceptual channels](lectures/lecture10.html) | [slides](slides/Other%20Channels%202.pdf) |
+|            | Sep 27 | Assignment 4 discussion | |
+|            |        | [Interaction](lectures/lecture11.html) | [slides](slides/interaction.pdf) |
+|            | Sep 29 | [Design Criticism, Algebraic Design](lectures/lecture12.html) | [slides](slides/algebraic_design.pdf) |
+|----|---|-----|----|
+| Techniques | Oct 4 | [Basic Spatial Arrangements](lectures/lecture13.html) | [slides](slides/basic%20spatial%20arrangements.pdf) |
+|            | Oct 6 | cont'd. | |
+|            | Oct 11 | [High-Dimensional Data](lectures/lecture15.html) | [slides](slides/Dimensionality%20Reduction.pdf) |
+|            | Oct 13 | High-Dimensional Data | |
+|----|---|-----|----|
+| Review | Oct 20 | [Review](lectures/lecture17.html) | [slides](slides/midterm%20review.pdf) |
+|----|---|-----|----|
+|        | Oct 25 | MIDTERM | 
+|        | Oct 27 | Class canceled (VIS 2016) | 
+|        | Nov 1st | [Hierarchies](lectures/lecture18.html) | [slides](slides/Hierarchies.pdf) |
+|        | Nov 3rd | Graphs | [slides](slides/Graphs.pdf) |
+|        | Nov 8th | Graphs+Spatial Data| [slides](slides/spatial_data.pdf) |
+|        | Nov 10th | Spatial Data | [slides](slides/spatial_data.pdf), [slides 2](slides/spatial_data_2.pdf)|
+|----|---|-----|----|
 
 ## Planned schedule
 
@@ -80,11 +107,9 @@ The syllabus for the course is available [here](syllabus.html).
 * DOM, SVG
 * Javascript basics
 * Higher-order Javascript
-* Talking to a server, AJAX
 * d3 intro
 * d3 selections, joins
 * d3 scales, transitions
-* Exploratory Data Analysis, d3 data loading, cleaning
 
 ### Principles
 
@@ -119,7 +144,6 @@ The syllabus for the course is available [here](syllabus.html).
 * [Week 4, Odds and Ends (spr 2015 material)](../../spr15/cs444/lectures/week4.html): JavaScript Events, AJAX, HTTP.
 * [Week 4b, Introduction to d3 (spr 2015 material)](../../spr15/cs444/lectures/week4b.html)
 * [Week 5, d3 selections and joins (spr 2015 material)](../../spr15/cs444/lectures/week5.html)
-* Exploratory Data Analysis, Data Cleaning, Project Discussion
 
 ### Principles
 

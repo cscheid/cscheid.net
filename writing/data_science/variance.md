@@ -29,10 +29,10 @@ other. If we slightly rewrite variance to be $ \Var[X] =
 E[(X - E[X])(X - E[X])] $, then we can see that we're measuring the
 expectation of the product of the difference of the expectation to
 itself, *with itself*. But it can be useful to measure this product of
-the difference from the expectation between two different variables,
+the difference from the expectation between two different expressions,
 and this is the *covariance*:
 
 $$ \Cov[X, Y] = E[(X - E[X])(Y - E[Y])] $$
 
-## Variance of a sample vs. population variance
+
 

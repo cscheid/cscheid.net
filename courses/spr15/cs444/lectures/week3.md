@@ -390,7 +390,7 @@ Here's what can go wrong:
 	{
 		return {
 			x: 3,
-			get(): function() { return this.x };
+			get: function() { return this.x };
 		};
 	}
 

@@ -27,3 +27,7 @@ nothing.
 # Reading
 
 I think I read too much [scifi](scifi_notes.html).
+
+## Data Science
+
+I've started writing down some notes on [data science](data_science/).

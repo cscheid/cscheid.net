@@ -1,11 +1,11 @@
 ---
 layout: bootstrap
-title: Week 2, The basics of the web stack
+title: Lecture 2, The basics of the web stack (Aug 25th, 2016)
 ---
 
-# Week 2, The basics of the web stack
+# Lecture 2, The basics of the web stack
 
-This week, we go over the very basics of how the content of a web page
+Today, we go over the very basics of how the content of a web page
 is represented in HTML. We will learn some simple CSS, which lets us separate the content of
 the web page with how we want it to look; this separation will let us
 change both things independently of one another, which will help a lot
@@ -131,7 +131,7 @@ While HTML is a textual representation of a markup document, the DOM
 is a programming interface for it. DOM stands for "Document Object
 Model", and in this class we will use "DOM" to mean the tree
 created by the web browsers to represent the document, and the API
-that they provide in order to access it. This week, we will not use
+that they provide in order to access it. Today, we will not use
 the API part of it, but the examples we'll go over in class will
 highlight the tree structure of the DOM.
 

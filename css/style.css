@@ -18,15 +18,13 @@ ul.posts {
 }
 
 p, ul, ol, td {
-    font-family: "freight-sans-pro-1", "freight-sans-pro-2", "Helvetica Neue", sans;
-    font-weight: 400;
+    font-family: "Helvetica Neue", "Calibri", sans;
+    font-weight: 300;
     font-size: 1.03em;
-    /* font-family: "garamond-premier-pro-display-1","garamond-premier-pro-display-2"; */
-    /* font-weight: 100; */
 }
 
 th {
-    font-family: "freight-sans-pro-1", "freight-sans-pro-2", "Helvetica Neue", sans;
+    font-family: "Helvetica Neue", "Calibri", sans;
     font-weight: 400;
 }
 
@@ -36,13 +34,13 @@ table td, table th {
 }
 
 em {
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal
 }
 
 .heading {
-    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
-    font-weight: 100;
+    font-family: "Helvetica Neue", "Calibri", sans;
+    font-weight: 500;
     font-size: .75em;
     margin-top: 20px;
 }
@@ -57,7 +55,7 @@ em {
 }
 
 h1.my-sidebar > a {
-    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-family: "Helvetica Neue", "Calibri", sans;
     padding-top: 0em;
     padding-bottom: 0em;
     position: relative;
@@ -89,7 +87,7 @@ h2.my-sidebar, h3.my-sidebar, h4.my-sidebar {
 }
 
 h2.my-sidebar > a, h3.my-sidebar > a, h4.my-sidebar > a {
-    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-family: "Helvetica Neue", "Calibri", sans;
     padding: 0;
     margin: 0;
     font-weight: 300;
@@ -99,7 +97,7 @@ h2.my-sidebar > a, h3.my-sidebar > a, h4.my-sidebar > a {
 }
 
 h1 {
-    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-family: "Helvetica Neue", "Calibri", sans;
     padding-top: 0em;
     padding-bottom: 0em;
     position: relative;
@@ -109,7 +107,7 @@ h1 {
 }
 
 h2, h3, h4 {
-    font-family: "museo-sans-1","museo-sans-2", "Helvetica Neue";
+    font-family: "Helvetica Neue", "Calibri", sans;
     font-weight: 700;
     position: relative;
     left: -1em;

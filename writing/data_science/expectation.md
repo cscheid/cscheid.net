@@ -56,9 +56,22 @@ write things like: $E[X^2 - X]$ or $E[(X+Y)^2]$.
 Some of these expressions can get confusing. For example, what if $X$
 denotes the value of one die roll, and $Y$ the value of another roll?
 The rule to keep in mind is that the expectation operator is always taken "over a
-single dataset" (more formally, it's always over one single
-random variable and associated probability space). So in the example
+single dataset" (more formally, it's always over a given, single
+random variable and its associated probability space). So in the example
 above, there is an implicit operation of turning the two dice rolls
 into a *single* experiment, and in that case you need to be careful to
 think about the probabilities that each particular case gets (read
-more on probability spaces [here](probabilities.html)).
+[more on probability spaces](probabilities.html)).
+
+The main feature of the expectation is that it's a *linear* operator:
+
+$$E[X + Y] = E[X] + E[Y]$$
+
+$$E[kX] = k E[X]$$
+
+$$E[k] = k$$
+
+It means that we can understand complicated expectation expressions by
+breaking them into sums, and turning those into sums of
+(simpler) expectations. And this is really why they are so popular,
+even when sometimes it doesn't make sense to use them. 

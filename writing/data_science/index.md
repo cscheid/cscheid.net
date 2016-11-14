@@ -13,5 +13,8 @@ probability, statistics, data mining, and machine learning.
 
 I have found that students often lack the intuition that ties these
 fields together. These notes try to explain some of the basic concepts
-in a way that I hope will be useful to build intuitin.
+in a way that I hope will be useful.
+
+* [Principal Components Analysis](pca.html)
+* [Multidimensional Scaling](mds.html)
 

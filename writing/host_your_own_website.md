@@ -35,9 +35,9 @@ I currently use [namecheap](http://www.namecheap.com) for my domain
 purchases, and you can get many of them for around a dollar a month.
 
 I use [DigitalOcean](http://www.digitalocean.com) for the actual
-hosting. This webserver is currently a U$20/month machine because I host
-other services, but I'm considering downgrading it to a U$5/month
-machine.
+hosting. This webserver currently costs 20 dollars a month machine because I host
+other services, but I'm considering downgrading it to a machine a
+fourth the price.
 
 In case any of these companies go out of service, you can simply move
 your domain and machines to competitors. The important thing is that
