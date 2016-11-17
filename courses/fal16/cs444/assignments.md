@@ -16,8 +16,7 @@ know how `turnin` works, please read and follow
 5.  [d3 scales, transitions, axes](assignment_5.html).
 6.  [Color spaces, bivariate maps, texton sequences](assignment_6.html).
 7.  [Interaction, linked plots](assignment_7.html).
-8.  Treemaps
-9.  Geo visualization
-10. Scalar fields
-11. Vector fields
+8.  [Treemaps](assignment_8.html).
+9.  [Scalar fields](assignment_9.html).
+10. [Vector fields](assignment_10.html).
 

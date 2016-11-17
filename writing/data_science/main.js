@@ -4,87 +4,130 @@ var svg = d3.select("#div-duality")
 
 //////////////////////////////////////////////////////////////////////////////
 
+function updateCursor(d) {
+    cursorLine.p2.x = d3.event.offsetX;
+    cursorLine.p2.y = d3.event.offsetY;
+    updateHyperPlaneDrawing();
+}
+
 var bg = svg.append("rect")
         .attr("width", 500).attr("height", 500)
         .attr("fill", "rgba(0,0,0,0.1)")
-        .on("mousemove", function(d) {
-            p2.x = d3.event.offsetX;
-            p2.y = d3.event.offsetY;
-            updateDrawing();
-        });
+        .on("mousemove", updateCursor);
 
-var ellipse_g = svg.append("g")
-        .attr("transform", "translate(250, 250) rotate(45)");
+var centerX = 250, centerY = 250,
+    radiusX = 200, radiusY = 80,
+    rotate = 45;
 
-var ellipse = ellipse_g.append("ellipse")
+var ellipseG = svg.append("g")
+        .attr("transform",
+              cscheid.svg.translate(centerX, centerY) +
+              cscheid.svg.rotate(rotate));
+
+var ellipseSVG = ellipseG.append("ellipse")
         .attr("cx", 0).attr("cy", 0)
-        .attr("rx", 100).attr("ry", 80)
-        .attr("fill", "white").attr("stroke", "black").attr("stroke-width", 2);
+        .attr("rx", radiusX).attr("ry", radiusY)
+        .attr("fill", "white").attr("stroke", "black").attr("stroke-width", 2)
+        .on("mousemove", updateCursor);
+
+var G = cscheid.geometry;
+var M = cscheid.math;
+
+var ellipse = G.ellipse()
+        .transform(G.Transform.prototype.scale(radiusX, radiusY))
+        .transform(G.Transform.prototype.rotate(M.radians(rotate)))
+        .transform(G.Transform.prototype.translate(centerX, centerY))
+;
 
 //////////////////////////////////////////////////////////////////////////////
 
-function translate(x, y) {
-    return "translate(" + x + ", " + y + ")";
-}
-
-function translateD(d) {
-    return translate(d.x, d.y);
-}
-
-function updateDrawing() {
+function updateHyperPlaneDrawing() {
     setTangentLine();
-    pointToCursor.attrs(lineD);
+    setDualTangentLine();
     tangentAtCursor.attrs(lineD);
+    tangentAtEllipse.attrs(lineD);
+    pointToCursor.attrs(lineD);
+}
+
+function updateClosestPointDrawing() {
+    debugGroup.selectAll("*").remove();
+    cscheid.debug.clear();
+    setLineToClosestPoint();
+    // cscheid.debug.appendToD3(debugGroup);
+    lineToClosestPointSVG.attrs(lineD);
 }
 
 var drag = d3.drag()
         .on("drag", function(d,i) {
             d.x += d3.event.dx;
             d.y += d3.event.dy;
-            d3.select(this).attr("transform", translateD);
-            updateDrawing();
+            d3.select(this).attr("transform", cscheid.svg.translateVec);
+            updateClosestPointDrawing();
+            updateHyperPlaneDrawing();
         });
 
-var p1 = { x: 50, y: 400 };
-var p2 = { x: 0, y: 0 };
-
-var cursorLine = { p1: p1, p2: p2 };
-var tangentLine = { p1: {x: 0, y: 0}, p2: {x: 0, y: 0} };
+var cursorLine = { p1: G.vec2(50, 400), p2: G.vec2(0, 0) };
+var tangentLine = { p1: G.vec2(0,0), p2: G.vec2(0,0) };
+var dualTangentLine = { p1: G.vec2(0,0), p2: G.vec2(0,0) };
+var lineToClosestPoint = { p1: cursorLine.p1, p2: G.vec2(0, 0) };
 
 function setTangentLine() {
-    var d = { x: p2.x - p1.x, y: p2.y - p1.y };
-    var l = Math.sqrt(d.x * d.x + d.y * d.y);
-    if (l === 0.0) {
-        l = 1.0;
-    }
-    d.x /= l;
-    d.y /= l;
-    var p = { x: d.y, y: -d.x };
-    tangentLine.p1.x = p2.x - p.x * 500;
-    tangentLine.p1.y = p2.y - p.y * 500;
-    tangentLine.p2.x = p2.x + p.x * 500;
-    tangentLine.p2.y = p2.y + p.y * 500;
+    var p1 = cursorLine.p1, p2 = cursorLine.p2;
+    var d = p2.minus(p1).unit();
+    var tangent = G.vec2(d.y, -d.x).scale(500);
+    tangentLine.p1.set(p2.minus(tangent));
+    tangentLine.p2.set(p2.plus(tangent));
 }
 
-var lineD =
-        { x1: function(d) { return d.p1.x; },
-          x2: function(d) { return d.p2.x; },
-          y1: function(d) { return d.p1.y; },
-          y2: function(d) { return d.p2.y; } };
+function setDualTangentLine() {
+    var p1 = cursorLine.p1, p2 = cursorLine.p2;
+    var n = p1.minus(p2).unit();
+    var p = ellipse.tangentPointWithNormal(n);
+    var tangent = G.vec2(n.y, -n.x).scale(500);
+    dualTangentLine.p1.set(p.minus(tangent));
+    dualTangentLine.p2.set(p.plus(tangent));
+}
+
+function setLineToClosestPoint() {
+    var closest = ellipse.closestPoint(lineToClosestPoint.p1);
+    lineToClosestPoint.p2.set(closest);
+}
+
+var lineD = {
+    x1: function(d) { return d.p1.x; },
+    x2: function(d) { return d.p2.x; },
+    y1: function(d) { return d.p1.y; },
+    y2: function(d) { return d.p2.y; } };
+
 
 var pointToCursor = svg.append("line")
         .datum(cursorLine)
         .attrs(lineD)
-        .attrs({ stroke: "black", fill: "none", "stroke-dasharray": "2 2"});
+        .attrs({ stroke: "gray", fill: "none", "stroke-dasharray": "2 2" });
 
 var tangentAtCursor = svg.append("line")
         .datum(tangentLine)
         .attrs(lineD)
-        .attrs({ stroke: "black", fill: "none"});
+        .attrs({ stroke: "gray", "stroke-dasharray": "2 2" });
+
+var tangentAtEllipse = svg.append("line")
+        .datum(dualTangentLine)
+        .attrs(lineD)
+        .attrs({ stroke: "red", "stroke-dasharray": "2 2" });
+
+var lineToClosestPointSVG = svg.append("line")
+        .datum(lineToClosestPoint)
+        .attrs(lineD)
+        .attrs({ stroke: "blue", fill: "none", "stroke-dasharray": "2 2" });
 
 var point = svg.append("circle")
-        .datum(p1)
+        .datum(cursorLine.p1)
         .attr("r", 5)
-        .attr("transform", translateD)
+        .attr("transform", cscheid.svg.translateVec)
         .attr("cursor", "pointer")
         .call(drag);
+
+var debugGroup = svg.append("g");
+
+updateClosestPointDrawing();
+updateHyperPlaneDrawing();

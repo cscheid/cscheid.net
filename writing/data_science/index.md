@@ -17,4 +17,4 @@ in a way that I hope will be useful.
 
 * [Principal Components Analysis](pca.html)
 * [Multidimensional Scaling](mds.html)
-
+* [A simple illustration of duality](duality.html)

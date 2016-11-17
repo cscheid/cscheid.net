@@ -61,8 +61,9 @@ The syllabus for the course is available [here](syllabus.html).
 * [Assignment 5](assignment_5.html) (past due, grades reported)
 * [Assignment 6](assignment_6.html) (past due, grades reported)
 * [Assignment 7](assignment_7.html) (past due, grades reported)
-* [Assignment 8](assignment_8.html) (**posted**, due Nov. 9th)
-* [Assignment 9](assignment_9.html) (**posted**, due Nov. 15th)
+* [Assignment 8](assignment_8.html) (past due, grades reported)
+* [Assignment 9](assignment_9.html) (past due)
+* [Assignment 10](assignment_10.html) (**posted**, due Nov. 22nd)
 
 ## Lectures
 
@@ -97,6 +98,9 @@ The syllabus for the course is available [here](syllabus.html).
 |        | Nov 3rd | Graphs | [slides](slides/Graphs.pdf) |
 |        | Nov 8th | Graphs+Spatial Data| [slides](slides/spatial_data.pdf) |
 |        | Nov 10th | Spatial Data | [slides](slides/spatial_data.pdf), [slides 2](slides/spatial_data_2.pdf)|
+|        | Nov 15th | Spatial Data | [slides 2](slides/spatial_data_2.pdf) |
+|----|---|-----|----|
+| Topics | Nov 17th | Cartography | [slides](slides/cartography.pdf) |
 |----|---|-----|----|
 
 ## Planned schedule

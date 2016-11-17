@@ -9,6 +9,8 @@ layout: d3_project
 
 <div id="div-duality"></div>
 
-The duality principle states that the **smallest** distance from a point
-to a convex shape is also the **largest** distance from a point to a
+The duality principle states that the <span class="blue">**smallest**</span> distance from a point
+to a convex shape is also the <span class="red">**largest**</span> distance from a point to a
 hyperplane tangent to the convex shape.
+
+(Go ahead, drag the black point around.)

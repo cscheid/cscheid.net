@@ -5,7 +5,7 @@ title: Courses taught by Carlos Scheidegger
 
 # Spring 2017
 
-- CSC 630, [Computational Data Science](http://cscheid.net/courses/spr17/cs630/).
+- CSC 655, [Computational Data Science](http://cscheid.net/courses/spr17/cs655/).
 
 # Fall 2016
 
