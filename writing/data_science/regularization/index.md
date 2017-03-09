@@ -44,7 +44,7 @@ $$ X \beta = y $$
 
 Here, we are looking to fit the best parameters $\beta$ to rows of the
 design matrix. Each input point $(v\_i, y\_i)$ is mapped to some
-feature space encoded in the rows of X ($f(v\_i) = x\_{i\star}$). The
+feature space encoded in the rows of $X$ ($f(v\_i) = x\_{i\star}$). The
 $\beta$ parameters which minimize the expected squared error are:
 
 $$ \hat{\beta} = (X^T X)^{-1} X^T y $$

@@ -90,3 +90,13 @@ But does this algorithm terminate? And does it give an optimal
 solution?
 
 ## Validity
+
+TBF.
+
+## Additional reading
+
+The choice of initialization for $k$-means can greatly affect how fast
+it converges (and good the results
+are). [$k$-means++](http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf)
+offers a simple rule for initialization that has provable
+approximation guarantees.

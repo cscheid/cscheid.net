@@ -176,3 +176,8 @@ code {
 a.reversefootnote {
     font-size: 50%;
 }
+
+#footer {
+    font-weight: 300;
+    color: #ddd;
+}
