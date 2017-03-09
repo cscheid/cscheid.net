@@ -53,7 +53,7 @@ function updateClosestPointDrawing() {
     debugGroup.selectAll("*").remove();
     cscheid.debug.clear();
     setLineToClosestPoint();
-    // cscheid.debug.appendToD3(debugGroup);
+    cscheid.debug.appendToD3(debugGroup);
     lineToClosestPointSVG.attrs(lineD);
 }
 

@@ -102,7 +102,7 @@ There is no required textbook. All material will be available online, including 
 There are many good visualization textbooks, all optional:
 
 * Tamara Munzner, [Visualization Analysis and Design](http://www.cs.ubc.ca/~tmm/vadbook/).
-* Scott Murray, [Interactive Data Visualization for the Web]().
+* Scott Murray, [Interactive Data Visualization for the Web](http://chimera.labs.oreilly.com/books/1230000000345).
 
 ## Assessment
 
@@ -139,7 +139,7 @@ provided one week after the assignment is due.
 * Midterm date: Tuesday, October 25th, 2016.
   * Exam grades will be returned by October 30th.
 * Final date: Dec 13th 2016, 8:00AM-10:00AM.
-  * Location: TBD.
+  * Location: GS 906.
 
 Please refer to the [UA Final exam regulations](https://www.registrar.arizona.edu/courses/final-examination-regulations-and-information) for more information.
 
@@ -160,7 +160,7 @@ week after they are posted, 11:59PM of that day. Tentative dates for assignments
 | [8](assignment_8.html) | Nov 1  | Nov 8  | Nov 15 |
 | [9](assignment_9.html) | Nov 8 | Nov 15 | Nov 22 |
 | [10](assignment_10.html) | Nov 15 | Nov 22 | Nov 29 |
-| [11](assignment_11.html) | Nov 22 | Nov 29 | Dec 6 |
+| [11](assignment_11.html) | Nov 29 | Dec 6 | Dec 13 |
 
 These assignments will test whether you understood the concepts
 discussed in the previous week, and will be small and

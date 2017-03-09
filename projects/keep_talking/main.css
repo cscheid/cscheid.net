@@ -1,0 +1,53 @@
+body {
+    font-size: 12px;
+    font-family: Helvetica Neue;
+}
+
+.small-button {
+    width: 40px;
+    height: 18px;
+    font-size: 16px;
+    outline: 1px solid gray;
+    padding: 5px;
+    padding-top: 6px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.tiny-button {
+    width: 20px;
+    height: 18px;
+    font-size: 16px;
+    outline: 1px solid gray;
+    padding: 5px;
+    padding-top: 6px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.wire-button {
+    width: 80px;
+    height: 18px;
+    font-size: 16px;
+    outline: 1px solid gray;
+    padding: 5px;
+    padding-top: 6px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+
+.wire-caption {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.unselected {
+    opacity: 0.1;
+}
+
+#simpleWires-answer {
+    font-weight: 500;
+}

@@ -40,7 +40,7 @@ If you've read about PCA before, you might remember something like
 "the principal components are the eigenvectors of the covariance
 matrix". This statement is true, but it doesn't actually help you
 understand what the PCA is doing. Instead, we will look at the PCA 
-
+in two ways.
 
 # PCA through the covariance matrix
 
@@ -50,7 +50,7 @@ of the matrix $ X\_{*i} = [ x\_{0,i}, x\_{1,i}, \cdots, x\_{n-1,i} ] $
 as a vector (storing the values of these attributes),
 then the covariance between any two attributes is given by
 
-$$\Cov[X_{*i}, Y_{*j}] = E[(X_{*i} - E[X_{*i}])(X_{*j} - E[X_{*j}])]$$
+$$\Cov[X_{*i}, X_{*j}] = E[(X_{*i} - E[X_{*i}])(X_{*j} - E[X_{*j}])]$$
 
 To make our analysis easier, let's work with a slightly different
 version of the dataset, $\tilde{X}$, where we will subtract the
@@ -65,7 +65,7 @@ $$E[\tilde{X}_{*i}] = 0.$$
 Now, it's easy to see that the covariance matrix of $\tilde{X}$ has a
 simpler expression:
 
-$$\begin{align}\Cov[\tilde{X}_{*i}, \tilde{Y}_{*j}] &=& E[(\tilde{X}_{*i} - E[\tilde{X}_{*i}])(\tilde{X}_{*j} - E[\tilde{X}_{*j}])]\\\Cov[\tilde{X}_{*i}, \tilde{Y}_{*j}] &=& E[\tilde{X}_{*i} \tilde{X}_{*j}]\\m \Cov[\tilde{X}_{*i}, \tilde{Y}_{*j}] &=& m \tilde{X}^T \tilde{X}\end{align}$$
+$$\begin{align}\Cov[\tilde{X}_{*i}, \tilde{X}_{*j}] &=& E[(\tilde{X}_{*i} - E[\tilde{X}_{*i}])(\tilde{X}_{*j} - E[\tilde{X}_{*j}])]\\\Cov[\tilde{X}_{*i}, \tilde{X}_{*j}] &=& E[\tilde{X}_{*i} \tilde{X}_{*j}]\\m \Cov[\tilde{X}_{*i}, \tilde{X}_{*j}] &=& m \tilde{X}^T \tilde{X}\end{align}$$
 
 $\tilde{X}^T \tilde{X}$ is a symmetric, $n \times n$ matrix. 
 
@@ -76,7 +76,7 @@ $\tilde{X}^T \tilde{X}$ cannot have a negative eigenvalue. It also means that we
 
 $$\tilde{X}^T \tilde{X} = U \Lambda U^T,$$
 
-where $U$ is an *orthogonal* matrix (a rotation), and $\Lambda$ is a diagonal matrix of positive values, sorted from largest to smallest [^1]. This, in turn, yields:
+where $U$ is an *orthogonal* matrix (a rotation), and $\Lambda$ is a diagonal matrix of non-negative values, sorted from largest to smallest [^1]. This, in turn, yields:
 
 $$\tilde{X}^T \tilde{X} = U \Lambda^{1/2} \Lambda^{1/2} U^T,$$
 
@@ -170,12 +170,14 @@ eigendecomposition.
 But enough about the SVD: let's put it to use. Specifically, let's look
 at the SVD of $\tilde{X}$:
 
-$$\begin{align}\tilde{X} &=& U \Sigma V^T \\ \tilde{X} \tilde{X}^T & = & U \Sigma V^T V \Sigma U^T \\ \tilde{X}^T \tilde{X} &=& V \Sigma U^T U \Sigma V^T \end{align}$$
+$$\begin{align}\tilde{X} &=& U \Sigma V^T \\ \tilde{X} \tilde{X}^T & = & U \Sigma V^T V \Sigma^T U^T \\ \tilde{X}^T \tilde{X} &=& V \Sigma^T U^T U \Sigma V^T \end{align}$$
 
 Since $U$ and $V$ are orthogonal, a lot of terms cancel:
 
-$$\begin{align} \tilde{X} \tilde{X}^T & = & U \Sigma^2 U^T \\ \tilde{X}^T \tilde{X} &=& V \Sigma^2 V^T \end{align}$$
+$$\begin{align} \tilde{X} \tilde{X}^T & = & U \Sigma_1^2 U^T \\ \tilde{X}^T \tilde{X} &=& V \Sigma_2^2 V^T \end{align}$$
 
+(We use $\Sigma_1^2$ and $\Sigma_2^2$ to differentiate them since the former
+is $m \times m$, and the latter is $n \times n$.)
 From here, we can see that there are a lot of relationships between
 the SVD of $\tilde{X}$ and the eigendecompositions of
 $\tilde{X}\tilde{X}^T$, and that of $\tilde{X}^T\tilde{X}$.
@@ -248,6 +250,13 @@ centering the **rows** of X.
    specific order. Show that the PCA of a dataset is independent of
    the choice of ordering of rows in the matrix $X$.
    
+4. Finish the argument that any matrix $M$ that can be written as $M =
+   X^T X$ cannot have a negative eigenvalue.
+
+## Acknowledgments
+
+Mingwei Li provided careful proofreading and exercise suggestions.
+
 # Footnotes
 
 [^1]: The decomposition of a matrix $M$ into $M = U \Lambda U^T$, that is, into an orthogonal matrix, a diagonal matrix, and the inverse of the same orthogonal matrix is known as a "diagonalization" of amatrix. In this form, it should be easy to see that the columns of $U$ are the eigenvectors of $M$, and the diagonal entries of $\Lambda$ are the eigenvectors (so this is also often known as an "eigendecomposition").

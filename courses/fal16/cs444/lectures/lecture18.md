@@ -13,4 +13,4 @@ flower samples, etc). The main novelty now is that we are interested
 in the relationships between elements in the data. We start by
 covering hierarchies, and then we will look at more general graphs.
 
-Slides for today's are [here](../slides/Hierarchies.pdf).
+Slides for today's lecture are [here](../slides/Hierarchies.pdf).

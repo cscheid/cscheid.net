@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <meta name="viewport" content="width=device-width">
+    <title>Keep Talking and Nobody Explodes</title>
+    <link rel="stylesheet" href="main.css"></link>
+    <style>
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.4.0/d3.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <div id="information">
+      <div>Bomb Information</div>
+      <div>Last digit of serial number is [<input type="checkbox" id="sn-even"> <label for="sn-even">even</label></input>] [<input type="checkbox" id="sn-odd"> <label for="sn-odd">odd</label></input>].</div>
+      <div>Lit indicators: <div><span id="lit-indicators"></span></div></div>
+    </div>
+    <hr>
+    <div id="simpleWires">
+      <div>Simple Wires</div>
+      <div id="simpleWires-n" style="margin-left:150px"></div>
+      <div id="simpleWires-wires"></div>
+      <div id="simpleWires-instructions">Cut the <span id="simpleWires-answer">?</span> wire</div>
+    </div>
+    <hr>
+    <div id="button">
+      <div>Button</div>
+      <div><span style="display: inline-block; width: 50px">Color</span><span id="button-colors"></span></div>
+      <div><span style="display: inline-block; width: 50px">Word</span><span id="button-words"></span></div>
+      <div><span style="display: inline-block; width: 50px">Strip</span><span id="button-strips"></span></div>
+      <div id="button-instructions"><span id="button-action-1"></span> the button<span id="button-action-2"></span></div>
+    </div>
+  </body>
+</html>

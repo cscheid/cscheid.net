@@ -62,8 +62,9 @@ The syllabus for the course is available [here](syllabus.html).
 * [Assignment 6](assignment_6.html) (past due, grades reported)
 * [Assignment 7](assignment_7.html) (past due, grades reported)
 * [Assignment 8](assignment_8.html) (past due, grades reported)
-* [Assignment 9](assignment_9.html) (past due)
-* [Assignment 10](assignment_10.html) (**posted**, due Nov. 22nd)
+* [Assignment 9](assignment_9.html) (past due, grades reported)
+* [Assignment 10](assignment_10.html) (past due, grades reported)
+* [Assignment 11](assignment_11.html) (**posted**)
 
 ## Lectures
 
@@ -101,6 +102,11 @@ The syllabus for the course is available [here](syllabus.html).
 |        | Nov 15th | Spatial Data | [slides 2](slides/spatial_data_2.pdf) |
 |----|---|-----|----|
 | Topics | Nov 17th | Cartography | [slides](slides/cartography.pdf) |
+|        | Nov 22nd | Large Data | [slides](slides/large%20data.pdf) |
+|        | Nov 24th | Thanksgiving, no class |  |
+|        | Nov 29th | [Putting it all together](lectures/lecture25.html) |  |
+|        | Dec 1st  | [The Human Side of Data](lectures/lecture26.html) |  |
+|        | Dec 6th  | Retrospective, Review | [slides](slides/retrospective.pdf) |
 |----|---|-----|----|
 
 ## Planned schedule

@@ -1,15 +1,15 @@
 tiny:
 
-Carlos Scheidegger is assistant professor at the University of
+Carlos Scheidegger is an assistant professor at the University of
 Arizona. His research interests are in large-scale data analysis,
-information visualization and, more broadly, "where people meet
-data" and vice-versa.
+information visualization and, more broadly, "where people meet data"
+and vice-versa.
 
 short:
 
-Since 2014, Carlos Scheidegger is assistant professor in the
+Since 2014, Carlos Scheidegger is an assistant professor in the
 Department of Computer Science at the University of Arizona. He holds
-a PhD in Computing from the University of Utah, where we worked on
+a PhD in Computing from the University of Utah, where he worked on
 software infrastructure for scientific collaboration. His current
 research interests are in large-scale data analysis, information
 visualization and, more broadly, what happens "when people meet

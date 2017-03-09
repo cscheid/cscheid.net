@@ -375,7 +375,7 @@ So far, so good: we've used `this` to change the value bound to the
 `x` field in the object from the object itself. That's pretty
 convenient.
 
-However, the conenience comes with a caveat. The way JavaScript
+However, the convenience comes with a caveat. The way JavaScript
 decides to associate `this` with a given object is simple to explain,
 but sometimes leads to strange behavior. The way it works is that
 although `obj.someFunction` is the syntax to access the `someFunction`

@@ -132,7 +132,8 @@ people can change their own biologies, their societies? Are they
 changing their own selves? If so, is gender not really a part of the
 self? Who gets to decide it? You, or the people around you?
 
-Examples: Too Like The Lightning; The Rapture of the Nerds; 2312
+Examples: Too Like The Lightning; The Rapture of the Nerds; 2312;
+Lock In
 
 ### Power and Politics
 
@@ -174,4 +175,5 @@ that Hunter Thompson isn't a total misanthrope. Sure, the statement is
 true in the context of local comparisons. But is that really the best
 one could do?)
 
-Examples: Ready Player One; The Reckoners; The Atrocity Archives
+Examples: Ready Player One; The Reckoners; The Atrocity Archives;
+Altered Carbon

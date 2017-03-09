@@ -17,6 +17,10 @@ because of its simplicity.
 
 As usual, you will build on skeleton code we provide.
 
+**note**: there was a problem in the screenshots of the uniform and
+  randomly-placed arrow glyphs. It has been now fixed. Thank you,
+  Steven Eiselen and Jesse Bartels for catching and reporting it.
+
 # Data
 
 The data is provided in one array: `data`. This array contains objects
