@@ -28,7 +28,7 @@ function linearLeastSquares(data, degree, lambda, normalize)
         }
         for (i=1; i<=degree; ++i) {
             averages[i] /= data.xs.length;
-            stdevs[i] = Math.pow(stdevs[i] - Math.pow(averages[i], 2), 0.5);
+            stdevs[i] = Math.pow(stdevs[i]/data.xs.length - Math.pow(averages[i], 2), 0.5);
         }
     } else {
         for (i=0; i<=degree; ++i) {
@@ -46,7 +46,6 @@ function linearLeastSquares(data, degree, lambda, normalize)
         matrix.push(row);
     }
 
-    // data-imputation version of regularization
     var s = numeric.svd(matrix);
 
     // horrible, horrible. FIXME: don't make a diagonal matrix.

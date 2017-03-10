@@ -3,7 +3,6 @@ $(document).ready(function() {
 });
 
 function guessGithubURL() {
-    debugger;
     var path = window.location.pathname;
     if (path.endsWith("/"))
         path += "index.md";
