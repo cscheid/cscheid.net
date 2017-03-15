@@ -181,3 +181,7 @@ a.reversefootnote {
     font-weight: 300;
     color: #ddd;
 }
+
+div.footnotes {
+    font-size: 80%;
+}

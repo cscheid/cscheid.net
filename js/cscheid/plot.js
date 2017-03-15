@@ -38,22 +38,22 @@
             var colorAccessor;
             var radiusAccessor = defaultAccessor(accessors, "r", 2);
             if (accessors.class) {
-                colorAccessor = function(d) {
-                    return colorScale(accessors.class(d));
+                colorAccessor = function(d,i) {
+                    return colorScale(accessors.class(d,i));
                 };
             } else if (accessors.color) {
-                colorAccessor = function(d) {
-                    return accessors.color(d);
+                colorAccessor = function(d,i) {
+                    return accessors.color(d,i);
                 };
             } else {
                 colorAccessor = function() { return "black"; };
             }
             
             return function(sel) {
-                sel.attr("cx", function(d) { return xScale(accessors.x(d)); })
-                    .attr("cy", function(d) { return yScale(accessors.y(d)); })
-                    .attr("fill", function(d) { return colorAccessor(d); })
-                    .attr("r", function(d) { return radiusAccessor(d); })
+                sel.attr("cx", function(d,i) { return xScale(accessors.x(d,i)); })
+                    .attr("cy", function(d,i) { return yScale(accessors.y(d,i)); })
+                    .attr("fill", function(d,i) { return colorAccessor(d,i); })
+                    .attr("r", function(d,i) { return radiusAccessor(d,i); })
                     .call(accessors.custom || function() {})
                 ;
             };
@@ -63,11 +63,11 @@
             var strokeAccessor = defaultAccessor(accessors, "stroke", "black");
             
             return function(sel) {
-                sel.attr("x1", function(d)  { return xScale(accessors.x1(d)); })
-                    .attr("x2", function(d) { return xScale(accessors.x2(d)); })
-                    .attr("y1", function(d) { return yScale(accessors.y1(d)); })
-                    .attr("y2", function(d) { return yScale(accessors.y2(d)); })
-                    .attr("stroke", function(d) { return strokeAccessor(d); })
+                sel.attr("x1", function(d,i)  { return xScale(accessors.x1(d,i)); })
+                    .attr("x2", function(d,i) { return xScale(accessors.x2(d,i)); })
+                    .attr("y1", function(d,i) { return yScale(accessors.y1(d,i)); })
+                    .attr("y2", function(d,i) { return yScale(accessors.y2(d,i)); })
+                    .attr("stroke", function(d,i) { return strokeAccessor(d,i); })
                     .call(accessors.custom || function() {});
             };
         }
@@ -211,10 +211,10 @@
                         var that = this;
                         var sel = group.selectAll("path");
                         (transition ? sel.transition() : sel)
-                            .attr("d", function(d) {
+                            .attr("d", function(d,ix) {
                                 var x2 = d3.scaleLinear().domain([0, lineResolution]).range(xScale.domain());
                                 var pts = [];
-                                var value = that.accessors.value(d);
+                                var value = that.accessors.value(d,ix);
                                 for (var i=0; i<lineResolution; ++i) {
                                     var x = x2(i);
                                     pts.push({x: x, y: value(x)});

@@ -15,9 +15,25 @@ I have found that students often lack the intuition that ties these
 fields together. These notes try to explain some of the basic concepts
 in a way that I hope will be useful.
 
+## Basics
+
+## Supervised Learning
+
+Methods which use data to make predictions about new, unseen data.
+
+* [Logistic Regression](logistic_regression/index.html)
+
+## Unsupervised Learning
+
+Methods which, given a dataset that has a complex representation,
+create simpler versions of the dataset.
+
 * [Principal Components Analysis](pca.html)
 * [Multidimensional Scaling](mds.html)
-* [A simple illustration of duality](duality.html)
-* [Regularization](regularization/index.html)
-* [Logistic Regression](logistic_regression/index.html)
 * [$k$-means](kmeans/index.html)
+
+
+## Other
+
+* [Regularization](regularization/index.html)
+* [A simple illustration of duality](duality.html)
