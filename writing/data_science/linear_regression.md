@@ -80,7 +80,7 @@ values $y\_i$ and $x\_i$ at training time, when we take derivatives of
 $E$, the resulting expressions are always linear functions of $a$ and
 $b$. This is true even if the model we are fitting uses non-linear functions. For example, imagine that our model was, instead,
 
-$$ y = a x^2 + b x + c $$.
+$$ y = a x^2 + b x + c. $$
 
 Even though the model would be fitting parabolic curves to the data
 (instead of linear fits), the process of combining the simpler models
