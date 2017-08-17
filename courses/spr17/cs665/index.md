@@ -30,3 +30,7 @@ by Blum, Hopcroft and Kannan.
 # Course syllabus
 
 The syllabus for the course is available [here](syllabus.html).
+
+# Student final projects
+
+Look at the student proposals for their [final projects](final_projects/).

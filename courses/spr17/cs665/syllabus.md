@@ -75,7 +75,7 @@ freely-available sources of material.
   * subspace clustering
 * Random walks
   * Markov Chains, Metropolis-Hastings, Gibbs sampling
-  * Bootstrapping
+* Bootstrapping
 
 ### The Computational Practice of Data Science
 
@@ -100,9 +100,9 @@ freely-available sources of material.
 * [Assignment 2](assignments/assignment_2.html)
 * [Assignment 3](assignments/assignment_3.html)
 * Midterm
-* Assignment 4
-* Assignment 5
-* Assignment 6
+* [Assignment 4](assignments/assignment_4.html)
+* [Assignment 5](assignments/assignment_5.html)
+* [Assignment 6](assignments/assignment_6.html)
 * Final Project (or Final Exam)
 
 # Schedule
@@ -134,34 +134,34 @@ freely-available sources of material.
 | 2/28 | 8 |  | Assignment 3 Due (to be posted by Feb 14th) [Low-Rank Approximations](lectures/low_rank_approximations.html) |
 | 3/2 |   |  | Clustering, [$k$-means](https://cscheid.net/writing/data_science/kmeans/) |
 |---|---|---|---|
-| 3/7 | 9 |  | Gaussian Mixture Models, subspace clustering |
+| 3/7 | 9 |  | Review |
 | 3/9 |   | MIDTERM | |
 |---|---|---|---|
 | 3/14 | Spring Break |  |  |
 | 3/16 | Spring Break |  |  |
 |---|---|---|---|
-| 3/21 | 10 |  | **Random walks**, Markov Chains |
-| 3/23 |    |  |  |
+| 3/21 | 10 |  | [Optimization wrap-up](lectures/other_formulations.html): other objective functions, regularization criteria, etc. |
+| 3/23 |    |  | Generating random samples; inverse transform sampling; rejection sampling |
 |---|---|---|---|
-| 3/28 | 11 |  | Last day to drop, Assignment 4 Due (to be posted by Mar 14th) Metropolis-Hastings |
-| 3/30 |    |  | Gibbs Sampling |
+| 3/28 | 11 |  | **Random walks**, Markov Chains, Last day to drop, [Assignment 4](assignments/assignment_4.html) Due (to be posted by Mar 14th), Metropolis |
+| 3/30 |    |  | Gibbs Sampling, Bootstrapping  |
 |---|---|---|---|
 |   |   |   |  **The Computational Practice of Data Science** |
 |---|---|---|---|
-| 4/4 | 12 |  |  |
-| 4/6 |    |  |  |
+| 4/4 | 12 |  | Bagging, Ensemble Methods |
+| 4/6 |    |  | [FATML](http://fatml.org), [Ten Simple Rules](http://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1005399&type=printable) |
 |---|---|---|---|
-| 4/11 | 13 |  | Assignment 5 Due (to be posted by Mar 28th) |
-| 4/13 |    |  |  |
+| 4/11 | 13 |  | [Certifying and Removing DI](https://arxiv.org/abs/1412.3756) Assignment 5 Due (to be posted by Mar 28th) |
+| 4/13 |    |  | Feature influence methods: [A peek into the black box: exploring classifiers by randomization](http://link.springer.com/article/10.1007/s10618-014-0368-8), [Algorithmic Transparency via Quantitative Input Influence](https://www.andrew.cmu.edu/user/danupam/datta-sen-zick-oakland16.pdf). Other things we discussed: [The Code I'm Still Ashamed Of](https://medium.freecodecamp.com/the-code-im-still-ashamed-of-e4c021dff55e), [Haunted by Data](http://idlewords.com/talks/haunted_by_data.htm). |
 |---|---|---|---|
-| 4/18 | 14 |  |  |
-| 4/20 |    |  |  |
+| 4/18 | 14 |  | [Why should I trust you? Explaining the predictions of any classifier](https://arxiv.org/pdf/1602.04938.pdf) |
+| 4/20 |    |  | [Layer-wise relevance propagation](http://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0130140&type=printable). Also, an entire workshop on interpretable ML: [Interpretable ML for Complex Systems NIPS 2016 Workshop](https://sites.google.com/site/nips2016interpretml/home). [Adversarial examples](https://arxiv.org/pdf/1312.6199.pdf), [Gradients as explanations](https://arxiv.org/pdf/1506.01066.pdf) |
 |---|---|---|---|
-| 4/25 | 15 |  | Assignment 6 Due (to be posted by Apr 11th) |
-| 4/27 |    |  |  |
+| 4/25 | 15 |  | The replication crisis and data science's role in it. [The File Drawer problem](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.900.2720&rep=rep1&type=pdf), the [neutral model of inquiry](http://bactra.org/weblog/698.html), [Why Most Published Research Findings are False](http://faculty.dbmi.pitt.edu/day/Bioinf2118/Bioinf-2118-2013/Ioannidis-journal.pmed.0020124.pdf). [Restructuring incentives and practices to promote truth over publishability](https://arxiv.org/pdf/1205.4251.pdf). Debugging data science (and the [principle of assumed error](http://www.russpoldrack.org/2016/08/the-principle-of-assumed-error.html) -- assume your good result is a bug, because you'd have assumed it was a bug if your result had been bad.). The [Open Science Framework](https://osf.io/). |
+| 4/27 |    |  | Data science interactions with software engineering. [Machine Learning: The High Interest Credit Card of Technical Debt](https://research.google.com/pubs/pub43146.html). |
 |---|---|---|---|
-| 5/2 | 16 |  |  |
-| 5/4 |    |  | Final Project Due |
+| 5/2 | 16 |  | Assignment 6 and Final Project Due |
+| 5/4 |    |  | Dead day - no classes |
 |---|---|---|---|
 | 5/9 | Finals Week |  |  |
 | 5/11 |             |  |  |
@@ -245,7 +245,8 @@ assignments will be worth a combined total of 55 points, and the
 midterm will be worth 20 points. I will give class participation 5%
 weight, for a total score from 0 to 100. Notice that this means that
 it will be hard for you to get an A in the course unless you actively
-participate in class. This means attending class, 
+participate in class. This means attending class *and* participating in
+discussions. Participation on the online forum also counts.
 
 Your final grade in the course will be based on overall performance:
 
