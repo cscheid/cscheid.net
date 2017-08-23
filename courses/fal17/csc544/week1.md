@@ -3,11 +3,11 @@ layout: bootstrap
 title: Week 1, Getting Started
 ---
 
-# CSC 544: Data Visualization
+# CSC 544: Advanced Data Visualization
 
-Welcome to CSC 544, Data Visualization. In this course, you will
-learn how, and why, to create data visualizations. Pay attention to
-this document: *it serves as the syllabus for the course*.
+Welcome to CSC 544, Advanced Data Visualization. In this course, you will
+learn how, and why, to create data visualizations. Before you read any
+further, please make sure you've read the [course syllabus](syllabus.html)
 
 A "visualization" is simply a visual representation of an object of
 our interest. It's *visual*: we consume them with our eyes, and so it is
@@ -100,13 +100,18 @@ program and in your head.
   * dot plots
   * scatterplots
 * Scalar field visualization
-  * 2D: heatmaps, choropleths, isosurfaces, vector fields
+  * 2D: heatmaps, choropleths, isosurfaces fields
   * 3D: isosurfaces and volume rendering
-* Hierarchies
+* Vector field visualization
+  * 2D: derived fields, streamlines
+* Hierarchies and Networks
   * treemaps
   * node-link diagrams
     * directed graphs
     * undirected graphs
+* High-dimensional data
+  * Linear methods: PCA, MDS
+  * non-linear methods: IsoMap, LLE, t-SNE
 * techniques for large data
   * Aggregation, sampling
 * software infrastructure for data visualization
@@ -150,7 +155,6 @@ for better data cleaning.
   * csv, json
 * outliers, missing values, basic statistics
 
-
 # Reading material
 
 There is no required textbook for the course, and all of the necessary
@@ -181,7 +185,8 @@ at least once, the following books:
 
 We will also be reading some web pages and some research papers. When
 you're expected to read material ahead of time, the material will be
-posted on the course web page, and will be discussed in class.
+posted on the course web page at least one week in advance, and will
+be discussed in class.
 
 # Discussion Fora
 
@@ -189,7 +194,7 @@ Offline student discussion is encouraged and welcome, as long as it does not inv
 sharing of assignment source code (see the
 [Academic Conduct](#academic-conduct-plagiarism-and-open-source-software)
 section below). Discussion on the
-[Piazza](https://piazza.com/arizona/spring2015/cs444544/home) site is
+[Piazza](https://piazza.com/arizona/fall2017/csc544/home) site is
 especially encouraged, since we can monitor it and will count towards
 class participation.
 
@@ -202,18 +207,6 @@ should each take you less two to five hours to complete.
 There will be one midterm, and one final project. In other
 words, there is no final exam in this course.
 
-- the expected scope of the final project; 544 students will have more
-  open-ended projects, and will be expected to implement techniques
-  closer to the state of the art. (If you'd like to do research with
-  me in the future, let me know ahead of time and we will design a
-  project that makes sense for us)
-
-- some of the additional reading material that is entirely optional
-  for 444 students will be required for 544 students. This will be,
-  mostly, research papers. When this happens, 544 students will be
-  asked to submit a short summary of the paper. I'll be using this,
-  for example, to gauge your interest for your final projects.
-
 ## Small Assignments
 
 Small assignments will test whether you understood the concepts
@@ -221,23 +214,38 @@ discussed in that particular week, and will be small and
 self-contained. You'll submit a webpage, typically, with a
 demonstration of the concept we discussed and a short explanation.
 
-Assignments will be posted on Wednesdays, and will be due on the
-following Wednesday at the time class starts. There will be no office
-hours on tuesday and wednesday. This is so that I can use the tuesday
-lecture to talk about issues with the previous assignment, and to
-nudge you to get started more than 24 minutes (ahem, hours) before the
-deadline.
+Assignments will be due on Wednesdays at class start time, and will be
+posted at least one week in advance, on the previous Wednesday.  There
+will be no office hours on tuesday and wednesday. This is so that I
+can use the monday lecture to talk about issues with the previous
+assignment, and to nudge you to get started more than 24 minutes
+(ahem, hours) before the deadline.
+
+* [CSC 544 Assignments](assignments.html)
+
+| Assignment   | Due | Grades returned |
+| [1](assignment_1/)  | Aug 30 2017 | Sep 6  2017 |
+| 2  | Sep 6  2017 | Sep 13 2017 |
+| 3  | Sep 13 2017 | Sep 20 2017 |
+| 4  | Sep 20 2017 | Sep 27 2017 |
+| 5  | Sep 27 2017 | Oct 4  2017 |
+| 6  | Oct 4  2017 | Oct 11 2017 |
+| 7  | Oct 11 2017 | Oct 18 2017 |
+| 8  | Oct 18 2017 | Oct 25 2017 |
+| 9  | Oct 25 2017 | Nov 1  2017 |
+| 10 | Nov 1  2017 | Nov 8  2017 |
+| 11 | Nov 8  2017 | Nov 15 2017 |
 
 ## Midterm
 
 The midterm will be given, tentatively, on the eight week of the
-course. By then we will have been through the Mechanics, and some of
-the Principles. The midterm will be a closed-books exam which I'm
+course. By then we will have been through the mechanics and
+principles.  The midterm will be a closed-books exam which I'm
 calibrating so that you can finish in one hour.
 
 ## Final project
 
-For the final project, you will do either of the following
+For the final project, you will do either of the following:
 
 - build one larger visualization of your own choosing, using the
   mechanics, principles and techniques you learn in this course, and
@@ -260,13 +268,12 @@ guaranteed an A), but the clearer it is how to take what you have and
 turn it into a reasonable submission to a workshop, conference, or
 journal, the better.
 
-
 ## Grading
 
 I will grade your assignments, midterms, and final project on a scale
 from 0 to 100, with respective weights of 50%, 20% and 30%. 
-In addition, I will give class participation 10% weight. This will
-give you a score from 0 to 110. Your final grade in the course of be
+In addition, I will give class participation 5% weight. This will
+give you a score from 0 to 105. Your final grade in the course of be
 the *best* of a per-class grading curve and overall performance:
 
 Overall performance: 
@@ -277,11 +284,9 @@ Overall performance:
 * 40% or better: D;
 * below 40%: F.
 
-By your last day to withdraw, you will know more than 40% of your
-grade by weight.
-
 Grades for assignments, midterm and final project will be posted on
-D2L as soon as we have them.
+D2L as soon as we have them. Grades for assignments will be posted no
+more than 2 weeks after each the deadline for each assignment.
 
 ## Academic conduct, plagiarism, and open-source software
 
@@ -324,6 +329,10 @@ grade, we will both have agreed on what exactly you need to finish,
 and by what time (I expect will you to have completed
 everything necessary before the end of summer).
 
+# Schedule
+
+TBD.
+
 # A tour of visualizations, good, bad, and ugly
 
 By the end of this course, you will have the skills to create many of
@@ -357,8 +366,7 @@ bad design, and *why*.
 
 - [Smartphone buyers](http://viz.wtf/post/107998162170/6-7-gender-neutral).
 
-- [A hairball](https://d148z92cppxlnu.cloudfront.net/wp-content/uploads/2012/02/ecoli_meta3_sm.png). We
-  didn't have to go into this in class, but we'll learn in the
+- [A hairball](https://d148z92cppxlnu.cloudfront.net/wp-content/uploads/2012/02/ecoli_meta3_sm.png). We'll learn in the
   Principles section why this is a terrible visualization, and in the
   Techniques section how to create something better.
 

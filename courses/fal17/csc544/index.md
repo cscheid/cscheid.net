@@ -1,18 +1,18 @@
 ---
 layout: bootstrap
-title: CS544, Data Visualization
+title: CS544, Advanced Data Visualization
 ---
 
-# Data Visualization
+# Advanced Data Visualization
 
-This is the course website for CS544, Data Visualization.
+This is the course website for CS544, Advanced Data Visualization.
 
 * Instructor: [Carlos Scheidegger](http://cscheid.net)
 * class email:
   [cscheid+fal17cs544@cs.arizona.edu](mailto:cscheid+fal17cs544@cs.arizona.edu)
   *Please use this email for urgent class-related questions and
   comments*. For content
-  discussions, please use [Piazza](http://piazza.com/arizona/spring2015/cs444544/).
+  discussions, please use [Piazza](https://piazza.com/arizona/fall2017/csc544/home).
 * Lectures: Mondays and Wednesdays, 3:30PM-4:45PM
 * Office Hours: 1 hour/week TBD. Otherwise by appointment only.
 
@@ -42,9 +42,10 @@ This is the course website for CS544, Data Visualization.
 <!-- * [Principles: Preattentiveness, Gestalt](lectures/week8.html). -->
 <!-- * [Principles: Interaction, Filtering, Aggregation](lectures/week8b.html). -->
 
-<!-- ## [Assignments](assignments.html) -->
+## [Assignments](assignments.html)
 
-<!-- * [Assignment 1](assignment_1.html), posted January 15th. Due January -->
+* [Assignment 1](assignment_1/), posted August 21st, due August 30th.
+
 <!--   22nd. -->
 <!-- * [Assignment 2](assignment_2.html), posted January 22nd. Due January -->
 <!--   29th. -->
