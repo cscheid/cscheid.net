@@ -1,0 +1,26 @@
+obj = { x: 5, y: 10 }
+
+obj = { value: 0,
+        inc: function() { this.value += 1; return this.value; },
+	add: function(v) { this.value += v; return this.value; } };
+	
+function pickOdd(a) {
+    var result = [];
+    for (var i=0; i<a.length; ++i) {
+        if (a[i] % 2 === 1)
+            result.push(a[i]);
+    }
+    return result;
+}
+
+var pickWhich = function(f, a) {
+    var result = [];
+    for (var i=0; i<a.length; ++i) {
+        if (f(a[i]))
+            result.push(a[i]);
+    }
+    return result;
+}
+
+var pickWhich2 = (f, a) => a.filter(f);
+var pickOdd2 = a => a.filter(x => x % 2 === 1);

@@ -14,7 +14,7 @@ This is the course website for CS544, Advanced Data Visualization.
   comments*. For content
   discussions, please use [Piazza](https://piazza.com/arizona/fall2017/csc544/home).
 * Lectures: Mondays and Wednesdays, 3:30PM-4:45PM
-* Office Hours: 1 hour/week TBD. Otherwise by appointment only.
+* Office Hours: Mondays, 10-11AM, GS 734. Otherwise by appointment only.
 
 ## Previous versions of the course
 
@@ -24,6 +24,10 @@ This is the course website for CS544, Advanced Data Visualization.
 # Class materials
 
 * [Week 1, Syllabus+Introduction](week1.html).
+* [Lecture 2](lecture2.html).
+* [Lecture 3](lecture3.html).
+* [Lecture 4](lecture4.html).
+* [Lecture 5](lecture5.html).
 
 <!-- ### Mechanics -->
 
@@ -45,6 +49,8 @@ This is the course website for CS544, Advanced Data Visualization.
 ## [Assignments](assignments.html)
 
 * [Assignment 1](assignment_1/), posted August 21st, due August 30th.
+* [Assignment 2](assignment_2/), posted August 28th, due Sep 6th.
+* [Assignment 3](assignment_3/), posted Sep 6th, due Sep 13th.
 
 <!--   22nd. -->
 <!-- * [Assignment 2](assignment_2.html), posted January 22nd. Due January -->
@@ -68,7 +74,55 @@ This is the course website for CS544, Advanced Data Visualization.
 <!-- scratch. The [final project](final_project.html) page includes a list -->
 <!-- of the projects as submitted by the students.   -->
 
-<!-- ## Schedule -->
+## Schedule
+
+|----|---|-----|----|
+|    | Date | Materials | Assignments | Reading |
+|----|---|-----|----|
+| Intro | 08/21 | [Introduction](week1.html) | **[Assignment 1](assignment_1/)** |
+|----|---|-----|----|
+| Mechanics | 08/23 | [HTML/CSS/SVG Basics](lecture2.html) | |
+|           | 08/28 | [JavaScript and the DOM](lecture3.html) | |
+|           | 08/30 | [JavaScript and the DOM](lecture3.html), [d3 basics](lecture4.html) | **[Assignment 2](assignment_2/)** |
+|           | 09/04 | Labor day | |
+|           | 09/06 | | **[Assignment 3](assignment_3/)** | |
+|----|---|-----|----|
+| Principles | 09/11 | Scales of measurement, invariants, perception | | [1](http://psychology.okstate.edu/faculty/jgrice/psyc3214/Stevens_FourScales_1946.pdf), [2](http://info.slis.indiana.edu/~katy/S637-S11/cleveland84.pdf) |
+|----|---|-----|----|
+
+<!-- | Mechanics | Aug 28  | HTML/CSS/SVG Basics | | -->
+<!-- |           | Aug 30  | Javascript, DOM | **Assignment 1 due** | -->
+<!-- |           | Sep  4  | Labor day, no classes | | -->
+<!-- |           | Sep  6  | d3 | no slides | -->
+<!-- |           | Sep  11 | d3 | no slides | -->
+<!-- |----|---|-----|----| -->
+<!-- | Principles | Sep 13 | Scales of measurement, invariants |  | -->
+<!-- |            | Sep 18 | Color Vision | | -->
+<!-- |            | Sep 20 | Other Channels |  | -->
+<!-- |            | Sep 25 | Interaction and Animation |  | -->
+<!-- |            | Sep 27 | Informed critique, visualization design process | | -->
+<!-- |----|---|-----|----| -->
+<!-- | Techniques | Oct 2  | Scatterplots, line plots, small multiples | | -->
+<!-- |            | Oct 4  | Histograms, KDE | | -->
+<!-- |            | Oct 9  | Choropleths, heatmaps | |  -->
+<!-- |            | Oct 11 | 2D Isocontours | | -->
+<!-- |            | Oct 16 |  | **MIDTERM** | -->
+<!-- |            | Oct 18 | 2D Vector Fields, streamlines | | -->
+<!-- |            | Oct 23 | 3D Scalar Fields: isosurfacing | | -->
+<!-- |            | Oct 25 |  | | -->
+<!-- |            | Oct 30 | 3D Scalar Fields: Direct volume rendering | **LAST DAY TO DROP** | -->
+<!-- |            | Nov 1  |  |  | -->
+<!-- |            | Nov 6  | Principal Component Analysis, Grand Tour |  | -->
+<!-- |            | Nov 8  | Multidimensional Scaling |  | -->
+<!-- |            | Nov 13 | Isomap and LLE |  | -->
+<!-- |            | Nov 15 | t-SNE |  | -->
+<!-- |            | Nov 20 | Basics of hierarchies and networks |  | -->
+<!-- |            | Nov 22 | force-directed placements, metric embeddings |  | -->
+<!-- |            | Nov 27 | Interaction: linked views, visual querying |  | -->
+<!-- |            | Nov 29 | Scalability |  | -->
+<!-- |            | Dec 4  |  |  | -->
+<!-- |            | Dec 6  |  |  | -->
+<!-- |----|---|-----|----| -->
 
 <!-- ### Mechanics -->
 

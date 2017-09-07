@@ -3,7 +3,30 @@ layout: bootstrap
 title: Lecture 2, The basics of the web stack (Aug 23rd, 2017)
 ---
 
-# Lecture 2, The basics of the web stack
+# Anscombe's quartet
+
+We're going to start with a hands-on exercise on why data
+visualization can be powerful (and what its limits might be).
+
+## Activity
+
+* [Anscombe's quartet](lecture-extras/anscombe/).
+
+## Further reading
+
+* Matejka and Fitzmaurice,
+  [Same Stats, Different Graphs: Generating Datasets with Varied Appearance and Identical Statistics through Simulated Annealing](https://www.autodeskresearch.com/publications/samestats). CHI 2017, Best paper honorable mention.
+* Anscombe,
+  [Graphs in Statistical Analysis](http://www.jstor.org/stable/2682899). The American Statistician, 27(1), 1973, 17--21.
+
+## Questions to ponder
+
+* Does Anscombe's quartet and its generalizations prove that visualizations are *better* than tables? 
+* The scatterplots we used for Anscombe's quartet are also kind of
+  visualization. But tables are a kind of visualization as well! If
+  so, are there similar attacks on "actual" visualizations?
+
+# The basics of the web stack
 
 Today, we go over the very basics of how the content of a web page
 is represented in HTML. We will learn some simple CSS, which lets us separate the content of
@@ -571,17 +594,62 @@ up.
 
 As you might have noticed by comparing the HTML examples with the SVG
 ones, some appearance aspects are controlled by HTML attributes;
-others are controlled by CSS properties.  Which is which is a
-perennial source of confusion, and unfortunately there's no good way
-around it. To add to the confusion, a subset of SVG attributes can
-also be specified via CSS: these are the
+others are controlled by CSS properties. For example, consider the
+ellipse we saw before:
+
+    <ellipse cx="200" cy="100" rx="100" ry="50"
+         style="fill:blue; stroke:green; stroke-width:5px"/>
+
+It's always annoying to remember that fill colors go in `style`, while
+positions go in the `cx` attribute. What goes where is a perennial
+source of confusion, and unfortunately there's no good way around
+it. To add to the confusion, a subset of SVG attributes can also be
+specified via CSS: these are the
 ["presentation attributes"](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute).
 
-It's worth remembering this because CSS declarations for these
-attributes will override inline attribute definitions in the DOM. This
-is in turn inconsistent with the rule for the `style` attribute
-itself, which overrides CSS definitions (on behalf of whoever designed
-this standard: I am sorry).
+I can promise you this: there will be no graded question in any
+assignment that you will get wrong for getting these attributes
+switched with style parameters, and forgetting which are presentation attributes.
+Still, it's worth remembering that these differences exist
+(instead of just mindlessly trying an attribute and then a style)
+because CSS declarations for these attributes will override inline
+attribute definitions in the DOM. This is in turn inconsistent with
+the rule for the `style` attribute itself, which overrides CSS
+definitions (on behalf of whoever designed this standard: I am sorry).
+
+## Colors
+
+We will spend a significant amount of time talking about color theory,
+color perception, and the computer science behind it. But, for now,
+what you need to know is that there are two main ways in which color
+is represented in a web browser. The first one is by a color name:
+<span style="color: red">red</span>, <span style="color:
+green">green</span>, <span style="color: orange">orange</span>,
+etc. (The previous text is written as follows in html:)
+
+    <span style="color: red">red</span>, <span style="color: green">green</span>,
+	<span style="color: orange">orange</span>
+
+The other way is by a color *code*, a short string that describes a
+much larger variation of colors, and also has the advantage of being
+much easier to write code against: imagine the nightmare if you had to
+write software to decide between "dark blue", "powder blue", "navy",
+"aquamarine", etc. Color codes are represented as a string starting
+with [#](https://en.wiktionary.org/wiki/octothorpe) and followed
+by three 2-digit hexadecimal numbers representing the amount of red,
+green and blue in the color. `#ff0000` is <span style="color: #ff0000">red</span>, `#000000` is black,
+`#0000ff` is <span style="color: #0000ff">blue</span>, `#008000` is <span style="color: #008000">green</span>, etc. So you can write 
+
+    <span style="color: red">red</span>
+	
+or you can write
+
+	<span style="color: #ff0000">red</span>
+
+If you're intrigued by color names and the discussion around it,
+you'll enjoy the
+[xkcd color survey](https://blog.xkcd.com/2010/05/03/color-survey-results/).
+
 
 # Resources, hints, etc.
 

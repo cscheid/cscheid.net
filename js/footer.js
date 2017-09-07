@@ -32,10 +32,14 @@ function cumulativeOffset(element, parent) {
 function extractFootnotes() {
     var div = d3.select("div.footnotes");
     if (div.nodes().length > 0) {
+        if (d3.select("#footnotes-ol-sidebar").nodes().length === 0) {
+            // no sidebar, instead add a footnotes section
+            debugger;
+        }
         div.select("ol").selectAll("li").each(function() {
             // can't d3.select() here because using the id actually makes an invalid
             // selector (it has a colon in it)
-            var refId = d3.select(this).selectAll("a").attr("href").substr(1);
+            var refId = d3.select(this).selectAll("a.reversefootnote").attr("href").substr(1);
             var link = document.getElementById(refId);
             var offset = cumulativeOffset(link, d3.select("#content").node());
             var that = this;

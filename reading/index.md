@@ -9,6 +9,8 @@ Mostly to myself, in case I need to refer to it in the future.
 
 #### August 2017
 
+* [Automated Testing of Graphics Shader Compilers](https://www.doc.ic.ac.uk/~afd/homepages/papers/pdfs/2017/OOPSLA.pdf). Ok, so this is 95% bragging, but I just want to say I [called it](https://blog.regehr.org/archives/631#comment-3256) 6 years ago.
+
 * Sometimes you get [crepuscular rays](http://www.atoptics.co.uk/atoptics/rayim1.htm) in the sky. But sometimes you get [anti-crepuscular rays](http://www.atoptics.co.uk/atoptics/anti1.htm), which appear to converge _away_ from the sun.
 
 * Yonatan Zunger ["on this Googler's manifesto"](https://medium.com/@yonatanzunger/so-about-this-googlers-manifesto-1e3773ed1788).

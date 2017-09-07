@@ -36,7 +36,7 @@ mechanics, principles, and techniques.
 Although there are no specific prerequisites to this regard, we will
 write most of our code using the web stack. This means we are
 targeting modern web browsers, and writing our programs in a
-combination of HTML, CSS, and Javascript. If you don't know these
+combination of HTML, CSS, and JavaScript. If you don't know these
 technologies, you will be expected to learn them.
 
 ## Course Prerequisites or Co-requisites
@@ -215,7 +215,7 @@ midterm, or project).
 |       | Aug 23 |  | |
 |----|---|-----|----|
 | Mechanics | Aug 28  | HTML/CSS/SVG Basics | |
-|           | Aug 30  | Javascript, DOM | **Assignment 1 due** |
+|           | Aug 30  | JavaScript, DOM | **Assignment 1 due** |
 |           | Sep  4  | Labor day, no classes | |
 |           | Sep  6  | d3 | no slides |
 |           | Sep  11 | d3 | no slides |

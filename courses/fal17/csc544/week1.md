@@ -331,7 +331,7 @@ everything necessary before the end of summer).
 
 # Schedule
 
-TBD.
+See [the syllabus](syllabus.html).
 
 # A tour of visualizations, good, bad, and ugly
 
