@@ -30,7 +30,7 @@ added to the baseline probability", interpreting a probability of 0.1
 as having "negative 1 nine".
 
 The original nomogram was meant to be used with a physical ruler to do
-the calculations. Here, you can the circles around to change the
+the calculations. Here, you can move the circles around to change the
 settings.
 
 <div id="main"></div>
