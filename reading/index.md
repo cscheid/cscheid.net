@@ -7,6 +7,16 @@ title: Readings
 
 Mostly to myself, in case I need to refer to it in the future.
 
+#### October 2017
+
+* [Conditioning on a collider](https://www.theatlantic.com/business/archive/2012/05/when-correlation-is-not-causation-but-something-much-more-screwy/256918/),
+  one of those statistical ideas that show up everywhere and explain
+  a lot once you know to look for them.
+
+#### September 2017
+
+* [Very nice explanation of the IEEE 754 float representation](https://twitter.com/paulsmith/status/908407225240182784)
+
 #### August 2017
 
 * [Automated Testing of Graphics Shader Compilers](https://www.doc.ic.ac.uk/~afd/homepages/papers/pdfs/2017/OOPSLA.pdf). Ok, so this is 95% bragging, but I just want to say I [called it](https://blog.regehr.org/archives/631#comment-3256) 6 years ago.
