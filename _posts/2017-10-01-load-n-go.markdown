@@ -1,0 +1,39 @@
+---
+layout: post_paper
+title: "Load-n-Go: Fast Approximate Join Visualizations That Improve Over Time"
+tags: paper
+---
+
+Marianne Procopio, [Carlos Scheidegger](/), [Eugene Wu](http://www.cs.columbia.edu/~ewu/), and [Remco Chang](http://www.cs.tufts.edu/~remco/)
+
+Visual exploratory analysis of large-scale databases often relies on
+precomputed query results in order to guarantee interactivity with the
+visualization system. This is especially true when the query requires
+joining tables across the database since join is one of the most
+computationally expensive operations and in the worst case requires
+joining every row of one table to every row of the other
+table. Advances in approximate query processing enable quick look
+summary statistics, but with limitations to the types and complexities
+of the queries. A recent advancement in approximate query processing
+is a technique called Wander Join, that performs random walks across
+these joins, resulting in faster convergence on aggregation
+values. However, this online aggregation technique is not tailored for
+visualization tasks that often involve filtering on one or more
+conditions or viewing aggregation values across multiple groups such
+as in bar charts. In both cases, the convergence rate is slowed since
+more samples are needed in order to find records that pass the
+filters, resulting in the user waiting longer for a confident result.
+
+To address this issue, we propose a generalization of the Wander Join
+algorithm that improves the convergence rate for visualization queries
+involving filtering and viewing aggregation. We implemented this
+improved version of Wander Join that we call Load-n-Go and compared it
+to the original, specifically in the context of visual analysis
+tasks. Our evaluation finds that our algorithm outperforms Wander Join
+by reducing the sample complexity. Load-n-Go requires up to 50% fewer
+samples for group by queries, and up to 85% fewer samples for
+filtering queries. Such reduced sampling complexity can represent up
+to 2x and 6x speedups respectively for visual exploratory systems
+using the Load-n-Go algorithm.
+
+Short paper presented at [DSIA 2017](http://www.interactive-analysis.org). [pdf](/static/papers/dsia-load-n-go-2017.pdf)

@@ -37,6 +37,5 @@ Paper in [PDF](http://arxiv.org/pdf/1412.3756v2) format, from arxiv.
 
 See also the [Fairness, Accountability, and Transparency in Machine
 Learning](http://fatml.org) workshop where Sorelle talked about this
-work, and [this
-post](//2014/12/09/data-mining-visualization-fairness-accountability.html)
+work, and [this post](/2014/12/09/data-mining-visualization-fairness-accountability.html)
 where I give some more context.
