@@ -34,7 +34,8 @@ function extractFootnotes() {
     if (div.nodes().length > 0) {
         if (d3.select("#footnotes-ol-sidebar").nodes().length === 0) {
             // no sidebar, instead add a footnotes section
-            debugger;
+            d3.select(div.node().parentNode).insert("h2", "div.footnotes").text("Footnotes");
+            return;
         }
         div.select("ol").selectAll("li").each(function() {
             // can't d3.select() here because using the id actually makes an invalid

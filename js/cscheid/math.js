@@ -144,4 +144,24 @@
         return r / (Math.PI/180);
     }
     math.degrees = degrees;
+
+    function choose(n, k) {
+        k = Math.min(k, n-k);
+        var result = 1;
+        var v = n;
+        for (var i=1; i<=k; ++i) {
+            result *= v / i;
+            v -= 1;
+        }
+        return result;
+    }
+    math.choose = choose;
+
+    function fact(n) {
+        var result = 1;
+        for (var i=1; i<=n; ++i)
+            result *= i;
+        return result;
+    }
+    math.fact = fact;
 })();

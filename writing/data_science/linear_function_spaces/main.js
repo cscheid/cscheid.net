@@ -1,62 +1,6 @@
 /*global cscheid */
 
-function drawingSurface(opts)
-{
-    var width = opts.width || 600;
-    var height = opts.height || 300;
-    var element = opts.element || cscheid.debug.die("element parameter is required");
-    
-    var svg = element.append("svg")
-            .attr("width", width)
-            .attr("height", height);
-
-    var xScale = opts.xScale || d3.scaleLinear().domain([-1.1, 1.1]);
-    xScale.range([0, width]);
-    var yScale = opts.yScale || d3.scaleLinear().domain([-0.55, 0.55]);
-    yScale.range([height, 0]);
-
-    var axisGroup = svg.append("g");
-    var xAxis = d3.axisBottom(xScale);
-    var yAxis = d3.axisLeft(yScale);
-    var xAxisGroup = axisGroup
-            .append("g")
-            .attr("transform", cscheid.svg.translate(0, yScale(0)));
-    var yAxisGroup = axisGroup
-            .append("g")
-            .attr("transform", cscheid.svg.translate(xScale(0), 0));
-    xAxisGroup.call(xAxis);
-    yAxisGroup.call(yAxis);
-
-    return {
-        svg: svg,
-        xScale: xScale,
-        yScale: yScale,
-        addFunction: function(f, steps) {
-            if (!_.isArray(f))
-                f = [f];
-            steps = steps || 100;
-            var s = d3.scaleLinear().domain([0, steps]).range(xScale.domain());
-            var data = d3.range(steps+1);
-            return svg.append("g").selectAll("path")
-                .data(f)
-                .enter().append("path")
-                .attr("d", f => {
-                    var lineGenerator = d3.line()
-                            .x(d => xScale(s(d)))
-                            .y(d => yScale(f(s(d))));
-                    return lineGenerator(data);
-                });
-        },
-        addText: function(text, x, y) {
-            return svg.append("text").text(text)
-                .attr("class", "annotation")
-                .attr("text-anchor", "middle")
-                .attr("dominant-baseline", "middle")
-                .attr("x", xScale(x))
-                .attr("y", yScale(y));
-        }
-    };
-}
+var drawingSurface = cscheid.plot.surface;
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -92,21 +36,29 @@ var linearFunctions = drawingSurface({
     xScale: d3.scaleLinear().domain([-2.1, 2.1]),
     yScale: d3.scaleLinear().domain([-1.1, 1.1])
 });
-linearFunctions.addFunction(x => 1, 1)
-    .attr("stroke", "blue")
-    .attr("stroke-width", "1px");
+var linearFunctionAnnotations = [
+    { text: "f(x) = 1",         x:  1.8, y:  0.9 },
+    { text: "f(x) = x",         x: -0.5, y: -0.3 },
+    { text: "f(x) = (x + 1)/2", x: -1.3, y:  0.1 }
+];
+linearFunctions.append("g").selectAll("text")
+    .data(linearFunctionAnnotations)
+    .enter()
+    .append("text")
+    .text(d => d.text)
+    .attr("x", d => d.x)
+    .attr("y", d => d.y)
+    .call(setAnnotationStyle);
 
-linearFunctions.addText("f(x) = 1", 1.8, 0.9);
+linearFunctions.surface.addFunction([x=>1, x=>x, x=>(x+1)/2], 1)
+    .attr("stroke", (d, i) => ["blue", "red", "black"][i])
+    .attr("stroke-width", (d, i) => ["1px", "1px", "2px"][i]);
 
-linearFunctions.addFunction(x => x, 1)
-    .attr("stroke", "red")
-    .attr("stroke-width", "1px");
-linearFunctions.addText("f(x) = x", -0.5, -0.3);
-
-linearFunctions.addFunction(x => 0.5 + 0.5 * x, 1)
-    .attr("stroke", "black")
-    .attr("stroke-width", "2px");
-linearFunctions.addText("f(x) = (x + 1)/2", -1.3, 0.1);
+function setAnnotationStyle(sel) {
+    return sel.attr("class", "annotation")
+        .attr("text-anchor", "middle")
+        .attr("dominant-baseline", "middle");
+};
 
 //////////////////////////////////////////////////////////////////////////////
 // runge phenomenon
@@ -130,11 +82,11 @@ var runges = [x => deg3runge.predict(x),
               x => deg7runge.predict(x),
               x => deg11runge.predict(x) ];
               
-rungeChart.addFunction(runges, 600)
+rungeChart.surface.addFunction(runges, 600)
     .attr("stroke", (d, i) => d3.hcl(0,0,80 - i * 30))
     .attr("stroke-width", (d, i) => String(i+1) + "px")
     .attr("fill", "none");
-rungeChart.addFunction(runge, 600)
+rungeChart.surface.addFunction(runge, 600)
     .attr("stroke", "red")
     .attr("stroke-width", "3px")
     .attr("fill", "none");
@@ -164,14 +116,14 @@ var shiftColorScale = d3.scaleLinear()
         .domain([-2, 2])
         .range([d3.lab(60, 30, -30), d3.lab(60, 30, 30)])
         .interpolate(d3.interpolateLab);
-squareFunctions.addFunction([shift(squareKernel, -1),
+squareFunctions.surface.addFunction([shift(squareKernel, -1),
                              shift(squareKernel, 0),
                              shift(squareKernel, 1)], 600)
     .attr("stroke", (f, i) => shiftColorScale(i-1))
     .attr("fill", "none")
     .attr("stroke-width", "1px");
 var f = linearFunctionSpace([-1,0,1].map(x => shift(squareKernel, x)), [0.2, 0.6, 0.4]);
-squareFunctions.addFunction(f, 600)
+squareFunctions.surface.addFunction(f, 600)
     .attr("stroke", d3.lab(60,-30,0))
     .attr("fill", "none")
     .attr("stroke-width", "2px");
@@ -208,7 +160,7 @@ var sq11runge = cscheid.approximation.leastSquaresLFS(
 var sqrunges = [x => sq3runge.predict(x),
                 x => sq7runge.predict(x),
                 x => sq11runge.predict(x)];
-squareRunge.addFunction(sqrunges,  600)
+squareRunge.surface.addFunction(sqrunges,  600)
     .attr("stroke", (f, i) => d3.hcl(0,0,80-i*30))
     .attr("fill", "none")
     .attr("stroke-width", (f, i) => String(i+1) + "px");
@@ -221,7 +173,7 @@ var bspline0drawing = drawingSurface({
     yScale: d3.scaleLinear().domain([-0.1, 1.1])
 });
 [-2,-1,0,1,2].forEach(i => {
-    bspline0drawing.addFunction(x => bspline0(x-i), 600)
+    bspline0drawing.surface.addFunction(x => bspline0(x-i), 600)
         .attr("stroke", shiftColorScale(i))
         .attr("fill", "none")
         .attr("stroke-width", "3px");
@@ -239,7 +191,7 @@ var bspline1drawing = drawingSurface({
     yScale: d3.scaleLinear().domain([-0.1, 1.1])
 });
 [-2,-1,0,1,2].forEach(i => {
-    bspline1drawing.addFunction(x => bspline1(x-i), 600)
+    bspline1drawing.surface.addFunction(x => bspline1(x-i), 600)
         .attr("stroke", shiftColorScale(i))
         .attr("fill", "none")
         .attr("stroke-width", "3px");
@@ -259,17 +211,16 @@ var bspline2drawing = drawingSurface({
     yScale: d3.scaleLinear().domain([-0.1, 1.1])
 });
 [-2,-1,0,1,2].forEach(i => {
-    bspline2drawing.addFunction(x => bspline2(x-i), 600)
+    bspline2drawing.surface.addFunction(x => bspline2(x-i), 600)
         .attr("stroke", shiftColorScale(i))
         .attr("fill", "none")
         .attr("stroke-width", "3px");
 });
-[{ el: bspline0drawing, f: bspline0 },
- { el: bspline1drawing, f: bspline1 },
- { el: bspline2drawing, f: bspline2 }].forEach(obj => {
-     var f = linearFunctionSpace([-2,-1,0,1,2].map(s => shift(obj.f, s)),
-                                 [0.4, 0.3, 0.5, 0.7, 0.6]);
-     obj.el.addFunction(f, 600)
+[{ el: bspline0drawing, k: cscheid.caliper.kernels.bSpline(0) },
+ { el: bspline1drawing, k: cscheid.caliper.kernels.bSpline(1) },
+ { el: bspline2drawing, k: cscheid.caliper.kernels.bSpline(2) }].forEach(obj => {
+     var f = cscheid.caliper.makeFunction([0.4, 0.3, 0.5, 0.7, 0.6], obj.k);
+     obj.el.surface.addFunction(x => f(x+2), 600)
          .attr("stroke", d3.lab(60, -30, 0))
          .attr("fill", "none")
          .attr("stroke-width", "5px");

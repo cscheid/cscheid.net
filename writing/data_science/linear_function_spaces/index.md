@@ -1,11 +1,16 @@
 ---
 title: Linear function spaces
 layout: lux_project
+debug: true
 ---
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
 
-# Linear function spaces
+# Linear function spaces (and reconstruction kernels)
+
+Brief intro to using linear function spaces and
+reconstruction kernels to represent continuous functions in a
+computer. Heavily geared to 
 
 In data visualization (and more generally, in the subfields of data
 analysis that tend to care about spatial data), we often want to
@@ -152,26 +157,62 @@ the reconstructed function is itself different.
 
 <div id="bspline-2" class="chart"></div>
 
-As the basis functions get smoother, so do the reconstructions. This
-happens because of a trivial, but very important property of linear
-function spaces: since these are linear spaces, function operations
-that are themselves linear will factor through to the basis
-functions. For example, the derivative is a linear operator. As a result, the
-derivative of a function from a linear function space is necessarily a
-member of a *different* linear function space, whose basis vectors are
-the derivatives of the basis vectors of the original function space:
+A proper discussion of reconstruction kernels is far beyond the scope
+of this (and any one) piece; see [this](../b_splines/index.html) piece
+instead.
+
+Note, though, that as the reconstruction kernels get smoother, so do
+the reconstructions. This happens because of a trivial, but very
+important property of linear function spaces: since these are linear
+spaces, function operations that are themselves linear will factor
+through to the basis functions. For example, the derivative is a
+linear operator. As a result, the derivative of a function from a
+linear function space is necessarily a member of a *different* linear
+function space, whose basis vectors are the derivatives of the basis
+vectors of the original function space:
 
 $$d/dx \left ( \sum_i c_i \phi_i(x) \right ) = \sum_i c_i \left (\frac{d \phi(x)}{dx} \right)$$
 
-The same thing happens for integrals, expectations, etc. This makes
-linear function spaces very computationally convenient.
+The same thing happens for integrals, expectations, convolutions,
+etc. This makes linear function spaces very computationally
+convenient.
+
 
 ## Multi-dimensional linear function spaces
 
 So far, we've seen function spaces whose domain are the real numbers
-(a one-dimensional space). It is very straightforward to extend the
-notion to multidimensional functions.
+(a one-dimensional space). It is straightforward to extend the notion
+to multidimensional functions: we just change the domain of the
+function to operate on $R^n$ instead of $R$. The only significant
+change is that our reconstruction kernels need to be themselves
+two-dimensional.
 
-### Separable linear function spaces
+Do note here a bit of terminological ambiguity: in this context, we
+are using "multi-dimensional" to refer to the domain of the function,
+not to the dimension of the space (as in its rank).
 
-(to be finished.)
+
+### Separable kernels
+
+The most common way to create multi-dimensional reconstruction kernels
+is to do it one dimension at a time. Concretely speaking, the space of
+all possible multidimensional reconstruction kernels is very large,
+and one natural solution is to look for kernels that _factor_:
+
+$$K(x,y) = k_x(x) k_y(y)$$
+
+Using B-Splines as the separable filters is very common, and very
+convenient.
+
+TODO: Add illustrations of a simple 2D function using $\beta_0$,
+$\beta_1$, $\beta_2$ as the separable filters.
+
+# More reading
+
+* Mitchell and Netravalli,
+  [Reconstruction Filters in Computer Graphics](https://dl.acm.org/citation.cfm?id=378514),
+  SIGGRAPH '88. A classic in the area.
+* Moller et al,
+  [Design of Accurate and Smooth filters for function](http://ieeexplore.ieee.org/document/729596/),
+  VolVis 1998. How to design filters in order to get good spatial
+  properties out of them.
