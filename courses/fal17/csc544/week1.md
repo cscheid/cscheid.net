@@ -223,19 +223,6 @@ assignment, and to nudge you to get started more than 24 minutes
 
 * [CSC 544 Assignments](assignments.html)
 
-| Assignment   | Due | Grades returned |
-| [1](assignment_1/)  | Aug 30 2017 | Sep 6  2017 |
-| 2  | Sep 6  2017 | Sep 13 2017 |
-| 3  | Sep 13 2017 | Sep 20 2017 |
-| 4  | Sep 20 2017 | Sep 27 2017 |
-| 5  | Sep 27 2017 | Oct 4  2017 |
-| 6  | Oct 4  2017 | Oct 11 2017 |
-| 7  | Oct 11 2017 | Oct 18 2017 |
-| 8  | Oct 18 2017 | Oct 25 2017 |
-| 9  | Oct 25 2017 | Nov 1  2017 |
-| 10 | Nov 1  2017 | Nov 8  2017 |
-| 11 | Nov 8  2017 | Nov 15 2017 |
-
 ## Midterm
 
 The midterm will be given, tentatively, on the eight week of the

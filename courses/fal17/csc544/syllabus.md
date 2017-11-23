@@ -220,32 +220,34 @@ midterm, or project).
 |           | Sep  6  | d3 | no slides |
 |           | Sep  11 | d3 | no slides |
 |----|---|-----|----|
-| Principles | Sep 13 | Scales of measurement, invariants |  |
-|            | Sep 18 | Color Vision | |
-|            | Sep 20 | Other Channels |  |
-|            | Sep 25 | Interaction and Animation |  |
-|            | Sep 27 | Informed critique, visualization design process | |
+| Principles | Sep 13 | Scales of measurement, invariants               |  |
+|            | Sep 18 | Color Vision                                    |  |
+|            | Sep 20 | Other Channels                                  |  |
+|            | Sep 25 | Informed critique, visualization design process |  |
+|            | Sep 27 | Algebraic Design Process                        |  |
+|            | Oct 2  | Interaction                                     |  |
+|            | Oct 4  | IEEE VIS 2017 - **class canceled**              |  |
 |----|---|-----|----|
-| Techniques | Oct 2  | Scatterplots, line plots, small multiples | |
-|            | Oct 4  | Histograms, KDE | |
-|            | Oct 9  | Choropleths, heatmaps | | 
-|            | Oct 11 | 2D Isocontours | |
-|            | Oct 16 |  | **MIDTERM** |
-|            | Oct 18 | 2D Vector Fields, streamlines | |
-|            | Oct 23 | 3D Scalar Fields: isosurfacing | |
-|            | Oct 25 |  | |
-|            | Oct 30 | 3D Scalar Fields: Direct volume rendering | **LAST DAY TO DROP** |
-|            | Nov 1  |  |  |
-|            | Nov 6  | Principal Component Analysis, Grand Tour |  |
-|            | Nov 8  | Multidimensional Scaling |  |
-|            | Nov 13 | Isomap and LLE |  |
-|            | Nov 15 | t-SNE |  |
-|            | Nov 20 | Basics of hierarchies and networks |  |
-|            | Nov 22 | force-directed placements, metric embeddings |  |
-|            | Nov 27 | Interaction: linked views, visual querying |  |
-|            | Nov 29 | Scalability |  |
-|            | Dec 4  |  |  |
-|            | Dec 6  |  |  |
+|Techniques  | Oct 9  | Scalability in Linked Views and Visual Querying |  | 
+|            | Oct 11 | Scatterplots, line plots, small multiples       |  |
+|            | Oct 16 | Histograms, KDE                                 |  |
+|            | Oct 18 | Choropleths, heatmaps                           |  |
+|            | Oct 23 |                                                 | **MIDTERM** |
+|            | Oct 25 | 2D Isocontours                                  |  |
+|            | Oct 30 | 2D Vector Fields, streamlines                   | **LAST DAY TO DROP** |
+|            | Nov 1  | 3D Scalar Fields: isosurfacing                  |  |
+|            | Nov 6  |                                                 |  |
+|            | Nov 8  | 3D Scalar Fields: Direct volume rendering       |  |
+|            | Nov 13 |                                                 |  |
+|            | Nov 15 | Principal Component Analysis, Grand Tour        |  |
+|            | Nov 20 | Multidimensional Scaling                        |  |
+|            | Nov 22 | Isomap and LLE                                  |  |
+|            | Nov 27 | t-SNE                                           |  |
+|            | Nov 29 | Basics of hierarchies and networks              |  |
+|            | Dec 4  | force-directed placements, metric embeddings    |  |
+|            | Dec 6  |                                                 |  |
+
+
 |----|---|-----|----|
 
 ## Department of Computer Science Code of Conduct
@@ -389,3 +391,9 @@ reference, **please contact me ahead of time so we can discuss**.
 ## Subject to Change Statement
 
 Information contained in the course syllabus, other than the grade and absence policy, may be subject to change with advance notice, as deemed appropriate by the instructor.
+
+### Edits
+
+* October 9th, 2017: Technique lectures on Scalability and Interaction
+  were rearranged to fit better with Principle lectures on
+  Interactions.

@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/cscheid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://cscheid.net
+  * I am cscheid (https://keybase.io/cscheid) on keybase.
+  * I have a public key ASCbHGh8DWbPaMRsAqX3jKu2t6uySLoIHP3RpjNWw7XvNQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012072911a2fe85a1276a158b7b2354e063816397658702b091609491ba633ef63dd0a",
+      "host": "keybase.io",
+      "kid": "01209b1c687c0d66cf68c46c02a5f78cabb6b7abb248ba081cfdd1a63356c3b5ef350a",
+      "uid": "79d2d62a27c2bee0cc7c833545b69719",
+      "username": "cscheid"
+    },
+    "merkle_root": {
+      "ctime": 1511379609,
+      "hash": "9a8be53398c5d18ecb9ef2c11ac24d5a0699e630a5bafe4f46ba33e5c1ae627003d8e89b681a49e4de172340dd999f739490c06b4891d1ba6c7c0a7907bfb133",
+      "hash_meta": "a51e9e74e8218b19db024f33a1c85297c4f131dfc0325febda56371aa72f5a2f",
+      "seqno": 1734965
+    },
+    "service": {
+      "hostname": "cscheid.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1511379613,
+  "expire_in": 504576000,
+  "prev": "82ac2db512efd354c31f2909adeea5254b4c87b875b1bb68628ff64ed32ec425",
+  "seqno": 9,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgmxxofA1mz2jEbAKl94yrtrerski6CBz90aYzVsO17zUKp3BheWxvYWTFA0J7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwNzI5MTFhMmZlODVhMTI3NmExNThiN2IyMzU0ZTA2MzgxNjM5NzY1ODcwMmIwOTE2MDk0OTFiYTYzM2VmNjNkZDBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOWIxYzY4N2MwZDY2Y2Y2OGM0NmMwMmE1Zjc4Y2FiYjZiN2FiYjI0OGJhMDgxY2ZkZDFhNjMzNTZjM2I1ZWYzNTBhIiwidWlkIjoiNzlkMmQ2MmEyN2MyYmVlMGNjN2M4MzM1NDViNjk3MTkiLCJ1c2VybmFtZSI6ImNzY2hlaWQifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTEzNzk2MDksImhhc2giOiI5YThiZTUzMzk4YzVkMThlY2I5ZWYyYzExYWMyNGQ1YTA2OTllNjMwYTViYWZlNGY0NmJhMzNlNWMxYWU2MjcwMDNkOGU4OWI2ODFhNDllNGRlMTcyMzQwZGQ5OTlmNzM5NDkwYzA2YjQ4OTFkMWJhNmM3YzBhNzkwN2JmYjEzMyIsImhhc2hfbWV0YSI6ImE1MWU5ZTc0ZTgyMThiMTlkYjAyNGYzM2ExYzg1Mjk3YzRmMTMxZGZjMDMyNWZlYmRhNTYzNzFhYTcyZjVhMmYiLCJzZXFubyI6MTczNDk2NX0sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJjc2NoZWlkLm5ldCIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM2In0sImN0aW1lIjoxNTExMzc5NjEzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6IjgyYWMyZGI1MTJlZmQzNTRjMzFmMjkwOWFkZWVhNTI1NGI0Yzg3Yjg3NWIxYmI2ODYyOGZmNjRlZDMyZWM0MjUiLCJzZXFubyI6OSwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEAkQh575NlUhB4UZM0zPCX1/2VzAtpmS/mr3h/TuUCSV9/YaEGaGnhvf6Kij2OjT1KgLSzKTlTVPpkK8mK7FgMIqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgg99wbn8+qowl4n0hKyaEPMXBxiJ3/u/4UhQ/TCkc/P2jdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cscheid
+
+==================================================================

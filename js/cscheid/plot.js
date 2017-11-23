@@ -29,7 +29,11 @@
 
         var axisGroup = svg.append("g");
         var xAxis = d3.axisBottom(xScale);
+        if (opts.xTicks)
+            xAxis.ticks(opts.xTicks);
         var yAxis = d3.axisLeft(yScale);
+        if (opts.yTicks)
+            yAxis.ticks(opts.yTicks);
         var xAxisGroup = axisGroup
                 .append("g")
                 .attr("transform", cscheid.svg.translate(0, yScale(0)));

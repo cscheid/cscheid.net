@@ -137,7 +137,7 @@ there, and take the *average* of the two vectors as the vector to use.
         while True:
             report_point(px, py, t)
             (vx,  vy)  = vector_field(px, py)
-			(vx2, vy2) = vector_field(px+h*vx, py+h*vy)
+            (vx2, vy2) = vector_field(px+h*vx, py+h*vy)
             px += ((vx + vx2) / 2) * h
             py += ((vy + vy2) / 2) * h
             t += h

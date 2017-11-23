@@ -3,7 +3,7 @@ title: Drill 12
 layout: d3_project
 ---
 
-# Drill 12: challenge
+# Drill 12
 
 Write the function `createTable` to complete the following snippet and
 create the elements in a `table`, based on the data array.
@@ -32,6 +32,15 @@ The elements in the resulting table should look like this:
 	  </tr>
 	</table>
 
+**Hint**. Remember the general pattern in d3's API:
+
+- if a d3 method receives a constant value, then it uses the same value for all
+  elements in a selection;
+- if a d3 method receives a function, then it calls this function for
+  every element in the selection, passing the bound datum;
+  
+**So far, you have called d3 like this: `d3.selectAll(...).data(constant_array)`.**
+
 ## Try it
 
 <div style="clear:both"></div>
@@ -42,7 +51,7 @@ The elements in the resulting table should look like this:
 	<div id="run"></div>
   </div>
   <div class="half-width-float tall">
-    <div>SVG Output</div>
+    <div>HTML Output</div>
 	<div id="preview"><table id="table"></table></div>
 	<div id="reset"></div>
   </div>
@@ -60,4 +69,4 @@ The elements in the resulting table should look like this:
 </div>
 
 <script src="ace.js"></script>
-<script src="drill11.js"></script>
+<script src="drill12.js"></script>

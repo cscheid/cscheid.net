@@ -1,0 +1,29 @@
+---
+title: "Decisions when plotting a one-dimensional variable"
+author: "cscheid"
+date: "10/16/2017"
+output: html_document
+---
+
+
+```{r}
+plot(co2)
+```
+
+```{r}
+plot(co2, ylim=c(0, max(co2)))
+```
+
+```{r}
+plot(co2, ylim=c(280, max(co2)))
+```
+
+```{r fig.height=8, fig.height=2.5}
+# Forcing the plot to be wider than it is tall
+plot(co2)
+```
+
+```{r fig.height=8, fig.height=7}
+# Forcing the plot to be square-ish
+plot(co2)
+```

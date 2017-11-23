@@ -34,9 +34,16 @@ function prettyPrintDOM(element)
     function prettyPrintDOMInner(element, indent)
     {
         var is = ' '.repeat(indent), i;
+        // this is likely incomplete..
+        if (element.nodeName === '#text') {
+            result.push(is + element.textContent);
+            return;
+        }
         var attrs = [];
-        for (i=0; i<element.attributes.length; ++i) {
-            attrs.push(' ' + element.attributes[i].nodeName.toLocaleLowerCase() + '="' + element.attributes[i].nodeValue + '"');
+        if (element.attributes) {
+            for (i=0; i<element.attributes.length; ++i) {
+                attrs.push(' ' + element.attributes[i].nodeName.toLocaleLowerCase() + '="' + element.attributes[i].nodeValue + '"');
+            }
         }
         var openTag = '<' + element.nodeName.toLocaleLowerCase() + attrs.join('') + '>';
         var closeTag = '</' + element.nodeName.toLocaleLowerCase() + '>';
@@ -74,7 +81,7 @@ drillChecks = {
             test: function(sel, data, result) {
                 return result.filter(function(d) {
                     return this.nodeName.toLocaleLowerCase() === nodeName;
-                }).nodes().length == result.nodes().length;
+                }).nodes().length === result.nodes().length;
             },
             error: function(sel, data, result) {
                 var counterExample = result.filter(function(d) { return this.nodeName !== nodeName; }).node();
