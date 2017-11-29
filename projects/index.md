@@ -7,6 +7,7 @@ title: Projects
 
 Vis projects, small hacks, etc. Presented in no particular order.
 
+* [Optical Illusions](illusions/)
 * 2016-11-20 - The [Fagan Nomogram](fagan_nomogram/) is a great way to get better
   intuition for simple cases of Bayes's Theorem.
 * 2016-11-19 - The [Bunimovich stadium](bunimovich_stadium/) is a neat dynamical
