@@ -25,7 +25,7 @@ Vis projects, small hacks, etc. Presented in no particular order.
 
 * If you take pictures of clouds from an airplane, you can see [their
   3D structure](http://cscheid.net/to/clouds.html).
-* The roots of polynomials with small integer coefficients has some
+* The set roots of polynomials with small integer coefficients has some
   [incredible structure](http://cscheid.github.io/lux/demos/beauty_of_roots/beauty_of_roots.html)
 * If you stitch together 4 hours of an intercontinental flight, you
   get an interesting [map of the US](/static/windowseat).
