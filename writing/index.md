@@ -23,6 +23,7 @@ nothing.
 * [Host your own website](host_your_own_website.html).
 * Advice for [my students](../advice/students.html) and academic
   advice [in general](../advice/academics.html).
+* [Stupid SVG tricks](data_visualization/stupid-svg-tricks/)
 
 # Reading
 

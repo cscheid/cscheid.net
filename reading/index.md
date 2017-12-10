@@ -9,6 +9,7 @@ Mostly to myself, in case I need to refer to it in the future.
 
 #### December 2017
 
+* [How differential steering works](https://www.youtube.com/watch?v=yYAw79386WI). What an amazing explanation of how differential gears work.
 * [Face2Face: Real-time Face Capture and Reenactment of RGB Videos](https://www.youtube.com/watch?v=ohmajJTcpNk). We are all doomed.
 
 #### October 2017

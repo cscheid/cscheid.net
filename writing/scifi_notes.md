@@ -43,7 +43,7 @@ away, 2312 is a natural progression of the Red Mars Trilogy, and
 although I think it's an phenomenal book, it doesn't fundamentally
 change anything on the combined trajectory of his books.
 
-Aurora, on the other hand? This. Changes. Everything.
+Aurora, on the other hand? It. Changes. Everything.
 
 One of the ways I've started thinking about KSR's writing is that he's
 in a sense telling us that, no matter where --- or how --- people
@@ -51,14 +51,18 @@ choose to live, there's *something* fundamental and unchanging about
 being human. It's like he's written a dozen or so novels trying to get
 at some notion of a Soul, but without having to get theistic about it
 (in passing, KSR is the most spiritual writer of hard scifi I can
-think of.) A central notion of his books, in my view, have been that
+think of, though people tell me that Gene Wolfe is a worthy competitor
+in this respect.) A central notion of his books, in my view, have been that
 environments are fragile but humans are hardy: we will live in
 Other Places, and we will thrive. This stands in direct contast with
 what Aurora is about!  It's a really fascinating change of
 perspective, and it left me really wanting to read the next
 installment (even though it seems clear that Aurora is not a trilogy).
 
-## Ken MacLeod, and the Star Fraction
+New York 2140 is a fine chapter of Humans are (Fool)Hardy, but it's
+passable overall unless you are a KSR completionist.
+
+## Ken MacLeod, and the Fall Revolution
 
 Disclaimer: I've only read Star Fraction so far. It's a series,
 though, so it's possible I'm getting this stuff completely wrong.
@@ -66,7 +70,7 @@ though, so it's possible I'm getting this stuff completely wrong.
 I never lived in Europe, but reading this book --- especially in
 contrast to typical science fiction written in the US --- made me
 think about just how densely diverse Europe is, in ethnicity,
-religion, and politics. It really is as if multiple worlds and
+culture, and politics. It really is as if multiple worlds and
 histories all folded right on top of each other. Throw in a
 multi-century conspiracy, the lure of central planning given infinite
 wisdom and computational planning, space exploration, and drugs, and
@@ -80,6 +84,10 @@ Star Fraction was *very slow going*, maybe slower than Foucault's
 Pendulum. They definitely belong in the same shelf, together with
 Infinite Jest, even if MacLeod doesn't ramble as much as DFW (sadly,
 the way I see it. But it does make for a tighter book).
+
+(Update: I've now read the Stone Canal and am halfway through the
+Cassini Division. They're all great, and they move the series closer
+to Stross and Doctorow's singularity ideas.)
 
 ## Neal Stephenson
 
@@ -173,7 +181,10 @@ The Magic Power Of Protagonist Love. Sigh, enough with this shit
 already. (Bonus mini-rant: Joss Whedon is a feminist in the same sense
 that Hunter Thompson isn't a total misanthrope. Sure, the statement is
 true in the context of local comparisons. But is that really the best
-one could do?)
+we could do?)
 
 Examples: Ready Player One; The Reckoners; The Atrocity Archives;
-Altered Carbon
+Altered Carbon; Artemis (though in Artemis this happens in the novel's
+negative space, it's sufficiently telegraphed and annoying that I
+can't help but bringing it up. Not to mention that Artemis suffers
+from [men-writing-about-womenitis](https://imgur.com/gallery/faeYP))
