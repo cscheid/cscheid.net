@@ -11,7 +11,9 @@ Mostly to myself, in case I need to refer to it in the future.
 
 * [How differential steering works](https://www.youtube.com/watch?v=yYAw79386WI). What an amazing explanation of how differential gears work.
 * [Face2Face: Real-time Face Capture and Reenactment of RGB Videos](https://www.youtube.com/watch?v=ohmajJTcpNk). We are all doomed.
-
+* [data-vis-jobs](https://groups.google.com/forum/#!forum/data-vis-jobs), a google groups forum on jobs in data
+  visualization.
+  
 #### October 2017
 
 * [Conditioning on a collider](https://www.theatlantic.com/business/archive/2012/05/when-correlation-is-not-causation-but-something-much-more-screwy/256918/),
