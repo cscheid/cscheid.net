@@ -1,9 +1,9 @@
 ---
-title: Joins: Drill 1
+title: Joins, Drill 1
 layout: d3_project
 ---
 
-# Joins: Drill 1
+# Joins, Drill 1
 
 Write the function `createCircles` to complete the following snippet and insert three
 circles into the svg element `#svg`, each bound to one of the elements

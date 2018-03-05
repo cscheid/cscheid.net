@@ -17,7 +17,7 @@ and play around with them in [d3](http://d3js.org).
 Here's the
 original version.
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="/assets/js/d3.slider.js"></script>
 <link rel="stylesheet" href="/assets/css/d3.slider.css"/>
 

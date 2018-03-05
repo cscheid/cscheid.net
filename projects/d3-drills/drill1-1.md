@@ -27,7 +27,7 @@ object which contains a selection of a single node with id `svg`.
   </div>
 </div>
 
-<div style="clear:both"></div>
+	<div style="clear:both"></div>
 <div>
   <div class="full-width-float">
     <div>Messages</div>
@@ -40,4 +40,3 @@ object which contains a selection of a single node with id `svg`.
 <script src="ace.js"></script>
 
 <script src="drill1-1.js"></script>
-

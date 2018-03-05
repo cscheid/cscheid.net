@@ -5,6 +5,10 @@ title: Courses
 
 # My courses
 
+## Spring 2018
+
+- CSC 444, [Data Visualization](http://cscheid.net/courses/spr18/csc444/).
+  
 ## Fall 2017
 
 - CSC 544, [Data Visualization](http://cscheid.net/courses/fal17/csc544/).

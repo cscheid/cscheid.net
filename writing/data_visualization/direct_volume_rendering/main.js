@@ -1,35 +1,35 @@
-/*global cscheid */
+/*global cscheid,d3 */
 
 /* BEWARE - THIS NEEDS A MASSIVE CLEANUP */
 
 //////////////////////////////////////////////////////////////////////////////
 
-function mip2D(rayBegin, rayEnd, nSteps, volume) {
+function mip2D(rayBegin, rayEnd, nSteps, scalarField) {
     var rayScale = d3.scaleLinear()
             .domain([0, nSteps-1])
             .range([rayBegin, rayEnd]);
     var result = -Infinity;
     for (var i=0; i<nSteps; ++i) {
         var p = rayScale(i);
-        result = Math.max(result, volume(p[0], p[1]));
+        result = Math.max(result, scalarField(p[0], p[1]));
     };
     return result;
 }
 
-function xRay2D(rayBegin, rayEnd, nSteps, volume, weight) {
+function xRay2D(rayBegin, rayEnd, nSteps, scalarField, weightFunction) {
     var rayScale = d3.scaleLinear()
             .domain([0, nSteps-1])
             .range([rayBegin, rayEnd]);
     var result = 0;
     for (var i=0; i<nSteps; ++i) {
         var pos = rayScale(i);
-        var w = weight(pos[0], pos[1]);
-        result += volume(pos[0], pos[1]) * w;
+        var w = weightFunction(pos[0], pos[1]);
+        result += scalarField(pos[0], pos[1]) * w;
     };
     return result;
 }
 
-function absorptionEmission2D(rayBegin, rayEnd, nSteps, volume, weight) {
+function absorptionEmission2D(rayBegin, rayEnd, nSteps, scalarField, weightFunction) {
     debugger;
     var rayScale = d3.scaleLinear()
             .domain([0, nSteps-1])
@@ -37,8 +37,8 @@ function absorptionEmission2D(rayBegin, rayEnd, nSteps, volume, weight) {
     var result = 0;
     for (var i=nSteps; i>=0; --i) {
         var pos = rayScale(i);
-        var w = weight(pos[0], pos[1]);
-        var c = volume(pos[0], pos[1]);
+        var w = weightFunction(pos[0], pos[1]);
+        var c = scalarField(pos[0], pos[1]);
         result = w * c + (1 - w) * result;
     };
     return result;

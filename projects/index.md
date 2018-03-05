@@ -7,6 +7,8 @@ title: Projects
 
 Vis projects, small hacks, etc. Presented in no particular order.
 
+* 2018-02-21 - [Scales Playground](d3-scale-playground/) - A playground to explore the
+  behavior of different d3 scales.
 * [Optical Illusions](illusions/)
 * 2016-11-20 - The [Fagan Nomogram](fagan_nomogram/) is a great way to get better
   intuition for simple cases of Bayes's Theorem.

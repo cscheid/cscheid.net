@@ -1,0 +1,16 @@
+iteration 1: no reuse
+
+iteration 2: generic make
+
+iteration 3: move "data" into plotAll
+
+iteration 4: make widthGetter, heightGetter, xGetter, yGetter
+
+iteration 5: change getters for each different size
+
+iteration 6: getter generators, higher-order functions
+
+iteration 7: generic plotAll, any SVG element, just like generic make
+in iteration 2:
+
+iteration 8: examples.

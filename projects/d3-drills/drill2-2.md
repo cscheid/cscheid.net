@@ -1,5 +1,5 @@
 ---
-title: Joins: Drill 2
+title: Joins, Drill 2
 layout: d3_project
 ---
 

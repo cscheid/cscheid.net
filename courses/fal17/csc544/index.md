@@ -75,6 +75,7 @@ This is the course website for CS544, Advanced Data Visualization.
 * [Assignment 6](assignment_6/), posted Oct 16th, due Oct 30th. (two weeks for this)
 * [Assignment 7](assignment_7/), posted Nov 1st, due Nov 8th.
 * [Assignment 8](assignment_8/), posted Nov 20th, due Nov 29th.
+* [Assignment 9](assignment_9/), posted Nov 29th, due last day of class.
 
 <!-- ## [Final Project](final_project.html) -->
 
