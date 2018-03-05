@@ -11,6 +11,6 @@ var md = new MobileDetect(window.navigator.userAgent);
 if (md.phone() == 'iPhone') {
     d3.select("head").append("link")
         .attr("rel", "stylesheet")
-        .attr("href", "css/iphone.css")
+        .attr("href", "/css/iphone.css")
         .attr("type", "text/css");
 }
