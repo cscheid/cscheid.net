@@ -1,5 +1,5 @@
 body {
-    font-size: 1.8em; 
+    font-size: 16px;
     text-rendering: optimizeLegibility;
 }
 
@@ -28,14 +28,14 @@ ul.posts {
 }
 
 p, ul, ol, td {
-    font-family: "Helvetica Neue", "Calibri", sans;
-    font-weight: 300;
-    font-size: 1.03em;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    color: #444;
 }
 
 th {
-    font-family: "Helvetica Neue", "Calibri", sans;
-    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
 }
 
 table td, table th {
@@ -44,13 +44,13 @@ table td, table th {
 }
 
 em {
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal
 }
 
 .heading {
-    font-family: "Helvetica Neue", "Calibri", sans;
-    font-weight: 500;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
     font-size: .75em;
     margin-top: 20px;
 }
@@ -65,7 +65,7 @@ em {
 }
 
 h1.my-sidebar > a {
-    font-family: "Helvetica Neue", "Calibri", sans;
+    font-family: "Source Sans Pro", "Calibri", sans;
     padding-top: 0em;
     padding-bottom: 0em;
     position: relative;
@@ -97,7 +97,7 @@ h2.my-sidebar, h3.my-sidebar, h4.my-sidebar {
 }
 
 h2.my-sidebar > a, h3.my-sidebar > a, h4.my-sidebar > a {
-    font-family: "Helvetica Neue", "Calibri", sans;
+    font-family: "Source Sans Pro", "Calibri", sans;
     padding: 0;
     margin: 0;
     font-weight: 300;
@@ -107,7 +107,7 @@ h2.my-sidebar > a, h3.my-sidebar > a, h4.my-sidebar > a {
 }
 
 h1 {
-    font-family: "Helvetica Neue", "Calibri", sans;
+    font-family: "Source Sans Pro", "Calibri", sans;
     padding-top: 0em;
     padding-bottom: 0em;
     position: relative;
@@ -117,7 +117,7 @@ h1 {
 }
 
 h2, h3, h4 {
-    font-family: "Helvetica Neue", "Calibri", sans;
+    font-family: "Source Sans Pro", "Calibri", sans;
     font-weight: 700;
     position: relative;
     left: -1em;
