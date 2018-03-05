@@ -112,10 +112,10 @@ I'm stealing the section title from Philip Guo's
 writeup (I'm not going to hold it against you if you leave now and go
 read everything Guo has written. Seriously).
 
-It is maybe a bit embarassing that the best way
+It is a bit embarassing that the best way
 we know how to carry our day-to-day research is by interacting with
 computers through a command-line interface that's been the same for,
-more or less, 40 years. But them's the breaks, so my job is to make it
+more or less, 40 years. But that's the world we live in, so my job is to make it
 as easy as possible for you to get used to it yourself.
 
 You will need to learn either [git](http://git-scm.com/) or
@@ -137,14 +137,14 @@ You will need to learn one of the standard UNIX shells: `bash`,
 `tcsh`, `zsh`, or whatever you like. If you use Windows on a
 day-to-day basis, I will not be able to help you with your workflow. I
 have been bitten by proprietary software way too many times in the
-past; even though I run OS X primarily, the stuff I depend on for
+past; even though I run macOS primarily, the stuff I depend on for
 research is all open source.
 
 I don't care what programming language you use for your software, but
 it will make things much smoother if we speak the same ones.  C++,
-Python, and Javascript are what I use on a day-to-day basis (in no
+Python, R, and Javascript are what I use on a day-to-day basis (in no
 particular order), but I speak a little Haskell, Scheme, Julia, OCaml,
-Java, and a handful of others. It's much more important for you to be
+Java, Rust, and a handful of others. It's much more important for you to be
 very proficient with one language than to write in whatever is the new
 hotness, but if you're a fan of some particularly cool programming
 language, tell me about it!
@@ -164,10 +164,9 @@ decided it was time to plaster your keyboard with caffeine.
 
 Everything that is important about your research should be saved in a
 system that's backed up, *automatically*, by someone other than
-yourself (emailing files to yourself does not count). Dropbox is not backup,
-[unless you pay for the packrat option](https://www.dropbox.com/en/help/113). For
+yourself (emailing files to yourself does not count). Dropbox is not backup. For
 example, have a [cron job that rsyncs](#command-line-bullshittery)
-your contents with the university machines, or run CrashPlan, or
+your contents with the university machines, or run Arq, or
 *something*. I will ask you about your backups.
 
 # requests
