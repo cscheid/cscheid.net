@@ -74,32 +74,7 @@ table th, table td {
   </div>
 </div>
 <div class="row">
-  <div class="col-md-5">
-    <h4 class="bold"><a name="blog"></a>BLOG</h2>
-    <ul class="posts">
-      <table>
-      {% for post in site.posts %}
-        {% if post.tags contains 'paper' %}
-        {% else %}
-      <tr valign="top">
-	<td valign="top" align="right" style="white-space: nowrap">
-	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%-d" }}</span><span style="padding-right:.1em"/>
-	</td>
-	<td valign="top" align="right" style="white-space: nowrap; text-transform: lowercase">
-	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%b" }}</span><span style="padding-right:.1em"/>
-	</td>
-	<td valign="top" align="right" style="white-space: nowrap">
-	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%Y" }}</span><span style="padding-right:.5em"/>
-	</td>
-	<td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></td>
-      </tr>
-        {% endif %}
-      {% endfor %}
-      </table>
-    </ul>
-
-  </div>
-  <div class="col-md-7 flush-right">
+  <div class="col-md-7 col-md-push-5 flush-right">
     </ul>
     <h4 class="bold"><a name="papers"></a>PAPERS</h2>
     <ul class="posts">
@@ -126,6 +101,31 @@ table th, table td {
       {% endfor %}
       </table>
     </ul>
+  </div>
+  <div class="col-md-5 col-md-pull-7">
+    <h4 class="bold"><a name="blog"></a>BLOG</h2>
+    <ul class="posts">
+      <table>
+      {% for post in site.posts %}
+        {% if post.tags contains 'paper' %}
+        {% else %}
+      <tr valign="top">
+	<td valign="top" align="right" style="white-space: nowrap">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%-d" }}</span><span style="padding-right:.1em"/>
+	</td>
+	<td valign="top" align="right" style="white-space: nowrap; text-transform: lowercase">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%b" }}</span><span style="padding-right:.1em"/>
+	</td>
+	<td valign="top" align="right" style="white-space: nowrap">
+	  <span class="hidden-md hidden-lg">⬝&nbsp;</span><span class="visible-md-block visible-md-inline visible-lg-block visible-lg-inline">{{ post.date | date: "%Y" }}</span><span style="padding-right:.5em"/>
+	</td>
+	<td valign="top"> <a href="{{ post.url }}">{{ post.title }}</a></td>
+      </tr>
+        {% endif %}
+      {% endfor %}
+      </table>
+    </ul>
+
   </div>
 </div>
 <script src="js/mobile-detect.js"></script>

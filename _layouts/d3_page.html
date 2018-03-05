@@ -56,20 +56,7 @@
       </div>
     </div>
     <hr/>
-    <div class="container">
-      <div class="col-md-1"></div>
-      <div class="col-md-10" id="footer">
-	<span style="float: right">
-	  <a href="/">about</a> |
-	  <a href="/license.html">license</a> |
-	  <a href="" id="pull-request">suggest a fix</a> |
-	  Last modified: {{ page.last_modified_at }}
-	</span>
-	<div style="clear: both"></div>
-	<div>&nbsp;</div>
-      </div>
-    </div>
-    <script src="/js/footer.js"></script>
+    {% include footer.html %}
     <script src="common.js"></script>
     <script src="{{ page.name | remove: '.md' }}.js"></script>
   </body>
