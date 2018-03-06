@@ -2,9 +2,14 @@
 layout: post_paper
 title: "Auditing Black-box Models for Indirect Influence"
 tags: paper
+thumb: 2016-icdm-auditing
+paper_link: /static/papers/icdm_auditing_2016.pdf
 ---
 
-Philip Adler, Casey Falk, Sorelle A. Friedler, Gabriel Rybeck, Carlos Scheidegger, Brandon Smith, and Suresh Venkatasubramanian
+Philip Adler, Casey Falk, Sorelle A. Friedler, Tionney Nix, Gabriel Rybeck, Carlos Scheidegger, Brandon Smith, and Suresh Venkatasubramanian. 
+
+Conference version published at ICDM 2016, journal version published
+at Knowledge and Information Systems.
 
 Data-trained predictive models see widespread use, but for the most
 part they are used as black boxes which output a prediction or
@@ -32,4 +37,4 @@ variety of publicly available datasets and models. We also validate
 our procedure using techniques from interpretable learning and feature
 selection, as well as against other black-box auditing procedures.
 
-Paper in [PDF](/static/papers/icdm_auditing_2016.pdf) format
+[Conference paper in PDF](/static/papers/icdm_auditing_2016.pdf) format. [Journal paper from publisher website](https://link.springer.com/article/10.1007/s10115-017-1116-3).

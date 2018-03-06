@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Load-n-Go: Fast Approximate Join Visualizations That Improve Over Time"
 tags: paper
+thumb: 2017-dsia-load-n-go
+paper_link: /static/papers/dsia-load-n-go-2017.pdf
 ---
 
 Marianne Procopio, [Carlos Scheidegger](/), [Eugene Wu](http://www.cs.columbia.edu/~ewu/), and [Remco Chang](http://www.cs.tufts.edu/~remco/)

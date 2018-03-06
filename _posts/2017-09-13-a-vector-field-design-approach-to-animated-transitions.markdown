@@ -2,6 +2,8 @@
 layout: post_paper
 title: "A Vector Field Design Approach to Animated Transitions"
 tags: paper
+thumb: 2017-tvcg-animated
+paper_link: /static/papers/tvcg-animated-2017.pdf
 ---
 
 Yong Wang, [Daniel Archambault](http://cs.swansea.ac.uk/~csdarchambault/), [Carlos Scheidegger](/), and Huamin Qu
