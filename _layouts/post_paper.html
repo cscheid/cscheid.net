@@ -1,6 +1,39 @@
----
-layout: bootstrap
----
-    <h1 class="bold" style="font-size:1.2em">{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date_to_string }}</p>
-    {{ content }}
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+      href="/feed.xml">
+    {% include header_contents.html %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+	<div class="col-md-12">
+	  <span class="meta" style="float:right; margin-top:20px">{{ page.date | date_to_string }}</span>
+	  <h1 class="bold" style="font-size:1.2em">{{ page.title }}</h1>
+	</div>
+      </div>
+      <div class="row">
+	<div class="col-md-9">
+	  {{ content }}
+	</div>
+	<div class="col-md-3" id="right-column" style="font-weight: 300">
+	  {% if page.thumb.size %}
+	  <a href="https://arxiv.org/pdf/1706.09847.pdf">
+	    <img src="/assets/img/paper-thumbs/{{page.thumb}}.png" style="width:100%">
+	  </a>
+	  {% endif %}
+	  <ol id="footnotes-ol-sidebar">
+	  </ol>
+	</div>
+      </div>
+    </div>
+    <hr>
+    {% include footer.html %}
+  </body>
+</html>

@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Runaway Feedback Loops in Predictive Policing"
 tags: paper
+thumb: 2017-runaway-feedback-loops
+paper_link: https://arxiv.org/pdf/1706.09847.pdf
 ---
 
 Danielle Ensign,  [Sorelle A. Friedler](http://sorelle.friedler.net),

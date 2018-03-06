@@ -2,6 +2,7 @@ name: Carlos Scheidegger
 markdown: kramdown
 url: http://cscheid.net
 pygments: true
+exclude: scripts
 gems:
   - jekyll-last-modified-at
 asset_bundler:

@@ -2,6 +2,8 @@
 layout: post_paper
 title: "DimReader: Using auto-differentiation to explain non-linear projections"
 tags: paper
+thumb: 2017-arxiv-dimreader
+paper_link: /static/papers/arxiv_dimreader_2017.pdf
 ---
 
 [Rebecca Faust](https://rjfaust.github.io/), [Carlos Scheidegger](/).
