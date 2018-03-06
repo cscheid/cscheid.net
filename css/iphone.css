@@ -2,6 +2,11 @@ body {
     font-size: 3.6em;
 }
 
+h1 {
+    font-size: 1.5em;
+    left: -40px;
+}
+
 .container {
     width: auto;
     margin-left: 15px;
