@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Hashedcubes: Simple, Low Memory, Real-Time Visual Exploration of Big Data"
 tags: paper
+thumb: 2016-infovis-hashedcubes
+paper_link: /static/papers/infovis_hashed_cubes_2016.pdfs
 ---
 
 Cicero A. L. Pahins, Sean A. Stephens, Carlos Scheidegger, Joao

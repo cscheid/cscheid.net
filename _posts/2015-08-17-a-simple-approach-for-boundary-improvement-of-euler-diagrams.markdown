@@ -2,6 +2,8 @@
 layout: post_paper
 title: "A Simple Approach for Boundary Improvement of Euler Diagrams"
 tags: paper
+thumb: 2015-infovis-smooth
+paper_link: /static/papers/infovis_smooth_2015.pdf
 ---
 
 Paolo Simonetto, Daniel Archambault, and Carlos Scheidegger. IEEE

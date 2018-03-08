@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets"
 tags: paper
+thumb: 2016-infovis-gaussiancubes
+paper_link: /static/papers/infovis_gaussian_cubes_2016.pdf
 ---
 
 Zhe Wang, Nivan Ferreira, Youhao Wei, Aarthy Bhaskar, Carlos Scheidegger. IEEE InfoVis 2016

@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Collaborative Visual Analysis with RCloud"
 tags: paper
+thumb: 2015-vast-rcloud
+paper_link: /static/papers/vast_rcloud_2015.pdf
 ---
 
 Stephen North, Carlos Scheidegger, Simon Urbanek and Gordon
@@ -33,7 +35,7 @@ years. We report on interviews with some of these users, and discuss
 design decisions, tradeoffs and limitations in comparison to other
 approaches.
 
-Paper in [PDF](http://cscheid.net/static/papers/vast_rcloud_2015.pdf) format.
+Paper in [PDF](/static/papers/vast_rcloud_2015.pdf) format.
 
 RCloud is an [open source](http://github.com/att/rcloud) project from
 [AT&T Labs](http://www.research.att.com).
