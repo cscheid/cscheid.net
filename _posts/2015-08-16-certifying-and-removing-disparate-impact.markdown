@@ -2,6 +2,8 @@
 layout: post_paper
 title: "Certifying and Removing Disparate Impact"
 tags: paper
+thumb: 2015-kdd-certifying
+paper_link: http://arxiv.org/pdf/1412.3756v2
 ---
 
 Michael Feldman, Sorelle Friedler, John Moeller, Carlos Scheidegger, Suresh Venkatasubramanian.

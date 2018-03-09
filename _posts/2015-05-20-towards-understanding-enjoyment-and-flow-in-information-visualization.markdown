@@ -3,6 +3,8 @@ layout: post_paper
 title: "(short paper) Towards Understanding Enjoyment and Flow in Information Visualization"
 date: 2015-05-20 00:10:00
 tags: paper
+thumb: 2015-eurovis-enjoyment
+paper_link: /static/papers/eurovis_short_2015.pdf
 ---
 
 Bahador Saket, Carlos Scheidegger, and Stephen G. Kobourov. Eurovis 2015.
