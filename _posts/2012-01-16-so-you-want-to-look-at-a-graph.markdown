@@ -51,7 +51,7 @@ navigate the design space. When we are aware of the rule, the process
 of thinking how we are bending it gives
 natural descriptions of the trade-offs. 
 It also raises the question "have we missed any spots", and I
-[think](http://cscheid.net/blog/how_many_visweek_papers_could_the_nyt_write_in_three_weeks_)
+[think](https://cscheid.net/blog/how_many_visweek_papers_could_the_nyt_write_in_three_weeks_)
 this is a fundamental question to ask.
 
 ## What not to draw

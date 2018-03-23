@@ -31,5 +31,5 @@ bandwidth measurements. We ﬁnd that the timings for the queries in our
 examples are dominated by network and user-interaction latencies.
 
 Get the
-[paper](http://cscheid.net/static/papers/nanocubes.pdf)
+[paper](https://cscheid.net/static/papers/nanocubes.pdf)
 and visit the [website](http://nanocubes.net) for [live](http://nanocubes.net/view.html#twitter) [demos](http://nanocubes.net/view.html#brightkite).

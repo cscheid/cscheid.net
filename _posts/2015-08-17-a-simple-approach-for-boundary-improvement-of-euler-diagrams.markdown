@@ -20,4 +20,4 @@ the diagram while at the same time ensuring its topological structure
 does not change. We demonstrate the effectiveness of the approach
 through case studies and quantitative evaluations.
 
-Paper in [PDF](http://cscheid.net/static/papers/infovis_smooth_2015.pdf) format.
+Paper in [PDF](https://cscheid.net/static/papers/infovis_smooth_2015.pdf) format.

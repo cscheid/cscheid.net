@@ -4,7 +4,7 @@ title: "The technology behind cscheid.net: the backend"
 ---
 
 In which I tell you, in two installments, how I
-run [cscheid.net]("http://cscheid.net"). Here, I will give an
+run [cscheid.net]("https://cscheid.net"). Here, I will give an
 overview of the backend of the site. Next, I will write about the
 user-visible aspects.
 

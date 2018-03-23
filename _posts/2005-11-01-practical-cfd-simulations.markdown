@@ -33,4 +33,4 @@ three-dimensional domains and free-boundary problems.
 Paper in [PDF](http://www.sci.utah.edu/~cscheid/pubs/smac-cgf.pdf)
 format (~2.4MB).
 
-A companion page with the source code is available [here](http://cscheid.net/old/smac/).
+A companion page with the source code is available [here](https://cscheid.net/old/smac/).

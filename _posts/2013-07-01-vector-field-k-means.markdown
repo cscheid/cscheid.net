@@ -22,5 +22,5 @@ historical hurricane data, GPS tracks of people and vehicles, and
 anonymous cellular radio handoffs from a large service provider.
 
 Get the
-[paper](http://cscheid.net/static/papers/vfkmeans.pdf) as a PDF file
+[paper](https://cscheid.net/static/papers/vfkmeans.pdf) as a PDF file
 (10MB), and the source code [here](http://github.com/nivan/vfkm).

@@ -28,4 +28,4 @@ Marc Khoury, Yifan Hu, Shankar Krishnan, Carlos Scheidegger. Eurovis 2012, to ap
 
 Get the
 [paper
-preprint](http://cscheid.net/static/papers/lowrank_stressmajorization_eurovis2012.pdf) as a PDF file (12MB).
+preprint](https://cscheid.net/static/papers/lowrank_stressmajorization_eurovis2012.pdf) as a PDF file (12MB).

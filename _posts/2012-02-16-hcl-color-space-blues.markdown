@@ -5,7 +5,7 @@ title: "HCL color space blues"
 
 {::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
-src="http://cscheid.net/static/20120216/xyz_frame.html" width=400
+src="https://cscheid.net/static/20120216/xyz_frame.html" width=400
 height=480></iframe></div>
 {:/nomarkdown}
 
@@ -38,7 +38,7 @@ apart.
 
 {::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
-src="http://cscheid.net/static/20120216/luv_frame.html" width=400
+src="https://cscheid.net/static/20120216/luv_frame.html" width=400
 height=480></iframe></div> 
 {:/nomarkdown}
 
@@ -70,7 +70,7 @@ these to work (sorry!). Pay attention to the boundary of the gamut.
 
 {::nomarkdown}
 <div style="position:absolute; right: -450px"><iframe
-src="http://cscheid.net/static/20120216/hsv_frame.html" width=400
+src="https://cscheid.net/static/20120216/hsv_frame.html" width=400
 height=480></iframe></div>
 {:/nomarkdown}
 
@@ -106,7 +106,7 @@ think there's any simple algorithm to do this.
 
 {::nomarkdown}
 <div style="position:absolute; right:-450px"><iframe
-src="http://cscheid.net/static/20120216/hcl_frame.html" width=400
+src="https://cscheid.net/static/20120216/hcl_frame.html" width=400
 height=480></iframe></div>
 Or is there?
 {:/nomarkdown}

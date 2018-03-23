@@ -5,15 +5,15 @@ title: "So you want to look at a graph, part 2"
 
 This series of posts is a thorough examination of the design space of
 graph visualization
-([Intro](http://cscheid.net/blog/so_you_want_to_look_at_a_graph),
+([Intro](https://cscheid.net/blog/so_you_want_to_look_at_a_graph),
 [part
-1](http://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1)). In the previous post, we talked about graphs and their
+1](https://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1)). In the previous post, we talked about graphs and their
 properties.  We will now talk about constraints arising from the
 process of transforming our data into a visualization.
 
 ## What is in a sheet of paper? Marks
 
-<div class="sidebar"><img src="http://cscheid.net/static/20120229/marks.png"></div>
+<div class="sidebar"><img src="https://cscheid.net/static/20120229/marks.png"></div>
 Paper is like external memory. We can make marks on it, and later we
 can *read* marks that we made on a particular spots. We will say
 then that visualizations are encodings of data as particular
@@ -48,7 +48,7 @@ that should be enough.
 
 ## Even the simplest possible abstract encoding can go boink
 
-<div class="sidebar"><img src="http://cscheid.net/static/20120229/innocent_marks.png"></div>
+<div class="sidebar"><img src="https://cscheid.net/static/20120229/innocent_marks.png"></div>
 When there are *two* dot marks on a piece of paper, it turns out
 that we immediately see that these two marks have some distance
 between them. Given two marks written on paper, I can then read a real
@@ -67,7 +67,7 @@ graph vertices, edges and properties. Furthermore, this encoding is
 lossless.
 
 <div class="sidebar"><img
-src="http://cscheid.net/static/20120229/oh_oh.png"></div> 
+src="https://cscheid.net/static/20120229/oh_oh.png"></div> 
 Although
 encoding an entire graph as a single distance between two points is
 valid, it's clearly ludicrous. What went wrong?  Remember that we
@@ -101,7 +101,7 @@ choices. And if we ever hope our theoretical arguments to be valid
 regardless of which encoding we use to examine, we need to be able to
 articulate why stupid encodings like the above are, in fact, stupid.
 
-<div class="sidebar-large"><img src="http://cscheid.net/static/20120229/chernoff_faces.png"></div>
+<div class="sidebar-large"><img src="https://cscheid.net/static/20120229/chernoff_faces.png"></div>
 And even armed with the simplest of the observations above, 
 we can already make some nontrivial statements.
 If you've ever heard about Chernoff faces and

@@ -15,5 +15,5 @@ topology to design algorithms which verify topological invariants. Our
 extended framework reveals unexpected behavior and coding mistakes in
 popular publicly-available isosurface codes.
 
-Get the [paper](http://cscheid.net/static/papers/topology_verification.pdf)
+Get the [paper](https://cscheid.net/static/papers/topology_verification.pdf)
 in PDF version (9.9MB).

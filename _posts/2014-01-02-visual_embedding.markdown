@@ -19,5 +19,5 @@ we show how striving to preserve *metrics* leads to implementations of
 colormap design, glyph selection and quantitative evaluation
 algorithms.
 
-Get the [paper](http://cscheid.net/static/papers/visual_embedding.pdf)
+Get the [paper](https://cscheid.net/static/papers/visual_embedding.pdf)
 here.

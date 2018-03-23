@@ -19,9 +19,9 @@ One of the themes of my research has been that user data (typically
 process provenance in form of activity logs, like the version trees in
 VisTrails and the git logs in RCloud) can be put to very good use.  We
 can suggest new visualizations like we did in
-[VisComplete](http://cscheid.net/2008/10/01/viscomplete.html), or
+[VisComplete](https://cscheid.net/2008/10/01/viscomplete.html), or
 [study student dynamics in homework
-assignments](http://cscheid.net/2008/07/01/examining-statistics-of-workflow-evolution.html). Understandably,
+assignments](https://cscheid.net/2008/07/01/examining-statistics-of-workflow-evolution.html). Understandably,
 when I give talks about these ideas, people ask me whether users are
 afraid or reluctant to share data, and my answer has so far been that
 "cultural problems require cultural solutions". What I meant is if

@@ -3,7 +3,7 @@ layout: post
 title: "VisWeek 2012, Monday and Tuesday"
 ---
 This continues the set of notes I started on the
-[previous post](http://cscheid.net/blog/visweek_2012__sunday).
+[previous post](https://cscheid.net/blog/visweek_2012__sunday).
 
 ## Monday
 

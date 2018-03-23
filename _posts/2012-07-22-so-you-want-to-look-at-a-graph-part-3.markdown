@@ -6,9 +6,9 @@ title: "So you want to look at a graph, part 3"
 This series of posts is a tour of the design space of
 graph visualization. I've written about
 [graphs
-and their properties](http://cscheid.net/blog/so_you_want_to_look_at_a_graph), and how the
+and their properties](https://cscheid.net/blog/so_you_want_to_look_at_a_graph), and how the
 [encoding
-of data into a visual representation is crucial](http://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1). In this post, I will
+of data into a visual representation is crucial](https://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1). In this post, I will
 use those ideas to justify the choices behind a classic algorithm for laying
 out directed, mostly-acyclic graphs.
 
@@ -60,7 +60,7 @@ node-link diagrams. So your mission is simply to specify positions of
 the nodes on a cartesian plane, and edges will be drawn as
 straight lines (directed edges will use traditional arrowheads).
 
-<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe1.html" width=250 height=250></iframe></div>
+<div style="position: absolute; right: -250px"><iframe src="https://cscheid.net/static/20120722/iframe1.html" width=250 height=250></iframe></div>
 You're given a graph $G$ which happens to have a "mostly
 acyclic structure". That is, there are either no cycles, or
 relatively few of them, such that you expect that the majority of the
@@ -77,11 +77,11 @@ preserve, namely the "directionality" of the graph. This is good, but it
 is not very actionable: how do we design a visualization around
 that? Going back to part 1, remember that we learned that the
 [vertices
-of acyclic graphs can be ranked](http://cscheid.net/blog/so_you_want_to_look_at_a_graph): we can give every vertex $v$ an
+of acyclic graphs can be ranked](https://cscheid.net/blog/so_you_want_to_look_at_a_graph): we can give every vertex $v$ an
 integer $r(v)$ such that if there is a path from vertex $v\_1$ to
  $v\_2$, then $r(v\_1) < r(v\_2)$.
 
-<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe2.html" width=250 height=250></iframe></div>
+<div style="position: absolute; right: -250px"><iframe src="https://cscheid.net/static/20120722/iframe2.html" width=250 height=250></iframe></div>
 Let's set aside the fact that there are many such possible
 rankings, and accept for now that a rank ordering is a good
 representation of the notion of acyclicity. The question is then: can
@@ -138,7 +138,7 @@ arrangement" with "no additional information" is a mix of cultural
 and innate characteristics about which we know very little (but there has been
 [recent work in the area](http://www.cs.brown.edu/people/cziemki/documents/ziemkiewicz10_laws-of-attraction.pdf)).
 
-<div style="position: absolute; right: -250px"><iframe src="http://cscheid.net/static/20120722/iframe3.html" width=250 height=250></iframe></div>
+<div style="position: absolute; right: -250px"><iframe src="https://cscheid.net/static/20120722/iframe3.html" width=250 height=250></iframe></div>
 Leaving aside all those important details, this is what an
 algorithm which (roughly) encodes the above principles
 generates. Aside from one important step, this is a result from

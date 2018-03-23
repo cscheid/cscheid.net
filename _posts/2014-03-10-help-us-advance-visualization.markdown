@@ -11,7 +11,7 @@ browser (preferably not on a handheld). We would love it if you could
 do the experiment yourself, and send it to other people who you think
 might be interested.
 
-The URL is [http://cscheid.net:9999](http://cscheid.net:9999). It's
+The URL is [https://cscheid.net:9999](https://cscheid.net:9999). It's
 quick, anonymous, and for the good of visualization research.
 
 Thank you!
