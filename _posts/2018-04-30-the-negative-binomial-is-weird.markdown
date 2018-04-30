@@ -62,7 +62,7 @@ Numerically, I've found that the number tends to be closer to $0.69
 from this quick calculation. 
 
 More importantly, what this shows is that the median is not _that_ far
-from the mean. Yes, it's consistenly skewed. But no, it's not absurdly
+from the mean. Yes, it's consistently skewed. But no, it's not absurdly
 small. In fact, it's within a constant factor of the mean, and a
 factor that's pretty close to one. So the combination of ideas in the
 original post, namely "the median is a better descriptor of this
