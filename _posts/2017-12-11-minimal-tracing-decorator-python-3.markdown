@@ -29,40 +29,61 @@ Then, for this program,
 
     @tracing
     def fib(n):
-        if n < 2:
+        if n == 0:
+            return 0
+        elif n == 1:
             return 1
-        return fib(n-1) + fib(n-2)
+        else:
+            return fib(n-1) + fib(n-2)
     
     if __name__ == '__main__':
-        print(fib(4))
+        print(fib(5))
 
 You get this:
 
     $ python3 tracing_test.py
     ENTER fib:
-      n: 4
+        n: 5
       ENTER fib:
-        n: 3
+          n: 4
         ENTER fib:
-          n: 2
+            n: 3
           ENTER fib:
-            n: 1
+              n: 2
+            ENTER fib:
+                n: 1
+            EXIT fib (returned 1)
+            ENTER fib:
+                n: 0
+            EXIT fib (returned 0)
           EXIT fib (returned 1)
           ENTER fib:
-            n: 0
+              n: 1
           EXIT fib (returned 1)
         EXIT fib (returned 2)
         ENTER fib:
-          n: 1
+            n: 2
+          ENTER fib:
+              n: 1
+          EXIT fib (returned 1)
+          ENTER fib:
+              n: 0
+          EXIT fib (returned 0)
         EXIT fib (returned 1)
       EXIT fib (returned 3)
       ENTER fib:
-        n: 2
+          n: 3
         ENTER fib:
-          n: 1
+            n: 2
+          ENTER fib:
+              n: 1
+          EXIT fib (returned 1)
+          ENTER fib:
+              n: 0
+          EXIT fib (returned 0)
         EXIT fib (returned 1)
         ENTER fib:
-          n: 0
+            n: 1
         EXIT fib (returned 1)
       EXIT fib (returned 2)
     EXIT fib (returned 5)
