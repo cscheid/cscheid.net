@@ -1,0 +1,64 @@
+---
+layout: post
+title: "GDPR"
+---
+
+The
+[GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
+starts being enforceable in a week. The general state of people who
+run websites seems to be, essentially, "I am freaking out, man". But
+for many of these websites, there's an easy solution.
+
+Just don't log any PII. Shocking, I know.
+
+## On GDPR specifically
+
+First, read this by [Mattheij](https://jacquesmattheij.com/):
+
+* [GDPR Hysteria](https://jacquesmattheij.com/gdpr-hysteria)
+
+If you're interested in GDPR specifically, this "plain-english"
+summary of the whole law is great: [GDPR requirements list in plain
+english](https://blog.varonis.com/gdpr-requirements-list-in-plain-english/).
+
+The hyperbole around "my tiny website can be fined two million euros"
+is silly. The best charitable explanation I've read yet comes from this great [HN
+comment](https://news.ycombinator.com/item?id=17100541):
+
+The rest of the hyperbole comes from a number of folks that only now
+realize that should you be on the internet and choose to not abide by
+the laws of a particular country, you might get sued in that
+country. It's true! And yet, it's not the GDPR's doing: this has
+always been the case. Welcome to being a grownup in the world.
+
+Do you still think "but mah daaataaa"?
+
+## Data really is a liability
+
+Read these three pieces by [Cegłowski](http://idlewords.com/about.htm):
+
+* [The Moral Economy of Tech](http://idlewords.com/talks/sase_panel.htm)
+* [Deep-Fried Data](http://idlewords.com/talks/deep_fried_data.htm)
+* [Haunted by Data](http://idlewords.com/talks/haunted_by_data.htm)
+
+## Here's how I solve the problem
+
+In my specific case, the important question was: Do I really need
+those logs? What do I use them for? (as opposed to "what do I
+fantasize about eventually using them for, one day, when I finally
+have all that spare time I'd like to have?")
+
+It turns out that I don't actually need them, and the last time I used
+the logs (many years ago), what I needed them for didn't require any
+IP information. I don't run any analytics on this site now. I just
+didn't have a defensible use case for it.
+
+I run nginx, so I [configured
+it](https://docs.nginx.com/nginx/admin-guide/monitoring/logging/) to
+not store IP or user agent information in my logs. It turns out that
+nginx naturally stores IP information in its error logs, and that
+[cannot be
+changed](https://stackoverflow.com/questions/4246756/is-it-possible-to-specify-custom-error-log-format-in-nginx). So
+I just don't store error logs (they go straight to `/dev/null`).
+
+(I'm not a lawyer. This isn't legal advice. Don't be an idiot.)
