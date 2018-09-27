@@ -61,4 +61,4 @@ to be 10 times the bound value.
 
 <script src="ace.js"></script>
 
-<script src="drill1-6.js"></script>
+<script type="module" src="drill1-6.js"></script>

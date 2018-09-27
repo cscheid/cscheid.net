@@ -39,4 +39,4 @@ object which contains a selection of a single node with id `svg`.
 
 <script src="ace.js"></script>
 
-<script src="drill1-1.js"></script>
+<script type="module" src="drill1-1.js"></script>

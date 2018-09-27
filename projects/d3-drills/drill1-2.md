@@ -48,4 +48,4 @@ should be a child of the `div` with id `svg-parent`.
 
 <script src="ace.js"></script>
 
-<script src="drill1-2.js"></script>
+<script type="module" src="drill1-2.js"></script>

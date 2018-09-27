@@ -10,7 +10,7 @@ This is the course website for CS444, Data Visualization.
 * Instructor: [Carlos Scheidegger](http://cscheid.net)
 * TAs: Ashwin Srinivasan, Alex Yee (UGTA)
 * class email:
-  [cscheid+fall18csc444@cs.arizona.edu](mailto:cscheid+spr18csc444@cs.arizona.edu)
+  [cscheid+spr18csc444@cs.arizona.edu](mailto:cscheid+spr18csc444@cs.arizona.edu)
   *Use this email for urgent class-related questions and
   comments*. For content
   discussions, please use [Piazza](https://piazza.com/arizona/spring2018/csc444/home).
@@ -68,46 +68,46 @@ The syllabus for the course is available [here](syllabus.html).
 
 ## Lectures
 
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-|            | Date  | Topic                                                                  | Materials                                                                    |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Intro      | 01/11 | [Introduction](lectures/week1.html)                                    | [slides](slides/lecture%201.pdf)                                             |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Mechanics  | 01/16 | [HTML/CSS/SVG Basics](lectures/lecture2.html)                          | no slides                                                                    |
-|            | 01/18 | [Javascript Basics](lectures/lecture3.html)                            | *[A2](assignment_2.html)* no slides                                          |
-|            | 01/23 | [Javascript + DOM, SVG](lectures/lecture4.html)                        | no slides                                                                    |
-|            | 01/25 | [d3 intro](lectures/lecture5.html)                                     | *[A3](assignment_3.html)* no slides                                          |
-|            | 01/30 | [d3 joins and scales](lectures/lecture6.html)                          | no slides                                                                    |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Principles | 02/01 | [Color vision](lectures/lecture7.html)                                 | *[A4](assignment_4.html)* [slides](slides/color-spr18-csc444.pdf)            |
-|            | 02/06 | [Color vision](lectures/lecture7.html)                                 | [slides](slides/color-2-spr18-csc444.pdf)                                    |
-|            | 02/08 | [Other perceptual channels](lectures/lecture9.html)                    | *[A5](assignment_5.html)* [slides](slides/Other%20Channels%201.pdf)          |
-|            | 02/15 | Other perceptual channels                                              | *[A6](assignment_6.html)* [slides](slides/other-channels-2-spr18-csc444.pdf) |
-|            | 02/22 | Interaction                                                            | [slides](slides/interaction.pdf)                                             |
-|            | 02/27 | Design Criticism, Algebraic Design                                     | [slides](slides/algebraic-process-spr18-csc444.pdf)                          |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Techniques | 03/01 | [Basic Spatial Arrangements](lectures/basic_spatial_arrangements.html) | [slides](slides/basic%20spatial%20arrangements.pdf)                          |
-|            |       | cont'd.                                                                |                                                                              |
-|            |       | [High-Dimensional Data](lectures/lecture15.html)                       | [slides](slides/Dimensionality%20Reduction.pdf)                              |
-|            |       | High-Dimensional Data                                                  |                                                                              |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Review     |       | [Review](lectures/lecture17.html)                                      | [slides](slides/midterm%20review.pdf)                                        |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-|            |       | MIDTERM                                                                |                                                                              |
-|            |       | Catchup                                                                |                                                                              |
-|            |       | [Hierarchies](lectures/lecture18.html)                                 | [slides](slides/Hierarchies.pdf)                                             |
-|            |       | Graphs                                                                 | [slides](slides/Graphs.pdf)                                                  |
-|            |       | Graphs+Spatial Data                                                    | [slides](slides/spatial_data.pdf)                                            |
-|            |       | Spatial Data                                                           | [slides](slides/spatial_data.pdf), [slides 2](slides/spatial_data_2.pdf)     |
-|            |       | Spatial Data                                                           | [slides 2](slides/spatial_data_2.pdf)                                        |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| Topics     |       | Cartography                                                            | [slides](slides/cartography.pdf)                                             |
-|            |       | Large Data                                                             | [slides](slides/large%20data.pdf)                                            |
-|            |       | Thanksgiving, no class                                                 |                                                                              |
-|            |       | [Putting it all together](lectures/lecture25.html)                     |                                                                              |
-|            |       | [The Human Side of Data](lectures/lecture26.html)                      |                                                                              |
-|            |       | Retrospective, Review                                                  | [slides](slides/retrospective.pdf)                                           |
-|------------|-------|------------------------------------------------------------------------|------------------------------------------------------------------------------|
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+|            | Date  | Topic                                                 | Materials                                                                    |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Intro      | 01/11 | [Introduction](lectures/week1.html)                   | [slides](slides/lecture%201.pdf)                                             |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Mechanics  | 01/16 | [HTML/CSS/SVG Basics](lectures/lecture2.html)         | no slides                                                                    |
+|            | 01/18 | [Javascript Basics](lectures/lecture3.html)           | *[A2](assignment_2.html)* no slides                                          |
+|            | 01/23 | [Javascript + DOM, SVG](lectures/lecture4.html)       | no slides                                                                    |
+|            | 01/25 | [d3 intro](lectures/lecture5.html)                    | *[A3](assignment_3.html)* no slides                                          |
+|            | 01/30 | [d3 joins and scales](lectures/lecture6.html)         | no slides                                                                    |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Principles | 02/01 | [Color vision](lectures/lecture7.html)                | *[A4](assignment_4.html)* [slides](slides/color-spr18-csc444.pdf)            |
+|            | 02/06 | [Color vision](lectures/lecture7.html)                | [slides](slides/color-2-spr18-csc444.pdf)                                    |
+|            | 02/08 | [Other perceptual channels](lectures/lecture9.html)   | *[A5](assignment_5.html)* [slides](slides/Other%20Channels%201.pdf)          |
+|            | 02/15 | Other perceptual channels                             | *[A6](assignment_6.html)* [slides](slides/other-channels-2-spr18-csc444.pdf) |
+|            | 02/22 | Interaction                                           | [slides](slides/interaction.pdf)                                             |
+|            | 02/27 | Design Criticism, Algebraic Design                    | [slides](slides/algebraic-process-spr18-csc444.pdf)                          |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Techniques |       | [Basic Spatial Arrangements](lectures/lecture13.html) | [slides](slides/basic%20spatial%20arrangements.pdf)                          |
+|            |       | cont'd.                                               |                                                                              |
+|            |       | [High-Dimensional Data](lectures/lecture15.html)      | [slides](slides/Dimensionality%20Reduction.pdf)                              |
+|            |       | High-Dimensional Data                                 |                                                                              |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Review     |       | [Review](lectures/lecture17.html)                     | [slides](slides/midterm%20review.pdf)                                        |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+|            |       | MIDTERM                                               |                                                                              |
+|            |       | Catchup                                               |                                                                              |
+|            |       | [Hierarchies](lectures/lecture18.html)                | [slides](slides/Hierarchies.pdf)                                             |
+|            |       | Graphs                                                | [slides](slides/Graphs.pdf)                                                  |
+|            |       | Graphs+Spatial Data                                   | [slides](slides/spatial_data.pdf)                                            |
+|            |       | Spatial Data                                          | [slides](slides/spatial_data.pdf), [slides 2](slides/spatial_data_2.pdf)     |
+|            |       | Spatial Data                                          | [slides 2](slides/spatial_data_2.pdf)                                        |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
+| Topics     |       | Cartography                                           | [slides](slides/cartography.pdf)                                             |
+|            |       | Large Data                                            | [slides](slides/large%20data.pdf)                                            |
+|            |       | Thanksgiving, no class                                |                                                                              |
+|            |       | [Putting it all together](lectures/lecture25.html)    |                                                                              |
+|            |       | [The Human Side of Data](lectures/lecture26.html)     |                                                                              |
+|            |       | Retrospective, Review                                 | [slides](slides/retrospective.pdf)                                           |
+|------------|-------|-------------------------------------------------------|------------------------------------------------------------------------------|
 
 ## Resources
 

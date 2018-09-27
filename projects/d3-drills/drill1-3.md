@@ -59,4 +59,4 @@ circles in the `svg` element.
 
 <script src="ace.js"></script>
 
-<script src="drill1-3.js"></script>
+<script type="module" src="drill1-3.js"></script>

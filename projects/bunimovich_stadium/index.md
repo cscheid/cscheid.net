@@ -22,8 +22,6 @@ a chunk of the table unexplored.
 <div id="reset-elliptical"></div>
 <div id="clear-tracks"></div>
 
-<script src="bunimovich_table.js"></script>
-
 ## Acknowledgments
 
 Inspiration for this post came from

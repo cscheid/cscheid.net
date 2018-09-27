@@ -1,4 +1,5 @@
-G = cscheid.geometry;
+import { geometry as G } from "/js/cscheid.js";
+import * as cscheid from "/js/cscheid.js";
 
 function makeBall(origin, velocity, originT) {
     return {

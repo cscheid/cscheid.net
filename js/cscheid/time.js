@@ -1,13 +1,7 @@
-/*global cscheid */
+import * as cscheid from "../cscheid.js";
 
-(function() {
-  var time = {};
+var epoch = Date.now();
 
-  var epoch = Date.now();
-
-  time.elapsed = function() {
-    return (Date.now() - epoch) / 1000;
-  };
-
-  cscheid.time = time;
-})();
+export function elapsed() {
+  return (Date.now() - epoch) / 1000;
+};

@@ -73,4 +73,4 @@ circles that are children of the `group-2` element.
 
 <script src="ace.js"></script>
 
-<script src="drill1-4.js"></script>
+<script type="module" src="drill1-4.js"></script>

@@ -69,4 +69,4 @@ The elements in the resulting table should look like this:
 </div>
 
 <script src="ace.js"></script>
-<script src="drill2-2.js"></script>
+<script type="module" src="drill2-2.js"></script>

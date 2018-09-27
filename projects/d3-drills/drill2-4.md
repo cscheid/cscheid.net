@@ -53,4 +53,4 @@ bound to an object with the shape `{key: ..., value: ...}`.
 </div>
 
 <script src="ace.js"></script>
-<script src="drill2-4.js"></script>
+<script type="module" src="drill2-4.js"></script>

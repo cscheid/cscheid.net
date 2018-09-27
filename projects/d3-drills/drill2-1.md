@@ -47,4 +47,4 @@ in `data`, in order:
 </div>
 
 <script src="ace.js"></script>
-<script src="drill2-1.js"></script>
+<script type="module" src="drill2-1.js"></script>

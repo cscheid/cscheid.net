@@ -7,6 +7,7 @@ title: Projects
 
 Vis projects, small hacks, etc. Presented in no particular order.
 
+* 2018-09-27 - [Anscombe's T-Rex](https://cscheid.net/courses/fal16/csc444/demos/anscombes_trex.html) - you never know, dinosaurs might be hiding in your summary statistics.
 * 2018-09-13 - [Yet another color demo](https://cscheid.net/courses/fal18/csc444/lectures/lecture7/slides/color/) - luminance, saturation, hue: the three main attributes we use to describe color.
 * 2018-09-05 - [Another color interpolation demo](color-interpolation/) - Linear paths in different color spaces look quite different from one another.
 * 2018-02-21 - [Scales Playground](d3-scale-playground/) - A playground to explore the

@@ -1,3 +1,5 @@
+import * as drill from "./main.js";
+
 function skeleton()
 {
     // The bad indentation is on purpose!
@@ -19,8 +21,8 @@ function resetDrill()
 }
 
 window.onload = function() {
-    check = makeChecker([
-        drillChecks.isSelection,
+    var check = drill.makeChecker([
+        drill.drillChecks.isSelection,
         {
             test: function(sel, data, result) {
                 return result.nodes().length === 1;
@@ -45,5 +47,11 @@ window.onload = function() {
             name: "returns selection object with the correct node"
         }
     ]);
+  drill.configureDrillAndGo({
+    reset: resetDrill,
+    skeleton: skeleton,
+    setup: setup,
+    check: check
+  });
 };
 

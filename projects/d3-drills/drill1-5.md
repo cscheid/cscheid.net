@@ -60,4 +60,4 @@ to black.
 
 <script src="ace.js"></script>
 
-<script src="drill1-5.js"></script>
+<script type="module" src="drill1-5.js"></script>

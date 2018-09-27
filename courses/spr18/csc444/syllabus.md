@@ -158,7 +158,7 @@ provided one week after the assignment is due.
 
 There will be a total of 11 programming assignments paced at around
 one assignment per week, skipping weeks for the midterm, spring break,
-and final. Each assignment will be due at least week after it is posted.
+and final. Each assignment will be due at least one week after it is posted.
 
 ### Assignments
 

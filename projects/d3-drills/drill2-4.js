@@ -1,3 +1,5 @@
+import * as drill from "./main.js";
+
 function skeleton()
 {
     // The bad indentation is on purpose!
@@ -87,3 +89,12 @@ function check(selection, data, selectionResult)
     report.push("Success!");
   return report; 
 }
+
+window.onload = function() {
+  drill.configureDrillAndGo({
+    reset: resetDrill,
+    skeleton: skeleton,
+    setup: setup,
+    check: check
+  });
+};

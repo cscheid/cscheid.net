@@ -56,4 +56,4 @@ corresponding to the `key` field of each value in the array.
 </div>
 
 <script src="ace.js"></script>
-<script src="drill2-3.js"></script>
+<script type="module" src="drill2-3.js"></script>
