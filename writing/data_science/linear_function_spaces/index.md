@@ -8,9 +8,9 @@ debug: true
 
 # Linear function spaces (and reconstruction kernels)
 
-Brief intro to using linear function spaces and
-reconstruction kernels to represent continuous functions in a
-computer. Heavily geared to 
+(Brief intro to using linear function spaces and reconstruction kernels
+to represent continuous functions in a computer. Heavily geared to
+data visualization, of the specific "scientific" variety.)
 
 In data visualization (and more generally, in the subfields of data
 analysis that tend to care about spatial data), we often want to
@@ -208,6 +208,8 @@ TODO: Add illustrations of a simple 2D function using $\beta_0$,
 $\beta_1$, $\beta_2$ as the separable filters.
 
 # More reading
+
+* [2D example](two_d/).
 
 * Mitchell and Netravalli,
   [Reconstruction Filters in Computer Graphics](https://dl.acm.org/citation.cfm?id=378514),

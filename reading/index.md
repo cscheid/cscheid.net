@@ -7,6 +7,12 @@ title: Readings
 
 Mostly to myself, in case I need to refer to it in the future.
 
+#### May 2018
+
+* Cyrus Farivar, Habeas Data
+  * The note on page 38 about Joe Biden deserves more discussion, [like here](https://news.ycombinator.com/item?id=4986223).
+
+
 #### December 2017
 
 * [How differential steering works](https://www.youtube.com/watch?v=yYAw79386WI). What an amazing explanation of how differential gears work.

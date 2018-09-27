@@ -1,7 +1,7 @@
 function skeleton()
 {
     // The bad indentation is on purpose!
-    return function updateEvenCircles(selection, data)
+    return function updateEvenCircles(selection, newData)
 {
     // write your function here!
     
@@ -13,10 +13,10 @@ function setup()
 {
     var selection = d3.select("#svg");
     var data = [
-        { key: "1", value: 10},
-        { key: "2", value: 5},
+	{ key: "4", value: 6},
         { key: "3", value: 12},
-	{ key: "4", value: 6}
+        { key: "2", value: 5},
+        { key: "1", value: 10}
     ];
     var elements = selection
         .selectAll()
@@ -73,6 +73,9 @@ function check(selection, data, selectionResult)
             if (this.__olddata__ === this.__data__) {
                 report.push("Expected circles with even keys to be changed, but circle with key " +
                             this.__olddata__.key + " remained the same.");
+            } else if (this.__olddata__.key !== this.__data__.key) {
+                report.push("Expected circles with even keys to keep the same key, but circle with key " +
+                            this.__olddata__.key + " received new key " + this.__data__.key);
             }
         }
     });

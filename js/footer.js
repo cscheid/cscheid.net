@@ -14,6 +14,19 @@ function guessGithubURL() {
 d3.select("#pull-request")
     .attr("href", guessGithubURL());
 
+function footnoteCumulativeHeights() {
+    var heights = d3.select("#footnotes-ol-sidebar")
+        .selectAll("li")
+        .nodes()
+        .map((node) => node.getBoundingClientRect().height);
+    var totalSoFar = 0;
+    return heights.map((h) => {
+        var result = totalSoFar;
+        totalSoFar += h;
+        return result;
+    });
+}
+
 // based on http://stackoverflow.com/a/1480137/221007
 function cumulativeOffset(element, parent) {
     var top = 0, left = 0;
@@ -37,7 +50,9 @@ function extractFootnotes() {
             d3.select(div.node().parentNode).insert("h2", "div.footnotes").text("Footnotes");
             return;
         }
-        div.select("ol").selectAll("li").each(function() {
+
+        // first, build slightly-incorrect height-adjusted footnotes.
+        div.select("ol").selectAll("li").each(function(d, index) {
             // can't d3.select() here because using the id actually makes an invalid
             // selector (it has a colon in it)
             var refId = d3.select(this).selectAll("a.reversefootnote").attr("href").substr(1);
@@ -51,6 +66,17 @@ function extractFootnotes() {
                 .style("position", "relative")
                 .style("top", offset.top + "px");
         });
+        
+        // now, correct the heights. 
+        var cumulativeHeights = footnoteCumulativeHeights();
+        d3.select("#footnotes-ol-sidebar")
+            .selectAll("li")
+            .each(function(d, index) {
+                var top = Number(this.style.top.substr(0, this.style.top.length-2));
+                this.style.top = (top - cumulativeHeights[index]) + "px";
+            });
+
+        // FIXME there's still a bug where the footnotes can overlap one another.
     }
 }
 extractFootnotes();

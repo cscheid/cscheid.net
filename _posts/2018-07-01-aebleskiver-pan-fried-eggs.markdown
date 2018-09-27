@@ -14,7 +14,7 @@ All you need is eggs, salt, and a round table spoon of about the same curvature 
 
 ![Aebleskiver pan](/assets/img/aebleskiver-eggs/pan.jpg)
 
-Start the pan on high heat, drop the eggs, add salt to taste. Salt the egg right now so both whites and yolks get seasoned. As they get cooking, they'll eventually look kinda like this (it takes around a minute and a half, but can change depending on how cold the oil and eggs were):
+Start the pan on high heat, drop the eggs, add salt to taste. Salt the egg right now so both whites and yolks get seasoned. As they get cooking, they'll eventually look kinda like this (it takes around a minute and a half, but varies depending on how cold the oil and eggs were):
 
 ![Eggs](/assets/img/aebleskiver-eggs/eggs1.jpg)
 

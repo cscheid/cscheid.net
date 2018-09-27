@@ -1,15 +1,14 @@
 ---
-title: Joins, Drill 3
+title: Joins, Drill 4
 layout: d3_project
 ---
 
-# Joins, Drill 3
+# Joins, Drill 4
 
-Write the function `updateEvenCircles` that will take a selection of
-elements, and update the data bound
-to circles with even keys to the values in the variable `newData`.
-Each circle is bound to an object with the shape `{key: ..., value: ...}`, and the join selection 
-corresponding to the `key` field of each value in the array.
+Write the function `removeEvenCircles` that will take a selection of
+elements, remove the elements whose `value` fields are even, and
+return a selection with those elements.  As before, each circle is
+bound to an object with the shape `{key: ..., value: ...}`.
 
     <body>
       <svg id="svg">
@@ -22,9 +21,7 @@ corresponding to the `key` field of each value in the array.
                    { key: "1", value: 10}],
                   function(d) { return d.key; })
             .enter().append("circle");
-        data = [{ key: "2", value: 100},
-                { key: "4", value: 200}];
-        updateEvenCircles(elements, data); // write this function
+        removeEvenCircles(elements); // write this function
       </script>
     </body>
 
@@ -56,4 +53,4 @@ corresponding to the `key` field of each value in the array.
 </div>
 
 <script src="ace.js"></script>
-<script src="drill2-3.js"></script>
+<script src="drill2-4.js"></script>

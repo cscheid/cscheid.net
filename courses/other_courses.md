@@ -6,7 +6,7 @@ layout: bootstrap_wide
 # Courses
 
 University-level course materials on the web from other fine people,
-slanted towards what I tend to teach (what I teach, you can find [here](index.html))
+slanted towards what I tend to teach (you can find what I teach [here](index.html))
 
 ## Vis
 

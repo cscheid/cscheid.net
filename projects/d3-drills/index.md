@@ -24,6 +24,6 @@ To run your code snippet, click on the Run button, or press Ctrl+Enter.
 * [Drill 2-1](drill2-1.html): create circles bound to data
 * [Drill 2-2](drill2-2.html): create an HTML table from data
 * [Drill 2-3](drill2-3.html): update data bound elements based on a join key.
-
+* [Drill 2-4](drill2-4.html): remove elements based on data
 
 
