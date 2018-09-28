@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 var drawingSurface = cscheid.plot.surface;
 
 //////////////////////////////////////////////////////////////////////////////

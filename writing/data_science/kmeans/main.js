@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 function assignmentTrace(assignments) {
     assignments = new Int32Array(assignments);
     return function() {

@@ -44,6 +44,6 @@
     <hr/>
     {% include footer.html %}
     <script src="common.js"></script>
-    <script src="{{ page.name | remove: '.md' }}.js"></script>
+    <script type="module" src="{{ page.name | remove: '.md' }}.js"></script>
   </body>
 </html>

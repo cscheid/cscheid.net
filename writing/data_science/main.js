@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 var svg = d3.select("#div-duality")
     .append("svg")
     .attr("width", 500).attr("height", 500);

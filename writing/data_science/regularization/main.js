@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 function generatePoints(n, noise)
 {
     var xs = new Float32Array(n);

@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 var s = cscheid.plot.surface({
     element: d3.select("#basic-trig"),
     width: 600,

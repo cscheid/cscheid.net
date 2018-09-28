@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 function logisticRegression(data, lambda)
 {
     lambda = lambda || 1e-4;
