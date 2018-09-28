@@ -6,7 +6,7 @@ thumb: 2018-infovis-looksgoodtome
 paper_link: /static/papers/infovis_looksgoodtome_2018.pdf
 ---
 
-[Michael Correll](https://research.tableau.com/user/michael-correll), [Mingwei Li](http://hdc.cs.arizona.edu/~mwli/), [Gordon Kindlmann](), [Carlos Scheidegger](/)
+[Michael Correll](https://research.tableau.com/user/michael-correll), [Mingwei Li](http://hdc.cs.arizona.edu/~mwli/), [Gordon Kindlmann](http://people.cs.uchicago.edu/~glk/), [Carlos Scheidegger](/). IEEE InfoVis 2018
 
 Famous examples such as Anscombe’s Quartet highlight that one of the
 core benefits of visualizations is allowing people to discover visual

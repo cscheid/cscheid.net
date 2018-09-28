@@ -6,7 +6,7 @@ thumb: 2018-infovis-dimreader
 paper_link: /static/papers/infovis_dimreader_2018.pdf
 ---
 
-[Rebecca Faust](https://rjfaust.github.io/), David Glickenstein, [Carlos Scheidegger](/). IEEE InfoVis 2018
+[Rebecca Faust](https://rjfaust.github.io/), David Glickenstein, [Carlos Scheidegger](/).
 
 Non-linear dimensionality reduction (NDR) methods such as LLE and
 t-SNE are popular with visualization researchers and experienced data
