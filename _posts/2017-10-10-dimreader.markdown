@@ -27,5 +27,4 @@ real-life, and show how it can be used to compare different NDR
 methods and hyperparameter choices. Finally, we discuss limitations of
 our proposal and situations where further research is needed.
 
-
 [pdf](/static/papers/arxiv_dimreader_2017.pdf), [arxiv](https://arxiv.org/abs/1710.00992).
