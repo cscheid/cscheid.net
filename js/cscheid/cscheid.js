@@ -5,9 +5,11 @@ import * as data          from "./cscheid/data.js";
 import * as debug         from "./cscheid/debug.js";
 import * as dom           from "./cscheid/dom.js";
 import * as geometry      from "./cscheid/geometry.js";
+import * as legend        from "./cscheid/legend.js";
 import * as math          from "./cscheid/math.js";
 import * as plot          from "./cscheid/plot.js";
 import * as random        from "./cscheid/random.js";
+import * as reveal        from "./cscheid/reveal.js";
 import * as svg           from "./cscheid/svg.js";
 import * as time          from "./cscheid/time.js";
 
@@ -18,9 +20,11 @@ export { approximation,
          debug,
          dom,
          geometry,
+         legend,
          math,
          plot,
          random,
+         reveal,
          svg,
          time };
 

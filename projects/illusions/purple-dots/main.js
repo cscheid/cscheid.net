@@ -1,3 +1,5 @@
+import * as cscheid from "/js/cscheid/cscheid.js";
+
 var svgMain = cscheid.dom.makeCenteredElement(d3.select("#wrapper"),"svg")
     .attr("width", 600)
     .attr("height", 600);

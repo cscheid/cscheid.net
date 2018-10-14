@@ -1,4 +1,4 @@
-/*global cscheid */
+import * as cscheid from "/js/cscheid/cscheid.js";
 
 var canvasEl = cscheid.dom.makeCenteredElement(d3.select("#main"), "canvas")
     .attr("width", 600)

@@ -24,4 +24,4 @@ experiment outcomes in an actionable manner. Exploring the
 implications and applications of our model and its design principles
 should provide many directions for future visualization research.
 
-Get the [paper](http://algebraicvis.net/paper.pdf) here.
+Get the [paper](https://cscheid.net/static/papers/infovis_avd_2014.pdf) here.

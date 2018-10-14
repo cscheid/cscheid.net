@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="inline-frame">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <!-- <link rel="stylesheet" href="/css/bootstrap-theme.css"/> -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"/> -->
+    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/slide-inline-frame.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css"/>
+    <script src="/js/d3.v5.js"></script>
+    <script src="/lib/reveal/js/reveal-iframe-helpers.js"></script>
+    <script type="module" src="/js/cscheid/cscheid.js"></script> 
+    <!-- <script type="text/x-mathjax-config"> -->
+    <!--   MathJax.Hub.Config({ -->
+    <!--     extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"], -->
+    <!--     jax: ["input/TeX","output/HTML-CSS"], -->
+    <!--     tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]],  -->
+    <!--               processEscapes: true}, -->
+    <!--     'HTML-CSS': { availableFonts: [], webFont: 'TeX' }}); -->
+    <!-- </script> -->
+    <!-- <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  </head>
+  <body class="inline-frame">
+    <div id="main"></div>
+    <script>
+      _transitions = [];
+    </script>
+    <script type="module" src="main.js"></script>
+    {{ content }}
+  </body>
+</html>

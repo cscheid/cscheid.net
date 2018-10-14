@@ -259,7 +259,7 @@ Mingwei Li provided careful proofreading and exercise suggestions.
 
 # Footnotes
 
-[^1]: The decomposition of a matrix $M$ into $M = U \Lambda U^T$, that is, into an orthogonal matrix, a diagonal matrix, and the inverse of the same orthogonal matrix is known as a "diagonalization" of amatrix. In this form, it should be easy to see that the columns of $U$ are the eigenvectors of $M$, and the diagonal entries of $\Lambda$ are the eigenvectors (so this is also often known as an "eigendecomposition").
+[^1]: The decomposition of a matrix $M$ into $M = U \Lambda U^T$, that is, into an orthogonal matrix, a diagonal matrix, and the inverse of the same orthogonal matrix is known as a "diagonalization" of a matrix. In this form, it should be easy to see that the columns of $U$ are the eigenvectors of $M$, and the diagonal entries of $\Lambda$ are the eigenvectors (so this is also often known as an "eigendecomposition").
 
 
 

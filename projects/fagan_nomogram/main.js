@@ -1,4 +1,4 @@
-/*global cscheid */
+import * as cscheid from "/js/cscheid/cscheid.js";
 
 var svg = d3.select("#main")
         .append("svg")

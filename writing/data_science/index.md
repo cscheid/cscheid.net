@@ -41,6 +41,7 @@ create simpler versions of the dataset.
 * [Regularization](regularization/index.html)
 * [A simple illustration of duality](duality.html)
 * [Convolutions](convolution/index.html)
+* [Eigenwhat?](/courses/fal16/cs444/lectures/lecture15/eigenvectors.html)
 
 ## Data visualization
 

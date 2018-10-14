@@ -48,10 +48,10 @@ represented by the red dots.
 ## Enter the values for M here
 
 <table>
-<tr><td>$M_{00}$</td> <td><input type="number" id="m00" min="-10" max="10" value="4" step="0.05"></input></td>
-    <td>$M_{01}$</td> <td><input type="number" id="m01" min="-10" max="10" value="1" step="0.05"></input></td></tr>
+<tr><td>$M_{00}$</td> <td><input type="number" id="m00" min="-10" max="10" value="4" step="0.05"></td>
+    <td>$M_{01}$</td> <td><input type="number" id="m01" min="-10" max="10" value="1" step="0.05"></td></tr>
 <tr><td>$M_{10}$</td> <td id="m10">1</td> 
-    <td>$M_{11}$</td> <td><input type="number" id="m11" min="-10" max="10" value="2" step="0.05"></input></td></tr>
+    <td>$M_{11}$</td> <td><input type="number" id="m11" min="-10" max="10" value="2" step="0.05"></td></tr>
 </table>
 
 ## Eigenvectors and eigenvalues
@@ -68,7 +68,7 @@ represented by the red dots.
 ## Known bugs
 
 * Eigenvalue multiplicity (two eigenvectors not aligned with one
-  another with equal eigenvalues) will mean that there are more than 4
+  another with equal eigenvalues) will mean that there are more than 2
   unit-length eigenvectors, and my crappy power iteration algorithm
   stops working in that case.
 * The rotation transition for $U$ and $U^T$ should be an actual

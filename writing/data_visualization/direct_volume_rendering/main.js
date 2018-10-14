@@ -1,4 +1,4 @@
-/*global cscheid,d3 */
+import * as cscheid from "/js/cscheid/cscheid.js";
 
 /* BEWARE - THIS NEEDS A MASSIVE CLEANUP */
 
