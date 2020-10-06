@@ -6,14 +6,14 @@ layout: bootstrap_wide
 # Sci-fi rants
 
 Some notes about the science fiction I read. These aren't
-reviews --- often they'll be about a tiny part of a book that
+reviews, and often they'll be about a tiny part of a book that
 I think is interesting, or a book that's ruined for me because of some
 minor detail.
 
 I read a bunch of science fiction. Some of it is even good! And worse,
 I read very little of non-science fiction.
 
-Note: **there are spoilers below**. I don't think they're central to
+Note: *there are spoilers below*. I don't think they're central to
 the books I talk about, but they do involve plot points. You have been
 warned.
 
@@ -67,7 +67,7 @@ passable overall unless you are a KSR completionist.
 Disclaimer: I've only read Star Fraction so far. It's a series,
 though, so it's possible I'm getting this stuff completely wrong.
 
-I never lived in Europe, but reading this book --- especially in
+I've never lived in Europe, but reading this book --- especially in
 contrast to typical science fiction written in the US --- made me
 think about just how densely diverse Europe is, in ethnicity,
 culture, and politics. It really is as if multiple worlds and
@@ -83,7 +83,7 @@ me a lot of time to unpack it.
 Star Fraction was *very slow going*, maybe slower than Foucault's
 Pendulum. They definitely belong in the same shelf, together with
 Infinite Jest, even if MacLeod doesn't ramble as much as DFW (sadly,
-the way I see it. But it does make for a tighter book).
+the way I see it. But it makes for a tighter book).
 
 (Update: I've now read the Stone Canal and am halfway through the
 Cassini Division. They're all great, and they move the series closer
@@ -121,70 +121,59 @@ rightfully belongs right there with classic literature (of which I'm
 of course completely ignorant about - you *did* read the part where I
 said I read mostly trash scifi, right?)
 
-### Polylaw
-
-What happens when cultures and communities truly internalize
+*Polylaw*. What happens when cultures and communities truly internalize
 that they can create their own set of laws --- and splinter off to make
 new laws --- and that the only "meta-law" that needs to be accepted
 everywhere is that One Abides By The Local Laws? (And what happens when
-people, fickle as they are, choose to break the meta-law?)
-
-Examples: Too Like The Lightning; Accelerando; 2312; The Moon is a Harsh
+people, fickle as they are, choose to break the meta-law?) Examples: Too Like The Lightning; Accelerando; 2312; The Moon is a Harsh
 Mistress; The Star Fraction
 
-### Gender
-
-To what extent people are defined by the gender they're born in (and
+*Gender*. To what extent people are defined by the gender they're born in (and
 what does that even mean?), or the one they perform? What happens when
 people can change their own biologies, their societies? Are they
 changing their own selves? If so, is gender not really a part of the
 self? Who gets to decide it? You, or the people around you?
-
 Examples: Too Like The Lightning; The Rapture of the Nerds; 2312;
 Lock In
 
-### Power and Politics
-
-What is power besides the ability to control other people's choices?
+*Power and Politics*. What is power besides the ability to control other people's choices?
 Is there, fundamentally, political power that is not tyranny? If we
 accept that there exist problems that require agent coordination
 (subtheme: What If There is Actually Evil in This World?), then
 we must accept the existence of Society. And with it, Power - and
 tyranny, and violence? Can people escape this?
-
 Examples: The Star Fraction; Accelerando; Too Like the Lightning; The Red Mars
-Trilogy; The Long Earth; Starship Troopers
+Trilogy; The Long Earth; Starship Troopers; The Broken Earth Trilogy
+
 
 ## Tugging at my heart strings
 
-When I read these, I'm a little too suspicious that someone read
-into my thoughts and desires. It doesn't stop me from enjoying the
-hell out of them, though.
+When I read these, I'm a little too suspicious that someone is reading
+into my brain and preparing a custom-tailored dopamine delivery
+mechanism. Predictably, I can't stay away from the stuff.
 
-### The Nerds Shall Inherit The Earth
+*The Nerds Shall Inherit The Earth*. True nerdery is transcendent and
+badass. Often, it's not just math and engineering nerdery. It's the
+obsessive geeking out over some specific thing that ends up saving the
+world.  Examples: Seveneves; Cryptonomicon; The Martian;
 
-True nerdery is transcendent and badass. Often, it's not just math and
-engineering nerdery. It's the obsessive geeking out over some specific
-thing that ends up saving the world.
-
-Examples: Seveneves; Cryptonomicon; The Martian; 
 
 ## Themes I wish people would just get over with
 
-### The Nice Guy Gets The Girl
-
-Subthemes here include: Badass Damsel Suddenly In Distress, Only To Be
-Saved By Emotionally-Stunted Nerd Protagonist Who Then Realizes He Is,
-In Fact, Badass (But Worry Not, Damsel Will Go Back To Being A
-Backdrop At End of Chapter); Damsel Learns She Matters Only Through
-The Magic Power Of Protagonist Love. Sigh, enough with this shit
-already. (Bonus mini-rant: Joss Whedon is a feminist in the same sense
-that Hunter Thompson isn't a total misanthrope. Sure, the statement is
-true in the context of local comparisons. But is that really the best
-we could do?)
-
+*The Nice Guy Gets The Girl*. Subthemes here include: Badass Damsel
+Suddenly In Distress, Only To Be Saved By Emotionally-Stunted Nerd
+Protagonist Who Then Realizes He Is, In Fact, Badass (But Worry Not,
+Damsel Will Go Back To Being A Backdrop At End of Chapter); Damsel
+Learns She Matters Only Through The Magic Power Of Protagonist
+Love. Sigh, enough with this shit already. (Bonus mini-rant. Joss
+Whedon is a feminist in the same sense that Hunter Thompson isn't a
+total misanthrope. Compare it to the average of a big enough sample and you're technically right. But is that really the best we could do?)
 Examples: Ready Player One; The Reckoners; The Atrocity Archives;
-Altered Carbon; Artemis (though in Artemis this happens in the novel's
-negative space, it's sufficiently telegraphed and annoying that I
-can't help but bringing it up. Not to mention that Artemis suffers
+Altered Carbon; Artemis (in Artemis this happens in the novel's
+negative space, but it's so telegraphed and annoying that I
+have to bring it up. Not to mention that Artemis suffers
 from [men-writing-about-womenitis](https://imgur.com/gallery/faeYP))
+
+*These big guns go pew pew pew and then we win*. I don't enjoy space
+opera largely because of this. Examples: Prador Moon, Consider
+Phlebas.

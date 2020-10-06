@@ -1,0 +1,27 @@
+---
+title: Singular Value Decomposition
+layout: bootstrap_wide
+---
+
+# Singular Value Decomposition
+
+Any matrix $M$ can be written as
+
+$$M = U \Sigma V^T, $$
+
+where $U$ and $V$ are orthogonal, and $\Sigma$ is diagonal with
+non-negative entries.
+
+Because orthogonal and diagonal matrices have many convenient
+properties, it's often simpler to replace a matrix with its SVD in
+order to analyze something.
+
+## Problems
+
+- In the problem of linear least squares, we are given a matrix
+  $M$ (whose $n$ rows and $m$ columns encode $n$ data points each with
+  $m$ features) and a vector $b$, and we seek a vector $x$ such that
+  the length of $||Mx - b||$ is minimized. 
+
+
+

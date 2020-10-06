@@ -12,13 +12,15 @@ Linear regression is one of simplest ways of building a model that can
 make predictions from existing data (the "training data"). Regression
 models are used to predict numbers ("what will the temperature be
 tomorrow?"), while classification models are used to predict discrete
-outcomes ("will it rain tomorrow?"). The training 
+outcomes ("will it rain tomorrow?").
 
 Although linear regression is an elementary method in data analysis
 that has existed for 200 years, it is robust, flexible, easy to
 compute, easy to understand, often performs quite well, and, just as
 importantly, the foundation upon which many modern regression models
 are built.
+
+We give a more general perspective [in a separate piece](linear_least_squares.html).
 
 ## Modeling data for linear regression
 
@@ -78,17 +80,20 @@ equations.
 The crucial observation in linear models is that, since we know the
 values $y\_i$ and $x\_i$ at training time, when we take derivatives of
 $E$, the resulting expressions are always linear functions of $a$ and
-$b$. This is true even if the model we are fitting uses non-linear functions. For example, imagine that our model was, instead,
+$b$. This is true even if the model we are fitting uses non-linear functions. 
+For example, imagine that our model was, instead,
 
 $$ y = a x^2 + b x + c. $$
 
 Even though the model would be fitting parabolic curves to the data
 (instead of linear fits), the process of combining the simpler models
-($1$, $x$ and $x^2$) is still linear.
+($1$, $x$ and $x^2$) is still linear [^3].
 
 ### Setting up the matrices
 
-TBF.
+
+
+
 
 ### Solving the system of equations
 
@@ -102,3 +107,4 @@ TBF. Click on the plot to add points.
 
 [^1]: A linear combination of a set of vectors is a weighted sum of those vectors, where the weights can be arbitrary values.
 [^2]: Different generalizations of this error function make up a surprisingly large fraction of modern methods in data analysis.
+[^3]: See [linear least squares]()
