@@ -43,35 +43,35 @@ The volume renderings in Tables 1 and 5 were generated with [VisTrails](http://w
 
 ### Cubic Lattice
 
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_0_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_0.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_1_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_1.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_2_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_2.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_3_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_3.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_0_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_0.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_1_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_1.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_2_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_2.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_3_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_3.png)
 
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_4_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_4.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_5_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_5.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_6_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_6.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_7_small.png")](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_7.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_4_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_4.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_5_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_5.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_6_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_6.png)
+[![visualization of the quality volume for the cubic lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_7_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/cubic_7.png)
 
 ### BCC Lattice
 
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_0_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_0.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_1_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_1.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_2_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_2.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_3_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_3.png)
+[![visualization of the quality volume for the bcc lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_0_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_0.png)
+[![visualization of the quality volume for the bcc lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_1_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_1.png)
+[![visualization of the quality volume for the bcc lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_2_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_2.png)
+[![visualization of the quality volume for the bcc lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_3_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/BCC_3.png)
 
 ### CFK Lattice
 
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_0_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_0.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_1_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_1.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_2_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_2.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_3_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_3.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_4_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_4.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_0_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_0.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_1_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_1.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_2_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_2.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_3_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_3.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_4_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_4.png)
 
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_5_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_5.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_6_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_6.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_7_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_7.png)
-[![](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_8_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_8.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_5_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_5.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_6_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_6.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_7_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_7.png)
+[![visualization of the quality volume for the cfk lattice](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_8_small.png)](http://www.sci.utah.edu/~cscheid/vis2008/edge_groups/volume_rendering/CFK_8.png)
 
 ## Code, Scripts
 

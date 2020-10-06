@@ -5,15 +5,15 @@ title: "So you want to look at a graph, part 2"
 
 This series of posts is a thorough examination of the design space of
 graph visualization
-([Intro](https://cscheid.net/blog/so_you_want_to_look_at_a_graph),
+([Intro](https://cscheid.net/2012/01/16/so-you-want-to-look-at-a-graph.html),
 [part
-1](https://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1)). In the previous post, we talked about graphs and their
+1](https://cscheid.net/2012/01/25/so-you-want-to-look-at-a-graph-part-1.html)). In the previous post, we talked about graphs and their
 properties.  We will now talk about constraints arising from the
 process of transforming our data into a visualization.
 
 ## What is in a sheet of paper? Marks
 
-<div class="sidebar"><img src="https://cscheid.net/static/20120229/marks.png"></div>
+<div class="sidebar"><img src="https://cscheid.net/static/20120229/marks.png" alt="An example of marks on a surface"></div>
 Paper is like external memory. We can make marks on it, and later we
 can *read* marks that we made on a particular spots. We will say
 then that visualizations are encodings of data as particular
@@ -48,7 +48,7 @@ that should be enough.
 
 ## Even the simplest possible abstract encoding can go boink
 
-<div class="sidebar"><img src="https://cscheid.net/static/20120229/innocent_marks.png"></div>
+<div class="sidebar"><img src="https://cscheid.net/static/20120229/innocent_marks.png" alt="pairs of dots laid out horizontally"></div>
 When there are *two* dot marks on a piece of paper, it turns out
 that we immediately see that these two marks have some distance
 between them. Given two marks written on paper, I can then read a real
@@ -67,7 +67,7 @@ graph vertices, edges and properties. Furthermore, this encoding is
 lossless.
 
 <div class="sidebar"><img
-src="https://cscheid.net/static/20120229/oh_oh.png"></div> 
+src="https://cscheid.net/static/20120229/oh_oh.png" alt="A bad visual encoding for a graph"></div> 
 Although
 encoding an entire graph as a single distance between two points is
 valid, it's clearly ludicrous. What went wrong?  Remember that we
@@ -101,7 +101,7 @@ choices. And if we ever hope our theoretical arguments to be valid
 regardless of which encoding we use to examine, we need to be able to
 articulate why stupid encodings like the above are, in fact, stupid.
 
-<div class="sidebar-large"><img src="https://cscheid.net/static/20120229/chernoff_faces.png"></div>
+<div class="sidebar-large"><img src="https://cscheid.net/static/20120229/chernoff_faces.png" alt="Chernoff Faces"></div>
 And even armed with the simplest of the observations above, 
 we can already make some nontrivial statements.
 If you've ever heard about Chernoff faces and
@@ -119,7 +119,7 @@ different from Julia Roberts's face because his eyes are obviously
 12.3% larger, his ears are 15.7% smaller, and his nose is half as
 hooked."  In fact, Chris Morris, David Ebert and Penny Rheingans have
 experimentally confirmed this:
-[Chernoff faces are not pre-attentive](http://www.research.ibm.com/people/c/cjmorris/publications/Chernoff_990402.pdf).  The important point is that
+[Chernoff faces are not pre-attentive](https://www.semanticscholar.org/paper/Experimental-analysis-of-the-effectiveness-of-in-Morris-Ebert/299c1b95f971c500b4c2467a0df949e834badabd).  The important point is that
 even though we can, given enough time, make precise judgements
 of face proportions, the values don't jump at us: we have to
 *read* faces in the same way we would read numbers from a

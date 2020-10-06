@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Cartogram Visualization for Bivariate Geo-Statistical Data"
 tags: paper
+venue: TVCG
 thumb: 2017-tvcg-bivariate-cartograms
 paper_link: /static/papers/tvcg_bivariate_cartograms_2017.pdf
 ---

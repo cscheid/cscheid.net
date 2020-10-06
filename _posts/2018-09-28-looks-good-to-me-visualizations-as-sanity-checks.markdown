@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Looks Good to Me: Visualizations as Sanity Checks"
 tags: paper
+venue: VIS
 thumb: 2018-infovis-looksgoodtome
 paper_link: /static/papers/infovis_looksgoodtome_2018.pdf
 ---

@@ -5,9 +5,9 @@ title: "Data Mining, Fairness, Accountability, Visualization"
 
 This Friday at the "Fairness, Accountability and Transparency in
 Machine Learning" [workshop](http://www.fatml.org/),
-[Sorelle](http://www.haverford.edu/computerscience/faculty/sorelle/)
+[Sorelle](http://sorelle.friedler.net)
 will be presenting some work she,
-[Suresh](http://www.cs.utah.edu/~suresh/web/) and I have been doing
+[Suresh](http://www.cs.utah.edu/~suresh/) and I have been doing
 this year. We've been studying the intersection of computational ideas
 and [disparate impact](http://en.wikipedia.org/wiki/Disparate_impact),
 a legal theory of discrimination that central to US

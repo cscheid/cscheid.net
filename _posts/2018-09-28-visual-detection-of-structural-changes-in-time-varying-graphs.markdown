@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Visual Detection of Structural Changes in Time-Varying Graphs Using Persistent Homology"
 tags: paper
+venue: PVis
 thumb: 2018-pacificvis-ph
 paper_link: /static/papers/pacificvis_ph_2018.pdf
 ---

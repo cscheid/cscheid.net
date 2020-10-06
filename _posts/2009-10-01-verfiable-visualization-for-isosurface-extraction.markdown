@@ -29,4 +29,4 @@ interest, and have confidence in its behavior.
 
 Get the
 [PDF
-version of the paper](http://www.sci.utah.edu/~cscheid/pubs/verifiable-vis.pdf) (27.4MB). Tiago's presentation [slides](http://www.sci.utah.edu/~etiene/publications/slides/verifiable-vis-slides.pdf) are also available.
+version of the paper](http://www.sci.utah.edu/~cscheid/pubs/verifiable-vis.pdf) (27.4MB).

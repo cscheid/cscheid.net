@@ -16,7 +16,7 @@ it looked good, but it never became clear what the visualization
 taught the users. What's the point, then? Am I missing something here?
 
 One paper I'm looking forward to seeing this morning is [Albuquerque et
-al's Perception-Based Visual Quality Metrics](http://www.cg.tu-bs.de/media/publications/Albuquerque2011PBQ.pdf). The interesting bit here
+al's Perception-Based Visual Quality Metrics](https://www.cg.tu-bs.de/upload/publications/Albuquerque2011PBQ.pdf). The interesting bit here
 is that they use perceptual experiments to derive a metric through
 explicit energy minimization. This is neat: the paper uses human
 subjects where computers can't do a very good job, and computers where
@@ -30,7 +30,7 @@ manipulating network data. The only systemsy tool I know for
 generating and processing network data is GVPR, and it feels, ahem,
 slightly outdated. It certainly gets simple jobs done, but AWK
 expertise seems to be falling out of favor, and Heer has a good feel for
-good computational building blocks. I'm looking forward to that talk.
+computational building blocks. I'm looking forward to that talk.
 
 In the afternoon as well, there's van Wijk, Ware, Demiralp and
 Laidlaw's aptly named panel: "Theories of Visualization: are there

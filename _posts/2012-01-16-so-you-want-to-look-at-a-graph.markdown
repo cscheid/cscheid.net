@@ -36,7 +36,7 @@ interesting, while not being so complicated that the specific lessons
 they have to teach us would not translate well to other domains.
 
 They also happen to be the [expertise](http://www.graphviz.org) of the research
-department [where I am](http://www.research.att.com/groups/infovis).
+department where I am.
 I have spent a good amount of time in the last two years learning
 the graph drawing landscape, and this seems like an
 opportunity for a braindump.
@@ -51,8 +51,7 @@ navigate the design space. When we are aware of the rule, the process
 of thinking how we are bending it gives
 natural descriptions of the trade-offs. 
 It also raises the question "have we missed any spots", and I
-[think](https://cscheid.net/blog/how_many_visweek_papers_could_the_nyt_write_in_three_weeks_)
-this is a fundamental question to ask.
+think this is a fundamental question to ask.
 
 ## What not to draw
 

@@ -5,10 +5,10 @@ title: "So you want to look at a graph, part 3"
 
 This series of posts is a tour of the design space of
 graph visualization. I've written about
-[graphs
-and their properties](https://cscheid.net/blog/so_you_want_to_look_at_a_graph), and how the
-[encoding
-of data into a visual representation is crucial](https://cscheid.net/blog/so_you_want_to_look_at_a_graph__part_1). In this post, I will
+graphs
+and their properties, and how the
+encoding
+of data into a visual representation is crucial. In this post, I will
 use those ideas to justify the choices behind a classic algorithm for laying
 out directed, mostly-acyclic graphs.
 
@@ -38,7 +38,7 @@ represented by the closest matching properties in a sheet of paper.
 
 This notion is of course central in Cleveland and McGill's
 [classic
-paper](https://secure.cs.uvic.ca/twiki/pub/Research/Chisel/ComputationalAestheticsProject/cleveland.pdf), and you can also see something like it driving much of what
+paper](https://www.tandfonline.com/doi/pdf/10.1080/01621459.1984.10478080), and you can also see something like it driving much of what
 Bertin wrote about in his
 [seminal
 book](http://www.amazon.com/Semiology-Graphics-Diagrams-Networks-Maps/dp/1589482611). For example, Cleveland and McGill famously showed that
@@ -76,8 +76,8 @@ Following The Axiom, we already identified one property we want to
 preserve, namely the "directionality" of the graph. This is good, but it
 is not very actionable: how do we design a visualization around
 that? Going back to part 1, remember that we learned that the
-[vertices
-of acyclic graphs can be ranked](https://cscheid.net/blog/so_you_want_to_look_at_a_graph): we can give every vertex $v$ an
+vertices
+of acyclic graphs can be ranked: we can give every vertex $v$ an
 integer $r(v)$ such that if there is a path from vertex $v\_1$ to
  $v\_2$, then $r(v\_1) < r(v\_2)$.
 
@@ -93,7 +93,7 @@ vertices, but it's clear that the ranks are encoding some decent
 amount of structure in the graph (of course, if we wanted to know for
 sure, we should be using
 [formal
-inference methods](http://stat.wharton.upenn.edu/~buja/PAPERS/Wickham-Cook-Hofmann-Buja-IEEE-TransVizCompGraphics_2010-Graphical%20Inference%20for%20Infovis.pdf), but that's another story).
+inference methods](https://vita.had.co.nz/papers/inference-infovis.html), but that's another story).
 
 To decide the horizontal positions of the nodes, there are many
 possible solutions. To begin with, we are going to use the Axiom to
@@ -136,7 +136,7 @@ so that edges are "mostly vertical". It also prevents edge crossings.
 There are two main problems in this solution. First, the goal of vertical edges clashes directly with the goal of unique node positions. So we need to compromise somehow (and the devil is in the algorithmic details). But just as importantly, what constitutes a "natural 
 arrangement" with "no additional information" is a mix of cultural
 and innate characteristics about which we know very little (but there has been
-[recent work in the area](http://www.cs.brown.edu/people/cziemki/documents/ziemkiewicz10_laws-of-attraction.pdf)).
+[recent work in the area](https://ieeexplore.ieee.org/abstract/document/5613438/).
 
 <div style="position: absolute; right: -250px"><iframe src="https://cscheid.net/static/20120722/iframe3.html" width=250 height=250></iframe></div>
 Leaving aside all those important details, this is what an
@@ -152,7 +152,7 @@ mean that the edge $a \to c$ will necessarily be obscured. One can
 explicitly route edges around nodes, and this is precisely what
 "dot" does; I left that out in my crude drawing.
 
-The paper describing "dot" is worth, at the very least, skimming over; I like that it sets forth a few visual principles and then the algorithm itself (which is, alas, fairly complicated) is designed around those simple principles. The same kinds of statements can be found in the classic Reingold-Tilford [tree drawing algorithm](http://emr.cs.iit.edu/~reingold/tidier-drawings.pdf). I don't think I see this structure in more recent visualization papers. Should we be asking ourselves why?
+The paper describing "dot" is worth, at the very least, skimming over; I like that it sets forth a few visual principles and then the algorithm itself (which is, alas, fairly complicated) is designed around those simple principles. The same kinds of statements can be found in the classic Reingold-Tilford [tree drawing algorithm](https://reingold.co/tidier-drawings.pdf). I don't think I see this structure in more recent visualization papers. Should we be asking ourselves why?
 
 So there you have it, a very basic graph drawing algorithm distilled
 to its very basics: Find some structure you care about (in this case,

@@ -2,11 +2,12 @@
 layout: post_paper
 title: "A Vector Field Design Approach to Animated Transitions"
 tags: paper
+venue: TVCG
 thumb: 2017-tvcg-animated
 paper_link: /static/papers/tvcg-animated-2017.pdf
 ---
 
-[Yong Wang](http://home.cse.ust.hk/~ywangct/), [Daniel Archambault](http://cs.swansea.ac.uk/~csdarchambault/), [Carlos Scheidegger](/), and Huamin Qu
+Yong Wang, [Daniel Archambault](http://cs.swansea.ac.uk/~csdarchambault/), [Carlos Scheidegger](/), and Huamin Qu
 
 Animated transitions can be effective in explaining and exploring a
 small number of visualizations where there are drastic changes in the
@@ -26,5 +27,4 @@ effectiveness of this technique through metric evaluations and user
 study and discuss limitations and future directions.
 
 * Get the paper in [PDF](/static/papers/tvcg-animated-2017.pdf) format.
-* Visit the [paper page](http://home.cse.ust.hk/~ywangct/proj/vf_animation.html) with additional materials.
 

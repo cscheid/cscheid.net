@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Nanocubes for Real-Time Exploration of Spatiotemporal Datasets"
 tags: paper
+venue: VIS
 ---
 
 Lauro Lins, Carlos Scheidegger, Jim Klosowski. IEEE TVCG 2013

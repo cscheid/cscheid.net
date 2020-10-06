@@ -2,11 +2,14 @@
 layout: post_paper
 title: "A Comparative Study of Fairness-Enhancing Interventions in Machine Learning"
 tags: paper
+venue: FAccT
+thumb: 2019-fat-comparative-study
+paper_link: /static/papers/fat_comparative-study_2019.pdf
 ---
 
 ## Citation
 
-[Sorelle A. Friedler](https://sorelle.friedler.net), [Carlos Scheidegger](/), [Suresh Venkatasubramanian](https://www.cs.utah.edu/~suresh), Sonam Choudhary, Evan P. Hamilton, Derek Roth. A Comparative Study of Fairness-Enhancing Interventions in Machine Learning. [ACM Conference on Fairness, Accountability, and Transparency](https://fatconference.org/2019/acceptedpapers.html), 2019.
+[Sorelle A. Friedler](http://sorelle.friedler.net), [Carlos Scheidegger](/), [Suresh Venkatasubramanian](https://www.cs.utah.edu/~suresh), Sonam Choudhary, Evan P. Hamilton, Derek Roth. A Comparative Study of Fairness-Enhancing Interventions in Machine Learning. [ACM Conference on Fairness, Accountability, and Transparency](https://fatconference.org/2019/acceptedpapers.html), 2019.
 
 ## Abstract
 

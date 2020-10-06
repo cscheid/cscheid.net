@@ -131,4 +131,5 @@ get to write. Then we will put those things together, and bam,
 
 ## Previous posts
 
-* [Series introduction](https://cscheid.net/blog/so_you_want_to_look_at_a_graph)
+* [Series introduction](https://cscheid.net/2012/01/16/so-you-want-to-look-at-a-graph.html)
+

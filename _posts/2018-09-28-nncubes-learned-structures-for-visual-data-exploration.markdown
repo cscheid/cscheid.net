@@ -1,12 +1,13 @@
 ---
 layout: post_paper
 title: "NNCubes: Learned Structures for Visual Data Exploration"
+venue: arxiv
 tags: paper
 thumb: 2018-arxiv-nncubes
 paper_link: /static/papers/arxiv_nncubes_2018.pdf
 ---
 
-NNCubes: Learned Structures for Visual Data Exploration.
+[Zhe Wang](https://www.z-wang.com), Dylan Cashman, Mingwei Li, Jixian Li, Matthew Berger, Joshua A. Levine, Remco Chang, and [Carlos Scheidegger](/). 
 
 Visual exploration of large multidimensional datasets has seen
 tremendous progress in recent years, allowing users to express rich

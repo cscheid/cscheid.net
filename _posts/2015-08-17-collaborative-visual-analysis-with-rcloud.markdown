@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Collaborative Visual Analysis with RCloud"
 tags: paper
+venue: VAST
 thumb: 2015-vast-rcloud
 paper_link: /static/papers/vast_rcloud_2015.pdf
 ---

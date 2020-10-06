@@ -10,7 +10,7 @@ all roots of all polynomials with coefficients -1 or 1. Since it's
 ``just'' a set of points, it seemed
 like the perfect opportunity to try Facet on a large, good-looking dataset, and
 [here
-is the result](http://cscheid.github.com/facet/demos/beauty_of_roots.html). I think it looks pretty nice. If you want to know more
+is the result](http://cscheid.github.io/lux/demos/beauty_of_roots/beauty_of_roots.html). I think it looks pretty nice. If you want to know more
 about the mathematics behind it, read Baez's post. If you care about
 the visualization details of this, read on!
 
@@ -31,7 +31,7 @@ a floating-point texture (so that we don't get too much accumulation
 error). The shape of the gaussian blobs is computed in a fragment
 shader. Then, we read back the texture and pass it through a simple
 tonemapping and colormap on another shader. If you read the
-[source](http://cscheid.github.com/facet/demos/beauty_of_roots.js),
+[source](http://cscheid.github.io/lux/demos/beauty_of_roots/beauty_of_roots.js)
 however, you'll see that there's no shaders being written anywhere:
 they're all synthesized from the Javascript expressions.
 

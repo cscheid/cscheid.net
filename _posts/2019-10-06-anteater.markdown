@@ -1,0 +1,48 @@
+---
+layout: post_paper
+title: "Anteater: Interactive Visualization for Program Understanding"
+tags: paper
+venue: arxiv
+thumb: 2019-arxiv-anteater
+paper_link: /static/paper/arxiv_anteater_2019.pdf
+---
+
+## Citation
+
+Rebecca Faust, Katherine Isaacs, William Z Bernstein, Michael Sharp, Carlos Scheidegger. Anteater: Interactive Visualization for Program Understanding. arXiv:1907.02872.
+
+    @article{faust2019anteater,
+      title={Anteater: Interactive Visualization for Program Understanding},
+      author={Faust, Rebecca and Isaacs, Katherine and Bernstein, 
+          William Z and Sharp, Michael and Scheidegger, Carlos},
+      journal={arXiv preprint arXiv:1907.02872},
+      year={2019}
+    }
+
+## Abstract
+
+Understanding and debugging long, complex programs can be extremely
+difficult; it often includes significant, manual program
+instrumentation and searches through source files. In this paper, we
+present Anteater, an interactive visualization system for tracing and
+exploring the execution of a program. While existing debugging tools
+often have visualization components, these components are often added
+on top of an existing environment. In Anteater, in contrast,
+visualization is a driving concern. We answer the following question:
+what should a debugging tool look like if it were designed from the
+ground up to support interactive visualization principles? Anteater
+automatically instruments source code to capture execution behavior
+along with variables and expressions specified by the user. After
+generating the execution trace, Anteater presents the execution
+information through interactive visualizations. Anteater supports
+interactions that help with tasks such as discovering important
+structures in the execution, learning dependencies, and understanding
+and debugging unexpected behaviors. To assess the utility of Anteater,
+we present several real-world case studies that show how Anteater
+compares favorably to existing approaches. Finally, we discuss
+limitations of our system and where further research is needed.
+
+## Resources
+
+* [Paper](https://arxiv.org/pdf/1907.02872.pdf)
+

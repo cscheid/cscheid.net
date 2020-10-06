@@ -8,7 +8,7 @@ img {
   width: 60%;
 }
 </style>
-For something totally different, I recently discovered how to make the best eggs _ever_ (no, seriously). I'm generally not great in the kitchen, but with this method I get consistent, perfectly-cooked yolks and whites. It also happens to be about the easiest way to cook eggs I know of! The trick is to use an [aebleskiver](https://en.wikipedia.org/wiki/Aebleskiver) pan (we specifically have a [cast-iron aebleskiver pan](https://www.amazon.com/gp/offer-listing/B00063RXQA/)). 
+For something totally different, I recently discovered how to make the best eggs _ever_ (no, seriously). I'm generally not great in the kitchen, but with this method I get consistent, perfectly-cooked yolks and whites. It also happens to be about the easiest way to cook eggs I know of! The trick is to use an [aebleskiver](https://en.wikipedia.org/wiki/Aebleskiver) pan (we specifically have a cast-iron aebleskiver pan). 
 
 All you need is eggs, salt, and a round table spoon of about the same curvature as the pockets in the pan. Start by filling the pockets with cooking oil (eggs cook coolly enough that I just use olive oil), anywhere between one-third and a half full:
 

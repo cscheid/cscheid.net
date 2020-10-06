@@ -114,6 +114,6 @@ Or is there?
 ## Acknowledgements
 
 Thanks to [Hadley Wickham](http://had.co.nz/) for teaching me
-about HCL, whose [ggplot](http://had.co.nz/ggplot/) library
+about HCL, whose [ggplot](https://ggplot2.tidyverse.org/) library
 uses that color space extensively. This post grew out of trying to
 make continuous HCL scales easier to specify.

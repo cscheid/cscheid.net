@@ -3,6 +3,7 @@ layout: post_paper
 title: "Map-based Visualizations Increase Recall Accuracy of Data"
 date: 2015-05-20 00:20:00
 tags: paper
+venue: Eurovis
 thumb: 2015-eurovis-recall
 paper_link: /static/papers/eurovis_long_2015.pdf
 ---

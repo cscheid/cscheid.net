@@ -23,12 +23,12 @@ following papers look great:
 
 [Large-Scale
 Multiple Sequence Alignment Visualization through Gradient Vector Flow
-Analysis](http://www.biovis.net/year/papers/large-scale-multiple-sequence-alignment-visualization-through-gradient-vector-flow), Khoa Tan Nguyen and Timo Ropinski. ([PDF](http://scivis.itn.liu.se/publications/2013/NR13a/NR13a.pdf‎))
+Analysis](http://www.biovis.net/year/papers/large-scale-multiple-sequence-alignment-visualization-through-gradient-vector-flow), Khoa Tan Nguyen and Timo Ropinski.
 
 [invis:
 Exploring High-dimensional Sequence Space of In Vitro Selection](http://www.biovis.net/year/papers/invis-exploring-high-dimensional-sequence-space-vitro-selection)
 Çağatay Demiralp, Eric Hayden, Jeff Hammerbacher, Jeffrey
-Heer. ([PDF](http://graphics.stanford.edu/~cagatay/projects/invis/invisBioVis13.pdf‎))
+Heer.
 
 Yes, I have a soft spot in my heart for high-dimensional data
 analysis.
@@ -41,13 +41,13 @@ visualization, data mining and machine learning worlds, which is also a favorite
 topic of mine. I'm happy to see his work featured in a keynote (does
 anyone have a link to his talk or slides?).
 
-For today, I'm eager to hear about [these two papers](http://www.ldav.org/program.html):
+For today, I'm eager to hear about these two papers:
 
 A Provably-Robust Sampling Method for Generating Colormaps of Large
 Data. David Thompson, C. Seshadhri, Ali Pinar, Janine
-Bennett. (preprint? [PDF](http://midas3.kitware.com/midas/download/?items=204915,1) It's the only link I found).
+Bennett.
 Data-driven colormap design is, when you think about it, a
-straightforward idea, but one appears to have received essentially no
+straightforward idea, but one which appears to have received essentially no
 attention until the last couple of years.
 
 Less After the Fact: Investigative Visual Analysis of Events from

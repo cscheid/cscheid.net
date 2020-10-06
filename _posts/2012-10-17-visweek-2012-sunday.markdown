@@ -3,7 +3,7 @@ layout: post
 title: "VisWeek 2012, Sunday"
 ---
 
-At this point, [VisWeek 2012](http://visweek.org) is just about
+At this point, [VisWeek 2012](http://ieeevis.org/year/2012/info/call-participation/welcome) is just about
 halfway done, and there's tons to write about, but I'll try to keep
 these short by sticking to one day at a time. 
 VisWeek now runs four parallel tracks for the best part
@@ -35,12 +35,12 @@ Much of his talk focused
 on [R](http://www.r-project.org), the current darling language
 of data analysts. Interestingly, across the hall to this talk,
 [a
-tutorial on ggplot2 and ggobi](http://visweek.org/visweek/2012/tutorial/visweek/visualizing-data-r-and-ggobi) was being presented by Di Cook, Heike Hofmann (of whom I'll
-have more to say soon). [ggplot2](http://ggplot2.org) has been described as the hipster
+tutorial on ggplot2 and ggobi](http://ieeevis.org/year/2012/tutorial/visweek/visualizing-data-r-and-ggobi) was being presented by Di Cook, Heike Hofmann (of whom I'll
+have more to say soon). ggplot2 has been described as the hipster
 plotting library for R. But it really does kick ass. Of course, 
 I'm partial to R since I work in the same building as some
-[good](http://www2.research.att.com/~urbanek/)
-[folks](http://www.research.att.com/people/Becker_Richard_A/index.html?fbid=Wto_COA2yWM)
+good
+folks
 who are deeply involved with it. Nevertheless, it's nice to see the
 VisWeek community warming up to it,
 [warts
@@ -72,7 +72,7 @@ of text, the more likely you are to go look at
 [cute cats](http://www.reddit.com/r/aww). So before you leave, let me plug
 a panel in which (because unfortunately [Juliana Freire](http://vgc.poly.edu/~juliana/) can't make the trip) I will be presenting, about
 [reproducible
-visualization research](http://visweek.org/visweek/2012/panel/infovis/reproducible-visualization-research-how-do-we-get-there). This is a topic near and dear to my heart, so
+visualization research](http://ieeevis.org/year/2012/panel/infovis/reproducible-visualization-research-how-do-we-get-there). This is a topic near and dear to my heart, so
 I am really honored (and more than a little scared) to be sharing the
 stage with [Tim Dwyer](http://www.csse.monash.edu.au/~tdwyer/),
 [Tamara Munzner](www.cs.ubc.ca/~tmm/) and

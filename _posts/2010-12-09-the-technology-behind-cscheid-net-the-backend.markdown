@@ -4,13 +4,13 @@ title: "The technology behind cscheid.net: the backend"
 ---
 
 In which I tell you, in two installments, how I
-run [cscheid.net]("https://cscheid.net"). Here, I will give an
+run [cscheid.net](https://cscheid.net). Here, I will give an
 overview of the backend of the site. Next, I will write about the
 user-visible aspects.
 
 ## Hosting
 
-I use [Linode]("http://linode.com") to get a (virtual) box with
+I use [Linode](http://linode.com) to get a (virtual) box with
 root privileges. I share one physical host with 3 other OS instances,
 and so far I have had no problems with resource contention.  The
 cheapest plan is USD20.00/month, and has enough disk and RAM to do fun
@@ -23,7 +23,7 @@ and their watchdogs caught the problem before I did.
 ## PLT Web Server
 
 The website itself uses [Racket's web server
-libraries]("http://docs.racket-lang.org/web-server/"). xexprs are much
+libraries](http://docs.racket-lang.org/web-server/). xexprs are much
 more pleasant to work with than raw HTML.  And although the huge
 libraries and popularity make me a Python fan, Racket is obviously a
 much better language to write for the web than PHP, Python, Perl or
@@ -45,8 +45,7 @@ Right now, the whole website runs on 800 lines of code.
 ## Scribble
 
 As I mentioned in
-my [earlier
-post](/blog/welcome_to_the_new_visualization__etc__)}, I really don't like Wordpress's posting infrastructure. WYSIWIG
+my earlier post, I really don't like Wordpress's posting infrastructure. WYSIWIG
 is very convenient, but Wordpress's rendition was never particularly
 consistent. The road to full control of Web content ends at raw HTML
 files, but the separation of content and presentation was important to
@@ -66,10 +65,10 @@ and all the translation happens at read-time.
 
 Scribble feels like LaTeX with Scheme under the hood. It lets me write
 with a much more pleasant syntax, and it lets me cleanly separate
-content and appearance by *writing the right code*. Every
-post on this blog is a Scribble file (you can see the
-Scribble [source](/source/blog/the_technology_behind_cscheid_net__the_backend)
-for this post).
+content and appearance by *writing the right code*. Every post on this
+blog is a Scribble file (2019 edit: you could see the Scribble source for
+this at some point in the past, but now this is a boring Jekyll site,
+sorry!)
 
 Scribble typically only supports HTML generation as a batch process,
 but I hacked together something based on Racket's dynamic loading

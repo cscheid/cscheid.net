@@ -4,7 +4,7 @@ title: "A Javascript question on performance vs. convenience"
 ---
 
 Here's a Javascript-specific software engineering problem I'm
-considering within [Facet](http://cscheid.github.com/facet). 
+considering within [Facet](http://cscheid.github.io/lux). 
 I'm trying to decide how (or even whether) to approach type-checking 
 in the API, and I'm looking for input.
 
@@ -23,14 +23,10 @@ hot path, but some calls are unavoidable: anything that happens
 per-frame on WebGL should be considered on the hotpath, since spare
 cycles can be used for more features. The canonical example of this
 type of thing is in
-[Shade.parameter](https://github.com/cscheid/facet/blob/master/src/shade/parameter.js).
+[Shade.parameter](https://github.com/cscheid/lux/blob/master/src/shade/parameter.js).
 
-I'm leaning towards creating two sets of methods, the
+I'm leaning towards creating two sets of methods; the
 slow, type-checked method, and the fast,
-[you be careful with dat](http://www.hulu.com/watch/115713)
 non-type-checked version.  But what's the best way to expose this in
 an API? 
 Is this even hopeful to do robustly and effectively?
-I have created an [issue on github](https://github.com/cscheid/facet/issues/1). If you've run into this
-type of issue in the past, want to voice an opinion or simply help
-out, I'd love to hear from you.

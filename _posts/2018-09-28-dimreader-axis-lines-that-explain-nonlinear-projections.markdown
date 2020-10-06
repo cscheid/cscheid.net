@@ -2,6 +2,7 @@
 layout: post_paper
 title: "DimReader: Axis lines that explain non-linear projections"
 tags: paper
+venue: arxiv
 thumb: 2018-infovis-dimreader
 paper_link: /static/papers/infovis_dimreader_2018.pdf
 ---

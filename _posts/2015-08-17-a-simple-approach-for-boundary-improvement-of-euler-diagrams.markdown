@@ -2,6 +2,7 @@
 layout: post_paper
 title: "A Simple Approach for Boundary Improvement of Euler Diagrams"
 tags: paper
+venue: VIS
 thumb: 2015-infovis-smooth
 paper_link: /static/papers/infovis_smooth_2015.pdf
 ---

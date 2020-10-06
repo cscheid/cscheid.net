@@ -3,7 +3,7 @@ layout: post
 title: "VisWeek 2011 day 0"
 ---
 
-[VisWeek 2011](http://visweek.org) starts tomorrow, with two
+VisWeek 2011 starts tomorrow, with two
 workshops, three tutorials and the contest. Having helped organize the
 workshops program, I'm obviously biased on the matter. Come attend the
 workshops! They're fantastic. 

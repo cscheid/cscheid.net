@@ -38,8 +38,8 @@ kind: Cherry MX brown switches.
 Here are the switches I tested: I got one keyboard 
 with [Gateron
 brown](https://mechanicalkeyboards.com/shop/index.php?l=product_list&c=306)
-switches, one with [Cherry MX blue](https://www.cherrymx.de/en/products/mx-blue.html) switches, and
-one with [Cherry MX Brown](https://www.cherrymx.de/en/products/mx-brown.html)
+switches, one with [Cherry MX blue](https://www.cherrymx.de/en/mx-original/mx-blue.html) switches, and
+one with [Cherry MX Brown](https://www.cherrymx.de/en/mx-original/mx-brown.html)
 switches. [Cherry](http://cherryamericas.com/) is the company famous
 for making good keyboard parts, and their switches are the gold
 standard. The different colors stand for the ways in which these

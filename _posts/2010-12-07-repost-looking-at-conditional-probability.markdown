@@ -19,7 +19,7 @@ what's your gut feeling? Take a moment to think about it.
 ## Getting started
 
 Most people get this sort of
-question **[horribly wrong](http://yudkowsky.net/bayes/bayes.html)**,
+question **[horribly wrong](http://yudkowsky.net/rational/bayes/)**,
  and yet this is the kind of situation in which we find
 ourselves all the time.  Bayes' Theorem, very loosely, what lets us
 turn observations of events into adjustments of our uncertainty about
@@ -94,7 +94,7 @@ Although I like the version above, and I was pretty pleased with
 myself when I came up with it, it turns out that someone improved my
 idea, and then traveled 30 years back in time to publish it in the New
 England Journal of Medicine! [Fagan's
-nomograph](http://www.childrens-mercy.org/stats/definitions/fagan.htm) 
+nomogram](http://www.pmean.com/definitions/fagan.htm)
 has the advantage of working in logarithmic scale, making
 the computation in case of very small probabilities much more precise.
 

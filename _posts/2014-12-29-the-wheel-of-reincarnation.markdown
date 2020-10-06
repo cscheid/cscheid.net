@@ -34,7 +34,7 @@ It's hard not to read Myer and Sutherland as essentially having
 predicted something like the [X Window
 System](http://en.wikipedia.org/wiki/X_Window_System), and why it
 eventually must succumb to something like
-[Mir](https://wiki.ubuntu.com/Mir/Spec?action=show&redirect=MirSpec),
+[Mir](https://en.wikipedia.org/wiki/Mir_(software)),
 which will of course be deemed too simple ("no network transparency?
 well, we'll see about that", says Furious Hacker as she forks Mir and
 creates X12 with everything that Mir does and more, one rung up).
@@ -44,7 +44,7 @@ large. For exploratory visualization, this made the pendulum swing
 long and slow in one direction. Because we essentially didn't have to
 worry about efficiency, we spent a lot of time worrying about how to
 make visualization infrastructure
-[well-behaved](http://www2.parc.com/istl/groups/uir/publications/items/UIR-1986-02-Mackinlay-TOG-Automating.pdf),
+[well-behaved](https://research.tableau.com/sites/default/files/p110-mackinlay.pdf),
 modular, and [easily
 programmable](http://idl.cs.washington.edu/files/2011-D3-InfoVis.pdf).
 But data size has caught up to us, and we're now trying to figure out
@@ -97,4 +97,4 @@ I hope you've had a good 2014, and will have an even better 2015!
 
 -----
 
-[^1]: This seems like a perfect opportunity to mention the [complex logarithm](http://en.wikipedia.org/wiki/Complex_logarithm#The_associated_Riemann_surface), since I made my way through a few more chapters of Penrose's Road to Reality this year, and I find myself rereading the complex numbers chapters every time. Arc sines tell us where we are in the circle given an angle; In the boring plane they're forgetful, and can't count how many turns we've gone around the circle. But sines and cosines are really just [complex exponentials](http://www.phy.duke.edu/~rgb/Class/phy51/phy51/node15.html) in hiding. The complex logarithm is just The True Arc-Sine-Cosine, and its Riemann surface actually knows how to count. It goes up those rungs as the angle goes around the circle, and after turning $2 \pi$ radians around the origin, you've come full circle, [but you're not where you started](http://readingpenrose.com/2013/11/12/constructing-a-riemann-surface/). You're one rung up!
+[^1]: This seems like a perfect opportunity to mention the [complex logarithm](http://en.wikipedia.org/wiki/Complex_logarithm#The_associated_Riemann_surface), since I made my way through a few more chapters of Penrose's Road to Reality this year, and I find myself rereading the complex numbers chapters every time. Arc sines tell us where we are in the circle given an angle; In the boring plane they're forgetful, and can't count how many turns we've gone around the circle. But sines and cosines are really just [complex exponentials](http://www.phy.duke.edu/~rgb/Class/phy51/phy51/node15.html) in hiding. The complex logarithm is just The True Arc-Sine-Cosine, and its Riemann surface actually knows how to count. It goes up those rungs as the angle goes around the circle, and after turning $2 \pi$ radians around the origin, you've come full circle, but you're not where you started. You're one rung up!

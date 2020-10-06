@@ -3,7 +3,7 @@ layout: post
 title: "How many VisWeek papers could the NYT write in three weeks?"
 ---
 
-Last week's [VisWeek](http://visweek.org) finished with Amanda Cox's
+Last week's VisWeek finished with Amanda Cox's
 amazing capstone talk about the visualization work that goes on at the
 [New York Times](http://www.nytimes.com). As everyone in the room was
 rightfully being blown away by the incredible productivity of their

@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Gaussian Cubes: Real-Time Modeling for Visual Exploration of Large Multidimensional Datasets"
 tags: paper
+venue: VIS
 thumb: 2016-infovis-gaussiancubes
 paper_link: /static/papers/infovis_gaussian_cubes_2016.pdf
 ---

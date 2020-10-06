@@ -5,7 +5,7 @@ title: "Voting in the MLB Hall of Fame"
 
 Here's a [visualization of the MLB Hall of Fame](http://bit.ly/Wgqqfz)
 trajectories my friend [Kenny
-Shirley](http://www2.research.att.com/~kshirley/) and I created using
+Shirley](http://www.kennyshirley.com/) and I created using
 [D3](http://d3js.org), [R](http://www.r-project.org),
 [crossfilter](http://square.github.io/crossfilter/) and a bunch of
 elbow grease.

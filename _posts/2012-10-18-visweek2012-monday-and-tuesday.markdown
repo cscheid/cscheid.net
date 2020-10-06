@@ -3,7 +3,7 @@ layout: post
 title: "VisWeek 2012, Monday and Tuesday"
 ---
 This continues the set of notes I started on the
-[previous post](https://cscheid.net/blog/visweek_2012__sunday).
+previous post.
 
 ## Monday
 
@@ -31,8 +31,8 @@ the session chairs before each set of papers.
 
 I started the day with the Infovis session on evaluation, and with
 [Steve Haroz](http://steveharoz.com)'s presentation of this year's
-[best
-Infovis paper](http://visweek.org/visweek/2012/paper/how-capacity-limits-attention-influence-information-visualization-effectiveness). Haroz and Whitney designed a set of simple experiments
+best
+Infovis paper. Haroz and Whitney designed a set of simple experiments
 that show very clearly how information displays are fundamentally
 bounded by our limited capacity for attention, and discuss how to optimize
 visualizations to avoid squandering this limited resource. 
@@ -43,7 +43,7 @@ these, but if you have the opportunity to see one of his talks, I urge
 you to do so: he was clear, persuasive, only explained as much as
 needed in a talk (because, really, you should read the paper!), and,
 above all, he used the projector to *show, not tell*. Really
-great job. There has been [some discussion](http://dl.dropbox.com/u/14753707/index.html) on how to interpret the
+great job. There has been some discussion on how to interpret the
 results, and Haroz [has written a response](http://steveharoz.com/blog/?p=203). How crazy is it
 that these written discussions can now happen during the course of a
 conference? We truly live in the future. Also, and I'll try to put it
@@ -52,13 +52,12 @@ know who you are! This is not how scholarly discourse happens.
 
 The other work I want to highlight of the morning session is Hofmann, Follett, Majumder and
 Cook's
-[paper](http://visweek.org/visweek/2012/paper/graphical-tests-power-comparison-competing-designs)
-on evaluating visualization designs by appealing to the notion of
+[paper](http://ieeevis.org/year/2012/paper/infovis/graphical-tests-power-comparison-competing-designs) on evaluating visualization designs by appealing to the notion of
 [statistical
 power](http://en.wikipedia.org/wiki/Statistical_power). This is a followup and a direct application of the techniques
 in
 [Graphical
-Inference for Infovis](http://stat.wharton.upenn.edu/~buja/PAPERS/Wickham-Cook-Hofmann-Buja-IEEE-TransVizCompGraphics_2010-Graphical%20Inference%20for%20Infovis.pdf), which if you're at all a reader of this blog,
+Inference for Infovis](https://vita.had.co.nz/papers/inference-infovis.html), which if you're at all a reader of this blog,
 you're probably sick of hearing. But bear with me some more, because
 this is great stuff. The original paper presented the groundbreaking
 techniques for turning visual tasks into formal statistical
@@ -100,9 +99,8 @@ should do *pro bono* visualization work and make the world a
 better place" to the intersection of art and
 visualization (by
 [Francesca
-Samsel](http://www.francescasamsel.com/home_html/HOME.html), who is actually organizing an
-[intriguingly
-named](http://visweek.org/visweek/2012/workshop/visweek/scheherazades-toolbox-artists-meet-visualization) workshop on Thursday), to our own
+Samsel](http://www.francescasamsel.com/home_html/HOME.html), who is actually organizing a
+workshop on Thursday), to our own
 [Robert Kosara](http://eagereyes.org) talking about story
 telling in visualization. This was possibly the best party I've ever
 attended at VisWeek, and I would love for something like it to become

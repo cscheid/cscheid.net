@@ -2,6 +2,7 @@
 layout: post_paper
 title: "Auditing Black-box Models for Indirect Influence"
 tags: paper
+venue: ICDM
 thumb: 2016-icdm-auditing
 paper_link: /static/papers/icdm_auditing_2016.pdf
 ---

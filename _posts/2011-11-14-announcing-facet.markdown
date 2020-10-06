@@ -3,7 +3,7 @@ layout: post
 title: "Announcing Facet, the EDSL for WebGL visualization and graphics"
 ---
 
-[Facet](http://cscheid.github.com/facet) is a Javascript
+[Facet](http://cscheid.github.io/lux) is a Javascript
 library I'm writing, part of a research project on high-performance
 visualization and graphics on the web. It's peculiar how historical
 accidents are opportunities in disguise. If everyone knew Lisp, and if
@@ -27,6 +27,6 @@ it is built around an optimizing source-to-source compiler.
 
 Facet is still very much work-in-progress. But if you care about this
 sort of thing, jump over to the
-[Github](http://cscheid.github.com/facet/) page, or just
-[fork Facet](http://github.com/cscheid/facet) directly; I'd
+[Github](http://cscheid.github.io/lux/) page, or just
+[fork Facet](http://github.com/cscheid/lux) directly; I'd
 love to hear your feedback.

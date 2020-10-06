@@ -2,6 +2,7 @@
 layout: post_paper
 title: "An Algebraic Process for Visualization Design"
 tags: paper
+venue: VIS
 ---
 
 Gordon Kindlmann, Carlos E. Scheidegger. IEEE VIS 2014

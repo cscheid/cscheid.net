@@ -7,7 +7,7 @@ I have recently received a large amount of excellent writing advice,
 and I want to share some of it with you. Among other things, I was
 told to read
 [The
-Science of Scientific Writing](http://www.americanscientist.org/issues/pub/the-science-of-scientific-writing), by George Gopen and Judith Swan. Being
+Science of Scientific Writing](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing), by George Gopen and Judith Swan. Being
 told that you suck is great; you get to learn so much from it!
 
 I know I'm not the best writer. I have read my good share of writing
