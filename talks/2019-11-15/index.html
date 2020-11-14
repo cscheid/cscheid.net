@@ -1,0 +1,809 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/head.min.js"></script>
+    <script src="js/d3.v5.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="grid title-slide">
+	  <div class="title line-fit">Humans, Data, Computers</div>
+	  <div class="author line-fit">Carlos Scheidegger, HDC Lab<br>Department of Computer Science, University of Arizona</div>
+	  <div><img class="logo" src="images/logos/hdc.svg"><img class="logo" src="images/logos/ua.svg"></div>
+	</section>
+
+        <section id="who-we-are" style="position: relative">
+          <div class="title">Who we are</div>
+          <div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot" src="images/headshots/bigelow.png">
+              <img class="headshot" src="images/headshots/iqbal.png">
+              <img class="headshot" src="images/headshots/nivan.jpg">
+              <img class="headshot" src="images/headshots/berger.jpg">
+              <img class="headshot" src="images/headshots/cscullyallison.png">
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">
+              <img class="headshot fade" src="images/headshots/remco.jpg">
+              <img class="headshot" src="images/headshots/josh.jpg">
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">
+              <img class="headshot fade" src="images/headshots/suresh.jpg">
+              <img class="headshot" src="images/headshots/jiangkairong.jpg">
+              <img class="headshot" src="images/headshots/mingwei.jpg">
+              <img class="headshot" src="images/headshots/zhe.jpg">
+              <img class="headshot" src="images/headshots/zhenge.jpg">
+              <img class="headshot" src="images/headshots/rfaust.jpg">
+              <img class="headshot" src="images/headshots/dylan.jpg">
+              <img class="headshot" src="images/headshots/jixianli.jpg">
+              <img class="headshot" src="images/headshots/cscheid.png">
+              <img class="headshot" src="images/headshots/dilshadurrahman.png">
+              <img class="headshot" src="images/headshots/kisaacs.jpg">
+              <img class="headshot" src="images/headshots/kawilliams.jpg">
+              <img class="headshot" src="images/headshots/skobourov.jpg">
+              <img class="headshot" src="images/headshots/bahadorsaket.jpg">
+            </div>
+          </div>
+          <div style="position: relative">
+            <div style="display: inline-block; width: 80vh; height: 20vh; margin: 2vh; transform: translate(0,-2vh)"> <!-- this is pretty gross.. -->
+              <!-- <div class="line-fit">https://cscheid.net</div> -->
+              <div class="line-fit">https://hdc.cs.arizona.edu</div>
+              <!-- <div class="line-fit">cscheid@cs.arizona.edu</div> -->
+            </div>
+            <div style="display: inline-block; margin: 2vh 0;">
+              <img class="logo" src="images/logos/hdc.svg">
+            <!--   <img class="logo" src="images/logos/ua.svg"> -->
+            <!--   <img class="logo" src="images/logos/nsf.png"> -->
+            <!--   <img class="logo" src="images/logos/att.png"> -->
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">We are building a better world by</div>
+	  <div class="contents">
+            <ul>
+              <li>improving how data analysts make sense of their problems</li>
+              <li>understanding how ML impacts people and society</li>
+              <li>improving Computer Science by making programming infrastructure that fits people better</li>
+            </ul>
+	  </div>
+        </section>
+
+        <section class="center" id="atria">
+          <div class="title line-fit">Atria: understanding task-parallel execution graphs better</div>
+	  <div class="contents">
+	    <img src="images/atria1.png" style="height: 70vh">
+	  </div>
+	</section>
+	
+        <section class="center" id="atria2">
+          <div class="title line-fit">Atria: understanding task-parallel execution graphs better</div>
+	  <div class="contents">
+	    <img src="images/atria2.png" style="height: 36vh">
+	  </div>
+	</section>
+
+	<section class="center" id="dimreader">
+          <div class="title line-fit">DimReader: improving non-linear dimensionality reduction</div>
+	  <div class="contents">
+	    <img src="images/dimreader1.png" style="height: 70vh">
+	  </div>
+	</section>
+
+        <section>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="iframes/dimreader-demo-1/"
+               data-scrollable="no"
+               data-transitions="6">
+          </div>
+        </section>
+
+        <section id="slide-iris-tsne">
+          <p>t-SNE visualization <span id="slide-iris-tsne-attribute-name"></span></p>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="iframes/dimreader-demo-1/demo2.html"
+               data-scrollable="no"
+               data-transitions="4">
+          </div>
+        </section>
+	
+
+	<section class="center" id="tfgan">
+          <div class="title">tfGAN: Using ML to improve data visualization</div>
+	  <div class="contents">
+	    <img src="images/tfgan.png" style="height: 70vh">
+	  </div>
+	</section>
+
+	<section class="center" id="predpol">
+          <div class="title line-fit">Assessing the impact of predictive policing (Lum and Isaac, <em>Significance, 2016</em>)</div>
+          <div>This is the world we created!</div>
+          <img class="plain"  style="margin-top:1em; height:60%" src="images/predpol/lum-isaac-2.png">
+	  <!-- </div> -->
+	</section>
+
+	<section class="center" id="predpol">
+          <div class="title line-fit">Assessing the impact of predictive policing</div>
+	  <div class="contents">
+	    <img src="images/predpol2.png" style="height: 70vh">
+	  </div>
+	</section>
+
+        <section id="who-we-are" style="position: relative">
+          <div class="title">Come help us!</div>
+          <div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot" src="images/headshots/bigelow.png">
+              <img class="headshot" src="images/headshots/iqbal.png">
+              <img class="headshot" src="images/headshots/nivan.jpg">
+              <img class="headshot" src="images/headshots/berger.jpg">
+              <img class="headshot" src="images/headshots/cscullyallison.png">
+              <img class="headshot" src="images/headshots/glickenstein.jpg">
+              <img class="headshot" src="images/headshots/remco.jpg">
+              <img class="headshot" src="images/headshots/josh.jpg">
+              <img class="headshot" src="images/headshots/kindlmann.jpg">
+              <img class="headshot" src="images/headshots/sorelle.jpg">
+              <img class="headshot" src="images/headshots/suresh.jpg">
+              <img class="headshot" src="images/headshots/jiangkairong.jpg">
+              <img class="headshot" src="images/headshots/mingwei.jpg">
+              <img class="headshot" src="images/headshots/zhe.jpg">
+              <img class="headshot" src="images/headshots/zhenge.jpg">
+              <img class="headshot" src="images/headshots/rfaust.jpg">
+              <img class="headshot" src="images/headshots/dylan.jpg">
+              <img class="headshot" src="images/headshots/jixianli.jpg">
+              <img class="headshot" src="images/headshots/cscheid.png">
+              <img class="headshot" src="images/headshots/dilshadurrahman.png">
+              <img class="headshot" src="images/headshots/kisaacs.jpg">
+              <img class="headshot" src="images/headshots/kawilliams.jpg">
+              <img class="headshot" src="images/headshots/skobourov.jpg">
+              <img class="headshot" src="images/headshots/bahadorsaket.jpg">
+            </div>
+          </div>
+          <div style="position: relative">
+            <div style="display: inline-block; width: 80vh; height: 20vh; margin: 2vh; transform: translate(0,-2vh)"> <!-- this is pretty gross.. -->
+              <!-- <div class="line-fit">https://cscheid.net</div> -->
+              <div class="line-fit">https://hdc.cs.arizona.edu</div>
+              <!-- <div class="line-fit">cscheid@cs.arizona.edu</div> -->
+            </div>
+            <div style="display: inline-block; margin: 2vh 0;">
+              <img class="logo" src="images/logos/hdc.svg">
+            <!--   <img class="logo" src="images/logos/ua.svg"> -->
+            <!--   <img class="logo" src="images/logos/nsf.png"> -->
+            <!--   <img class="logo" src="images/logos/att.png"> -->
+            </div>
+          </div>
+        </section>
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Reinhart-Rogoff</div> -->
+<!--           <div>This work was widely cited as a justification for the austerity measures in the EU</div> -->
+<!--           <img class="paper-big" src="images/rr/rr-abstract.png"> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Herndon-Ash-Pollin</div> -->
+<!--           <div>This is the world we created!</div> -->
+<!--           <img class="paper-big" src="images/rr/hap-abstract.png"> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="contents"> -->
+<!--             <div class="line-fit">Our data science infrastructure is not humane</li> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title">Predictive Policing</div> -->
+<!--           <img class="plain sized" src="images/predpol/predpol-landing.png"> -->
+<!--           <div>Deployed in major cities: Santa Cruz, Los Angeles, etc.</div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Lum and Isaac, <em>Significance, 2016</em></div> -->
+<!--           <img class="plain" style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-1.png"> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Lum and Isaac, <em>Significance, 2016</em></div> -->
+<!--           <div>This is the world we created!</div> -->
+<!--           <img class="plain"  style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-2.png"> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="contents"> -->
+<!--             <div class="line-fit">Our data science infrastructure is inhumane</div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="contents"> -->
+<!--             <div class="line-fit" data-line-fit-scale="90">Our ability to automate has far outpaced our ability to validate</div><br> -->
+<!--             <div class="line-fit" data-line-fit-scale="90">Automation is not going away: we ought to empower people in this new context</div><br> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <\!-----------------------------------------------------------------------------------------------------\-> -->
+
+<!--         <section id="dimreader" class="right"> -->
+<!--           <div class="title line-fit">DimReader: Axis Lines that Explain Non-Linear Projections</div> -->
+<!--             <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; "> -->
+<!--               <img class="headshot fade" src="images/headshots/rosen.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/beiwang.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/nivan.jpg">   -->
+<!--               <img class="headshot fade" src="images/headshots/berger.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/correll.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/glickenstein.jpg">   -->
+<!--               <img class="headshot fade" src="images/headshots/remco.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/josh.jpg">           -->
+<!--               <img class="headshot fade" src="images/headshots/kindlmann.jpg">      -->
+<!--               <img class="headshot fade" src="images/headshots/sorelle.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/suresh.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/comba.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/mingwei.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/zhe.jpg">            -->
+<!--               <img class="headshot fade" src="images/headshots/zhenge.jpg">         -->
+<!--               <img class="headshot" src="images/headshots/rfaust.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/dylan.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/jixianli.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/yongwang.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/huaminqu.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/archambault.jpg">    -->
+<!--               <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg">  -->
+<!--               <img class="headshot fade" src="images/headshots/skobourov.jpg">      -->
+<!--               <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">   -->
+<!--             </div> -->
+<!--           <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh"> -->
+<!--             <p>InfoVis 2018</p> -->
+<!--             <p>Rebecca Faust, David Glickenstein, Carlos Scheidegger</p> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="right" data-background-image="images/tsne/cnn_embed_6k.jpg"> -->
+<!--           <div class="title line-fit bg-black">t-SNE plots are beautiful, but what are they showing us?</div> -->
+<!--           <div class="contents" style="position: relative; width: 100%; height: 100%"> -->
+<!--             <div class="bg-black" style="position: absolute; bottom: 10vh; left: 1vh"> -->
+<!--               <a href="https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg">https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg</a> -->
+<!--             </div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">A simpler example: the iris dataset</div> -->
+<!--           <table> -->
+<!-- <tr><th>Sepal Length</th><th>Sepal Width</th><th>Petal Length</th><th>Petal Width</th><th>Species</th></tr> -->
+<!--             <tr><td>5.1</td><td>3.5</td><td>1.4</td><td>0.2</td><td>setosa</td></tr> -->
+<!-- <tr><td>4.9</td><td>3.0</td><td>1.4</td><td>0.2</td><td>setosa</td></tr> -->
+<!-- <tr><td>4.7</td><td>3.2</td><td>1.3</td><td>0.2</td><td>setosa</td></tr> -->
+<!-- <tr><td>...</td><td></td><td></td><td></td><td></td></tr> -->
+<!-- <tr><td>7.0</td><td>3.2</td><td>4.7</td><td>1.4</td><td>versicolor</td></tr> -->
+<!-- <tr><td>6.4</td><td>3.2</td><td>4.5</td><td>1.5</td><td>versicolor</td></tr> -->
+<!-- <tr><td>6.9</td><td>3.1</td><td>4.9</td><td>1.5</td><td>versicolor</td></tr> -->
+<!-- <tr><td>...</td><td></td><td></td><td></td><td></td></tr> -->
+<!-- <tr><td>6.3</td><td>3.3</td><td>6.0</td><td>2.5</td><td>virginica</td></tr> -->
+<!-- <tr><td>5.8</td><td>2.7</td><td>5.1</td><td>1.9</td><td>virginica</td></tr> -->
+<!-- <tr><td>7.1</td><td>3.0</td><td>5.9</td><td>2.1</td><td>virginica</td></tr> -->
+<!-- <tr><td>...</td><td></td><td></td><td></td><td></td></tr> -->
+<!--           </table> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="fig-container" style="width: 80%; display:inline-block" -->
+<!--                data-file="iframes/dimreader-demo-1/" -->
+<!--                data-scrollable="no" -->
+<!--                data-transitions="6"> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section id="slide-iris-tsne"> -->
+<!--           <p>t-SNE visualization <span id="slide-iris-tsne-attribute-name"></span></p> -->
+<!--           <div class="fig-container" style="width: 80%; display:inline-block" -->
+<!--                data-file="iframes/dimreader-demo-1/demo2.html" -->
+<!--                data-scrollable="no" -->
+<!--                data-transitions="4"> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Tangent maps of algorithms</div> -->
+<!--           <div class="contents"> -->
+<!--             <div style="position: relative"> -->
+<!--               <img class="plain" style="height: 70vh;" src="images/pushforward.svg"/> -->
+<!--               <div class="small right">author: "User from reddit", CC BY 3.0</div> -->
+<!--             </div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Tangent maps of algorithms</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>First-order understanding: visualizations should inform us about the local context of the data</li> -->
+<!--               <li>Influence functions and robust statistics, tools from 1970s: if this point had been more important, how would the model change?</li> -->
+<!--               <li>Counterfactual reasoning: "how would Y behave had X been different?". See Google PAIR's <a href="https://pair-code.github.io/what-if-tool/">What If?</a></li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title line-fit" data-line-fit-scale="95">How: Automatic Differentiation ("autodiff")</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>Differentials are <b>context-free</b>, so rules are syntactic and local</li> -->
+<!--               <li>Typical program evaluation: given expression and values of containing variables, you can deduce the value of the expression</li> -->
+<!--               <li>With autodiff: given expression, values of containing variables, and values of their derivatives, you can deduce the value of the expression, and the value of its derivatives</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="contents"> -->
+<!--             <div class="line-fit">Using the tangent map</div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Option 1: provide a perturbation</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>This is the mode I've shown you so far</li> -->
+<!--               <li>User picks a direction that makes intuitive sense, DimReader measures the direction of change in the projected points, and reconstructs the axis</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title">This lets us compare DR methods</div> -->
+<!--           <div class="contents"> -->
+<!--             <img class="plain" style="height: 70vh; margin-top: 2em" src="images/dimreader/comparison-2.png"/> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">This lets us compare DR methods</div> -->
+<!--           <div class="contents"> -->
+<!--             <img class="plain" style="height: 70vh; margin-top: 2em" src="images/dimreader/comparison-1.png"/> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center" data-background-image="images/fashion-mnist-sprite.png"> -->
+<!--           <div class="title line-fit bg-black">But what if there's no obvious direction?</div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title line-fit">But what if there's no obvious direction?</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>Option 2: let DimReader infer a good perturbation</li> -->
+<!--               <li style="margin-top: 3em">We have access to the entire tangent map, let's do math on it</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title line-fit" data-line-fit-scale="90">The structure of the tangent map for DR problems</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>The tangent map is (effectively) sparse and block-structured.</li> -->
+<!--               <li style="list-style:none"> -->
+<!--                 $$\left ( \begin{array}{cccc} B_1 & 0 & \cdots & 0 \\ 0 & B_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & B_n \end{array} \right ) $$ -->
+<!--               </li> -->
+<!--               <li>If the DR method sends points from $R^k$ to $R^d$, then each block $B_i$ is $d \times k$</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title line-fit">Eigenproblems for Perturbation Discovery</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>The tangent map is <b>linear</b>, and we will be seeking perturbation <b>directions</b> -->
+<!--                 that maximize some criteria</li> -->
+<!--               <li>Lots of interesting possibilities, but we focus on the following formulation:</li> -->
+              
+<!--               <li style="position: relative; margin-top: 2em; list-style:none; font-size: 1.3em">$$\textrm{argmax}_{p \in R^{d \times n}} \sum_i || B_i p_i ||^2 - \lambda \sum_i \sum_j ||p_i - p_j||^2 S(i,j)$$</li> -->
+
+<!--               <li style="position: relative; list-style:none; font-size: 1.3em">$$\textrm{s.t.}\ ||p||^2 - 1 = 0$$</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title line-fit">Eigenproblems for Perturbation Discovery</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li style="list-style:none; font-size: 1.3em">$$\textrm{argmax}_{p \in R^{d \times n}} \sum_i || B_i p_i ||^2 - \lambda \sum_i \sum_j ||p_i - p_j||^2 S(i,j)$$</li> -->
+
+<!--               <li style="position: relative; list-style:none; font-size: 1.3em">$$\textrm{s.t.}\ ||p||^2 - 1 = 0$$</li> -->
+<!--               <li style="position: relative; margin-top: 2em; ">$B_i$ holds the blocks of the tangent map</li> -->
+<!--               <li>$S$ encodes similarity between projection positions</li> -->
+<!--               <li>$\lambda$ is a user-specified tradeoff parameter</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section> -->
+<!--           <div class="title line-fit">Results: t-SNE projection on MNIST-Fashion</div> -->
+<!--           <div class="contents"> -->
+<!--             <img class="plain sized" src="images/mnist-fashion-tsne-dimreader.png"> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">Results: t-SNE projection on MNIST-Digits</div> -->
+<!--           <div class="contents"> -->
+<!--             <img class="plain sized" src="images/mnist-digits-tsne-dimreader.png"> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section data-background-image="images/dimreader/iris-tsne-discovery-1.jpg"> -->
+<!--           <div class="title line-fit bg-black" style="position: absolute; bottom: 1em">Results: t-SNE projection on Iris dataset</div> -->
+<!--         </section> -->
+
+<!--         <section data-background-image="images/dimreader/iris-tsne-discovery-2.jpg"> -->
+<!--           <div class="title line-fit bg-black" style="position: absolute; bottom: 1em">Results: t-SNE projection on Iris dataset</div> -->
+<!--         </section> -->
+        
+<!--         <section> -->
+<!--           <div class="title">Outlook</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>Can we design novel DR methods that yield good DimReader plots?</li> -->
+<!--               <li>What other visualization methods would benefit from first-order information?</li> -->
+<!--             </ul> -->
+<!--             <a href="#/predictive-policing">.</a> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section id="gaussian-cubes" class="right"> -->
+<!--           <div class="title line-fit">Gaussian Cubes: real-time modeling for visual exploration of large multidimensional datasets</div> -->
+<!--             <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; "> -->
+<!--               <img class="headshot fade" src="images/headshots/rosen.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/beiwang.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/nivan.jpg">   -->
+<!--               <img class="headshot fade" src="images/headshots/berger.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/correll.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/glickenstein.jpg">   -->
+<!--               <img class="headshot fade" src="images/headshots/remco.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/josh.jpg">           -->
+<!--               <img class="headshot fade" src="images/headshots/kindlmann.jpg">      -->
+<!--               <img class="headshot fade" src="images/headshots/sorelle.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/suresh.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/comba.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/mingwei.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/zhe.jpg">            -->
+<!--               <img class="headshot fade" src="images/headshots/zhenge.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/rfaust.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/dylan.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/jixianli.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/yongwang.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/huaminqu.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/archambault.jpg">    -->
+<!--               <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg">  -->
+<!--               <img class="headshot fade" src="images/headshots/skobourov.jpg">      -->
+<!--               <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">   -->
+<!--             </div> -->
+<!--           <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh"> -->
+<!--             <p>InfoVis 2016</p> -->
+<!--             <p style="font-size:1.5em">Zhe Wang, Nivan Ferreira, Youhao Wei, Aarthy Bhaskar, Carlos Scheidegger</p> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">Goal: Visual Exploration of Large Datasets</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>We have large datasets; can we enable data exploration at the speed of thought?</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--           <div class="fig-container" style="height: 70%; width:100%; display:inline-block" -->
+<!--                data-file="iframes/flights_test/index-big.html" -->
+<!--                data-scrollable="no" -->
+<!--                data-transitions="4"> -->
+<!--           </div>           -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">Goal: Visual Exploration of Large Datasets</div> -->
+<!--           <div class="contents" style="width: 85%; margin:auto"> -->
+<!--             <ul><li>BlinkDB uses stratified sampling and approximation (Agarwal et al, 2013)</li> -->
+<!--               <li>VisReduce and MapD use parallel computing (and GPUs) (Im et al, 2013)</li> -->
+<!--               <li>Nanocubes and immens (Lins et al., 2013, Li et al., 2013) use preaggregation, and data cubes specifically (Gray et al, 1997) -->
+<!--                 <ul><li>Gaussian Cubes takes the same approach, and extends the <b>types of visualizations</b> that are possible with data cubes</li></ul> -->
+<!--               </li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title">We want to visualize <b>models</b></div> -->
+<!--           <img class="plain sized" src="images/gc/overview.png"> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">What is Gaussian Cubes?</div> -->
+<!--           <div class="contents" style="width:85%; margin:auto"> -->
+<!--             <ul><li>Start with the data-cubes algorithm of Lins, Scheidegger and Klosowski (Infovis 2013)</li> -->
+<!--               <li>incorporate the ability to efficiently store and fit a number of models over large datasets</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">We add sufficient statistics for gaussian linear models</div> -->
+<!--           <div style="margin: auto; margin-top: 2em; width: 130vh; height: 40vh; display: grid; grid-gap: 1em; grid-template-columns: auto auto auto"> -->
+<!--             <img class="plain" style="height:35vh" src="images/gc/raw-data.png"> -->
+<!--             <img class="plain" style="height:35vh" src="images/gc/data-cubes.png"> -->
+<!--             <img class="plain" style="height:35vh" src="images/gc/gaussian-cubes.png"> -->
+<!--             <div>Raw Data</div> -->
+<!--             <div>Data Cubes</div> -->
+<!--             <div>Gaussian Cubes</div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">What does it take to fit a (gaussian linear) model?</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>Consider simple linear regression: $y_i = m x_i + b$</li> -->
+<!--               <li>We seek to minimize the squared error $E = \sum_i (y_i - m x_i - b)^2$</li> -->
+<!--               <li>Take the gradient,<ul> -->
+<!--                   <li class="equation" style="font-size:0.6em">$$\nabla E = \left ( \begin{array}{c} dE/dm \\ dE/db \end{array} \right ) = 2 \left ( \begin{array}{c} \sum_i(y_i - mx_i - b)y_i \\ \sum_i(y_i - mx_i - b) \end{array} \right ) = 2 \left ( \begin{array}{ccc}(\sum_i y_i^2) & - m (\sum_i x_i y_i) & - b (\sum_i y_i) \\ (\sum_i y_i) & - m (\sum_i x_i) & - b (\sum_i 1) \end{array} \right ) = 0$$</li> -->
+<!--               </li> -->
+<!--               </ul>                    -->
+<!--               <li>The model only depends on the data through the sums!</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section> -->
+<!--           <div class="title line-fit">Stupid gaussian linear model tricks</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul><li>The same idea works for: -->
+<!--                 <ul><li>linear regression</li><li>Principal Component Analysis</li><li>ANOVA</li></ul> -->
+<!--               </li> -->
+<!--               <li>.. k-means? SVMs?</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section> -->
+<!--           <div class="title line-fit">SDSS - visualizing similar subspaces</div> -->
+<!--           <div class="contents"> -->
+<!--             <img class="plain" style="height: 80vh" src="images/gc/sdss-gaussian-cubes-pca.jpg"> -->
+<!--           </div>           -->
+<!--         </section> -->
+        
+<!--         <section> -->
+<!--           <div class="title">Outlook</div> -->
+<!--           <div class="contents" style="width:85%; margin:auto"> -->
+<!--             <ul> -->
+<!--               <li>What happens when we push the preaggregation strategy deep into the data science pipeline? (NSF III-1815238)</li> -->
+<!--               <li>What does Pandas, dplyr, and other libraries look like when they have access to a Gaussian Cube-like structure?</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section id="predictive-policing" class="right"> -->
+<!--           <div class="title" style="font-size:2.5em">Runaway Feedback Loops in Predictive Policing</div> -->
+<!--             <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; "> -->
+<!--               <img class="headshot fade" src="images/headshots/rosen.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/beiwang.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/nivan.jpg">   -->
+<!--               <img class="headshot fade" src="images/headshots/berger.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/correll.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/glickenstein.jpg"> -->
+<!--               <img class="headshot fade" src="images/headshots/remco.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/josh.jpg">           -->
+<!--               <img class="headshot fade" src="images/headshots/kindlmann.jpg">      -->
+<!--               <img class="headshot" src="images/headshots/sorelle.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/suresh.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/comba.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/mingwei.jpg">        -->
+<!--               <img class="headshot fade" src="images/headshots/zhe.jpg">            -->
+<!--               <img class="headshot fade" src="images/headshots/zhenge.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/rfaust.jpg">         -->
+<!--               <img class="headshot fade" src="images/headshots/dylan.jpg">          -->
+<!--               <img class="headshot fade" src="images/headshots/jixianli.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/yongwang.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/huaminqu.jpg">       -->
+<!--               <img class="headshot fade" src="images/headshots/archambault.jpg">    -->
+<!--               <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg">  -->
+<!--               <img class="headshot fade" src="images/headshots/skobourov.jpg">      -->
+<!--               <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">   -->
+<!--             </div> -->
+<!--           <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh"> -->
+<!--             <p>FAT* 2018</p> -->
+<!--             <p style="font-size:1.15em">Danielle Ensign, Sorelle Friedler, Scott Neville, Carlos Scheidegger, Suresh Venkatasubramanian</p> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.002.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.003.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.004.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.005.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.006.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.007.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.008.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.009.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.011.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.012.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.013.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.014.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.022.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.023.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.024.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.027.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.029.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.030.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.031.png" data-background-size="1280px 960px"></section> -->
+
+<!--         <section id="thanks" style="position: relative"> -->
+<!--           <div class="title">Thanks!</div> -->
+<!--           <div> -->
+<!--             <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; "> -->
+<!--               <img class="headshot" src="images/headshots/rosen.jpg">          -->
+<!--               <img class="headshot" src="images/headshots/beiwang.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/nivan.jpg">   -->
+<!--               <img class="headshot" src="images/headshots/berger.jpg">         -->
+<!--               <img class="headshot" src="images/headshots/correll.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/glickenstein.jpg">   -->
+<!--               <img class="headshot" src="images/headshots/remco.jpg">          -->
+<!--               <img class="headshot" src="images/headshots/josh.jpg">           -->
+<!--               <img class="headshot" src="images/headshots/kindlmann.jpg">      -->
+<!--               <img class="headshot" src="images/headshots/sorelle.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/suresh.jpg">         -->
+<!--               <img class="headshot" src="images/headshots/comba.jpg">          -->
+<!--               <img class="headshot" src="images/headshots/mingwei.jpg">        -->
+<!--               <img class="headshot" src="images/headshots/zhe.jpg">            -->
+<!--               <img class="headshot" src="images/headshots/zhenge.jpg">         -->
+<!--               <img class="headshot" src="images/headshots/rfaust.jpg">         -->
+<!--               <img class="headshot" src="images/headshots/dylan.jpg">          -->
+<!--               <img class="headshot" src="images/headshots/jixianli.jpg">       -->
+<!--               <img class="headshot" src="images/headshots/yongwang.jpg">       -->
+<!--               <img class="headshot" src="images/headshots/huaminqu.jpg">       -->
+<!--               <img class="headshot" src="images/headshots/archambault.jpg">    -->
+<!--               <img class="headshot" src="images/headshots/sabrinanusrat.jpg">  -->
+<!--               <img class="headshot" src="images/headshots/skobourov.jpg">      -->
+<!--               <img class="headshot" src="images/headshots/bahadorsaket.jpg">   -->
+<!--             </div> -->
+<!--           </div> -->
+<!--           <div style="position: relative"> -->
+<!--             <div style="display: inline-block; height: 20vh; margin: 1vh; transform: translate(0,-2vh)"> <\!-- this is pretty gross.. -\-> -->
+<!--               <div class="line-fit">https://cscheid.net</div> -->
+<!--               <div class="line-fit">https://hdc.cs.arizona.edu</div> -->
+<!--               <div class="line-fit">cscheid@cs.arizona.edu</div> -->
+<!--             </div> -->
+<!--             <div style="display: inline-block; margin: 2vh 0;"> -->
+<!--               <img class="logo" src="images/logos/hdc.svg"> -->
+<!--               <img class="logo" src="images/logos/ua.svg"> -->
+<!--               <img class="logo" src="images/logos/nsf.png"> -->
+<!--               <img class="logo" src="images/logos/att.png"> -->
+<!--             </div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section data-background-image="images/kate-postdoc.png"> -->
+<!--         </section> -->
+        
+<!--         <section id="extra-slides"> -->
+<!--           <div class="line-fit"> -->
+<!--             <p>Extra Slides</p> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section id="extra-slides"> -->
+<!--           <div class="line-fit"> -->
+<!--             <p>DimReader</p> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section id="slide-swiss-roll-pca-value-heatmaps"> -->
+<!--           <div class="title line-fit">Comparison: DimReader vs. Value Heatmaps</div> -->
+<!--           <div class="fig-container" style="width: 80%; display:inline-block" -->
+<!--                data-file="iframes/dimreader-demo-2/swiss-roll.html" -->
+<!--                data-scrollable="no"> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section class="center"> -->
+<!--           <div class="title">Autodiff is not Symbolic Differentiation</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul style="font-size: 0.3em"> -->
+<!--               <li>Symbolic differentiation takes expressions and produces expressions</li> -->
+<!--               <li>Autodiff takes expressions, variable values (and their derivatives) and produces expression values (and their derivatives)</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+        
+<!--         <section class="center"> -->
+<!--           <div class="title">Autodiff is popular these days</div> -->
+<!--           <div class="contents"> -->
+<!--             <ul> -->
+<!--               <li>Reverse-mode autodiff is the magic behind torch, tensorflow, and friends -->
+<!--                 <ul><li>if you know back-propagation, then you've learned a specific instance of reverse-mode autodiff</li></ul></li> -->
+<!--               <li>We use forward-mode autodiff: it lets us reuse NDR projection code with very few changes (through operator overloading)</li> -->
+<!--             </ul> -->
+<!--           </div> -->
+<!--         </section> -->
+
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.010.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.015.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.016.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.017.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.018.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.019.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.020.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.021.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.024.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.025.png" data-background-size="1280px 960px"></section> -->
+<!--         <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.026.png" data-background-size="1280px 960px"></section> -->
+        
+<!--         <section id="swiss-roll"> -->
+<!--           <p><a href="scripts/make-swiss-roll-dimreader.py">swiss-roll.py</a><p> -->
+<!--         </section> -->
+
+<!--         <section class="grid-2x2-slide"> -->
+<!--           <div class="title line-fit">Algorithms in Society</div> -->
+<!--           <div class="row-2 column-1"> -->
+<!--             <img src="images/kdd-2015.png"> -->
+<!--             <div><a href="https://cscheid.net/2015/08/16/certifying-and-removing-disparate-impact.html">KDD 2015: Disparate Impact</a></div> -->
+<!--           </div> -->
+<!--           <div class="row-2 column-2"> -->
+<!--             <img src="images/icdm-2016.png"> -->
+<!--             <div class="line-fit"><a href="https://cscheid.net/2016/12/13/auditing-black-box-models-for-indirect-influence.html">ICDM 2016: Indirect influence and Black-box functions</a></div> -->
+<!--           </div> -->
+<!--           <div class="row-1 column-1"> -->
+<!--             <img src="images/fat-2018.png"> -->
+<!--             <div class="line-fit"><a href="https://cscheid.net/2017/12/05/runaway-feedback-loops-in-predictive-policing.html">FAT* 2018: Feedback loops in predictive policing</a></div> -->
+<!--           </div> -->
+<!--           <div class="row-1 column-2"> -->
+<!--             <img src="images/arxiv-2016.png"> -->
+<!--             <div class="line-fit"><a href="https://arxiv.org/abs/1609.07236">arxiv: Fairness definitions and (incompatible) value systems</a></div> -->
+<!--           </div> -->
+<!--         </section> -->
+
+
+<!-- 	      <section class="grid two-columns"> -->
+<!--           <div class="line-fit"> -->
+<!--             DimReader (Faust, Glickenstein, Scheidegger, Infovis 2018) -->
+<!--           </div> -->
+<!--           <div></div> -->
+<!--           <div class="line-fit"> -->
+<!--             Gaussian Cubes (Wang et al, Infovis 2016) -->
+<!--           </div> -->
+<!--           <div> -->
+<!--             <div class="fig-container" style="height: 100%;" -->
+<!--                  data-file="iframes/dimreader-demo-teaser/" -->
+<!--                  data-scrollable="no"> -->
+<!--             </div> -->
+<!--           </div> -->
+<!--           <div></div> -->
+<!--           <div> -->
+<!--             <div class="fig-container" style="height: 100%;" -->
+<!--                  data-file="iframes/flights_test/" -->
+<!--                  data-scrollable="yes"> -->
+<!--             </div> -->
+<!--           </div> -->
+<!-- 	      </section> -->
+        
+      </div>
+    </div>
+    <script src="reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+ 

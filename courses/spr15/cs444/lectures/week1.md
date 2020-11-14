@@ -312,7 +312,7 @@ credit*. For some assignments, learning how a particular
 implementation works is the entire point. In that case, I will make it
 clear that the implementation needs to be yours, and I will explicitly
 tell you that you are not allowed to search online for
-answers. [Ignore this warning at your peril.](http://briankrausz.com/how-to-catch-a-cheater/)
+answers. [Ignore this warning at your peril.](https://blog.briankrausz.com/how-to-catch-a-cheater-ff3c4a6ea11d).
 
 If you take an existing, however small, piece of code from elsewhere,
 use it in your coursework, and do not give attribution, this is

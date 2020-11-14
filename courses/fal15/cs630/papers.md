@@ -7,15 +7,15 @@ title: CS630, "Systems for Interactive Data Analysis"
 
 In no particular order,
 
-* [Building Blocks for Exploratory Data Analysis Tools](http://www.eecs.berkeley.edu/~alspaugh/papers/lsa_idea_2013.pdf).
-* [http://www.eecs.berkeley.edu/~alspaugh/papers/alspaugh-idea2014-final.pdf](http://www.eecs.berkeley.edu/~alspaugh/papers/alspaugh-idea2014-final.pdf).
+* [Building Blocks for Exploratory Data Analysis Tools](http://www.eecs.berkeley.edu/~alspaugh/papers/lsa_idea_2013.pdf) (dead link, lost to the sands of time).
+* [http://www.eecs.berkeley.edu/~alspaugh/papers/alspaugh-idea2014-final.pdf](http://www.eecs.berkeley.edu/~alspaugh/papers/alspaugh-idea2014-final.pdf) (dead link, lost to the sands of time).
 * [Netflix Recommendations: Beyond the 5 stars](http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html).
 
 
 ## Statisticians invent data science
 
 * [Data Science: An Action Plan for Expanding the
-Technical Areas of the Field of Statistics](http://www.stat.purdue.edu/~wsc/papers/datascience.pdf).
+Technical Areas of the Field of Statistics](https://www.jstor.org/stable/1403527)
 * Early history,
 [prim9, 1973](http://stat-graphics.org/movies/prim9.html). [The Future of Data Analysis](http://web.stanford.edu/~gavish/documents/Tukey_the_future_of_data_analysis.pdf).
 
@@ -32,7 +32,7 @@ Technical Areas of the Field of Statistics](http://www.stat.purdue.edu/~wsc/pape
 * Hellerstein et al., [Online Aggregation](http://www-cs-students.stanford.edu/~adityagp/courses/cs598/papers/online-aggregation.pdf)
 * Spark
 * BlinkDB
-* Blais et al., [Rapid Sampling for Visualizations with Ordering Guarantees](http://web.engr.illinois.edu/~adityagp/intel-sample-tr.pdf)
+* Blais et al., Rapid Sampling for Visualizations with Ordering Guarantees
 * Trust me, I'm partially right
 * Sample-Oriented Task-Driven Visualizations
 

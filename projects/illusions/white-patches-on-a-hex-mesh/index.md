@@ -13,5 +13,5 @@ between the gray lines.
 
 # Acknowledgements
 
-I found this one while building "[Variations on a Hermann Grid](../variations-on-a-hermann-grid/)".
+I found this one while building "[Variations on the Hermann Grid](../variations-on-the-hermann-grid/)".
 

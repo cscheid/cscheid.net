@@ -1,0 +1,50 @@
+/* https://medium.com/myplanet-musings/building-a-responsive-reveal-js-theme-399179632cc6 */
+
+.reveal .slides section.title .grid-wrapper {    
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "content content"
+    ". credit";
+  grid-template-columns: auto 40%;
+  grid-template-rows: 6vmin 1fr auto;
+  grid-column-gap: 10vmin;
+  height: 100%;
+  padding: 10vmin;
+}
+.logo {
+   grid-area: header;
+}
+.content {
+  align-self: center;
+  grid-area: content;
+}
+.credit {
+  grid-area: credit;
+}
+
+@media (max-width: 568px) {
+  .grid-wrapper {
+    grid-template-areas: "header" "content" "credit";
+    grid-template-columns: auto;
+  }
+  .credit {
+    justify-self: end;
+  }
+}
+
+@media (min-width: 1280px) {
+  .content {
+    display: grid;
+    grid-template-areas: "title description";
+    grid-template-columns: auto 40%;
+    grid-column-gap: 10vmin;
+  }
+  h1 {
+    grid-area: title;
+  }
+  .description {
+    grid-area: description;
+  }
+}

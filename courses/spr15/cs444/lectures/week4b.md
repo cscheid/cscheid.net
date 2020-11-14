@@ -63,8 +63,8 @@ library. If you're looking for a ready-made charting library, then
 there are better open-source alternatives, such as
 [protovis](http://mbostock.github.io/protovis/), and
 [dc.js](http://dc-js.github.io/dc.js/), or proprietary ones, such as
-[Variance](https://variancecharts.com/). If you're willing to learn R,
-then [ggplot2](http://ggplot2.org/) is astoundingly powerful.  As a
+[Variance](http://variancecharts.com/). If you're willing to learn R,
+then [ggplot2](https://ggplot2.tidyverse.org) is astoundingly powerful.  As a
 tool to build new visualization libraries and custom-made
 visualizations, however, d3 just leaves everything else in the
 dust. Since in this course we will be navigating a path that includes

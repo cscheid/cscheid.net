@@ -78,7 +78,8 @@ function initLegend()
 {
     var svg = d3.select("#d3-scale-legend")
         .append("svg")
-        .attr("width", 920)
+        .attr("viewBox", "0 0 920 100")
+        .attr("width", "100%")
         .attr("height", 100);
 
     var data = d3.range(100).map(x => x / 99);

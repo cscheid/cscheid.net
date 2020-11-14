@@ -72,7 +72,7 @@ sanctimonious ("be clear". Well, duh. But how?). So what should you
 read?
 
 Start with Gopen and Swan's
-[Science of Scientific Writing](http://engineering.missouri.edu/civil/files/science-of-writing.pdf):
+[Science of Scientific Writing](https://www.americanscientist.org/blog/the-long-view/the-science-of-scientific-writing):
 it's short, sweet and it actually explains *why* you should write in
 any particular way. Then go on to buy Gopen's
 [Sense of Structure](http://www.powells.com/biblio/62-9780205296323-1),

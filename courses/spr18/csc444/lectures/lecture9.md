@@ -12,4 +12,4 @@ The lecture will be based on
 
 ### Reading Material
 
-* [Graphical Perception: Theory, Experimentation, and Appliation to the Development of Graphical Methods](https://www.cs.ubc.ca/~tmm/courses/cpsc533c-04-spr/readings/cleveland.pdf)
+* Cleveland and McGill. Graphical Perception: Theory, Experimentation, and Appliation to the Development of Graphical Methods

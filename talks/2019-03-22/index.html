@@ -1,0 +1,217 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../lib/reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="../lib/css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../lib/js/d3.v5.js"></script>
+    <script src="../lib/js/lodash.min.js"></script>
+    <script src="../lib/js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="grid title-slide">
+	  <div class="title line-fit">PEOPLE-FIRST DATA SCIENCE</div>
+	  <div class="author line-fit">
+            Carlos Scheidegger, HDC Lab
+            <br>
+            Department of Computer Science, University of Arizona
+            <br>
+            2019-03-22
+          </div>
+          <div><img class="logo" src="../images/logos/hdc.svg"><img class="logo" src="../images/logos/ua.svg"></div>
+	</section>
+	
+        <!------------------------------------------------------------------------------------------------------>
+
+        <section id="hdc">
+          <div class="title">The HDC Lab</div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="../images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="../images/headshots/beiwang.jpg">       
+              <img class="headshot     " src="../images/headshots/nivan.jpg">  
+              <img class="headshot     " src="../images/headshots/berger.jpg">        
+              <img class="headshot fade" src="../images/headshots/correll.jpg">       
+              <img class="headshot fade" src="../images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="../images/headshots/remco.jpg">         
+              <img class="headshot     " src="../images/headshots/josh.jpg">          
+              <img class="headshot fade" src="../images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="../images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="../images/headshots/suresh.jpg">        
+              <img class="headshot     " src="../images/headshots/kisaacs.jpg">         
+              <img class="headshot     " src="../images/headshots/mingwei.jpg">       
+              <img class="headshot     " src="../images/headshots/zhe.jpg">           
+              <img class="headshot     " src="../images/headshots/zhenge.jpg">        
+              <img class="headshot     " src="../images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="../images/headshots/dylan.jpg">         
+              <img class="headshot     " src="../images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="../images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="../images/headshots/huaminqu.jpg">      
+              <img class="headshot fade" src="../images/headshots/archambault.jpg">   
+              <img class="headshot     " src="../images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot     " src="../images/headshots/skobourov.jpg">     
+              <img class="headshot     " src="../images/headshots/bahadorsaket.jpg">  
+            </div>
+          <!-- <div><img class="logo" src="../images/logos/hdc.svg"><img class="logo" src="../images/logos/ua.svg"></div> -->
+          <!-- <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh"> -->
+          <!--   <p>InfoVis 2018</p> -->
+          <!--   <p>Rebecca Faust, David Glickenstein, Carlos -->
+          <!--   Scheidegger</p> -->
+          <!-- </div> -->
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------>
+
+        <section class="center">
+          <div class="title">The HDC Lab</div>
+          <div class="contents">
+	    <ul>
+	      <li>Understanding data requires understanding people</li>
+	      <li>We can use computers to build a dehumanizing world</li>
+	      <li>... or we can build a world where people are front and center</li>
+	    </ul>
+	  </div>
+	</section>
+	
+        <!------------------------------------------------------------------------------------------------------>
+	
+        <section class="right" data-background-image="../images/slides/tsne-cnn/cnn_embed_6k.jpg">
+          <div class="title line-fit bg-black">t-SNE plots are beautiful, but what are they showing us?</div>
+          <div class="contents" style="position: relative; width: 100%; height: 100%">
+            <div class="bg-black" style="position: absolute; bottom: 10vh; left: 1vh">
+              <a href="https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg">https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg</a>
+            </div>
+          </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------>
+	
+        <section>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="../iframes/dimreader-demo-1/"
+               data-scrollable="no"
+               data-transitions="6">
+          </div>
+        </section>
+
+        <section id="slide-iris-tsne">
+          <p>t-SNE visualization <span id="slide-iris-tsne-attribute-name"></span></p>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="../iframes/dimreader-demo-1/demo2.html"
+               data-scrollable="no"
+               data-transitions="4">
+          </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------>
+	
+        <section class="center">
+          <div class="title line-fit">DimReader: Axis Lines that Explain Non-Linear Projections</div>
+          <div class="contents">
+            <ul>
+	      <li>Faust et al., InfoVis 2018</li>
+	      <li>How? Automatic Differentiation</li>
+	      <li>It's possible to extract the derivative <em>of an entire program</em></li>
+	      <li>(And this is low-key the reason machine learning has taken off, see Torch, TensorFlow, autograd, JAX, etc)</li>
+	    </ul>
+	  </div>
+	</section>
+
+        <!-- <section id="how"> -->
+        <!--   <\!-- <div class="title line-fit">How? Automatic Differentiation</div> -\-> -->
+	<!--   <img class="plain sized" style="width: 90%" src="../images/gifs/awesome-magic.webp"> -->
+	<!-- </section> -->
+
+        <!------------------------------------------------------------------------------------------------------>
+	
+        <section>
+          <div class="title line-fit">You're in a maze of 100M twisty little data points, all alike</div>
+          <div class="fig-container" style="height: 90%; width:100%; display:inline-block"
+               data-file="../iframes/gaussian-cubes-flights/index-big.html"
+               data-scrollable="no">
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title line-fit">Gaussian Cubes: Real-Time Modeling for Large Multidimensional Datasets</div>
+          <div class="contents">
+            <ul>
+	      <li>Wang et al., InfoVis 2016</li>
+	      <li>How? Custom Data Cubes over Sufficient Statistics</li>
+	      <li>You can fit a variety of useful stats models on large datasets very quickly with the right precomputation strategy</li>
+	    </ul>
+	  </div>
+	</section>
+
+        <!-- <section id="how-2"> -->
+        <!--   <\!-- <div class="title line-fit">How? Automatic Differentiation</div> -\-> -->
+	<!--   <img class="plain sized" style="width: 90%" src="../images/gifs/awesome-magic.webp"> -->
+	<!-- </section> -->
+
+        <!------------------------------------------------------------------------------------------------------>
+
+        <section id="thanks" style="position: relative">
+          <div class="title">Thanks!</div>
+          <div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot" src="../images/headshots/rosen.jpg">         
+              <img class="headshot" src="../images/headshots/beiwang.jpg">       
+              <img class="headshot" src="../images/headshots/nivan.jpg">  
+              <img class="headshot" src="../images/headshots/berger.jpg">        
+              <img class="headshot" src="../images/headshots/correll.jpg">       
+              <img class="headshot" src="../images/headshots/glickenstein.jpg">  
+              <img class="headshot" src="../images/headshots/remco.jpg">         
+              <img class="headshot" src="../images/headshots/josh.jpg">          
+              <img class="headshot" src="../images/headshots/kindlmann.jpg">     
+              <img class="headshot" src="../images/headshots/sorelle.jpg">       
+              <img class="headshot" src="../images/headshots/suresh.jpg">        
+              <img class="headshot" src="../images/headshots/kisaacs.jpg">         
+              <img class="headshot" src="../images/headshots/mingwei.jpg">       
+              <img class="headshot" src="../images/headshots/zhe.jpg">           
+              <img class="headshot" src="../images/headshots/zhenge.jpg">        
+              <img class="headshot" src="../images/headshots/rfaust.jpg">        
+              <img class="headshot" src="../images/headshots/dylan.jpg">         
+              <img class="headshot" src="../images/headshots/jixianli.jpg">      
+              <img class="headshot" src="../images/headshots/yongwang.jpg">      
+              <img class="headshot" src="../images/headshots/huaminqu.jpg">      
+              <img class="headshot" src="../images/headshots/archambault.jpg">   
+              <img class="headshot" src="../images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot" src="../images/headshots/skobourov.jpg">     
+              <img class="headshot" src="../images/headshots/bahadorsaket.jpg">  
+            </div>
+          </div>
+          <div style="position: relative">
+            <div style="display: inline-block; height: 20vh; margin: 1vh; transform: translate(0,-2vh)"> <!-- this is pretty gross.. -->
+              <div class="line-fit">https://cscheid.net</div>
+              <div class="line-fit">https://hdc.cs.arizona.edu</div>
+              <div class="line-fit">cscheid@cs.arizona.edu</div>
+            </div>
+            <div style="display: inline-block; margin: 2vh 0;">
+              <img class="logo" src="../images/logos/hdc.svg">
+              <img class="logo" src="../images/logos/ua.svg">
+              <img class="logo" src="../images/logos/nsf.png">
+              <img class="logo" src="../images/logos/att.png">
+            </div>
+          </div>
+        </section>
+
+
+      </div>
+      
+    <script src="../lib/reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="../lib/js/cscheid-talk-init.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+ 

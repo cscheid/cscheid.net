@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="/lib/reveal/reveal.js-3.7.0/css/reveal.css"/>
+    <link rel="stylesheet" href="/lib/reveal/css/cscheid.css"/>
+    <link rel="stylesheet" href="/lib/reveal/css/style.css"/>
+    <link rel="stylesheet" href="{{ page.name | remove: '.md' }}.css"/>
+
+    <script src="/lib/reveal/js/head.min.js"></script>
+    <script src="/lib/reveal/js/reveal_fixes.js"></script>
+    <script src="/js/d3.v5.js"></script>
+    <script src="/js/lodash.min.js"></script>
+
+    <script type="module" src="/js/cscheid/cscheid.js"></script> 
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    <title>{{ post.title }}</title>
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- we set opacity to 0 so we can do our markdown hacks safely
+
+	   note that we cannot do this with visibility:hidden because
+	   we need elements to be visible for our line-fit hacks to
+	   work.  -->
+      <div class="slides" style="opacity: 0">
+	{{ content }}
+      </div>
+    </div>
+    <script type="module" src="/js/markdown_talk.js"></script>
+
+    <!-- the two scripts below are loaded by /js/markdown_talk.js; we
+         defer their loading so reveal.js sees a transformed DOM -->
+    
+    <!-- <script src="/lib/reveal/reveal.js-3.7.0/js/reveal.js"></script> -->
+    <!-- <script src="/lib/reveal/js/reveal-main.js"></script> -->
+    
+    <script type="module" src="{{ page.name | remove: '.md' }}.js"></script>
+  </body>
+</html>

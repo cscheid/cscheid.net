@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="paper">
+  <head>
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:500,700,400'
+	  rel='stylesheet' type='text/css'>
+    <meta http-equiv="Pragma" content="no-cache"> 
+    <meta http-equiv="Expires" content="-1"> 
+    <meta http-equiv="cache-control" content="no-store">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"> 
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css"/>
+    <link rel="stylesheet" href="lib/leaflet.draw/leaflet.draw.css"/>
+    <link rel="stylesheet" href="nanocube2.css"/>    
+
+    <!-- Start of scripts-->
+    <!-- jQuery, Leaflet, Underscore, React includes -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-with-addons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+    <script src="lib/leaflet.draw/leaflet.draw-src.js"></script>
+    <script src="lib/colorbrewer.js"></script>
+    
+    <!-- Custom includes -->
+    <script src="regression.js"></script>
+    <script src="nanocube.js"></script>
+    <script src="TileLatLngUtils.js"></script>
+    
+    <script src="NanocubeLayer.js"></script>
+    <script src="Timeseries.js"></script>
+    <script src="GroupedBarChart.js"></script>
+    <script src="ColorLegend.js"></script>
+    
+    <script src="QueryConstraint.js"></script>
+    <script src="Variables.js"></script>
+    <script src="Model.js"></script>
+    <script src="init.js"></script>
+    <script src="spatial_view.js"></script>
+
+    <script src="ui.js"></script>
+    <script src="main.js"></script>
+  </head>
+  
+  <body>
+    <div id="nc-container">
+      <div id="maincontent">
+	<div style="position: absolute; left: 1em; bottom: 12em">
+	  <div id="react-log"></div>
+	  <div id="react-ui-main">
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+  </body>  
+</html>

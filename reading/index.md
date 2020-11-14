@@ -59,14 +59,14 @@ Mostly to myself, in case I need to refer to it in the future.
 
 #### April 2017
 
-* [Adjoint Neural Networks](http://download.springer.com/static/pdf/217/chp%253A10.1007%252F978-3-319-00248-4_7.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-319-00248-4_7&token2=exp=1492725655~acl=%2Fstatic%2Fpdf%2F217%2Fchp%25253A10.1007%25252F978-3-319-00248-4_7.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F978-3-319-00248-4_7*~hmac=2b4c7d346d845b30e68d0d33ea1597682508b66331aeef3b84fd1408133486b5)
+* [Adjoint Neural Networks](https://link.springer.com/chapter/10.1007/978-3-319-00248-4_7)
   * Layer-wise relevance propagation seems very related to a conservative,
     linear network going backwards. Kind of like an adjoint. That led
     me to adjoint neural networks. Now I need to understand this more carefully.
-* [Kernels for Periodic Time Series Arising in Astronomy](http://www.cs.tufts.edu/~roni/PUB/ecml09-tskernels.pdf)
+* [Kernels for Periodic Time Series Arising in Astronomy](http://homes.sice.indiana.edu/rkhardon/PUB/ecml09-tskernels.pdf)
   * Cross-correlation is not a kernel (even though it's a metric), but something similar is (kind
     of a softmax without the normalization term)
-* [Rope Science - Advanced CS concepts inside a text editor](https://github.com/google/xi-editor/blob/master/doc/rope_science/intro.md)
+* [Rope Science - Advanced CS concepts inside a text editor](http://abishov.com/xi-editor/docs/rope_science_00.html)
   * They had me at monoids for efficient updates. Think something like
     [Fenwick trees](https://en.wikipedia.org/wiki/Fenwick_tree) for
     text editor algorithms: editing, determining line width, paren

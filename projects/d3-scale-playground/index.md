@@ -5,7 +5,7 @@ layout: d3_project
 
 # D3 Scales playground
 
-<div id="d3-scale-legend"></div>
+<div id="d3-scale-legend" style="width: 100%; height:100px; position: relative"></div>
 <div style="clear:both"></div>
 <div>
   <div class="full-width-float tall">

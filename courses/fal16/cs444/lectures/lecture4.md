@@ -12,7 +12,7 @@ pretty great - thank you!
 * [The Fallen of World War II](http://www.fallen.io/ww2) - incredibly
   well-done visual storytelling.
 * Hans Rosling's [gapminder](https://www.gapminder.org/)
-* [mars trek](http://marstrek.jpl.nasa.gov/).
+* [mars trek](https://trek.nasa.gov/mars/)
 * [Data Looks Dope's Ice Bucket Challenge Visualization](http://datalooksdope.com/als).
 * [infogr.am](https://infogr.am/)
 

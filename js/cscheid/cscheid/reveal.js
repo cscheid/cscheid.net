@@ -1,22 +1,29 @@
-function stubbornly(f) {
-  return function() {
-    try {
-      return f();
-    } catch (e) {
-      console.error("STUBBORN FAILURE", e);
+/** @module cscheid/reveal */
+
+/* global Reveal*/
+
+export function setSlideDispatchers(slideDispatchers) {
+  Reveal.addEventListener('fragmentshown', function(event) {
+    let dispatcher = slideDispatchers[event.fragment.parentElement.id];
+    if (!dispatcher) {
       return undefined;
     }
-  };
-}
+    dispatcher = dispatcher['fragmentshown'];
+    if (!dispatcher) {
+      return undefined;
+    }
+    return dispatcher(event);
+  });
 
-export function setDataTransitions(transitions, states)
-{
-  for (var i=0; i<states.length-1; ++i) {
-    transitions.push({
-      transitionForward: (state => stubbornly(() => states[state+1]()))(i),
-      transitionBackward: (state => stubbornly(() => states[state]()))(i),
-      index: i
-    });
-  }
+  Reveal.addEventListener('fragmenthidden', function(event) {
+    let dispatcher = slideDispatchers[event.fragment.parentElement.id];
+    if (!dispatcher) {
+      return undefined;
+    }
+    dispatcher = dispatcher['fragmenthidden'];
+    if (!dispatcher) {
+      return undefined;
+    }
+    return dispatcher(event);
+  });
 }
-

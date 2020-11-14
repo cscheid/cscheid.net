@@ -1,0 +1,220 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/head.min.js"></script>
+    <script src="js/d3.v5.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	      <section class="grid title-slide">
+	        <div class="title line-fit">DATA SCIENCE, HUMANELY</div>
+	        <div class="author line-fit">Carlos Scheidegger, HDC Lab<br>Department of Computer Science, University of Arizona</div>
+          <div><img class="logo" src="images/logos/hdc.svg"><img class="logo" src="images/logos/ua.svg"></div>
+	      </section>
+
+        <section class="center">
+          <div class="title">Things that keep me up at night</div>
+        </section>
+
+        <section class="center">
+          <div class="title">Reinhart-Rogoff</div>
+          <div>This work was widely cited as a justification for the austerity measures in the EU</div>
+          <img class="paper-big" src="images/rr/rr-abstract.png">
+        </section>
+
+        <section class="center">
+          <div class="title">Herndon-Ash-Pollin</div>
+          <div>This is the world we created!</div>
+          <img class="paper-big" src="images/rr/hap-abstract.png">
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit">Our data science infrastructure is not humane</li>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Predictive Policing</div>
+          <img class="plain sized" src="images/predpol/predpol-landing.png">
+          <div>Deployed in major cities: Santa Cruz, Los Angeles, etc.</div>
+        </section>
+
+        <section class="center">
+          <div class="title">Lum and Isaac, <em>Significance, 2016</em></div>
+          <img class="plain" style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-1.png">
+        </section>
+
+        <section class="center">
+          <div class="title">Lum and Isaac, <em>Significance, 2016</em></div>
+          <div>This is the world we created!</div>
+          <img class="plain"  style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-2.png">
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit">Our data science infrastructure is inhumane</div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit" data-line-fit-scale="90">Our ability to automate has far outpaced our ability to validate</div><br>
+            <div class="line-fit" data-line-fit-scale="90">Automation is not going away: we ought to empower people in this new context</div><br>
+            <div class="line-fit" data-line-fit-scale="90"><b>I build data vis tools to help people</b></div><br>
+          </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------>
+
+        <section id="dimreader" class="right">
+          <div class="title line-fit"><a href="https://cscheid.net/talks/boston-2018/#/slide-iris-tsne">DimReader: Axis Lines that Explain Non-Linear Projections</a></div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot fade" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot fade" src="images/headshots/mingwei.jpg">       
+              <img class="headshot fade" src="images/headshots/zhe.jpg">           
+              <img class="headshot fade" src="images/headshots/zhenge.jpg">        
+              <img class="headshot" src="images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="images/headshots/dylan.jpg">         
+              <img class="headshot fade" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/kisaacs.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh">
+            <p>InfoVis 2018</p>
+            <p>Rebecca Faust, David Glickenstein, Carlos Scheidegger</p>
+          </div>
+        </section>
+
+        <section id="gaussian-cubes" class="right">
+          <div class="title line-fit"><a href="http://hdc.cs.arizona.edu/mamba_home/~cscheid/flights_test/">Gaussian Cubes: Real-time Modeling for Visual Exploration of Large Multidimensional Datasets</a></div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot fade" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot fade" src="images/headshots/mingwei.jpg">       
+              <img class="headshot" src="images/headshots/zhe.jpg">           
+              <img class="headshot fade" src="images/headshots/zhenge.jpg">        
+              <img class="headshot fade" src="images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="images/headshots/dylan.jpg">         
+              <img class="headshot fade" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/kisaacs.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh">
+            <p>InfoVis 2016</p>
+            <p>Zhe Wang, Nivan Ferreira, Youhao Wei, Aarthy Bhaskar, Carlos Scheidegger</p>
+          </div>
+        </section>
+        
+        <section id="nn-cubes" class="right">
+          <div class="title line-fit"><a href="http://hdc.cs.arizona.edu/people/zhew/nncubes-viewer/">NNCubes: Learned Structures for Visual Data Exploration</a></div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot" src="images/headshots/remco.jpg">         
+              <img class="headshot" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot" src="images/headshots/mingwei.jpg">       
+              <img class="headshot" src="images/headshots/zhe.jpg">           
+              <img class="headshot fade" src="images/headshots/zhenge.jpg">        
+              <img class="headshot fade" src="images/headshots/rfaust.jpg">        
+              <img class="headshot" src="images/headshots/dylan.jpg">         
+              <img class="headshot" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/kisaacs.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh">
+            <p>Zhe Wang, Dylan Cashman, Mingwei Li, Jixian Li, Matthew Berger, Joshua A. Levine, Remco Chang, and Carlos Scheidegger.</p>
+          </div>
+        </section>
+
+        <section id="nn-cubes" class="right">
+          <div class="title line-fit">Come work with us!</div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot" src="images/headshots/mingwei.jpg">       
+              <img class="headshot" src="images/headshots/zhe.jpg">           
+              <img class="headshot" src="images/headshots/zhenge.jpg">        
+              <img class="headshot" src="images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="images/headshots/dylan.jpg">         
+              <img class="headshot" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot" src="images/headshots/kisaacs.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+        </section>
+        
+    <script src="reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+ 

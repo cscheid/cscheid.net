@@ -118,8 +118,7 @@ computers through a command-line interface that's been the same for,
 more or less, 40 years. But that's the world we live in, so my job is to make it
 as easy as possible for you to get used to it yourself.
 
-You will need to learn either [git](http://git-scm.com/) or
-[mercurial](http://mercurial.selenic.com/). We are going to use
+You will need to learn [git](http://git-scm.com/). We are going to use
 version control to share source code, paper manuscripts, and possibly
 data. Dropbox is nice, but when the time of a paper deadline arrives,
 we will want to be editing the same files at the same time. We want to
@@ -128,7 +127,7 @@ so, we want to avoid the
 "paper\_version1\_ab\_november\_please\_stop.tex" madness. Distributed
 version-control systems are *wonderful* for that.
 
-Speaking of papers, you will need to learn
+You will also need to learn
 [LaTeX](http://www.latex-project.org/). You will be writing a lot, and
 although there is a lot that's bad about LaTeX, there's so much more
 that's good.
@@ -169,23 +168,32 @@ example, have a [cron job that rsyncs](#command-line-bullshittery)
 your contents with the university machines, or run Arq, or
 *something*. I will ask you about your backups.
 
-# requests
+# Requests
 
 It's an integral part of my job to help you succeed. You should ask me
 about anything you feel comfortable asking. Still, here's some things
 to keep in mind.
 
-## recommendation letters
+## Recommendation Letters
 
 Good recommendation letters are tremendously important for your
 success, and I'll be happy to write them for you. But know that bad
 recommendation letters hurt more than good recommendation letters
 help. I can only give you a good recommendation letter if we have
 worked together in the past. Also, recommendation letters take time to
-write! I would prefer that you tell me about the letter a month in
-advance, possibly more. You should still reach out to me if you're
-short on time, but you should have a backup plan in that case.
+write! Tell me about the letter *at least* a month in advance,
+possibly more, ideally more than three months.
 
+Your performance in a course is visible from your transcript, and so a
+good recommendation letter must include content that is independent of
+your performance in a course. That means that if you want a good
+recommendation letter, you should expect to work with me in an
+independent project (or be willing to work with one of my graduate
+students in one of their projects). With six months of advance time,
+we can come up with a plan for the contents of a good letter (which
+will change depending on your professional goals, and will involve
+work on your part!). With one month of advance time, it's often too
+late.
 
 <br/><br/><br/>
 

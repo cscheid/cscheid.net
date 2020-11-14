@@ -1,0 +1,11 @@
+div.vega-embed details {
+    visibility: hidden;
+}
+
+b.yes {
+    color: #f84
+}
+
+b.no {
+    color: #48f
+}

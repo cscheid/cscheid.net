@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+button {
+  font-family: "Lato", sans-serif;
+  font-size: 3vh;
+  font-weight: normal;
+  background: rgba(255, 255, 255, 0.5);
+  color: white;
+  margin: 5px;
+  border-radius: 5px;
+  border-color: rgba(255, 255, 255, 0.6) rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.4);
+  border-width: 2px;
+  cursor: pointer;
+}

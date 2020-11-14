@@ -21,17 +21,17 @@ In summary, regularization is a way to control the complexity of the
 model. In other words, we are talking about model selection. The first
 question one could ask is: "but why do we not control the model by
 explicitly choosing different models?" That is certainly one way to do
-model selection, but it is a surprisingly tricky one. In simple cases
-(like linear regression), it is easy to compare two models to see
-which is more complex. But it's not as simple to choose the *right*
-model complexity. 
+model selection, but it is a surprisingly tricky one in practice. In
+simple cases (like linear regression), it is easy to compare two
+models to see which is more complex. But it's not as simple to choose
+the *appropriate* model complexity.
 
 In contrast, typical methods for regularization allow us to more
 easily connect the relationship of the amount of regularization to the
 amount of noise in the data.
 
-The simplest example of regularization comes from linear regression,
-where it is known as ridge regression.
+The simplest example of regularization is known as "ridge regression",
+and it builds on linear regression.
 
 ## Ridge Regression
 

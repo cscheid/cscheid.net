@@ -1,3 +1,9 @@
 _site
+_staging_site
 unlinked
+htmlproofer-output.txt
 *~
+.jekyll-cache
+talks/tandon-march-2019/iframes/polya-urn/target
+.DS_Store
+datasets

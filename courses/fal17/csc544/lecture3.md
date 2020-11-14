@@ -41,7 +41,7 @@ In addition, you can also read the
 [Mozilla Developer Network's JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide). It
 will cover much of what this covers. For a slower, more interactive
 take on the same material, there's
-[codecademy's JavaScript track](http://www.codecademy.com/en/tracks/javascript).
+[codecademy's intro course](https://www.codecademy.com/learn/introduction-to-javascript).
 Every time I search for javascript documentation on google, I just
 throw in the term `mdn`, for Mozilla Developer Network. This makes
 sure that MDN is in the first few hits, and the quality of the results

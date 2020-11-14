@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="../lib/reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="../lib/css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="../lib/js/head.min.js"></script>
+    <script src="../lib/js/d3.v5.js"></script>
+    <script src="../lib/js/lodash.min.js"></script>
+    <script src="../lib/js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	<section class="grid title-slide">
+	  <div class="title line-fit">SELF-REFLECTING ON REP*BILITY</div>
+	  <div class="author line-fit">
+            Carlos Scheidegger, HDC Lab
+            <br>
+            Department of Computer Science, University of Arizona
+            <br>
+            2019-10-22
+	    <br><br>
+	    https://cscheid.net/to/rep-bility.html
+          </div>
+          <div><img class="logo" src="../images/logos/hdc.svg"><img class="logo" src="../images/logos/ua.svg"></div>
+	</section>
+	
+        <!------------------------------------------------------------------------------------------------------>
+
+	<section class="center">
+	  <div class="title">Rep*bility is important to me</div>
+	  <div class="contents">
+	    <ul>	
+	      <li>Does my work live up to my own standards?</li> 
+	    </ul>
+	  </div>
+	</section>
+
+	<section class="center">
+	  <div class="title">... I'll let you guess</div>
+	  <div class="contents">
+	    <iframe width=800 height=600 src="https://cscheid.net/replication.html">
+	    </iframe>
+	  </div>
+	</section>
+
+	<section class="center">
+	  <div class="title">So why is it still hard?</div>
+	  <div class="contents">
+	    <ul>	
+	      <li>No work exists in a vacuum, and the world moves from under you: computers, cloud, web, culture</li>
+	      <li>(I never thought about the fact that I'd be looking at my papers 15 years later!)</li>
+	      <li>It's easier when you have more time</li>
+	    </ul>
+	  </div>
+	</section>
+
+	<section class="center">
+	  <div class="title">Lessons</div>
+	  <div class="contents">
+	    <ul>
+	      <li>Want direct replication? Keep code minimal and self-contained</li>
+	      <li>Want longevity? Write into a bigger system</li>
+	      <li>Plan ahead of time (😂)</li>
+	      <li>Consider life expectancy explicitly</li>
+	      <li>Be kind to yourself and others in declaring success and yelling foul, this stuff is hard</li>
+	    </ul>
+	  </div>
+	</section>
+	
+        <section id="thanks" style="position: relative">
+          <div class="title">Thanks!</div>
+          <div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot" src="../images/headshots/rosen.jpg">         
+              <img class="headshot" src="../images/headshots/beiwang.jpg">       
+              <img class="headshot" src="../images/headshots/nivan.jpg">  
+              <img class="headshot" src="../images/headshots/berger.jpg">        
+              <img class="headshot" src="../images/headshots/correll.jpg">       
+              <img class="headshot" src="../images/headshots/glickenstein.jpg">  
+              <img class="headshot" src="../images/headshots/remco.jpg">         
+              <img class="headshot" src="../images/headshots/josh.jpg">          
+              <img class="headshot" src="../images/headshots/kindlmann.jpg">     
+              <img class="headshot" src="../images/headshots/sorelle.jpg">       
+              <img class="headshot" src="../images/headshots/suresh.jpg">        
+              <img class="headshot" src="../images/headshots/kisaacs.jpg">         
+              <img class="headshot" src="../images/headshots/mingwei.jpg">       
+              <img class="headshot" src="../images/headshots/zhe.jpg">           
+              <img class="headshot" src="../images/headshots/zhenge.jpg">        
+              <img class="headshot" src="../images/headshots/rfaust.jpg">        
+              <img class="headshot" src="../images/headshots/dylan.jpg">         
+              <img class="headshot" src="../images/headshots/jixianli.jpg">      
+              <img class="headshot" src="../images/headshots/yongwang.jpg">      
+              <img class="headshot" src="../images/headshots/huaminqu.jpg">      
+              <img class="headshot" src="../images/headshots/archambault.jpg">   
+              <img class="headshot" src="../images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot" src="../images/headshots/skobourov.jpg">     
+              <img class="headshot" src="../images/headshots/bahadorsaket.jpg">  
+            </div>
+          </div>
+          <div style="position: relative">
+            <div style="display: inline-block; height: 20vh; margin: 1vh; transform: translate(0,-2vh)"> <!-- this is pretty gross.. -->
+              <div class="line-fit">https://cscheid.net</div>
+              <div class="line-fit">https://hdc.cs.arizona.edu</div>
+              <div class="line-fit">cscheid@cs.arizona.edu</div>
+            </div>
+            <div style="display: inline-block; margin: 2vh 0;">
+              <img class="logo" src="../images/logos/hdc.svg">
+              <img class="logo" src="../images/logos/ua.svg">
+              <img class="logo" src="../images/logos/nsf.png">
+              <img class="logo" src="../images/logos/att.png">
+            </div>
+          </div>
+        </section>
+      
+    <script src="../lib/reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="../lib/js/cscheid-talk-init.js"></script>
+  </body>
+</html>
+ 

@@ -24,7 +24,7 @@ The lecture slides are
 - Heer and Agrawala, [Multiscale Banking to 45 degrees](http://vis.stanford.edu/papers/banking),
   Infovis 2006.
 - [Horizon Graphs](http://vis.berkeley.edu/papers/horizon/).
-- [Streamgraphs](http://www.leebyron.com/else/streamgraph/).
+- [Streamgraphs](http://leebyron.com/streamgraph/).
 
 
 

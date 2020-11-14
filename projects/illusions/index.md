@@ -15,6 +15,10 @@ layout: bootstrap_main
 * [White Patches on a Hex Mesh](white-patches-on-a-hex-mesh/)
 * [Variations on the Hermann Grid](variations-on-the-hermann-grid/)
 
+## Movement
+
+* [Straight Movement on Rotating Circle](straight-movement-on-circle/)
+
 ## Uncategorized
 
 * [Curvature Blindness](curvature-blindness/)

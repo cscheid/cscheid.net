@@ -23,8 +23,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #646464;
-  background-color: #646464; }
+  background: #333;
+  background-color: #333; }
 
 .reveal {
   font-family: "Lato", sans-serif;
@@ -46,6 +46,60 @@ body {
 .reveal .slides section > section {
   line-height: 1.3;
   font-weight: inherit; }
+
+/***/
+/* my own hacks */
+
+section {
+    text-align: left;
+}
+
+section div.frame {
+    max-width: 120vh;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+section.center {
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.reveal .slides section li {
+  margin: 20px 0;
+  line-height: 1.3;
+  font-size: 5vh;
+}
+
+section.center div.contents {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+}
+
+section.right {
+  text-align: right;
+  position: relative;
+}
+
+section div.title {
+    font-size: 8vh;
+    margin-bottom: 4vh;
+}
+
+section div.small {
+  font-size: 2vh;
+}
+
+section div.right {
+  position: absolute;
+  right: 0px;
+}
 
 /*********************************************
  * HEADERS
@@ -105,7 +159,7 @@ body {
 .reveal ol,
 .reveal dl,
 .reveal ul {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
   margin: 0 0 0 1em; }
 
@@ -209,7 +263,7 @@ body {
   font-size: smaller; }
 
 .reveal small {
-  display: inline-block;
+  /* display: inline-block; */
   font-size: 0.6em;
   line-height: 1.2em;
   vertical-align: top; }
@@ -289,3 +343,95 @@ body {
 
 .reveal time, .reveal mark, .reveal audio, .reveal video {
   font-size: 3vh; }
+
+
+/******************************************************************************/
+/* slide templates */
+
+/* 2x2-grid-slide */
+.reveal .slides .grid-2x2-slide {
+  display: grid !important;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 14% 47% 47%;
+}
+
+.reveal .slides .grid-2x2-slide img {
+  display: block;
+  margin: auto;
+  height: 30vh;
+}
+
+.reveal .slides .grid-2x2-slide img.wide {
+  display: block;
+  margin: auto;
+  height: inherit;
+  width: 30vh;
+}
+
+.reveal .slides .grid-2x2-slide div.title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.reveal .slides .grid-2x2-slide div.row-1 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.reveal .slides .grid-2x2-slide div.row-2 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.reveal .slides .grid-2x2-slide div.column-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.reveal .slides .grid-2x2-slide div.column-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.reveal section img.headshot {
+  width: 15vh;
+  height: 20vh;
+  border: 0;
+  margin: 0;
+}
+
+.reveal section img.fade {
+  filter: saturate(0%) contrast(20%);
+}
+
+.reveal section img.logo {
+  height: 13vh;
+  border: 0;
+  margin: 1vh;
+  background: inherit;
+  box-shadow: inherit;  
+}
+
+.reveal img.paper-big {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.reveal .bg-black {
+  background-color: rgba(0,0,0,0.75);
+}
+
+.reveal table {
+  color: rgb(222, 222, 222);
+}
+
+.reveal ul li.equation {
+  list-style: none;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}

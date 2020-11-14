@@ -1,0 +1,8 @@
+line .axis {
+  stroke: white;
+}
+
+g.tick text {
+  font-size: 3vh;
+}
+

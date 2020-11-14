@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.v5.js"></script>
+    <script src="js/underscore.js"></script>
+  </head>
+  <body>
+    <div id="main" style="position: relative">
+    </div>
+    <script type="module" src="js/demo2.js"></script>
+    <script>
+function stubbornly(f) {
+  return function() {
+    try {
+      return f();
+    } catch (e) {
+      console.error("STUBBORN FAILURE", e);
+      return undefined;
+    }
+  };
+}
+
+_transitions = [
+  {
+    transitionForward: stubbornly(() => window.showContours()),
+    transitionBackward: stubbornly(() => window.hideContours()),
+    index: 0
+  },
+  {
+    transitionForward: stubbornly(() => window.showDim(1)),
+    transitionBackward: stubbornly(() => window.showDim(0)),
+    index: 1
+  },
+  {
+    transitionForward: stubbornly(() => window.showDim(2)),
+    transitionBackward: stubbornly(() => window.showDim(1)),
+    index: 2
+  },
+  {
+    transitionForward: stubbornly(() => window.showDim(3)),
+    transitionBackward: stubbornly(() => window.showDim(2)),
+    index: 3
+  }
+];
+    </script>
+  </body>
+</html>

@@ -8,11 +8,11 @@ layout: d3_project
 <script src="https://cscheid.net/js/cscheid/blas.js"></script>
 <script src="https://cscheid.net/js/cscheid/plot.js"></script>
 
-## What is it used for?
+# Logistic Regression
 
 Logistic regression is one of the simplest ways to build
 *classifiers*: models that predict binary outcomes (in contrast to
-[regression models](linear_regression.html), which predict numerical
+[regression models](../linear_regression.html), which predict numerical
 values).
 
 ## Why Logistic Regression?

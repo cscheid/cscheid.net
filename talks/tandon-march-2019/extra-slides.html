@@ -1,0 +1,148 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/head.min.js"></script>
+    <script src="js/d3.v5.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section id="extra-slides">
+          <div class="line-fit">
+            <p>Extra Slides</p>
+          </div>
+        </section>
+
+        <section id="extra-slides">
+          <div class="line-fit">
+            <p>DimReader</p>
+          </div>
+        </section>
+
+        <section id="slide-swiss-roll-pca-value-heatmaps">
+          <div class="title line-fit">Comparison: DimReader vs. Value Heatmaps</div>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="iframes/dimreader-demo-2/swiss-roll.html"
+               data-scrollable="no">
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Autodiff is not Symbolic Differentiation</div>
+          <div class="contents">
+            <ul style="font-size: 0.3em">
+              <li>Symbolic differentiation takes expressions and produces expressions</li>
+              <li>Autodiff takes expressions, variable values (and their derivatives) and produces expression values (and their derivatives)</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Autodiff is popular these days</div>
+          <div class="contents">
+            <ul>
+              <li>Reverse-mode autodiff is the magic behind torch, tensorflow, and friends
+                <ul><li>if you know back-propagation, then you've learned a specific instance of reverse-mode autodiff</li></ul></li>
+              <li>We use forward-mode autodiff: it lets us reuse NDR projection code with very few changes (through operator overloading)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.002.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.003.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.004.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.005.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.006.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.007.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.008.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.009.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.010.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.011.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.012.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.013.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.014.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.015.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.016.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.017.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.018.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.019.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.020.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.021.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.022.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.023.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.024.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.024.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.025.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.026.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.027.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.029.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.030.png" data-background-size="1280px 960px"></section>
+        <section data-background-image="images/predictive-policing-keynote/runaway-feedback-loops-fatconference-2018-newkeynote.031.png" data-background-size="1280px 960px"></section>
+        
+        <section id="swiss-roll">
+          <p><a href="scripts/make-swiss-roll-dimreader.py">swiss-roll.py</a><p>
+        </section>
+
+        <section class="grid-2x2-slide">
+          <div class="title line-fit">Algorithms in Society</div>
+          <div class="row-2 column-1">
+            <img src="images/kdd-2015.png">
+            <div><a href="https://cscheid.net/2015/08/16/certifying-and-removing-disparate-impact.html">KDD 2015: Disparate Impact</a></div>
+          </div>
+          <div class="row-2 column-2">
+            <img src="images/icdm-2016.png">
+            <div class="line-fit"><a href="https://cscheid.net/2016/12/13/auditing-black-box-models-for-indirect-influence.html">ICDM 2016: Indirect influence and Black-box functions</a></div>
+          </div>
+          <div class="row-1 column-1">
+            <img src="images/fat-2018.png">
+            <div class="line-fit"><a href="https://cscheid.net/2017/12/05/runaway-feedback-loops-in-predictive-policing.html">FAT* 2018: Feedback loops in predictive policing</a></div>
+          </div>
+          <div class="row-1 column-2">
+            <img src="images/arxiv-2016.png">
+            <div class="line-fit"><a href="https://arxiv.org/abs/1609.07236">arxiv: Fairness definitions and (incompatible) value systems</a></div>
+          </div>
+        </section>
+
+
+	      <section class="grid two-columns">
+          <div class="line-fit">
+            DimReader (Faust, Glickenstein, Scheidegger, Infovis 2018)
+          </div>
+          <div></div>
+          <div class="line-fit">
+            Gaussian Cubes (Wang et al, Infovis 2016)
+          </div>
+          <div>
+            <div class="fig-container" style="height: 100%;"
+                 data-file="iframes/dimreader-demo-teaser/"
+                 data-scrollable="no">
+            </div>
+          </div>
+          <div></div>
+          <div>
+            <div class="fig-container" style="height: 100%;"
+                 data-file="iframes/flights_test/"
+                 data-scrollable="yes">
+            </div>
+          </div>
+	      </section>
+        
+      </div>
+    </div>
+    <script src="reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

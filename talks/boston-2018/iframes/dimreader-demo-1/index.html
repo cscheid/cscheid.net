@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/d3.v5.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/lux.js"></script>
+  </head>
+  <body>
+    <div id="main" style="position: relative">
+    </div>
+    <script type="module" src="js/main.js"></script>
+    <script>
+function stubbornly(f) {
+  return function() {
+    try {
+      return f();
+    } catch (e) {
+      console.error("STUBBORN FAILURE", e);
+      return undefined;
+    }
+  };
+}
+
+_transitions = [
+    // { transitionForward: stubbornly(() => window.states[0]()),
+    //   transitionBackward: stubbornly(() => window.states[0]()),
+    //   index: 0 },
+    { transitionForward: stubbornly(() => window.states[1]()),
+      transitionBackward: stubbornly(() => window.states[1]()),
+      index: 0 },
+    { transitionForward: stubbornly(() => window.states[2]()),
+      transitionBackward: stubbornly(() => window.states[2]()),
+      index: 1 },
+    { transitionForward: stubbornly(() => window.states[3]()),
+      transitionBackward: stubbornly(() => window.states[3]()),
+      index: 2 },
+    { transitionForward: stubbornly(() => window.states[4]()),
+      transitionBackward: stubbornly(() => window.states[4]()),
+      index: 3 },
+    { transitionForward: stubbornly(() => window.states[5]()),
+      transitionBackward: stubbornly(() => window.states[5]()),
+      index: 4 }
+];
+    </script>
+  </body>
+</html>

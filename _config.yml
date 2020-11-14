@@ -1,9 +1,9 @@
 name: Carlos Scheidegger
 markdown: kramdown
 url: http://cscheid.net
-pygments: true
-exclude: scripts
-gems:
+highlighter: pygments
+exclude: ['scripts', 'Makefile']
+plugins:
   - jekyll-last-modified-at
 asset_bundler:
   compress:

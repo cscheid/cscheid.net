@@ -9,7 +9,7 @@ The Bunimovich Stadium is one example of a
 [Dynamical Billiards](https://en.wikipedia.org/wiki/Dynamical_billiards)
 table that exhibits chaotic behavior even with only concave
 scatterings. Trajectories in the Bunimovich stadium exhibit (eventual)
-exponential diverence over time. In addition,
+exponential divergence over time. In addition,
 [almost any](https://en.wikipedia.org/wiki/Almost_surely) trajectory
 in a Bunimovich stadium will eventually touch cover any point of the
 stadium. This is in sharp contrast to trajectories in elliptical

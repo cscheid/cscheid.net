@@ -57,7 +57,8 @@ function main()
         d3.select("#correlation").text(fmt(cov / Math.pow(varx * vary, 0.5)));
     }
     
-    d3.csv("DinoAndNotDinoData.csv", function(error, data) {
+    d3.csv("DinoAndNotDinoData.csv")
+      .then(function(data) {
         dino = data;
         xExtent = d3.extent(data, function(d) { return d.x; });
         xDinoExtent = d3.extent(data, function(d) { return d['x-dino']; });

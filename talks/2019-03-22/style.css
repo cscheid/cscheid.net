@@ -1,0 +1,35 @@
+section.title-slide {
+    grid-gap: 5vh;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto;
+}
+
+section.title-slide div.title {
+    grid-column: 1 / 3;
+    font-size: 3em;
+    text-align: right;
+}
+
+section.title-slide div.author {
+    grid-column: 1 / 3;
+    font-size: 1.8em;
+    text-align: right;
+}
+
+.reveal .slide-number {
+    font-size: 3vh;
+    font-family: Lato, sans-serif;
+}
+
+section {
+    font-size: 3vh;
+}
+
+section.two-columns {
+  grid-template-columns: 8fr 1fr 8fr;
+  grid-template-rows: 8fr 1fr;
+}
+
+li.math-item {
+  list-style: none
+}

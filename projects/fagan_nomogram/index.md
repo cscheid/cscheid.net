@@ -5,12 +5,12 @@ layout: d3_project
 
 ## Fagan Nomogram
 
-The Fagan nomogram [1] is a nomogram [2] to computes the probability
-of the presence of a given condition based on an imperfect test and
+The Fagan nomogram [1] is a nomogram [2] that computes the probability
+of the presence of some condition based on an imperfect test and
 varying pre-test probabilities. It is a very handy tool to understand
 Bayes's Theorem "physically". People typically have a sense that the
-less powerful the test, the less likely it is that a detection (a
-positive result on the test) means the presence of the condition. But
+less powerful the test, the less likely it is that a
+positive test result means the presence of the condition. But
 people are much less likely to grasp the role of the pre-test
 probability [3]. 
 
@@ -20,9 +20,9 @@ particular kind of condition, then even if a test gives a ratio of
 true positives to false positives at 10 to 1, only 50% of the people
 tested positive will actually exhibit the condition.
 
-Similarly, if only 10% of the population exhibit the condition, then
+Similarly, if only 10% of the population exhibits the condition, then
 in order to be 90% sure that a positive result indicates the presence
-of the condition, then the test can give a false-positive result only
+of the condition, the test can give a false-positive result only
 1 every 100 times it gives true positive results. Intuitively, what's
 going on is that the base-10 logarithm of the "likelihood ratio" (10
 and 100 respectively in the examples above) is the "number of nines
@@ -30,8 +30,8 @@ added to the baseline probability", interpreting a probability of 0.1
 as having "negative 1 nine".
 
 The original nomogram was meant to be used with a physical ruler to do
-the calculations. Here, you can move the circles around to change the
-settings.
+the calculations. Here, you can grab the circles and move them around
+to change the settings.
 
 <div id="main"></div>
 

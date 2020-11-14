@@ -1,0 +1,643 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="reveal.js-3.7.0/css/reveal.css">
+    <link rel="stylesheet" href="css/cscheid.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/head.min.js"></script>
+    <script src="js/d3.v5.js"></script>
+    <script src="js/lodash.min.js"></script>
+    <script src="js/reveal_fixes.js"></script>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        extensions: ["tex2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js"],
+        jax: ["input/TeX","output/HTML-CSS"],
+        tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]], 
+                  processEscapes: true},
+        'HTML-CSS': { availableFonts: [], webFont: 'TeX' }});
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+	      <section class="grid title-slide">
+	        <div class="title line-fit">DATA SCIENCE, HUMANELY</div>
+	        <div class="author line-fit">
+            Carlos Scheidegger, HDC Lab
+            <br>
+            Department of Computer Science, University of Arizona
+            <br>
+            NYU Tandon, 2019-03-14
+          </div>
+          <div><img class="logo" src="images/logos/hdc.svg"><img class="logo" src="images/logos/ua.svg"></div>
+	      </section>
+
+        <section class="center">
+          <div class="title">Things that keep me up at night</div>
+        </section>
+
+        <section class="center">
+          <div class="title">Reinhart-Rogoff</div>
+          <div>This work was widely cited as a justification for the austerity measures in the EU</div>
+          <img class="paper-big" src="images/rr/rr-abstract.png">
+        </section>
+
+        <section class="center">
+          <div class="title">Herndon-Ash-Pollin</div>
+          <div>This is the world we created!</div>
+          <img class="paper-big" src="images/rr/hap-abstract.png">
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit">The data science infrastructure <b>we built</b> is not humane</li>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Predictive Policing</div>
+          <img class="plain sized" src="images/predpol/predpol-landing.png">
+          <div>Deployed in major cities: Santa Cruz, Los Angeles, etc.</div>
+        </section>
+
+        <section class="center">
+          <div class="title">Lum and Isaac, <em>Significance, 2016</em></div>
+          <img class="plain" style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-1.png">
+        </section>
+
+        <section class="center">
+          <div class="title">Lum and Isaac, <em>Significance, 2016</em></div>
+          <div>This is the world we created!</div>
+          <img class="plain"  style="margin-top:1em; height:80%" src="images/predpol/lum-isaac-2.png">
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit">The data science infrastructure we built is <b>inhumane</b></div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit" data-line-fit-scale="90">Our ability to automate has far outpaced our ability to validate</div><br>
+            <div class="line-fit" data-line-fit-scale="90">Automation is not going away: we ought to empower people in this new context</div><br>
+          </div>
+        </section>
+
+        <!------------------------------------------------------------------------------------------------------>
+
+        <section id="dimreader" class="right">
+          <div class="title line-fit">DimReader: Axis Lines that Explain Non-Linear Projections</div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot fade" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot fade" src="images/headshots/mingwei.jpg">       
+              <img class="headshot fade" src="images/headshots/zhe.jpg">           
+              <img class="headshot fade" src="images/headshots/zhenge.jpg">        
+              <img class="headshot" src="images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="images/headshots/dylan.jpg">         
+              <img class="headshot fade" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/huaminqu.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh">
+            <p>InfoVis 2018</p>
+            <p>Rebecca Faust, David Glickenstein, Carlos
+            Scheidegger</p>
+          </div>
+        </section>
+
+        <section class="right" data-background-image="images/tsne/cnn_embed_6k.jpg">
+          <div class="title line-fit bg-black">t-SNE plots are beautiful, but what are they showing us?</div>
+          <div class="contents" style="position: relative; width: 100%; height: 100%">
+            <div class="bg-black" style="position: absolute; bottom: 10vh; left: 1vh">
+              <a href="https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg">https://cs.stanford.edu/people/karpathy/cnnembed/cnn_embed_6k.jpg</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="right" data-background-image="images/tsne/cnn_embed_6k.jpg">
+          <div class="contents" style="position: relative; width: 100%; height: 100%">
+            <div class="bg-black line-fit" style="position: absolute; width: 100%; font-size: 2em; top: 30vh">Shouldn't our tools provide mechanisms for inspecting their own behavior?</div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="title line-fit">A simpler example: the iris dataset</div>
+          <table>
+<tr><th>Sepal Length</th><th>Sepal Width</th><th>Petal Length</th><th>Petal Width</th><th>Species</th></tr>
+            <tr><td>5.1</td><td>3.5</td><td>1.4</td><td>0.2</td><td>setosa</td></tr>
+<tr><td>4.9</td><td>3.0</td><td>1.4</td><td>0.2</td><td>setosa</td></tr>
+<tr><td>4.7</td><td>3.2</td><td>1.3</td><td>0.2</td><td>setosa</td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>7.0</td><td>3.2</td><td>4.7</td><td>1.4</td><td>versicolor</td></tr>
+<tr><td>6.4</td><td>3.2</td><td>4.5</td><td>1.5</td><td>versicolor</td></tr>
+<tr><td>6.9</td><td>3.1</td><td>4.9</td><td>1.5</td><td>versicolor</td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>6.3</td><td>3.3</td><td>6.0</td><td>2.5</td><td>virginica</td></tr>
+<tr><td>5.8</td><td>2.7</td><td>5.1</td><td>1.9</td><td>virginica</td></tr>
+<tr><td>7.1</td><td>3.0</td><td>5.9</td><td>2.1</td><td>virginica</td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+          </table>
+        </section>
+
+        <section>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="iframes/dimreader-demo-1/"
+               data-scrollable="no"
+               data-transitions="6">
+          </div>
+        </section>
+
+        <section id="slide-iris-tsne">
+          <p>t-SNE visualization <span id="slide-iris-tsne-attribute-name"></span></p>
+          <div class="fig-container" style="width: 80%; display:inline-block"
+               data-file="iframes/dimreader-demo-1/demo2.html"
+               data-scrollable="no"
+               data-transitions="4">
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Tangent maps of algorithms</div>
+          <div class="contents">
+            <div style="position: relative">
+              <img class="plain" style="height: 70vh;" src="images/pushforward.svg"/>
+              <div class="small right">author: "User from reddit", CC BY 3.0</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Tangent maps of algorithms</div>
+          <div class="contents">
+            <ul>
+              <li>First-order understanding: visualizations should inform us about the local context of the data</li>
+              <li>Influence functions and robust statistics, tools from 1970s: if this point had been more important, how would the model change?</li>
+              <li>Counterfactual reasoning: "how would Y behave had X been different?". See Google PAIR's <a href="https://pair-code.github.io/what-if-tool/">What If?</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title line-fit" data-line-fit-scale="95">How: Automatic Differentiation ("autodiff")</div>
+          <div class="contents">
+            <ul>
+              <li>Differentials are <b>context-free</b>, so rules are syntactic and local</li>
+              <li>Typical program evaluation: given expression and values of containing variables, you can deduce the value of the expression</li>
+              <li>With autodiff: given expression, values of containing variables, and values of their derivatives, you can deduce the value of the expression, and the value of its derivatives</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="contents">
+            <div class="line-fit">Using the tangent map</div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Option 1: provide a perturbation</div>
+          <div class="contents">
+            <ul>
+              <li>This is the mode I've shown you so far</li>
+              <li>User picks a direction that makes intuitive sense, DimReader measures the direction of change in the projected points, and reconstructs the axis</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">This lets us compare DR methods</div>
+          <div class="contents">
+            <img class="plain" style="height: 70vh; margin-top: 2em" src="images/dimreader/comparison-2.png"/>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">This lets us compare DR methods</div>
+          <div class="contents">
+            <img class="plain" style="height: 70vh; margin-top: 2em" src="images/dimreader/comparison-1.png"/>
+          </div>
+        </section>
+
+        <section class="center" data-background-image="images/fashion-mnist-sprite.png">
+          <div class="title line-fit bg-black">But what if there's no obvious direction?</div>
+        </section>
+        
+        <section class="center">
+          <div class="title line-fit">But what if there's no obvious direction?</div>
+          <div class="contents">
+            <ul>
+              <li>Option 2: let DimReader infer a good perturbation</li>
+              <li style="margin-top: 3em">We have access to the entire tangent map, let's do math on it</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title line-fit" data-line-fit-scale="90">The structure of the tangent map for DR problems</div>
+          <div class="contents">
+            <ul>
+              <li>The tangent map is (effectively) sparse and block-structured.</li>
+              <li class="math-item">
+                $$\left ( \begin{array}{cccc} B_1 & 0 & \cdots & 0 \\ 0 & B_2 & \cdots & 0 \\ \vdots & \vdots & \ddots & \vdots \\ 0 & 0 & \cdots & B_n \end{array} \right ) $$
+              </li>
+              <li>If the DR method sends points from $R^k$ to $R^d$, then each block $B_i$ is $d \times k$</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title line-fit">Eigenproblems for Perturbation Discovery</div>
+          <div class="contents">
+            <ul>
+              <li>The tangent map is <b>linear</b>, and we will be seeking perturbation <b>directions</b>
+                that maximize some criterion</li>
+              <li>We focus on the following formulation:</li>
+              
+              <li style="position: relative; margin-top: 2em; list-style:none; font-size: 1.5em">$$\textrm{argmax}_{p \in R^{d \times n}} \sum_i || B_i p_i ||^2 - \lambda \sum_i \sum_j ||p_i - p_j||^2 S(i,j)$$</li>
+
+              <li style="position: relative; list-style:none; font-size: 1.5em">$$\textrm{s.t.}\ ||p||^2 - 1 = 0$$</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title line-fit">Eigenproblems for Perturbation Discovery</div>
+          <div class="contents">
+            <ul>
+              <li style="list-style:none; font-size: 1.3em">$$\textrm{argmax}_{p \in R^{d \times n}} \sum_i || B_i p_i ||^2 - \lambda \sum_i \sum_j ||p_i - p_j||^2 S(i,j)$$</li>
+
+              <li style="position: relative; list-style:none; font-size: 1.3em">$$\textrm{s.t.}\ ||p||^2 - 1 = 0$$</li>
+              <li style="position: relative; margin-top: 2em; ">$B_i$ holds the blocks of the tangent map</li>
+              <li>$S$ encodes similarity between projection positions</li>
+              <li>$\lambda$ is a user-specified tradeoff parameter</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section>
+          <div class="title line-fit">Results: t-SNE projection on MNIST-Fashion</div>
+          <div class="contents">
+            <img class="plain sized" src="images/mnist-fashion-tsne-dimreader.png">
+          </div>
+        </section>
+
+        <section>
+          <div class="title line-fit">Results: t-SNE projection on MNIST-Digits</div>
+          <div class="contents">
+            <img class="plain sized" src="images/mnist-digits-tsne-dimreader.png">
+          </div>
+        </section>
+
+        <section data-background-image="images/dimreader/iris-tsne-discovery-1.jpg">
+          <div class="title line-fit bg-black" style="position: absolute; bottom: 1em">Results: t-SNE projection on Iris dataset</div>
+        </section>
+
+        <section data-background-image="images/dimreader/iris-tsne-discovery-2.jpg">
+          <div class="title line-fit bg-black" style="position: absolute; bottom: 1em">Results: t-SNE projection on Iris dataset</div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Outlook</div>
+          <div class="contents">
+            <ul>
+              <li>Can we design novel DR methods that yield good DimReader plots?</li>
+              <li>What other visualization methods would benefit from first-order information?</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="predictive-policing" class="right">
+          <div class="title line-fit" style="font-size:2.5em">Runaway Feedback Loops in Predictive Policing</div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; margin-top: 1em; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot fade" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot" src="images/headshots/sorelle.jpg">       
+              <img class="headshot" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot fade" src="images/headshots/mingwei.jpg">       
+              <img class="headshot fade" src="images/headshots/zhe.jpg">           
+              <img class="headshot fade" src="images/headshots/zhenge.jpg">        
+              <img class="headshot fade" src="images/headshots/rfaust.jpg">        
+              <img class="headshot fade" src="images/headshots/dylan.jpg">         
+              <img class="headshot fade" src="images/headshots/jixianli.jpg">      
+              <img class="headshot fade" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/huaminqu.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot fade" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot fade" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          <div class="contents" style="position: absolute; bottom: 1vh; right: 1vh">
+            <p>FAT* 2018</p>
+            <p style="font-size:1.15em">Danielle Ensign, Sorelle Friedler, Scott Neville, Carlos Scheidegger, Suresh Venkatasubramanian</p>
+          </div>
+        </section>
+
+        <section>
+          <div class="title">Predictive Policing</div>
+        </section>
+
+        <section>
+          <div class="title">Previous Work</div>
+          <div class="contents">
+            <ul>
+              <li>Lum and Isaac, 2016: What happens when predictive policing systems are trained on biased data?</li>
+            </ul>
+          </div>
+          <img class="plain sized" src="images/predpol/lum-isaac-oakland-arrests.png">
+        </section>
+        
+        <section>
+          <div class="title">Previous Work</div>
+          <div class="contents">
+            <ul>
+              <li>Lum and Isaac, 2016: What happens when predictive policing systems are trained on biased data?</li>
+            </ul>
+          </div>
+          <img class="plain sized" src="images/predpol/lum-isaac-oakland-nsduh.png">
+        </section>
+
+        <section>
+          <div class="title line-fit" style="margin-bottom: .2em">Does targeted predictive policing cause feedback?</div>
+          <img class="plain sized" src="images/predpol/lum-isaac-feedback.png">
+        </section>
+        
+        <section class="center">
+          <div class="title">Our contributions</div>
+          <div class="contents">
+            <ul>
+              <li>A simple model in which such feedback loops happen: P&oacute;lya-Eggenberger urns</li>
+              <li>A mitigation mechanism that solves the problem in the simplified model</li>
+              <li>Experimental evidence that this feedback loop explains Lum and Isaac's observations</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Goals, Assumptions</div>
+          <div class="contents">
+            <ul>
+              <li><em>Goal: Effective policing</em> - A region with fraction $\alpha$ of the crime should receive $\alpha$ of the policing effort</li>
+              <li><em>Assumption: Predictive Model</em> - Policing happens by visiting regions proportionally to probability estimated by model</li>
+              <li><em>Assumption: Limited context</em> - we only store crime counts</li>
+              <li><em>Assumption: Truth in data</em> - Policing uncovers crime exactly at the rate of crime occurrence</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">P&oacute;lya-Eggenberger Urns</div>
+          <div class="contents">
+            <ul>
+              <li>Start with an urn containing $r$ and $b$ red and black balls</li>
+              <li>Repeat:
+                <ul>
+                  <li>Draw a ball at random from urn, note its color</li>
+                  <li>If color was red, add $rr$ red balls, and $rb$ black balls. if black, add $br$ red balls, and $bb$ black balls.</li>
+                  <li class="math-item" style="margin-top:2em">$$\left ( \begin{array}{cc} rr & rb \\ br & bb \end{array} \right )$$</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">P&oacute;lya-Eggenberger Urns</div>
+          <div class="contents">
+            <ul>
+              <li>P&oacute;lya-Eggenberger Urns are reasonable models for predictive policing</li>
+              <li>Different colors correspond to different regions</li>
+              <li>As more crime happens in one area, we should direct more effort to that area</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">The simple case: P&oacute;lya Urn</div>
+          <div>
+            <ul>
+              <li>Consider the following update matrix: $\left ( \begin{array}{cc} 1 & 0 \\ 0 & 1 \end{array} \right )$</li>
+              <li>Let's run this process 50 times</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-1.html"
+                 data-scrollable="no"
+                 data-transitions="1">
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">The simple case: P&oacute;lya Urn</div>
+          <div>
+            <ul>
+              <li>Consider the following update matrix: $\left ( \begin{array}{cc} 1 & 0 \\ 0 & 1 \end{array} \right )$</li>
+              <li>Let's run this process 10,000 times</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-2.html"
+                 data-scrollable="no">
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div>
+            <ul>
+              <li class="math-item">What about $\left ( \begin{array}{cc} 2 & 0 \\ 0 & 1 \end{array} \right )$ ?</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-3.html"
+                 data-scrollable="no"
+                 data-transitions="1">
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div>
+            <ul>
+              <li class="math-item">What about $\left ( \begin{array}{cc} 2 & 0 \\ 0 & 1 \end{array} \right )$ ?</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-4.html"
+                 data-scrollable="no">
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">What's going wrong?</div>
+          <div class="contents">
+            <ul>
+              <li>As police record more crime in a region, they're more likely to go there
+                <ul><li>This makes sense</li></ul></li>
+              <li>But as police is more likely to go to a region, they're also more likely to see crime there!
+                <ul><li><b>This is the crux of the problem</b></li></ul></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Intuition</div>
+          <div class="contents">
+            <ul>
+              <li>If we often police $a$, then we already expect crime at $a$, and shouldn't (relatively) be surprised to see crime at $a$</li>
+              <li>If we're twice as likely to go to $a$ than $b$, then we should be half as willing to count our observations there</li>
+              <li>With this modified urn, the ratio of balls will always converge to the ratio of the diagonal values
+                <ul><li>And hence, no feedback loops</li></ul>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Two explanations</div>
+          <div class="contents">
+            <ul>
+              <li>If we think of policing as "surveying crime", then our mitigation strategy is exactly the Thompson-Horvitz estimator for unequal-probability survey sampling</li>
+              <li>If we think of the decision of where to go as tossing a <em>biased</em> coin, then our mitigation strategy for recording <em>unbiased</em> observations is exactly Von Neumann's classic trick for getting unbiased tosses from biased coins</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div>
+            <ul>
+              <li class="math-item">What about $\left ( \begin{array}{cc} 2 & 0 \\ 0 & 1 \end{array} \right )$ ?</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-5.html"
+                 data-scrollable="no"
+                 data-transitions="1">
+            </div>
+          </div>
+        </section>
+
+        <section class="center">
+          <div>
+            <ul>
+              <li class="math-item">What about $\left ( \begin{array}{cc} 2 & 0 \\ 0 & 1 \end{array} \right )$ ?</li>
+            </ul>
+            <div class="fig-container" style="width: 100%; display:inline-block"
+                 data-file="iframes/polya-urn/polya-urn-6.html"
+                 data-scrollable="no">
+            </div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="title line-fit">But does this actually explain Isaac and Lum's results?</div>
+        </section>
+          
+        <section>
+          <div class="contents">
+            <img src="images/predpol/compensated-update-lum-isaac-experiments-2.png" style="border:0">
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Limitations, Caveats</div>
+          <div class="contents">
+            <ul><li>Our findings are not unassailable evidence that PredPol is broken</li>
+              <li><b>More importantly, our mitigation strategy is not evidence that "now PredPol is fixed"</b>
+              <li>We think of it as a serious threat to validity and an explanation mechanism, not as a bugfix</li>
+              <li>We also think that batch learning is fundamentally broken in this setting (see our followup ALT paper for a bandit approach)</li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="center">
+          <div class="title">Acknowledgments</div>
+          <div class="contents">
+            <ul><li>Without William Isaac and Kristian Lum's willingness to help and share their results, this would have been literally impossible to write</li></ul>
+          </div>
+        </section>
+
+        <section class="center">
+          <div class="title">Where to now?</div>
+          <div class="contents">
+            <ul>
+              <li>We build inhumane systems at our peril</li>
+              <li>Worse yet, we build inhumane systems at the peril of those powerless to contest the system's decisions</li>
+              <li>We can choose to build a better world</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="thanks" style="position: relative">
+          <div class="title">Thank you!</div>
+          <div>
+            <div style="width: 120vh; height: 60vh; display: grid; margin: auto; grid-template-rows: auto auto auto; grid-template-columns: auto auto auto auto auto auto auto auto; ">
+              <img class="headshot fade" src="images/headshots/rosen.jpg">         
+              <img class="headshot fade" src="images/headshots/beiwang.jpg">       
+              <img class="headshot fade" src="images/headshots/nivan.jpg">  
+              <img class="headshot fade" src="images/headshots/berger.jpg">        
+              <img class="headshot fade" src="images/headshots/correll.jpg">       
+              <img class="headshot fade" src="images/headshots/glickenstein.jpg">  
+              <img class="headshot fade" src="images/headshots/remco.jpg">         
+              <img class="headshot fade" src="images/headshots/josh.jpg">          
+              <img class="headshot fade" src="images/headshots/kindlmann.jpg">     
+              <img class="headshot fade" src="images/headshots/sorelle.jpg">       
+              <img class="headshot fade" src="images/headshots/suresh.jpg">        
+              <img class="headshot fade" src="images/headshots/comba.jpg">         
+              <img class="headshot" src="images/headshots/mingwei.jpg">       
+              <img class="headshot" src="images/headshots/zhe.jpg">           
+              <img class="headshot" src="images/headshots/zhenge.jpg">        
+              <img class="headshot" src="images/headshots/rfaust.jpg">        
+              <img class="headshot" src="images/headshots/dylan.jpg">         
+              <img class="headshot" src="images/headshots/jixianli.jpg">      
+              <img class="headshot" src="images/headshots/yongwang.jpg">      
+              <img class="headshot fade" src="images/headshots/huaminqu.jpg">      
+              <img class="headshot fade" src="images/headshots/archambault.jpg">   
+              <img class="headshot" src="images/headshots/sabrinanusrat.jpg"> 
+              <img class="headshot fade" src="images/headshots/skobourov.jpg">     
+              <img class="headshot" src="images/headshots/bahadorsaket.jpg">  
+            </div>
+          </div>
+          <div style="position: relative">
+            <div style="display: inline-block; height: 20vh; margin: 1vh; transform: translate(0,-2vh)"> <!-- this is pretty gross.. -->
+              <div class="line-fit">https://cscheid.net</div>
+              <div class="line-fit">https://hdc.cs.arizona.edu</div>
+              <div class="line-fit">cscheid@cs.arizona.edu</div>
+            </div>
+            <div style="display: inline-block; margin: 2vh 0;">
+              <img class="logo" src="images/logos/hdc.svg">
+              <img class="logo" src="images/logos/ua.svg">
+              <img class="logo" src="images/logos/nsf.png">
+              <img class="logo" src="images/logos/att.png">
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+    <script src="reveal.js-3.7.0/js/reveal.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+ 

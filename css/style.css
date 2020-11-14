@@ -1,7 +1,19 @@
 body {
-    font-family: "Source Sans Pro", sans-serif;
+    /* font-family: "Source Sans Pro", sans-serif; */
+    /* font-family: neue-haas-grotesk-display, "Helvetica Neue", sans-serif; */
+    font-family: ivypresto-text, "Helvetica Neue", sans-serif;
+    font-weight: 100;
     font-size: 16px;
+    font-style: normal;
+    line-height: 1.7;
     text-rendering: optimizeLegibility;
+}
+
+.table-figure {
+    font-variant-numeric: tabular-nums;
+    -moz-font-feature-settings: "tnum";
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
 }
 
 img {
@@ -43,8 +55,7 @@ table td, table th {
 }
 
 em {
-    font-weight: 600;
-    font-style: normal
+    font-style: italics;
 }
 
 .heading {
@@ -103,16 +114,25 @@ h2.my-sidebar > a, h3.my-sidebar > a, h4.my-sidebar > a {
 }
 
 h1 {
+    font-family: novecento-sans-wide, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
     padding-top: 0em;
     padding-bottom: 0em;
     position: relative;
     left: -20px;
-    font-weight: 300;
     text-transform: uppercase;
 }
 
 h2, h3, h4 {
+    font-family: novecento-sans-wide, sans-serif;
     font-weight: 700;
+    color: #555;
+    font-style: normal;
+
+    /* font-family: neue-haas-grotesk, sans-serif; */
+    /* font-weight: 700; */
     position: relative;
     left: -1em;
     text-transform: uppercase;
@@ -204,4 +224,18 @@ body.inline-frame {
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+.editable {
+    background-color: #ddd;
+}
+
+/* https://stackoverflow.com/a/4753609 */
+div.center-scaffold {
+    width:100%;
+    text-align: center;
+}
+
+div.center-scaffold div {
+    display: inline-block;
 }
