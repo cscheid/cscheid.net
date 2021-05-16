@@ -1,0 +1,95 @@
+d3.select("#test")
+Selection {_groups: Array(1), _parents: Array(1)}
+d3.select("#test").append("div").text("hello, world")
+Selection {_groups: Array(1), _parents: Array(1)}
+div = d3.select("#test").append("div")
+Selection {_groups: Array(1), _parents: Array(1)}
+div.text("another div")
+Selection {_groups: Array(1), _parents: Array(1)}
+div.text("asldkjfha")
+Selection {_groups: Array(1), _parents: Array(1)}
+div.text("another div")
+Selection {_groups: Array(1), _parents: Array(1)}
+div.style("background-color", "green");
+Selection {_groups: Array(1), _parents: Array(1)}
+d1
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+svg = d3.select("#test").append("svg").attr("width", 300).attr("height", 300)
+Selection {_groups: Array(1), _parents: Array(1)}
+svg.style("background-color", "gray")
+Selection {_groups: Array(1), _parents: Array(1)}
+d1.forEach(function(v) { svg.append("circle").attr("cx", v * 50).attr("cy",150).attr("r", v * 5 + 5).style("fill", "red"); })
+undefined
+
+
+
+svg = d3.select("#test").append("svg").attr("width", 300).attr("height", 300)
+Selection {_groups: Array(1), _parents: Array(1)}
+svg.style("background-color", "gray")
+Selection {_groups: Array(1), _parents: Array(1)}
+svg.selectAll("circle").data(d1).append("circle").attr("cx", function(d) { return d * 50; }).attr("cy", 150).attr("r", function(d) { return d * 5 + 5; }).style("fill", "red");
+Selection {_groups: Array(1), _parents: Array(1)}
+svg.selectAll("circle").data(d1).enter().append("circle").attr("cx", function(d) { return d * 50; }).attr("cy", 150).attr("r", function(d) { return d * 5 + 5; }).style("fill", "red");
+Selection {_groups: Array(1), _parents: Array(1)}
+d1
+(8) [1, 2, 3, 4, 5, 6, 7, 8]
+svg.selectAll("circle").attr("cy", function(d) { return d * d * 8; })
+Selection {_groups: Array(1), _parents: Array(1)}
+svg.selectAll("circle").style("stroke", "white")
+Selection {_groups: Array(1), _parents: Array(1)}
+d2
+(8) [8, 7, 6, 5, 4, 3, 2, 1]
+circles = svg.selectAll("circle").data(d2)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.attr("cy", function(d) { return d * d * 8; })
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles = circles.data(d1)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.attr("cy", function(d) { return d * d * 8; })
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles = circles.data(d2)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.transition().attr("cy", function(d) { return d * d * 8; })
+Transition {_groups: Array(1), _parents: Array(1), _name: null, _id: 1}
+circles = circles.data(d1)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.transition().duration(1500).attr("cy", function(d) { return d * d * 8; })
+Transition {_groups: Array(1), _parents: Array(1), _name: null, _id: 2}
+function setY(sel) { sel.attr("cy", function(d) { return d * d * 8; }); }
+undefined
+circles = circles.data(d2)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+setY(circles)
+undefined
+circles = circles.data(d1)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+setY(circles.transtition().duration(1000))
+VM1187:1 Uncaught TypeError: circles.transtition is not a function
+    at <anonymous>:1:14
+(anonymous) @ VM1187:1
+setY(circles.transition().duration(1000))
+undefined
+circles = circles.data(d2)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+setY(circles.transition().duration(1000).delay(3000))
+undefined
+circles = circles.data(d1)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+setY(circles.transition().duration(1000).delay(function(d) { return d * 200; }))
+undefined
+forecasts
+(5) [{…}, {…}, {…}, {…}, {…}]0: {city: "Washington, DC", temperature: 92}1: {city: "New York", temperature: 96}2: {city: "Seattle", temperature: 77}3: {city: "Tucson", temperature: 102}4: {city: "San Francisco", temperature: 65}length: 5__proto__: Array(0)
+circles = circles.data(forecasts)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}_enter: [Array(5)]_exit: [Array(8)]_groups: [Array(5)]_parents: [svg]__proto__: Object
+circles.exit().attr("cx", 30).attr("cy", 30)
+Selection {_groups: Array(1), _parents: Array(1)}
+circles.exit().remove()
+Selection {_groups: Array(1), _parents: Array(1)}
+circles.attr("r", 10)
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.attr("cy", function(d) { return d.temperature })
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.attr("cy", function(d) { return 300 - 2 * d.temperature; })
+Selection {_groups: Array(1), _parents: Array(1), _enter: Array(1), _exit: Array(1)}
+circles.transition().attr("cy", function(d) { return d.temperature })
+Transition {_groups: Array(1), _parents: Array(1), _name: null, _id: 6}

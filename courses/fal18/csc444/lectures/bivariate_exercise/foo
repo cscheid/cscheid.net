@@ -1,0 +1,28 @@
+
+        var popDomain = d3.extent(data.filter(d => d.properties.area !== 0), d => d.properties.t);
+        
+        var scale = d3.scaleLinear()
+            .domain(popDomain)
+            .range(["white", "black"]);
+        
+        var scale2 = d3.scaleLinear()
+            .domain([0, 100])
+            .range(["red", "blue"]);
+
+        var scale3 = d3.scaleLinear()
+            .domain([0, 50, 100])
+            .range(["red", "gray", "blue"]);
+
+        var scale4 = d3.scaleLinear()
+            .domain([0, 50, 100])
+            .range([50, 0, -50]);
+
+        var scale5 = d3.scaleLinear()
+            .domain(popDomain)
+            .range([100, 30]);
+        
+        polygons.attr("fill", function(d) {
+            return d3.lab(scale5(d.properties.t),
+                          0,
+                          scale4(d.properties.percentDemocrat));
+        });

@@ -7,3 +7,15 @@ htmlproofer-output.txt
 talks/tandon-march-2019/iframes/polya-urn/target
 .DS_Store
 datasets
+courses/**/slides
+courses/fal18/csc444/main.js
+courses/fal18/csc444/assignment_*/*
+courses/fal18/csc444/server*
+courses/spr18/csc444/lectures/lecture25
+courses/spr18/csc444/server*
+courses/spr18/csc444/assignment_*/*
+courses/spr19/csc665/assignments/assignment-*-assets/**
+courses/fall-2019/csc444/assignment_*/*
+courses/spring-2020/csc580/final-exam.pdf
+courses/spring-2020/csc580/midterm.pdf
+
