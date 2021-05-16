@@ -1,5 +1,5 @@
 ---
-title: Shapley, Grad, and All That
+title: Shapley, Grad, Fourier, and All That
 layout: markdown_talk
 ---
 
@@ -15,7 +15,9 @@ layout: markdown_talk
 
 * Typical example: Alice and Bob own a left-hand glove; Claire
   owns a right-hand glove. A pair is worth 1 dollar, but either hand
-  by itself is worth nothing. How much should you offer each player to participate in the game?
+  by itself is worth nothing. 
+  
+  * How much should you offer each player to participate in the game?
 
 ## SV: two classic definitions
 
@@ -29,7 +31,7 @@ layout: markdown_talk
 
 ## Shapley Values and ML Explanations
 
-* Widely used in ML for feature importance explanations: "how important is gender for this health risk classifier"
+* Widely used in ML for feature importance explanations: "how important is gender for this health risk classifier?"
 
 * Define a game with one feature per player, define feature importance as the Shapley Value of player.
 
@@ -80,7 +82,7 @@ Decompose $\nabla$ in $\nabla\_1, \dots, \nabla\_d$ such that $\sum_i \nabla_i =
 * $${\small \begin{array}{cc} \begin{array}{ccc}\textrm{set}&\textrm{position}&\textrm{value} \\ \hline \{\} & (1, 1) & 0 \\ \{1\} & (-1, 1) & 1 \\ \{2\} & (1, -1) & 1 \\ \{1,2\} & (-1, -1) & 0 \end{array} & \begin{array}{cc}\textrm{monomial}&\textrm{coefficient} \\ \hline 1 & 1/2 \\ p_1 & -1/4 \\ p_2 & -1/4 \\ p_1p_2 & 1/2 \end{array} \end{array}}$$
 
 * In set basis, $(0, 1, 1, 0)$
-* $f(p_1, p_2) = 1/2 - 1/4 p_1 - 1/4 p_2 + 1/2 p_1 p_2$
+* $f(p_1, p_2) = 1/2 - (1/4) p_1 - (1/4) p_2 + (1/2) p_1 p_2$
 * In polynomial basis, $(1/2, -1/4, -1/4, 1/2)$
 
 ## Fourier Transforms
@@ -88,7 +90,7 @@ Decompose $\nabla$ in $\nabla\_1, \dots, \nabla\_d$ such that $\sum_i \nabla_i =
 * $${\small \begin{array}{cc} \begin{array}{ccc}\textrm{set}&\textrm{position}&\textrm{value} \\ \hline \{\} & (1, 1) & 0 \\ \{1\} & (-1, 1) & 1 \\ \{2\} & (1, -1) & 1 \\ \{1,2\} & (-1, -1) & 2 \end{array} & \begin{array}{cc}\textrm{monomial}&\textrm{coefficient} \\ \hline 1 & 1/2 \\ p_1 & -1/4 \\ p_2 & -1/4 \\ p_1p_2 & 0 \end{array} \end{array}}$$
 
 * In set basis, $(0, 1, 1, 0)$
-* $f(p_1, p_2) = 1/2 - 1/4 p_1 - 1/4 p_2$
+* $f(p_1, p_2) = 1/2 - (1/4) p_1 - (1/4) p_2$
 * In polynomial basis, $(1/2, -1/4, -1/4, 0)$
 
 ## Now we analyze $\nabla^\dagger \nabla_i$
@@ -135,5 +137,5 @@ Decompose $\nabla$ in $\nabla\_1, \dots, \nabla\_d$ such that $\sum_i \nabla_i =
 
 ## References
 
-* Broader critique of feature explanations and Shapley Values: Kumar et al, ICML 2019, arXiv:2002.11097
-  
+1. Problems with Shapley Values... Kumar et al, ICML 2019, arXiv:2002.11097
+2. Hodge decomposition and the Shapley value of a cooperative game. Stern & Tettenhorst, Games & Econ. Behav. arXiv:1709.08318
