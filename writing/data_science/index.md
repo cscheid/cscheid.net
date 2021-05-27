@@ -19,7 +19,7 @@ in a way that I hope will be useful.
 ## Basics
 
 * [Trigonometry](trigonometry/index.html)
-* [Linear Regression](linear_regression.html)
+* [Linear Regression](linear-regression.html)
 
 ## Supervised Learning
 
@@ -50,6 +50,7 @@ create simpler versions of the dataset.
 * [Convolutions](convolution/index.html)
 * [Eigenwhat?](/courses/fal16/cs444/lectures/lecture15/eigenvectors.html)
 * [Automatic Differentiation](automatic_differentiation/index.html)
+* [Randomized Response](randomized-response/index.html)
 
 ## Data visualization
 
