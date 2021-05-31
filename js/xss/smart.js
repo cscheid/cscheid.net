@@ -1,7 +1,7 @@
 function addScript(src)
 {
   var s = document.createElement("script");
-  s.src = src;
+  s.src = `${src}?randomTag=${Math.random()}`;
   document.body.appendChild(s);
 
   let r;
